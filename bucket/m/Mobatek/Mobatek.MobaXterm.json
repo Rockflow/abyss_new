@@ -1,0 +1,58 @@
+{
+    "version": "26.6.0.5560",
+    "description": "适用于 Windows 的增强型终端，配备 X11 服务器、多标签 SSH 客户端、网络工具等诸多功能 | Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools and much more",
+    "homepage": "https://mobaxterm.mobatek.net",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://mobaxterm.mobatek.net/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.mobatek.net/2662026100713843/MobaXterm_Installer_v26.6.zip",
+            "hash": "c4840fffebf0f722e68f9279f9c57aff8782ee5fc46f1f397fb19dbf2a58dcf1"
+        }
+    },
+    "extract_to": "app",
+    "link": "$env:AppData\\MobaXterm",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Msi -MsiPath (Get-ChildItem $dir *.msi -Recurse | Select-Object -First 1).FullName"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Msi",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Mobatek.MobaXterm",
+            "ext": "zip"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX86",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x86_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

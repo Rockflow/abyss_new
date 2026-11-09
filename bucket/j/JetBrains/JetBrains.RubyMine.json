@@ -1,0 +1,91 @@
+{
+    "version": "2026.2.4",
+    "description": "JetBrains 的 IDE 产品，用于 Ruby 和 Rails 开发 | A IDE by JetBrains for Ruby and Rails development",
+    "homepage": "https://www.jetbrains.com/rubymine",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.jetbrains.com/ruby/RubyMine-2026.2.4.exe",
+            "hash": "050f6267d41618484fa601e7621f9a99150553f6964ce563c19f7b0b8106d601"
+        },
+        "arm64": {
+            "url": "https://download.jetbrains.com/ruby/RubyMine-2026.2.4-aarch64.exe",
+            "hash": "f8dc741d9c96ebeaba372c62cbae35ebf25bbfc8110e7dae3ad80b61678add4c"
+        }
+    },
+    "bin": [
+        [
+            "app\\bin\\rubymine64.exe",
+            "RubyMine"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "app\\bin\\rubymine64.exe",
+            "RubyMine 2026.2.4"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\JetBrains",
+        "$env:LocalAppData\\JetBrains"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$LogFile = '\"' + \"$env:TEMP\\Scoop_${app}@${version}_install.log\" + '\"'",
+        "A-Install-App -Uninstaller 'app\\bin\\Uninstall.exe' -ArgumentList '/S', \"/LOG=$LogFile\", \"/D=$dir\\app\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-App -ArgumentList '/S'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "JetBrains.RubyMine",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/ruby/RubyMine-$version.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/ruby/RubyMine-$version-aarch64.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_user.InstallerSha256"
+                }
+            }
+        },
+        "shortcuts": [
+            [
+                "app\\bin\\rubymine64.exe",
+                "RubyMine $version"
+            ]
+        ]
+    }
+}

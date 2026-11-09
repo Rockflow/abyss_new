@@ -1,0 +1,51 @@
+{
+    "version": "0.15.0",
+    "description": "又一款跨平台的图形化进程/系统监控工具 | Yet another cross-platform graphical process/system monitor",
+    "homepage": "https://bottom.pages.dev",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ClementTsang/bottom/releases/download/0.15.0/bottom_x86_64-pc-windows-msvc.zip",
+            "hash": "aeff72e355116516d2583f34348e31f60c5899e394a08eeda79a2bdb361e27bd"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\btm.exe",
+    "link": "$env:AppData\\bottom",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ClementTsang/bottom/releases/download/$version/bottom_x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

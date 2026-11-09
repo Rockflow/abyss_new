@@ -1,0 +1,55 @@
+{
+    "version": "20261025",
+    "description": "Rime 小狼毫词库: 萌娘百科词库 (无声调) | Rime Weasel Dictionary: Moetype (toneless)",
+    "homepage": "https://github.com/suiginko/moetype",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "notes_cn": "请在小狼毫(Rime)中进行重新部署。",
+    "notes": "Please redeploy in Rime Weasel.",
+    "suggest": {
+        "rime": "abyss/Rime.Weasel",
+        "model": "abyss/amzxyz.rime_wanxiang.model"
+    },
+    "url": "https://github.com/suiginko/moetype/releases/download/20261025/toneless_moe.dict.yaml",
+    "hash": "f01d1cc837bedb628dff909c5c970ce0efec02648c4ec7a8327fd7365e7571dd",
+    "conflicts": [
+        "suiginko.moetype.flypy",
+        "suiginko.moetype.moqi",
+        "suiginko.moetype.toneless",
+        "suiginko.moetype.tone",
+        "suiginko.moetype.zrm"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Ensure-Directory \"$env:AppData\\Rime\"",
+        "Write-Host \"Copying $dir\\toneless_moe.dict.yaml => $env:AppData\\Rime\" -ForegroundColor Yellow",
+        "Copy-Item \"$dir\\toneless_moe.dict.yaml\" $env:AppData\\Rime -Force"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "Remove-Item \"$env:AppData\\Rime\\toneless_moe.dict.yaml\" -Force -ErrorAction SilentlyContinue"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "url": "https://github.com/suiginko/moetype/releases/download/$version/toneless_moe.dict.yaml"
+    }
+}

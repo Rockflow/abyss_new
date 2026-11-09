@@ -1,0 +1,58 @@
+{
+    "version": "3.2.0",
+    "description": "一个高性能、可扩展的应用启动器和插件平台 | A High-Performance, Extensible Application Launcher and Plugin Platform",
+    "homepage": "https://github.com/ZToolsCenter/ZTools",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ZToolsCenter/ZTools/releases/download/v3.2.0/ZTools-3.2.0-win-x64-setup.exe",
+            "hash": "36a4a6a545b9fc40c17136c49cd9048c714b858b678e531ad72901a7545c0d10"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\ZTools.exe",
+            "ZTools"
+        ]
+    ],
+    "link": "$env:AppData\\ZTools",
+    "cleanup": "$env:LocalAppData\\ztools-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall ZTools.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ZToolsCenter/ZTools/releases/download/v$version/ZTools-$version-win-x64-setup.exe"
+            }
+        }
+    }
+}

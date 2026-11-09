@@ -1,0 +1,58 @@
+{
+    "version": "2.3.0",
+    "description": "适用于 YouTube、TikTok 及 1000 多个平台的免费开源视频下载器 | Free Open Source Video Downloader for YouTube, TikTok, and 1000+ Platforms",
+    "homepage": "https://vidbee.org",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nexmoe/VidBee/releases/download/v2.3.0/vidbee-2.3.0-setup.exe",
+            "hash": "7c3edc7be0278fcf4bf2f3f064011ff558ec4e01c14c3d208fc513a6a033b1b6"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\vidbee.exe",
+            "vidbee"
+        ]
+    ],
+    "link": "$env:AppData\\vidbee",
+    "cleanup": "$env:LocalAppData\\vidbee-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall vidbee.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/nexmoe/VidBee/releases/download/v$version/vidbee-$version-setup.exe"
+            }
+        }
+    }
+}

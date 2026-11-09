@@ -1,0 +1,57 @@
+{
+    "version": "21.0.0-rc1",
+    "description": "用于 Qt 框架开发的集成开发环境 (IDE) | IDE for development with the Qt framework",
+    "homepage": "https://doc.qt.io/qtcreator/index.html",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/qt-creator/qt-creator/releases/download/v21.0.0-rc1/qtcreator-windows-x64-msvc-21.0.0-rc1.7z",
+            "hash": "d84290d70a02a42122952532f09c93b800b8c714587be78ad3f76501305ee530"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\bin\\qtcreator.exe",
+    "shortcuts": [
+        [
+            "app\\bin\\qtcreator.exe",
+            "Qt Creator"
+        ]
+    ],
+    "link": "$env:AppData\\QtProject",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/qt-creator/qt-creator/releases/download/v$version/qtcreator-windows-x64-msvc-$version.7z"
+            }
+        }
+    }
+}

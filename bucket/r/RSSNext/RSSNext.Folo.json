@@ -1,0 +1,59 @@
+{
+    "version": "1.17.0",
+    "description": "在一个地方关注所有事情 | Follow everything in one place",
+    "homepage": "https://follow.is",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/RSSNext/Folo/releases/download/desktop/v1.17.0/Folo-1.17.0-windows-x64.exe#/dl.7z",
+            "hash": "090536e268de045a36712c057d75848b226e9169ff43ed3024d1a5f9d4cacc3e"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\Folo.exe",
+            "Folo"
+        ]
+    ],
+    "link": "$env:AppData\\Folo",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "Get-ChildItem \"$dir\\*\" -Exclude 'Folo-*nupkg' | Remove-Item",
+        "Expand-7zipArchive \"$dir\\app\\Folo-*-full.nupkg\" \"$dir\\app\" -ExtractDir 'lib\\net45' -Removal"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        },
+        "regex": "desktop/(.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/RSSNext/Folo/releases/download/desktop/v$version/Folo-$version-windows-x64.exe#/dl.7z"
+            }
+        }
+    }
+}

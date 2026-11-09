@@ -1,0 +1,63 @@
+{
+    "version": "1.1.8",
+    "description": "ComfyUI 的桌面应用程序。ComfyUI 是一款强大的模块化扩散模型 GUI、API 和后台，具有图形/节点界面 | A desktop app for ComfyUI, the most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface",
+    "homepage": "https://comfy.org",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.todesktop.com/241130tqe9q3y/Comfy%20Desktop%20Setup%201.1.8%20-%20Build%2026102263fz4azlz-x64.exe",
+            "hash": "1ff5609166a5174cd86e0d24a3d4ae036e9bc8097946b2f25e673dfd8f800dec"
+        }
+    },
+    "location": "$env:LocalAppData\\Programs\\Comfy Desktop",
+    "link": [
+        "$env:AppData\\Comfy Desktop",
+        "$env:LocalAppData\\Comfy-Desktop",
+        "$env:AppData\\ComfyUI"
+    ],
+    "cleanup": "$env:LocalAppData\\comfyui-desktop-2-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "# 不能安装在 Scoop 目录下，会导致数据目录位置变化",
+        "A-Install-App -Uninstaller 'Uninstall Comfy Desktop.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Comfy.ComfyUI-Desktop",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

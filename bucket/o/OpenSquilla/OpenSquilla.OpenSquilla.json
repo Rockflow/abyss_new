@@ -1,0 +1,61 @@
+{
+    "version": "0.5.7",
+    "description": "微内核 AI Agent | A microkernel AI agent",
+    "homepage": "https://opensquilla.ai",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/opensquilla/opensquilla/releases/download/v0.5.7/OpenSquilla-0.5.7-win-x64.exe",
+            "hash": "aef1a069455a57fa4280f4598410f164a9dc4b8975823e7226eac10db558fe44"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\OpenSquilla.exe",
+            "OpenSquilla"
+        ]
+    ],
+    "link": "$env:AppData\\@opensquilla",
+    "cleanup": [
+        "$env:LocalAppData\\OpenSquilla",
+        "$env:LocalAppData\\@opensquilladesktop-electron-updater"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall OpenSquilla.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-App",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/opensquilla/opensquilla/releases/download/v$version/OpenSquilla-$version-win-x64.exe"
+            }
+        }
+    }
+}

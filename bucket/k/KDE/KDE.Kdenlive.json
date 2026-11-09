@@ -1,0 +1,60 @@
+{
+    "version": "26.08.2",
+    "description": "免费开源的视频编辑器 | Free and Open Source Video Editor",
+    "homepage": "https://kdenlive.org",
+    "license": {
+        "identifier": "GPL-3.0-or-later",
+        "url": "https://invent.kde.org/multimedia/kdenlive/-/blob/HEAD/COPYING"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.kde.org/stable/kdenlive/26.08/windows/kdenlive-26.08.2.exe",
+            "hash": "9f89d8ac53b190ba506af86fb37b31f17b60a532394bd5303af4e505b3a5bee6"
+        }
+    },
+    "location": "$env:ProgramFiles\\kdenlive",
+    "link": "$env:LocalAppData\\kdenliverc",
+    "cleanup": "$env:LocalAppData\\kdenlive",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "KDE.Kdenlive",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

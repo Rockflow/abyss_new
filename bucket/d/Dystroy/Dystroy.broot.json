@@ -1,0 +1,50 @@
+{
+    "version": "1.62.0",
+    "description": "一种查看和浏览目录树的新方式 | A new way to see and navigate directory trees",
+    "homepage": "https://dystroy.org/broot",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Canop/broot/releases/download/v1.62.0/broot_1.62.0.zip",
+            "hash": "13630ae5d3b011ddc81fca05cb80dbee6189dad3ba393dd477f5f687c7b5106d",
+            "extract_dir": "x86_64-pc-windows-gnu"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\broot.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Canop/broot/releases/download/v$version/broot_$version.zip"
+            }
+        }
+    }
+}

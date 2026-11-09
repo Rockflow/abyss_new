@@ -1,0 +1,69 @@
+{
+    "version": "3.0.2.29",
+    "description": "微信输入法，由腾讯的微信团队开发 | An input method developed by the WeChat team of Tencent",
+    "homepage": "https://z.weixin.qq.com",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://wetype.wxqcloud.qq.com/page/article/index/14.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.z.weixin.qq.com/app/win/WeTypeSetup_3.0.2.29.exe",
+            "hash": "39fdbe6aa0895152e580e47971f9bc059c8b14d85520b384db6878fc2ec4c495"
+        },
+        "arm64": {
+            "url": "https://download.z.weixin.qq.com/app/win/WeTypeSetup_3.0.2.29.exe",
+            "hash": "39fdbe6aa0895152e580e47971f9bc059c8b14d85520b384db6878fc2ec4c495"
+        }
+    },
+    "location": "$env:ProgramFiles\\Tencent\\WeType",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -ArgumentList '/s'",
+        "A-Hold-App"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Deny-Update",
+        "A-Uninstall-Manually"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Tencent.WeType",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

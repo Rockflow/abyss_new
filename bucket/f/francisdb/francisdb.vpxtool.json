@@ -1,0 +1,58 @@
+{
+    "version": "0.39.0",
+    "description": "Visual Pinball 的基于终端的前端和实用程序 | Terminal based frontend and utilities for Visual Pinball",
+    "homepage": "https://github.com/francisdb/vpxtool",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/francisdb/vpxtool/releases/download/v0.39.0/vpxtool-Windows-x86_64-v0.39.0.zip",
+            "hash": "4f85c776b236afe1dd5353332afeeb46fc4d240d49b13752bfc4988e5a1a4a06"
+        },
+        "arm64": {
+            "url": "https://github.com/francisdb/vpxtool/releases/download/v0.39.0/vpxtool-Windows-aarch64-v0.39.0.zip",
+            "hash": "3de16ec7ec3caf9314263139c00abb58e19955e9e71548454d7617754e9c5047"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\vpxtool.exe",
+    "link": "$env:AppData\\vpxtool.cfg",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/francisdb/vpxtool/releases/download/v$version/vpxtool-Windows-x86_64-v$version.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/francisdb/vpxtool/releases/download/v$version/vpxtool-Windows-aarch64-v$version.zip"
+            }
+        }
+    }
+}

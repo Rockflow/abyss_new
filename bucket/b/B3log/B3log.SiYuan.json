@@ -1,0 +1,71 @@
+{
+    "version": "3.8.9",
+    "description": "一款以隐私为首要原则、可自行托管且完全开源的个人知识管理软件 | A privacy-first, self-hosted, fully open source personal knowledge management software",
+    "homepage": "https://b3log.org/siyuan",
+    "license": {
+        "identifier": "AGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/siyuan-note/siyuan/releases/download/v3.8.9/siyuan-3.8.9-win.exe",
+            "hash": "aed8aaa3884ea279d716b8e9b8d7d4624c279142d289af5ca59c4c7e8579c164"
+        },
+        "arm64": {
+            "url": "https://github.com/siyuan-note/siyuan/releases/download/v3.8.9/siyuan-3.8.9-win-arm64.exe",
+            "hash": "ed5e1b765df90627482df32ad60cd42eb12eeb7d317f4fe902e2317fac732df1"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\SiYuan.exe",
+            "SiYuan"
+        ]
+    ],
+    "link": [
+        "$home\\SiYuan",
+        "$home\\.config\\siyuan"
+    ],
+    "cleanup": [
+        "$env:AppData\\SiYuan-Electron",
+        "$env:LocalAppData\\siyuan-updater"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall SiYuan.exe' -ArgumentList '/CurrentUser','/S',\"/D=$dir\\app\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/siyuan-note/siyuan/releases/download/v$version/siyuan-$version-win.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/siyuan-note/siyuan/releases/download/v$version/siyuan-$version-win-arm64.exe"
+            }
+        }
+    }
+}

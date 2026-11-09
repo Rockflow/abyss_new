@@ -1,0 +1,65 @@
+{
+    "version": "2026.23",
+    "description": "为 git 用户提供的开源图形用户界面客户端 | Open-source GUI client for git users",
+    "homepage": "https://github.com/sourcegit-scm/sourcegit",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sourcegit-scm/sourcegit/releases/download/v2026.23/sourcegit_2026.23.win-x64.zip",
+            "hash": "1ac0ec27193f6647f9a7e2e81dbc17df53aed22f835dff95779c3e61293bd0cb"
+        },
+        "arm64": {
+            "url": "https://github.com/sourcegit-scm/sourcegit/releases/download/v2026.23/sourcegit_2026.23.win-arm64.zip",
+            "hash": "5144a726fc028e5a1a1c42a6f7db4859cab6302e67141efe99127119498f6267"
+        }
+    },
+    "extract_dir": "SourceGit",
+    "extract_to": "app",
+    "bin": "app\\SourceGit.exe",
+    "shortcuts": [
+        [
+            "app\\SourceGit.exe",
+            "SourceGit"
+        ]
+    ],
+    "link": "$env:AppData\\SourceGit",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sourcegit-scm/sourcegit/releases/download/v$version/sourcegit_$version.win-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/sourcegit-scm/sourcegit/releases/download/v$version/sourcegit_$version.win-arm64.zip"
+            }
+        }
+    }
+}

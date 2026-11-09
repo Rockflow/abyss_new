@@ -1,0 +1,70 @@
+{
+    "version": "2.42304.2",
+    "description": "Claude 桌面客户端 - 你电脑上的 AI 伙伴。快速、专注，专为深度工作而设计 | Claude Desktop Client - Your AI partner on desktop. Fast, focused, and designed for deep work",
+    "homepage": "https://claude.com",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.claude.ai/releases/win32/x64/2.42304.2/Claude-af65c0e384c1657459441aac3083c6e622789afe.msix",
+            "hash": "d737861f0da3175c6b663172af0e602494cd99ff1b350d57dae5910a49519fc9"
+        },
+        "arm64": {
+            "url": "https://downloads.claude.ai/releases/win32/arm64/2.42304.2/Claude-af65c0e384c1657459441aac3083c6e622789afe.msix",
+            "hash": "89c7c210767ba4868caec89573d904ce0acf5b1762e28532628b9fc87b43003b"
+        }
+    },
+    "msix": "Claude_pzs8sxrjxfjjc",
+    "link": [
+        "$env:LocalAppData\\Packages\\Claude_pzs8sxrjxfjjc\\LocalCache\\Roaming\\Claude",
+        "$env:LocalAppData\\Packages\\Claude_pzs8sxrjxfjjc\\LocalCache\\Roaming\\Claude-3p"
+    ],
+    "cleanup": "$env:ProgramData\\Claude",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Anthropic.Claude",
+            "ext": "msix"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

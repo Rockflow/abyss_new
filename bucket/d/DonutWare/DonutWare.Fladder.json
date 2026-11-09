@@ -1,0 +1,57 @@
+{
+    "version": "0.11.1",
+    "description": "一个基于 Flutter 构建的简单 Jellyfin 前端 | A Simple Jellyfin frontend built on top of Flutter",
+    "homepage": "https://github.com/DonutWare/Fladder",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/DonutWare/Fladder/releases/download/v0.11.1/Fladder-Windows-0.11.1.zip",
+            "hash": "c1180beb1ecabe8c79b60adcb23d02c55043e4593490892f965b776910ff6b41"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\fladder.exe",
+            "Fladder"
+        ]
+    ],
+    "link": "$env:AppData\\DonutWare\\fladder",
+    "cleanup": "$env:LocalAppData\\DonutWare\\fladder",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/DonutWare/Fladder/releases/download/v$version/Fladder-Windows-$version.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "version": "156.0.4314.58",
+    "description": "使用 Microsoft Edge WebView2 将 Web 内容（HTML、CSS 和 JavaScript）嵌入本机应用程序中 | Embed web content (HTML, CSS, and JavaScript) in your native applications with Microsoft Edge WebView2",
+    "homepage": "https://developer.microsoft.com/microsoft-edge/webview2",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/d5cc3c1c-bb59-4158-aedc-db0035e44466/MicrosoftEdgeWebView2RuntimeInstallerX64.exe",
+            "hash": "62863f0f0611a16ccf124b4f15650c3b66624504eba74d7cde1e2ae5d951249b"
+        },
+        "arm64": {
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/7da04b46-7e81-4f30-9852-6af198acc279/MicrosoftEdgeWebView2RuntimeInstallerARM64.exe",
+            "hash": "9e095f5ad0b42338823c2de143a0b7a97934a9bcec07c0400bb1f149709b3e64"
+        }
+    },
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -ArgumentList '/silent', '/install'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Manually 'app'"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Microsoft.EdgeWebView2Runtime",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

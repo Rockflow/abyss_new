@@ -1,0 +1,61 @@
+{
+    "version": "2026.10",
+    "description": "一款用 Rust 编写的开源 IRC 客户端，采用 Iced 图形用户界面库 | An open-source IRC client written in Rust, with the Iced GUI library",
+    "homepage": "https://halloy.chat",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/squidowl/halloy/releases/download/2026.10/halloy-installer.exe",
+            "hash": "c79b4c13ac21dbcb35d75619daec1ce5c1147eef5c79224d437623900ea35549"
+        }
+    },
+    "conflicts": [
+        "squidowl.halloy",
+        "squidowl.halloy.nightly"
+    ],
+    "shortcuts": [
+        [
+            "app\\halloy.exe",
+            "Halloy"
+        ]
+    ],
+    "link": "$env:AppData\\halloy",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/squidowl/halloy/releases/download/$version/halloy-installer.exe"
+            }
+        }
+    }
+}

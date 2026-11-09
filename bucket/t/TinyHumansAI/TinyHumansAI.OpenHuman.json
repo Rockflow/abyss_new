@@ -1,0 +1,58 @@
+{
+    "version": "0.64.15",
+    "description": "你的个人 AI 超级智能。私密、简单且极其强大 | Your Personal AI super intelligence. Private, Simple and extremely powerful",
+    "homepage": "https://tinyhumans.ai",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tinyhumansai/openhuman/releases/download/v0.64.15/OpenHuman_0.64.15_x64-setup.exe",
+            "hash": "fff6a9588c2f71334df8ec1f395b3bfae7395d77e84c97fef50950dd6411a2d6"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\OpenHuman.exe",
+            "OpenHuman"
+        ]
+    ],
+    "link": "$home\\.openhuman",
+    "cleanup": "$env:LocalAppData\\com.openhuman.app",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tinyhumansai/openhuman/releases/download/v$version/OpenHuman_$version_x64-setup.exe"
+            }
+        }
+    }
+}

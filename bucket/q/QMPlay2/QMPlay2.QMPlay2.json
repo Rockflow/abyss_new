@@ -1,0 +1,62 @@
+{
+    "version": "26.08.02",
+    "description": "一款视频和音频播放器，可以播放大多数格式和编解码器 | A video and audio player which can play most formats and codecs",
+    "homepage": "https://github.com/zaps166/QMPlay2",
+    "license": {
+        "identifier": "LGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zaps166/QMPlay2/releases/download/26.08.02/QMPlay2-Win64-26.08.02-portable.7z",
+            "hash": "1532aeed3b4c9586bf7a3c1a1628162af1aaaf3297416dae4d800da587c15d05"
+        }
+    },
+    "extract_dir": "QMPlay2-Win64-26.08.02-portable",
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\QMPlay2.exe",
+            "QMPlay2"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\settings",
+            "AppData\\Roaming\\QMPlay2"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zaps166/QMPlay2/releases/download/$version/QMPlay2-Win64-$version-portable.7z"
+            }
+        },
+        "extract_dir": "QMPlay2-Win64-$version-portable"
+    }
+}

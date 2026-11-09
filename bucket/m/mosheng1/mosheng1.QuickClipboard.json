@@ -1,0 +1,59 @@
+{
+    "version": "0.5.0",
+    "description": "一个功能强大的剪贴板管理工具，帮助你更高效地管理和使用剪贴板内容 | A powerful clipboard management tool that helps you manage and use clipboard content more efficiently",
+    "homepage": "https://quickclipboard.cn",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mosheng1/QuickClipboard/releases/download/v0.5.0/QuickClipboard_0.5.0_x64-setup.exe",
+            "hash": "fd6952ac0731cd054c6d0bd3b1126622dac7788e0341ef7af721515caaefc3f9"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\QuickClipboard.exe",
+            "QuickClipboard"
+        ]
+    ],
+    "link": "$env:LocalAppData\\quickclipboard",
+    "cleanup": "$env:LocalAppData\\com.quickclipboard.app",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mosheng1/QuickClipboard/releases/download/v$version/QuickClipboard_$version_x64-setup.exe"
+            }
+        }
+    }
+}

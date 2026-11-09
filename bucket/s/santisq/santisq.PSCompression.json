@@ -1,0 +1,41 @@
+{
+    "version": "4.0.0",
+    "description": "一个 PowerShell 模块，提供用于创建、管理和提取 zip 及 tar 归档文件，以及压缩和解压缩字符串的工具 | A PowerShell module that provides utilities for creating, managing, and extracting zip and tar archives, as well as compressing and decompressing strings",
+    "homepage": "https://github.com/santisq/PSCompression",
+    "license": {
+        "identifier": "MIT"
+    },
+    "url": "https://cdn.powershellgallery.com/packages/pscompression.4.0.0.nupkg",
+    "hash": "a500956624d3caa5f1689f2184d45266bedee24f50cdbe99edac8574bc9da69d",
+    "psmodule": {
+        "name": "PSCompression"
+    },
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "psgallery": {
+            "channel": "stable"
+        }
+    },
+    "autoupdate": {
+        "url": "https://cdn.powershellgallery.com/packages/pscompression.$version.nupkg"
+    }
+}

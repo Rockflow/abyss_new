@@ -1,0 +1,65 @@
+{
+    "version": "1.10.38",
+    "description": "轻量级的开源项目管理工具 | Lightweight task management tool",
+    "homepage": "https://www.dootask.com",
+    "license": {
+        "identifier": "AGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kuaifan/dootask/releases/download/v1.10.38/DooTask-v1.10.38-win-x64.exe",
+            "hash": "bb33263e0a5bf73d097592fa24fd6d16be408e66dea51c84708b1e54a6cb1c21"
+        },
+        "arm64": {
+            "url": "https://github.com/kuaifan/dootask/releases/download/v1.10.38/DooTask-v1.10.38-win-arm64.exe",
+            "hash": "1a3e1607f87857c07fee5607d5681e76de41e66e91cd2e19c3948f763c382b4c"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\DooTask.exe",
+            "DooTask"
+        ]
+    ],
+    "link": "$env:AppData\\DooTask",
+    "cleanup": "$env:LocalAppData\\dootask-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall DooTask.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/kuaifan/dootask/releases/download/v$version/DooTask-v$version-win-x64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/kuaifan/dootask/releases/download/v$version/DooTask-v$version-win-arm64.exe"
+            }
+        }
+    }
+}

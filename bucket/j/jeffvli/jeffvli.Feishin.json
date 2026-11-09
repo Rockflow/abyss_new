@@ -1,0 +1,56 @@
+{
+    "version": "1.17.0",
+    "description": "一款现代化的自托管音乐播放器 | A modern self-hosted music player",
+    "homepage": "https://github.com/jeffvli/feishin",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jeffvli/feishin/releases/download/v1.17.0/Feishin-1.17.0-win-x64.zip",
+            "hash": "79a56ab29985efd176834c846d35d63dcfd9f80b591210f8cb256cf65b0b4c57"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\Feishin.exe",
+            "Feishin"
+        ]
+    ],
+    "link": "$env:AppData\\feishin",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jeffvli/feishin/releases/download/v$version/Feishin-$version-win-x64.zip"
+            }
+        }
+    }
+}

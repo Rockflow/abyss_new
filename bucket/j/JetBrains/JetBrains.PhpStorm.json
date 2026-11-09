@@ -1,0 +1,91 @@
+{
+    "version": "2026.2.4",
+    "description": "JetBrains 的 IDE 产品，用于 PHP 开发 | A IDE by JetBrains for PHP development",
+    "homepage": "https://www.jetbrains.com/phpstorm",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.jetbrains.com/webide/PhpStorm-2026.2.4.exe",
+            "hash": "ddc0e3be3df71fffe29ffee9525ec270781476b817c92cf248784b8f736ca74b"
+        },
+        "arm64": {
+            "url": "https://download.jetbrains.com/webide/PhpStorm-2026.2.4-aarch64.exe",
+            "hash": "e9e3c2a95af212fcd7ebc1fceebd034a496156f400e6667649b5070b2b416895"
+        }
+    },
+    "bin": [
+        [
+            "app\\bin\\phpstorm64.exe",
+            "PhpStorm"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "app\\bin\\phpstorm64.exe",
+            "PhpStorm 2026.2.4"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\JetBrains",
+        "$env:LocalAppData\\JetBrains"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$LogFile = '\"' + \"$env:TEMP\\Scoop_${app}@${version}_install.log\" + '\"'",
+        "A-Install-App -Uninstaller 'app\\bin\\Uninstall.exe' -ArgumentList '/S', \"/LOG=$LogFile\", \"/D=$dir\\app\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-App -ArgumentList '/S'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "JetBrains.PhpStorm",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/webide/PhpStorm-$version.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/webide/PhpStorm-$version-aarch64.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_user.InstallerSha256"
+                }
+            }
+        },
+        "shortcuts": [
+            [
+                "app\\bin\\phpstorm64.exe",
+                "PhpStorm $version"
+            ]
+        ]
+    }
+}

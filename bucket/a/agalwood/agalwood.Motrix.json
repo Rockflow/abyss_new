@@ -1,0 +1,56 @@
+{
+    "version": "2.2.1",
+    "description": "一个全功能的下载器 | A full-featured download manager",
+    "homepage": "https://motrix.app",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/agalwood/Motrix/releases/download/v2.2.1/Motrix-2.2.1-win.zip",
+            "hash": "cfee15f405fe2369e4e772aa14646aec4a6bd74c6b66e5fc61edcbbb65bd22fa"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\Motrix.exe",
+            "Motrix"
+        ]
+    ],
+    "link": "$env:AppData\\Motrix",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/agalwood/Motrix/releases/download/v$version/Motrix-$version-win.zip"
+            }
+        }
+    }
+}

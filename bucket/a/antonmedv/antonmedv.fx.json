@@ -1,0 +1,56 @@
+{
+    "version": "40.0.1",
+    "description": "终端 JSON 查看器和处理器 | Terminal JSON viewer & processor",
+    "homepage": "https://fx.wtf",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/antonmedv/fx/releases/download/40.0.1/fx_windows_amd64.exe#/fx.exe",
+            "hash": "6482626d21f8f09e3b89836651e7fbac4d612e2e699abc7b324aab9bb0915e94"
+        },
+        "arm64": {
+            "url": "https://github.com/antonmedv/fx/releases/download/40.0.1/fx_windows_arm64.exe#/fx.exe",
+            "hash": "c56c14976bd4f85fd5ac5322c1dca25b5fbe948fb707dd7b2339051269d41328"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\fx.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/antonmedv/fx/releases/download/$version/fx_windows_amd64.exe#/fx.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/antonmedv/fx/releases/download/$version/fx_windows_arm64.exe#/fx.exe"
+            }
+        }
+    }
+}

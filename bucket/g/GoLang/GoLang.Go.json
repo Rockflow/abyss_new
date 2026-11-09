@@ -1,0 +1,58 @@
+{
+    "version": "1.27.3",
+    "description": "一个开源的编程语言，它能让构建安全、可扩展的系统变得简单 | An open source programming language that makes it simple to build secure, scalable systems",
+    "homepage": "https://go.dev",
+    "license": {
+        "identifier": "BSD-3-Clause"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://go.dev/dl/go1.27.3.windows-amd64.msi#/dl.msi_",
+            "hash": "89ec8325f667c674fe1b94a5a88e26932aa12323589881927ff54da99d4b7faa"
+        },
+        "arm64": {
+            "url": "https://go.dev/dl/go1.27.3.windows-arm64.msi#/dl.msi_",
+            "hash": "e7fb9c43a634f033089545c5352ae622735acc07ce9d44fdee7f1d75f0271493"
+        }
+    },
+    "location": "$env:ProgramFiles\\Go",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Msi"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Msi"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "GoLang.Go",
+            "ext": "msi"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://go.dev/dl/go$version.windows-amd64.msi#/dl.msi_"
+            },
+            "arm64": {
+                "url": "https://go.dev/dl/go$version.windows-arm64.msi#/dl.msi_"
+            }
+        }
+    }
+}

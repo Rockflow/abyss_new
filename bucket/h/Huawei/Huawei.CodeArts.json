@@ -1,0 +1,62 @@
+{
+    "version": "26.10.300-64f7d6a",
+    "description": "华为云码道 CodeArts 代码智能体 | Huawei Cloud CodeArts Code Agent",
+    "homepage": "https://codearts.huaweicloud.com/download.html",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://codearts-agent-obs-cdn.huaweicloud.com/codearts/ai/latest/codearts-agent-x64-26.10.300-64f7d6a.exe",
+            "hash": "0bf12428be7bea9df8d746fb22377cba75e89d6869426d34801e1f1014f5a53f"
+        }
+    },
+    "env_add_path": "app\\bin",
+    "shortcuts": [
+        [
+            "app\\codearts-agent.exe",
+            "CodeArts Agent"
+        ]
+    ],
+    "link": [
+        "$home\\.codeartsdoer",
+        "$home\\.codearts-doer-for-coding",
+        "$env:AppData\\codearts-agent"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://codearts.huaweicloud.com/download.html",
+        "regex": "codearts-agent-x64-([\\d.\\w-]+).exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://codearts-agent-obs-cdn.huaweicloud.com/codearts/ai/latest/codearts-agent-x64-$version.exe"
+            }
+        }
+    }
+}

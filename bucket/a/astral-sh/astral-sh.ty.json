@@ -1,0 +1,61 @@
+{
+    "version": "0.0.97",
+    "description": "一款速度极快的 Python 类型检查器和语言服务器，用 Rust 编写 | An extremely fast Python type checker and language server, written in Rust",
+    "homepage": "https://docs.astral.sh/ty",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/astral-sh/ty/releases/download/0.0.97/ty-x86_64-pc-windows-msvc.zip",
+            "hash": "02c5348449d29d44d4987ee8593fb53ff2efc53d9f7ccd971309d1cc15e4870c"
+        },
+        "arm64": {
+            "url": "https://github.com/astral-sh/ty/releases/download/0.0.97/ty-aarch64-pc-windows-msvc.zip",
+            "hash": "98ea96d1cfb39a59626afc3e8c34828b859036175146392b395a6c3bbebc0f8a"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\ty.exe",
+    "link": [
+        "$env:AppData\\ty",
+        "$env:LocalAppData\\ty"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Remove-Link",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/astral-sh/ty/releases/download/$version/ty-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/astral-sh/ty/releases/download/$version/ty-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

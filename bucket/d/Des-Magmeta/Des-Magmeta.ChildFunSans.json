@@ -1,0 +1,39 @@
+{
+    "version": "1.300",
+    "description": "游趣体 - 一款开源简体中文字体，基于 Fontworks 的 Stick 衍生 | Child Fun Sans - An open-source Chinese font derived from Fontworks' Stick",
+    "homepage": "https://github.com/Des-Magmeta/ChildFunSans",
+    "license": {
+        "identifier": "OFL-1.1"
+    },
+    "url": "https://github.com/Des-Magmeta/ChildFunSans/releases/download/v1.300/ChildFunSans.ttf",
+    "hash": "319db9f9195c1b0b45e0bcd2fe320ecd5f91ed0a489be3bdbea7474e2d3a8b4a",
+    "font": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "url": "https://github.com/Des-Magmeta/ChildFunSans/releases/download/v$version/ChildFunSans.ttf"
+    }
+}

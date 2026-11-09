@@ -1,0 +1,61 @@
+{
+    "version": "6.3.1",
+    "description": "一款面向开发者的免费开源代码片段管理器 | A free and open source code snippet manager for developers",
+    "homepage": "https://masscode.io",
+    "license": {
+        "identifier": "AGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/massCodeIO/massCode/releases/download/v6.3.1/massCode-6.3.1-x64.exe",
+            "hash": "071e05064e72b377b9ef64c653f2bd91d59db9622847888ce88b49ce6db04b00"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\massCode.exe",
+            "massCode"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\masscode",
+        "$home\\massCode"
+    ],
+    "cleanup": "$env:LocalAppData\\masscode-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall massCode.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/massCodeIO/massCode/releases/download/v$version/massCode-$version-x64.exe"
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "version": "3.3.3.5004",
+    "description": "屡获殊荣的集成平面设计、照片编辑和出版解决方案 | Award-winning integrated graphic design, photo-editing and publishing solution",
+    "homepage": "https://www.affinity.studio",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://affinity-update.serif.com/windows/3/studio/retail/Affinity-Affinity-Store-x64-5004-20596bdfdd242bf0f3a45a6fd4ce4f845132454e.msix",
+            "hash": "012910a060a4fae20ed815c0589bb22aa49d7c8078ce5a2d8c48a7b19dfcef95"
+        },
+        "arm64": {
+            "url": "https://affinity-update.serif.com/windows/3/studio/retail/Affinity-Affinity-Store-arm64-5004-20596bdfdd242bf0f3a45a6fd4ce4f845132454e.msix",
+            "hash": "2bfa7fafd4c10af73effdb4f4a7c6ade261d6292aa3539488dc70874fd5dbefb"
+        }
+    },
+    "msix": "Canva.Affinity_8a0j1tnjnt4a4",
+    "link": "$home\\.affinity",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Canva.Affinity",
+            "ext": "msix"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

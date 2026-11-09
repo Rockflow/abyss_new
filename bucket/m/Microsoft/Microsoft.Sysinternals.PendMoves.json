@@ -1,0 +1,78 @@
+{
+    "version": "1.2",
+    "description": "列出下次开机将执行的文件重命名与删除命令清单 | Enumerate the list of file rename and delete commands that will be executed the next boot",
+    "homepage": "https://learn.microsoft.com/sysinternals/downloads/pendmoves",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.sysinternals.com/files/PendMoves.zip",
+            "hash": "527143fc701ff297e57419d5200df82edb95b1dd564adaa50d40c5c93f6b36f6",
+            "bin": [
+                [
+                    "app\\pendmoves64.exe",
+                    "pendmoves",
+                    "/accepteula"
+                ]
+            ]
+        },
+        "arm64": {
+            "url": "https://download.sysinternals.com/files/PendMoves.zip",
+            "hash": "527143fc701ff297e57419d5200df82edb95b1dd564adaa50d40c5c93f6b36f6",
+            "bin": [
+                [
+                    "app\\pendmoves64a.exe",
+                    "pendmoves",
+                    "/accepteula"
+                ]
+            ]
+        }
+    },
+    "extract_to": "app",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Microsoft.Sysinternals.PendMoves",
+            "ext": "zip"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

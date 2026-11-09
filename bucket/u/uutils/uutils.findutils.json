@@ -1,0 +1,52 @@
+{
+    "version": "0.11.0",
+    "description": "用 Rust 实现的 findutils 替代品 | Drop-in replacement of findutils in Rust",
+    "homepage": "https://uutils.github.io/findutils",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/uutils/findutils/releases/download/0.11.0/findutils-x86_64-pc-windows-msvc.zip",
+            "hash": "b1a8b28fbcdddad43da486df32f16e9c467f2a991282890810dbc5de4b895f7a"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        "app\\find.exe",
+        "app\\xargs.exe"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/uutils/findutils/releases/download/$version/findutils-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "version": "1.5.4",
+    "description": "一款极速、隐私优先的 Windows 智能启动器，精通拼音与模糊匹配；可选本地 AI 语义检索，让错字与意图搜索也能秒速直达 | A Windows smart launcher that understands your typing. It excels at Pinyin and fuzzy matching, and can optionally add AI semantic understanding—so typos and vague queries still get instant results",
+    "homepage": "https://zerolaunch.ghost-him.com",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ghost-him/ZeroLaunch-rs/releases/download/v1.5.4/zerolaunch-rs_1.5.4_x64_en-US.msi#/dl.msi_",
+            "hash": "9a67368aa7ff42005d6b27a75d1744b7ab30a33ae370b564bfe275cadf4e493d"
+        },
+        "arm64": {
+            "url": "https://github.com/ghost-him/ZeroLaunch-rs/releases/download/v1.5.4/zerolaunch-rs_1.5.4_arm64_en-US.msi#/dl.msi_",
+            "hash": "91c394aca43e147557597f6dc1bd31b4721400d53e345149fe96eb08c0477b60"
+        }
+    },
+    "location": "$env:ProgramFiles\\zerolaunch-rs",
+    "extract_to": "app",
+    "link": "$home\\.ZeroLaunch-rs",
+    "cleanup": [
+        "$env:LocalAppData\\com.zerolaunch-rs.app",
+        "$env:LocalAppData\\com.zerolaunch-rs.portable.app"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Msi"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Msi",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ghost-him/ZeroLaunch-rs/releases/download/v$version/zerolaunch-rs_$version_x64_en-US.msi#/dl.msi_"
+            },
+            "arm64": {
+                "url": "https://github.com/ghost-him/ZeroLaunch-rs/releases/download/v$version/zerolaunch-rs_$version_arm64_en-US.msi#/dl.msi_"
+            }
+        }
+    }
+}

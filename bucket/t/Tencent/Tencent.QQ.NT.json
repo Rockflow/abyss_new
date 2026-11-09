@@ -1,0 +1,67 @@
+{
+    "version": "9.9.33.52230",
+    "description": "(NT 版本) QQ，腾讯的一款聊天通讯工具 | (NT version) A chat communication tool by Tencent",
+    "homepage": "https://im.qq.com",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://rule.tencent.com/rule/46a15f24-e42c-4cb6-a308-2347139b1201"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://qqdl.gtimg.cn/qqfile/QQNT/9.9.33/release/497e2f1f/QQ_9.9.33_260813_x64_01.exe",
+            "hash": "b25c0d3ce9df764074a9118d0ded927e1b2d7ebf60e306112e8df18a040ec492"
+        }
+    },
+    "location": "$env:ProgramFiles\\Tencent\\QQNT",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$DataDir = \"$home\\Documents\\Tencent Files\"",
+        "$PersistDir = $DataDir.Replace($home, \"$scoopdir\\persist\\@abyss\")",
+        "$SubDir1 = Get-ChildItem $DataDir -Directory -Depth 2 | ForEach-Object { if ($_.FullName -like \"$DataDir\\*\\nt_qq\") { Split-Path (Split-Path $_.FullName -Parent) -Leaf } }",
+        "$SubDir2 = Get-ChildItem $PersistDir -Directory -Depth 2 | ForEach-Object { if ($_.FullName -like \"$PersistDir\\*\\nt_qq\") { Split-Path (Split-Path $_.FullName -Parent) -Leaf } }",
+        "$LinkPaths = @()",
+        "@($SubDir1) + @($SubDir2) | Select-Object -Unique | ForEach-Object { $LinkPaths += Join-Path $DataDir \"$_\\nt_qq\" }",
+        "$LinkPaths += Join-Path $DataDir \"nt_qq\"",
+        "A-New-LinkDirectory $LinkPaths",
+        "A-Install-App -ArgumentList '/S'",
+        "A-Hold-App"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Deny-Update",
+        "A-Uninstall-Manually",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Tencent.QQ.NT",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

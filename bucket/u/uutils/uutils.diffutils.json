@@ -1,0 +1,49 @@
+{
+    "version": "0.6.0",
+    "description": "用 Rust 实现的 diffutils 替代品 | Drop-in replacement of diffutils in Rust",
+    "homepage": "https://uutils.github.io/diffutils",
+    "license": {
+        "identifier": "MIT|Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/uutils/diffutils/releases/download/v0.6.0/diffutils-x86_64-pc-windows-msvc.zip",
+            "hash": "69063ab317b737314ac509a1db0edee4be0b75892ac098969104103d9748e413"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\diffutils.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/uutils/diffutils/releases/download/v$version/diffutils-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

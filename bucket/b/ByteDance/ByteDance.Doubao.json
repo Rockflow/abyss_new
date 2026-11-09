@@ -1,0 +1,64 @@
+{
+    "version": "2.33.5",
+    "description": "豆包，字节跳动的 AI 聊天智能对话问答助手，写作文案翻译情感陪伴编程全能工具 | DouBao is a chatbot AI assistant by ByteDance. It can answer questions, write essays, translate text, and provide programming support",
+    "homepage": "https://www.doubao.com",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.33.5/Doubao_installer_2.33.5.exe",
+            "hash": "07781878cd2d6c9a8cb142f8cb842afa7baf40c84a18d5d76a7c8d9f6eaece54"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Doubao\\Doubao.exe",
+            "豆包"
+        ]
+    ],
+    "link": "$env:LocalAppData\\Doubao",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$InstallDir = '\"' + \"$dir\\app\" + '\"'",
+        "$LogDir = '\"' + \"$env:TEMP\\Scoop_${app}@${version}_logs\" + '\"'",
+        "A-Install-App -ArgumentList '--command=quiet_install', \"--target_dir=$InstallDir\", \"--log_dir=$LogDir\"",
+        "A-Hold-App"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Manually 'app'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "ByteDance.Doubao",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

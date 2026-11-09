@@ -1,0 +1,66 @@
+{
+    "version": "26276.513.5241.9675",
+    "description": "使用更快、更简单、更智能和更灵活的 Teams，更有效地进行协作 | Collaborate more effectively with a faster, simpler, smarter, and more flexible Teams",
+    "homepage": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Teams",
+    "license": {
+        "identifier": "Freemium",
+        "url": "https://www.microsoft.com/legal/terms-of-use"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x64/26276.513.5241.9675/MSTeams-x64.msix?p",
+            "hash": "e41b24bf7e2944b268bde7c7f6e8970700578b07cbeaf5da302db14e1a999e94"
+        },
+        "arm64": {
+            "url": "https://teamsinstaller.public.onecdn.static.microsoft/production-windows-arm64/26276.513.5241.9675/MSTeams-arm64.msix?p",
+            "hash": "00860601d97119549531aa92ba49156c41e5fac3019526367f9eeb7d004e3b0f"
+        }
+    },
+    "msix": "MSTeams_8wekyb3d8bbwe",
+    "link": "$env:LocalAppData\\Packages\\MSTeams_8wekyb3d8bbwe\\LocalCache\\Microsoft\\MSTeams",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Microsoft.Teams",
+            "ext": "msix"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

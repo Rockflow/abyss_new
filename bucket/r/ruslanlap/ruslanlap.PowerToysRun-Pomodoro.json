@@ -1,0 +1,54 @@
+{
+    "version": "1.2.2",
+    "description": "一个 PowerToys Run 插件，用于管理你的生产力会话 | A PowerToys Run plugin for managing your productivity sessions",
+    "homepage": "https://github.com/ruslanlap/PowerToysRun-Pomodoro",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ruslanlap/PowerToysRun-Pomodoro/releases/download/v1.2.2/Pomodoro-x64.zip",
+            "hash": "760ee514638ff6533df0c632916d4c4f8310698b0e66375e2e7bbf46f92024a6"
+        },
+        "arm64": {
+            "url": "https://github.com/ruslanlap/PowerToysRun-Pomodoro/releases/download/v1.2.2/Pomodoro-ARM64.zip",
+            "hash": "a7e12bb08194f57289dbe29c07eff9767e2b498b4edcc69f1a106693b1ef2563"
+        }
+    },
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-PowerToysRunPlugin 'Pomodoro'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ruslanlap/PowerToysRun-Pomodoro/releases/download/v$version/Pomodoro-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/ruslanlap/PowerToysRun-Pomodoro/releases/download/v$version/Pomodoro-ARM64.zip"
+            }
+        }
+    }
+}

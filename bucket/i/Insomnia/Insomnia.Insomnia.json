@@ -1,0 +1,58 @@
+{
+    "version": "13.4.0",
+    "description": "一个开源的跨平台 API 客户端，适用于 GraphQL、REST、WebSockets、SSE 和 gRPC，具有 Cloud、Local 和 Git 存储 | The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage",
+    "homepage": "https://insomnia.rest",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Kong/insomnia/releases/download/core%4013.4.0/insomnia-13.4.0-full.nupkg",
+            "hash": "742b17d363ddbbc4b61f0f52db2a2f192abd59e66d05267584e650069a64af8b"
+        }
+    },
+    "extract_dir": "lib\\net45",
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\Insomnia.exe",
+            "Insomnia"
+        ]
+    ],
+    "link": "$env:AppData\\Insomnia",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        },
+        "regex": "core@(.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Kong/insomnia/releases/download/core%40$version/insomnia-$version-full.nupkg"
+            }
+        }
+    }
+}

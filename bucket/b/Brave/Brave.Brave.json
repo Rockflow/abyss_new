@@ -1,0 +1,64 @@
+{
+    "version": "1.98.63",
+    "description": "带有广告拦截器的安全、快速且私密的网络浏览器 | Secure, Fast & Private Web Browser with Adblocker",
+    "homepage": "https://brave.com",
+    "license": {
+        "identifier": "MPL-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.98.63/brave-v1.98.63-win32-x64.zip",
+            "hash": "403f330d018f86fddbcedb95ea1f8b9b5e9a6198d93d306a4d4cee776f49396a"
+        },
+        "arm64": {
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.98.63/brave-v1.98.63-win32-arm64.zip",
+            "hash": "95f67da2b4e61ede4cdc01d54a7e24c57354d75ce6d4fc07a8f218df30bb538f"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\brave.exe",
+    "shortcuts": [
+        [
+            "app\\brave.exe",
+            "Brave"
+        ]
+    ],
+    "link": "$env:LocalAppData\\BraveSoftware\\Brave-Browser",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-arm64.zip"
+            }
+        }
+    }
+}

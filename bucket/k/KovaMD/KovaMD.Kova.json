@@ -1,0 +1,61 @@
+{
+    "version": "0.8.2",
+    "description": "可将纯 Markdown 文本转化为精致幻灯片的 Markdown 演示编辑器，支持实时预览、多种版式、主题设置以及 PPTX 格式导出 | Markdown presentation editor that turns plain Markdown into polished slides with live preview, multiple layouts, theming, and PPTX export",
+    "homepage": "https://kova.md",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/KovaMD/Kova/releases/download/v0.8.2/Kova_0.8.2_x64-setup.exe",
+            "hash": "86a817b3c4f0c3677bc2c04a187a36848433267a4380d8a5c6ee8dfe421a2ed3"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Kova.exe",
+            "Kova"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\kova",
+        "$env:AppData\\md.kova.app"
+    ],
+    "cleanup": "$env:LocalAppData\\md.kova.app",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/KovaMD/Kova/releases/download/v$version/Kova_$version_x64-setup.exe"
+            }
+        }
+    }
+}

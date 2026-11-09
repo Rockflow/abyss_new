@@ -1,0 +1,86 @@
+{
+    "version": "26.10r6392",
+    "description": "一个轻量级的基于 Scintilla 的文本编辑器 | Light-weight Scintilla based text editor",
+    "homepage": "https://github.com/zufuliu/notepad4",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zufuliu/notepad4/releases/download/v26.10r6392/Notepad4_HD_i18n_x64_v26.10r6392.zip",
+            "hash": "2b3f94fdc749283795e07eac2eb72dc9971f5f4005cdb00df7fd509fa067e4c1"
+        },
+        "arm64": {
+            "url": "https://github.com/zufuliu/notepad4/releases/download/v26.10r6392/Notepad4_HD_i18n_ARM64_v26.10r6392.zip",
+            "hash": "c9d6b87b3d6ce64c0907bda3e6a6bc4da0acca7b2adfe06161990bc06afb0bc3"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        "app\\Notepad4.exe",
+        "app\\matepath.exe"
+    ],
+    "shortcuts": [
+        [
+            "app\\Notepad4.exe",
+            "Notepad4"
+        ],
+        [
+            "app\\matepath.exe",
+            "matepath"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\Notepad4.ini",
+            "Notepad4.ini"
+        ],
+        [
+            "app\\matepath.ini",
+            "matepath.ini"
+        ],
+        [
+            "app\\Notepad4 DarkTheme.ini",
+            "Notepad4 DarkTheme.ini"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "$manifest.persist | ForEach-Object {",
+        "   Rename-Item -Path \"$dir\\app\\$($_[1])-default\" -NewName $_[1] -ErrorAction SilentlyContinue",
+        "}",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zufuliu/notepad4/releases/download/v$version/Notepad4_HD_i18n_x64_v$version.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/zufuliu/notepad4/releases/download/v$version/Notepad4_HD_i18n_ARM64_v$version.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "version": "0.45.1",
+    "description": "开箱即用的终端工作环境 | A terminal workspace with batteries included",
+    "homepage": "https://zellij.dev",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zellij-org/zellij/releases/download/v0.45.1/zellij-x86_64-pc-windows-msvc.zip",
+            "hash": "b854e7b223e67d0705c5f685ef50541c38a57981b13624d09c92bed419b6f80d"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\zellij.exe",
+    "link": [
+        "$env:AppData\\Zellij",
+        "$env:LocalAppData\\Zellij"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zellij-org/zellij/releases/download/v$version/zellij-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

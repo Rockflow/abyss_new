@@ -1,0 +1,69 @@
+{
+    "version": "1.143.17232",
+    "description": "Visual Studio Code 的自由及开放源代码软件二进制文件 | Free/Libre Open Source Software Binaries of Visual Studio Code",
+    "homepage": "https://vscodium.com",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.143.17232/VSCodiumUserSetup-x64-1.143.17232.exe",
+            "hash": "969c878c06f823e1e48fbc4c8bc5f8b4e25a303c24bc28d1623a492560b5607e"
+        },
+        "arm64": {
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.143.17232/VSCodiumUserSetup-arm64-1.143.17232.exe",
+            "hash": "fff5114e1cb8e91104c5cd08b542d677a3d066166f20ea786b7ea488baf4b64c"
+        }
+    },
+    "env_add_path": "app\\bin",
+    "commands": "codium",
+    "shortcuts": [
+        [
+            "app\\VSCodium.exe",
+            "VSCodium"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\VSCodium",
+        "$home\\.vscode-oss"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/VSCodium/vscodium/releases/download/$version/VSCodiumUserSetup-x64-$version.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/VSCodium/vscodium/releases/download/$version/VSCodiumUserSetup-arm64-$version.exe"
+            }
+        }
+    }
+}

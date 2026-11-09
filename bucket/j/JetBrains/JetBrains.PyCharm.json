@@ -1,0 +1,91 @@
+{
+    "version": "2026.2.4",
+    "description": "JetBrains 的 IDE 产品，用于 Python 开发 | A IDE by JetBrains for Python development",
+    "homepage": "https://www.jetbrains.com/pycharm",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.jetbrains.com/python/pycharm-2026.2.4.exe",
+            "hash": "389b01d55f91d66d8ffd666cbf1b7ab248bd88594e02f9a34ea0ab975bfe1ea5"
+        },
+        "arm64": {
+            "url": "https://download.jetbrains.com/python/pycharm-2026.2.4-aarch64.exe",
+            "hash": "65b0e8aef79a3d5ce14bfa1b92bbf9974d30f565e2f0d6ae343b2c8e9c2f1133"
+        }
+    },
+    "bin": [
+        [
+            "app\\bin\\pycharm64.exe",
+            "PyCharm"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "app\\bin\\pycharm64.exe",
+            "PyCharm 2026.2.4"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\JetBrains",
+        "$env:LocalAppData\\JetBrains"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$LogFile = '\"' + \"$env:TEMP\\Scoop_${app}@${version}_install.log\" + '\"'",
+        "A-Install-App -Uninstaller 'app\\bin\\Uninstall.exe' -ArgumentList '/S', \"/LOG=$LogFile\", \"/D=$dir\\app\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-App -ArgumentList '/S'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "JetBrains.PyCharm",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/python/pycharm-$version.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/python/pycharm-$version-aarch64.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_user.InstallerSha256"
+                }
+            }
+        },
+        "shortcuts": [
+            [
+                "app\\bin\\pycharm64.exe",
+                "PyCharm $version"
+            ]
+        ]
+    }
+}

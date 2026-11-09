@@ -1,0 +1,75 @@
+{
+    "version": "1.7.4",
+    "description": "一款能够自主学习、记忆信息并帮你处理各类事务的桌面端人工智能助手 | A desktop AI assistant that learns, remembers, and gets things done for you",
+    "homepage": "https://agivar.fittentech.com",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://web-ui-agivar.fittentech.com/agent/download/1.7.4/agivar-win-x64_Setup.exe",
+            "hash": "14890f097c8e3bd004fba37aa62ccde5642031a16509057408a3e55024e2692a"
+        },
+        "arm64": {
+            "url": "https://web-ui-agivar.fittentech.com/agent/download/1.7.4/agivar-win-arm64_Setup.exe",
+            "hash": "aadc35d3c2fa1ec8230758495242d0649e7f6b43217b0ac279428a5a4d6ffb27"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Agivar.exe",
+            "Agivar"
+        ]
+    ],
+    "link": "$home\\.agivar",
+    "cleanup": [
+        "$env:AppData\\agivar",
+        "$env:LocalAppData\\agivar-updater"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall Agivar.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://web-ui-agivar.fittentech.com/agent/download/latest/version.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://web-ui-agivar.fittentech.com/agent/download/$version/agivar-win-x64_Setup.exe",
+                "hash": {
+                    "url": "https://web-ui-agivar.fittentech.com/agent/download/latest/version.json",
+                    "jsonpath": "$.sha256.win-x64"
+                }
+            },
+            "arm64": {
+                "url": "https://web-ui-agivar.fittentech.com/agent/download/$version/agivar-win-arm64_Setup.exe",
+                "hash": {
+                    "url": "https://web-ui-agivar.fittentech.com/agent/download/latest/version.json",
+                    "jsonpath": "$.sha256.win-arm64"
+                }
+            }
+        }
+    }
+}

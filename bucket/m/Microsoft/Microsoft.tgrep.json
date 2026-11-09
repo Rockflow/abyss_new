@@ -1,0 +1,56 @@
+{
+    "version": "1.2.7",
+    "description": "三元语法索引 grep — 适用于大型代码库的快速正则表达式搜索 | Trigram-indexed grep — fast regex search for large codebases",
+    "homepage": "https://github.com/microsoft/tgrep",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/microsoft/tgrep/releases/download/v1.2.7/tgrep-v1.2.7-x86_64-pc-windows-msvc.zip",
+            "hash": "62023fbe6ac26a9bb85ab524dd0ecb6ab2c113f975659109eb9a70f5f51cbe31"
+        },
+        "arm64": {
+            "url": "https://github.com/microsoft/tgrep/releases/download/v1.2.7/tgrep-v1.2.7-aarch64-pc-windows-msvc.zip",
+            "hash": "ea03c4c2f2a4c4282ae34e99a198242bc9362f63c8d963d3f58cc67529205b52"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\tgrep.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/microsoft/tgrep/releases/download/v$version/tgrep-v$version-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/microsoft/tgrep/releases/download/v$version/tgrep-v$version-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

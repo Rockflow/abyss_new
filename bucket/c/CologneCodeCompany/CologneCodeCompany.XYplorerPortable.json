@@ -1,0 +1,61 @@
+{
+    "version": "28.40.0600",
+    "description": "一个 Windows 上的第三方文件管理器 | A file manager for Windows",
+    "homepage": "https://www.xyplorer.com/index.php",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.xyplorer.com/purchase.php"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.xyplorer.com/download/xyplorer64_28.40.0600_noinstall.zip",
+            "hash": "21e8169826c78e8460d2270438a9b69c951ef0c382e036f89073c88b5c45a8ed"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\XYplorer.exe",
+    "shortcuts": [
+        [
+            "app\\XYplorer.exe",
+            "XYplorer"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\Data",
+            "AppData\\Roaming\\XYplorer64"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://www.xyplorer.com",
+        "regex": "version.+?(([\\d.]+){3,})"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.xyplorer.com/download/xyplorer64_$version_noinstall.zip"
+            }
+        }
+    }
+}

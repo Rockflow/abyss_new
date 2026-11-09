@@ -1,0 +1,75 @@
+{
+    "version": "25.0.5.21",
+    "description": "微软构建的 OpenJDK 是一种全新的免费长期支持发行版，也是微软与 Java 生态系统开展协作和贡献的新方式 | The Microsoft Build of OpenJDK is a new no-cost long-term supported distribution and Microsoft's new way to collaborate and contribute to the Java ecosystem",
+    "homepage": "https://www.microsoft.com/openjdk",
+    "license": {
+        "identifier": "GPL2 with Classpath Exception",
+        "url": "https://openjdk.java.net/legal/gplv2+ce.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.5.0.2-windows-x64.msi#winget#/dl.msi",
+            "hash": "cdff1a90c299b74af813ea7353aa36399936dbf75738495c80fcc5e06b764ca8"
+        },
+        "arm64": {
+            "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.5.0.2-windows-aarch64.msi#winget#/dl.msi",
+            "hash": "5a452ad59c8141e336e8b4a6214a97e6ae523457fbab03e04cfb934ba2006b9d"
+        }
+    },
+    "extract_dir": "PFiles64\\Microsoft\\jdk-25.0.5.21-hotspot",
+    "extract_to": "app",
+    "env_set": {
+        "JAVA_HOME": "$dir\\app"
+    },
+    "env_add_path": "app\\bin",
+    "commands": [
+        "java",
+        "jabswitch"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Microsoft.OpenJDK.25",
+            "ext": "msi"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64#/dl.msi",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64#/dl.msi",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        },
+        "extract_dir": "PFiles64\\Microsoft\\jdk-$version-hotspot"
+    }
+}

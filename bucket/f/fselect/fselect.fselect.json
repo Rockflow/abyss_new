@@ -1,0 +1,49 @@
+{
+    "version": "0.10.4",
+    "description": "使用类 SQL 查询查找文件 | Find files with SQL-like queries",
+    "homepage": "https://fselect.rocks",
+    "license": {
+        "identifier": "Apache-2.0|MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jhspetersson/fselect/releases/download/0.10.4/fselect-x86_64-win.zip",
+            "hash": "a6eeff2b7d55d44cb6974d387fb925aa16da0db1a4a280888640200ec7cda364"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\fselect.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jhspetersson/fselect/releases/download/$version/fselect-x86_64-win.zip"
+            }
+        }
+    }
+}

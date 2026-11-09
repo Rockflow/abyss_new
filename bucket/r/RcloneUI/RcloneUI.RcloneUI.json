@@ -1,0 +1,61 @@
+{
+    "version": "3.7.5",
+    "description": "rclone 之上的一个轻便、透明的层（桌面图形用户界面），能以更用户友好的方式管理你的远程存储和任务 | A light, transparent layer (desktop GUI) on top of rclone to manage your remotes & tasks in a more user-friendly way",
+    "homepage": "https://rcloneui.com",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/rclone-ui/rclone-ui/releases/download/v3.7.5/Rclone.UI_x64.exe",
+            "hash": "f78476b79ae3fa6c1e62f7f7d4f77914b06a031607776d41067d1d81987a76ae"
+        },
+        "arm64": {
+            "url": "https://github.com/rclone-ui/rclone-ui/releases/download/v3.7.5/Rclone.UI_arm64.exe",
+            "hash": "80105a91b33476c256953be10178732d543fe132100d0cc377e8d5d16220ede2"
+        }
+    },
+    "location": "$env:ProgramFiles\\Rclone UI",
+    "link": "$env:AppData\\com.rclone.ui",
+    "cleanup": "$env:LocalAppData\\com.rclone.ui",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/rclone-ui/rclone-ui/releases/download/v$version/Rclone.UI_x64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/rclone-ui/rclone-ui/releases/download/v$version/Rclone.UI_arm64.exe"
+            }
+        }
+    }
+}

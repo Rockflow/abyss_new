@@ -1,0 +1,78 @@
+{
+    "version": "2.0.4",
+    "description": "一个易用的代理客户端 | An easy-to-use proxy client",
+    "homepage": "https://github.com/mihomo-party-org/clash-party",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "notes_cn": "$app 会在安装成功后自动启动。",
+    "notes": "$app will be automatically launched after installation.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-portable.7z",
+            "hash": "182063a60b9a06535d176742d627f8b8c95a99aae85fc8752c880efee7da5157"
+        },
+        "arm64": {
+            "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-arm64-portable.7z",
+            "hash": "c3c702bc77523611330a5a6c9e5424bdcfa662ca18ce7234826a9aaa676addb6"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\Clash Party.exe",
+            "Clash Party"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\data",
+            "AppData\\Roaming\\mihomo-party"
+        ]
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "# 安装完成后自动启动一次，以解决首次启动必须使用管理员权限的问题",
+        "$null = Start-Job -ScriptBlock {",
+        "    param($dir)",
+        "    While (!(Test-Path \"$dir\\app\\data\")) {",
+        "        Start-Sleep -Milliseconds 100",
+        "    }",
+        "    Start-Process \"$dir\\app\\Clash Party.exe\"",
+        "} -ArgumentList $dir"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v$version/clash-party-windows-$version-x64-portable.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v$version/clash-party-windows-$version-arm64-portable.7z"
+            }
+        }
+    }
+}

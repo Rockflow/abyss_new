@@ -1,0 +1,68 @@
+{
+    "version": "3.3.4",
+    "description": "一个可在你的电脑上运行的网络文件服务器 | A web file server to run on your computer",
+    "homepage": "https://github.com/rejetto/hfs",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/rejetto/hfs/releases/download/v3.3.4/hfs-windows-x64-3.3.4.zip",
+            "hash": "4b7b46487f58b7a7a06d361a60af4961dfb6a4a1999d2edb3662c94f9852675a"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        [
+            "app\\hfs.exe",
+            "hfs",
+            "--cwd \"$dir\\app\\.hfs\""
+        ]
+    ],
+    "shortcuts": [
+        [
+            "app\\hfs.exe",
+            "HFS",
+            "--cwd \"$dir\\app\\.hfs\""
+        ]
+    ],
+    "persist": [
+        [
+            "app\\.hfs",
+            ".hfs"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/rejetto/hfs/releases/download/v$version/hfs-windows-x64-$version.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "version": "1.0.43",
+    "description": "(Mono: 等宽/连字/全宽破折号, Slab: 有衬线, SC: Simplified Chinese, Unhinted: No-FontHinting) 一款 2:1 等宽字体 | (Mono: Monospace/Ligature/Full-width dash, Slab: Serifs, SC: Simplified Chinese, Unhinted: No-FontHinting) 2:1 monospaced font",
+    "homepage": "https://github.com/be5invis/Sarasa-Gothic",
+    "license": {
+        "identifier": "OFL-1.1"
+    },
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaMonoSlabSC-TTF-Unhinted-1.0.43.7z",
+    "hash": "888f2c98f2c7f543f3d2c31e907178a756b1af9c74150adbe9d3a04d6fecd3f3",
+    "conflicts": [
+        "be5invis.Sarasa.Mono-Slab-SC",
+        "be5invis.Sarasa.Mono-Slab-SC-Unhinted"
+    ],
+    "font": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v$version/SarasaMonoSlabSC-TTF-Unhinted-$version.7z"
+    }
+}

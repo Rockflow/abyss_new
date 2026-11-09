@@ -1,0 +1,59 @@
+{
+    "version": "11.5.1000.2609",
+    "description": "星愿浏览器，一款方便，可靠，简洁的浏览器 | Twinkstar Browser is a convenient, reliable and simple browser",
+    "homepage": "https://www.twinkstar.com",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://d1.twinkstar.com/win/Twinkstar_v11.5.1000.2609_Release.exe",
+            "hash": "1d61bf94abc9ffd9d414aa17b221e7b952ef7e536df3cb8cb52ffea37afbaf20"
+        }
+    },
+    "location": "$env:ProgramFiles\\Twinkstar Browser",
+    "link": "$env:LocalAppData\\Twinkstar\\User Data",
+    "cleanup": "$env:LocalAppData\\Twinkstar",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'Uninstall.exe' -ArgumentList '-silent'",
+        "A-Hold-App"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Manually",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Twinkstar.TwinkstarBrowser",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

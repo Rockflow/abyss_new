@@ -1,0 +1,59 @@
+{
+    "version": "2.0.0.23",
+    "description": "奥创极速网页版的扩展功能 - 鼠标 | ASUS Gear Link Companion - Mouse",
+    "homepage": "https://gearlink.asus.com",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "suggest": {
+        "Utility": "abyss/ASUS.GearLink.UtilityCompanion",
+        "Keyboard": "abyss/ASUS.GearLink.KeyBoardCompanion"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://gearlink.asus.com/local-services/01/windows/Gear%20Link_MS%20Companion_2.0.0.23.zip",
+            "hash": "6751f904b2ea7c00af137628b96550cbed4f3603f53faa2053e28581e798a17b"
+        }
+    },
+    "location": "${env:ProgramFiles(x86)}\\ASUS\\Gear Link\\MS",
+    "extract_dir": "Gear Link_MS Companion_2.0.0.23",
+    "extract_to": "app",
+    "link": "$env:LocalAppData\\ASUS\\Gear Link\\MS",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -UninstallerIsInstaller -Installer \"$dir\\app\\setup.exe\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App -ArgumentList '/S', '-removeonly'"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://gearlink.asus.com/local-services/01/windows/manifest.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://gearlink.asus.com/local-services/01/windows/Gear%20Link_MS%20Companion_$version.zip"
+            }
+        },
+        "extract_dir": "Gear Link_MS Companion_$version"
+    }
+}

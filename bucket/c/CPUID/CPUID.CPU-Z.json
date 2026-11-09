@@ -1,0 +1,65 @@
+{
+    "version": "3.01",
+    "description": "系统信息软件 | System information software",
+    "homepage": "https://www.cpuid.com/softwares/cpu-z.html",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.cpuid.com/cpu-z/cpu-z_3.01-cn.zip",
+            "hash": "8d4a93a8e48320201ff0c1c2d2a148395a6dd2e85284db5329c76ec9e446b659",
+            "bin": [
+                [
+                    "app\\cpuz_x64.exe",
+                    "cpuz"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "app\\cpuz_x64.exe",
+                    "CPU-Z"
+                ]
+            ]
+        }
+    },
+    "extract_to": "app",
+    "persist": [
+        [
+            "app\\cpuz.ini",
+            "cpuz.ini"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://www.cpuid.com/softwares/cpu-z.html",
+        "regex": "Version ([\\d.]+) for windows"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.cpuid.com/cpu-z/cpu-z_$version-cn.zip"
+            }
+        }
+    }
+}

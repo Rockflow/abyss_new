@@ -1,0 +1,56 @@
+{
+    "version": "261021",
+    "description": "高度可定制的媒体播放器 | Highly customizable media player",
+    "homepage": "https://potplayer.daum.net",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://potplayer.daum.net/publicRelation"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/261021/PotPlayerSetup64.exe",
+            "hash": "121f0e686d5ab702492e6a7d44331cf3748355d03cadd11e2731c56bc13ed7d4"
+        }
+    },
+    "location": "$env:ProgramFiles\\DAUM\\PotPlayer",
+    "link": [
+        "$env:AppData\\PotPlayer64",
+        "$env:AppData\\PotPlayerMini64"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://t1.daumcdn.net/potplayer/PotPlayer/v4/Update2/UpdateEng.html",
+        "regex": "\\[(\\d+)\\]"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/$version/PotPlayerSetup64.exe"
+            }
+        }
+    }
+}

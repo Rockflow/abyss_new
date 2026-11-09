@@ -1,0 +1,63 @@
+{
+    "version": "33.0.1",
+    "description": "用于视频录制和直播的免费开源软件 | Free and open source software for video recording and live streaming",
+    "homepage": "https://obsproject.com",
+    "license": {
+        "identifier": "GPL-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64.zip",
+            "hash": "0d9436451c2d772b33428e3fdae9776f071895c335de17283176306fb72651d3"
+        },
+        "arm64": {
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-arm64.zip",
+            "hash": "5bee731f6a9ce843ac670b4ccf048a54cdccb8b06acb3fd1c7928b9705f11100"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\bin\\64bit\\obs64.exe",
+            "OBS Studio"
+        ]
+    ],
+    "link": "$env:AppData\\obs-studio",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/obsproject/obs-studio/releases/download/$version/OBS-Studio-$version-Windows-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/obsproject/obs-studio/releases/download/$version/OBS-Studio-$version-Windows-arm64.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "version": "8.0.33",
+    "description": ".NET 是一个免费、跨平台、开源的开发者平台，用于构建多种不同类型的应用程序 | .NET is a free, cross-platform, open-source developer platform for building many different types of applications",
+    "homepage": "https://dotnet.microsoft.com",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.microsoft.com/download/9d8b4560-78de-40b0-91f9-d0a48dda818b/2317f3da-b666-45ac-baa4-72da1586d33c/windowsdesktop-runtime-8.0.33-win-x64.exe",
+            "hash": "4de14de0b327e801d7a691cb1afc8a00db5313a698ef53b979fc6f84fce631de"
+        },
+        "arm64": {
+            "url": "https://download.microsoft.com/download/9d8b4560-78de-40b0-91f9-d0a48dda818b/ce78f5f8-bc7b-4a55-a2c3-862cccd8d9bd/windowsdesktop-runtime-8.0.33-win-arm64.exe",
+            "hash": "452c065e4d030c2f54d757461bd83e787c51378f2529f938feb30dda197307df"
+        }
+    },
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -ArgumentList '/quiet', '/norestart'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "$UninstallEntry = A-Get-UninstallEntryByAppName \"^Microsoft Windows Desktop Runtime - $version\"",
+        "A-Uninstall-App -Uninstaller $UninstallEntry.BundleCachePath -ArgumentList '/uninstall', '/quiet'"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Microsoft.DotNet.DesktopRuntime.8",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

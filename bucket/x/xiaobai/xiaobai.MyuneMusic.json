@@ -1,0 +1,62 @@
+{
+    "version": "0.9.5",
+    "description": "一个基于 Flutter (Dart) 实现的简易本地音乐播放器 | A simple music player implemented using Flutter (Dart)",
+    "homepage": "https://github.com/xiaobaimc/myune_music",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/xiaobaimc/myune_music/releases/download/v0.9.5/MyuneMusic_v0.9.5_windows-x64.zip",
+            "hash": "c5c5bb6a03fa74cef5efe4680296e4df1ca1e880108a0a37f248e4e1a259df7a"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\myune_music.exe",
+            "MyuneMusic"
+        ]
+    ],
+    "link": "$env:AppData\\com.example\\myune_music",
+    "persist": [
+        [
+            "app\\list_data",
+            "list_data"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/xiaobaimc/myune_music/releases/download/v$version/MyuneMusic_v$version_windows-x64.zip"
+            }
+        }
+    }
+}

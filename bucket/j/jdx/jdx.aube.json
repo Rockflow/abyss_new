@@ -1,0 +1,62 @@
+{
+    "version": "2.9.0",
+    "description": "一款快速的 Node.js 包管理器 | A fast Node.js package manager",
+    "homepage": "https://aube.jdx.dev",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jdx/aube/releases/download/v2.9.0/aube-v2.9.0-x86_64-pc-windows-msvc.zip",
+            "hash": "b6a508864063be0bc34834e401e2379225fd5e56901059f6db4420e9efcc757e"
+        },
+        "arm64": {
+            "url": "https://github.com/jdx/aube/releases/download/v2.9.0/aube-v2.9.0-aarch64-pc-windows-msvc.zip",
+            "hash": "321991b11c3fba3909be06566df25c532ce3c9f029cbcbdba252cc71cc91a303"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        "app\\aube.exe",
+        "app\\aubr.exe",
+        "app\\aubx.exe"
+    ],
+    "link": "$home\\.config\\aube",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jdx/aube/releases/download/v$version/aube-v$version-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/jdx/aube/releases/download/v$version/aube-v$version-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

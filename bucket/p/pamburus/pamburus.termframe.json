@@ -1,0 +1,58 @@
+{
+    "version": "0.9.2",
+    "description": "一个非交互式终端模拟器，它能执行单个命令，在内部虚拟会话中渲染其输出，并将屏幕截图导出为 SVG 文件 | A non-interactive terminal emulator that executes a single command, renders its output in an internal virtual session, and exports a screenshot as an SVG file",
+    "homepage": "https://github.com/pamburus/termframe",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/pamburus/termframe/releases/download/v0.9.2/termframe-windows.zip",
+            "hash": "f4b0a86b829ed5c258dc924258a48e8a275bcd2455794b1910d99ae9531f866b"
+        },
+        "arm64": {
+            "url": "https://github.com/pamburus/termframe/releases/download/v0.9.2/termframe-windows-arm64.zip",
+            "hash": "540a4352c7be10eefb05846b475bed13147d982dfb2c70335127b070b0bddd4e"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\termframe.exe",
+    "link": "$env:AppData\\termframe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/pamburus/termframe/releases/download/v$version/termframe-windows.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/pamburus/termframe/releases/download/v$version/termframe-windows-arm64.zip"
+            }
+        }
+    }
+}

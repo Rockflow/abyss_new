@@ -1,0 +1,54 @@
+{
+    "version": "0.23.5",
+    "description": "一款针对古老的文件列表命令行程序 ls 的现代替代工具 | A modern alternative for the venerable file-listing command-line program ls",
+    "homepage": "https://eza.rocks",
+    "license": {
+        "identifier": "EUPL-1.2"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/eza-community/eza/releases/download/v0.23.5/eza.exe_x86_64-pc-windows-gnu.zip",
+            "hash": "c830638c844a5b89d39ba662b5549903a71fa539018e813880f5b8afa77bac2e"
+        }
+    },
+    "extract_to": "app",
+    "env_set": {
+        "EZA_CONFIG_DIR": "$scoopdir\\persist\\@abyss\\.config\\eza"
+    },
+    "bin": "app\\eza.exe",
+    "link": "$home\\.config\\eza",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/eza-community/eza/releases/download/v$version/eza.exe_x86_64-pc-windows-gnu.zip"
+            }
+        }
+    }
+}

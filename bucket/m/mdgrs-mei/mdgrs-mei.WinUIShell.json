@@ -1,0 +1,41 @@
+{
+    "version": "0.14.0",
+    "description": "使用 PowerShell 编写 WinUI 3 脚本 | Scripting WinUI 3 with PowerShell",
+    "homepage": "https://github.com/mdgrs-mei/WinUIShell",
+    "license": {
+        "identifier": "MIT"
+    },
+    "url": "https://cdn.powershellgallery.com/packages/winuishell.0.14.0.nupkg",
+    "hash": "8e5aeffeecbb62e83ffcadafbb7584113f47968fe45bd86ab6799b12294cc976",
+    "psmodule": {
+        "name": "WinUIShell"
+    },
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "psgallery": {
+            "channel": "stable"
+        }
+    },
+    "autoupdate": {
+        "url": "https://cdn.powershellgallery.com/packages/winuishell.$version.nupkg"
+    }
+}

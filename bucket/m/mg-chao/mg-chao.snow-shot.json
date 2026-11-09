@@ -1,0 +1,64 @@
+{
+    "version": "1.1.7-beta",
+    "description": "功能强大的截图工具 | Powerful screenshot tool",
+    "homepage": "https://snowshot.top",
+    "license": {
+        "identifier": "Apache-2.0|GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mg-chao/snow-apps/releases/download/v1.1.7-beta/snow-shot-1.1.7-beta-windows-x64-portable.zip",
+            "hash": "1eaa76ec2756f166e1c6506ac17c7da22e89c728a81282661e2bcc94631d250d"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\bin\\snow_shot.exe",
+            "Snow Shot"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\SnowShot",
+        "$env:AppData\\com.chao.snowshot"
+    ],
+    "cleanup": [
+        "$env:LocalAppData\\SnowShot",
+        "$env:LocalAppData\\com.chao.snowshot"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "Remove-Item $dir\\app\\bin\\__data_directory -Force"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mg-chao/snow-apps/releases/download/v$version/snow-shot-$version-windows-x64-portable.zip"
+            }
+        }
+    }
+}

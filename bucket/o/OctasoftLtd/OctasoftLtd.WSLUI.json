@@ -1,0 +1,64 @@
+{
+    "version": "0.21.0",
+    "description": "WSL-UI - 一款轻量级桌面应用程序，用于管理 Windows 子系统 Linux（WSL）发行版 | WSL-UI - A lightweight desktop application to manage Windows Subsystem for Linux (WSL) distributions",
+    "homepage": "https://wsl-ui.octasoft.co.uk",
+    "license": {
+        "identifier": "BUSL-1.1"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/octasoft-ltd/wsl-ui/releases/download/v0.21.0/WSL.UI_0.21.0_x64-setup.exe",
+            "hash": "84f5c6d074fce27a26eba6a49a55d51f961152244b4bb8e6f6efcfd1fe5d3ece"
+        },
+        "arm64": {
+            "url": "https://github.com/octasoft-ltd/wsl-ui/releases/download/v0.21.0/WSL.UI_0.21.0_arm64-setup.exe",
+            "hash": "2ede6da67790c38b76b9c1cb77fec222458b29cfa76243617402d449d8e25abe"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\wsl-ui.exe",
+            "WSL UI"
+        ]
+    ],
+    "link": "$env:LocalAppData\\wsl-ui",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/octasoft-ltd/wsl-ui/releases/download/v$version/WSL.UI_$version_x64-setup.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/octasoft-ltd/wsl-ui/releases/download/v$version/WSL.UI_$version_arm64-setup.exe"
+            }
+        }
+    }
+}

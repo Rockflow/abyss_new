@@ -1,0 +1,54 @@
+{
+    "version": "2026.10.26.011209",
+    "description": "Rime 小狼毫配置: 万象语法模型 | Rime Weasel Configuration: Wanxiang syntax model",
+    "homepage": "https://github.com/amzxyz/RIME-LMDG",
+    "license": {
+        "identifier": "CC-BY-4.0"
+    },
+    "notes_cn": "请在小狼毫(Rime)中进行重新部署。",
+    "notes": "Please redeploy in Rime Weasel.",
+    "suggest": {
+        "rime": "abyss/Rime.Weasel",
+        "input-schemes": "abyss/amzxyz.rime_wanxiang.base"
+    },
+    "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram",
+    "hash": "e34500ab44626dc039a0641792ecba98ab63307646eb3d29186be56608ffe094",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Ensure-Directory \"$env:AppData\\Rime\"",
+        "Write-Host \"Copying $dir\\wanxiang-lts-zh-hans.gram => $env:AppData\\Rime\" -ForegroundColor Yellow",
+        "Copy-Item \"$dir\\wanxiang-lts-zh-hans.gram\" $env:AppData\\Rime -Force"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "Get-Process | Where-Object { $_.Name -eq 'WeaselServer' } | Select-Object -First 1 | Stop-Process -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$env:AppData\\Rime\\wanxiang-lts-zh-hans.gram\" -Force -ErrorAction SilentlyContinue"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "tag": "LTS",
+            "raw": true
+        },
+        "jsonpath": "$.assets[?(@.name == 'wanxiang-lts-zh-hans.gram')].updated_at",
+        "regex": "(\\d+)-(\\d+)-(\\d+)T(\\d+):(\\d+):(\\d+)Z",
+        "replace": "${1}.${2}.${3}.${4}${5}${6}"
+    },
+    "autoupdate": {
+        "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
+    }
+}

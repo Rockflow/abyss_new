@@ -1,0 +1,43 @@
+{
+    "version": "2026.8.17.2152",
+    "description": "一个高性能 PowerShell 模块，可在终端中显示漂亮的 ANSI 颜色脚本，并具有智能缓存功能，加载速度可提高 6-19 倍 | A high-performance PowerShell module for displaying beautiful ANSI colorscripts in your terminal with intelligent caching for 6-19x faster load times",
+    "homepage": "https://github.com/Nick2bad4u/PS-Color-Scripts-Enhanced",
+    "license": {
+        "identifier": "Unlicense"
+    },
+    "url": "https://cdn.powershellgallery.com/packages/colorscripts-enhanced.2026.8.17.2152.nupkg",
+    "hash": "e4e321236872e91008776b9ae3f58a5be61e5da3b693afe9c1f975653d6d415b",
+    "psmodule": {
+        "name": "ColorScripts-Enhanced"
+    },
+    "link": "$env:AppData\\ColorScripts-Enhanced",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "psgallery": {
+            "channel": "stable"
+        }
+    },
+    "autoupdate": {
+        "url": "https://cdn.powershellgallery.com/packages/colorscripts-enhanced.$version.nupkg"
+    }
+}

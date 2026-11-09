@@ -1,0 +1,51 @@
+{
+    "version": "0.12.4",
+    "description": "一个优秀的、可自托管的命令行 Git 服务器 | A tasty, self-hostable Git server for the command line",
+    "homepage": "https://github.com/charmbracelet/soft-serve",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/charmbracelet/soft-serve/releases/download/v0.12.4/soft-serve_0.12.4_Windows_x86_64.zip",
+            "hash": "120af747596a55b241cd1fbff5923d913c578b1e39720a0cb894908c9ff72ee3",
+            "extract_dir": "soft-serve_0.12.4_Windows_x86_64"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\soft.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/charmbracelet/soft-serve/releases/download/v$version/soft-serve_$version_Windows_x86_64.zip",
+                "extract_dir": "soft-serve_$version_Windows_x86_64"
+            }
+        }
+    }
+}

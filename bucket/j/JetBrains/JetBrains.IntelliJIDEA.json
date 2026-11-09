@@ -1,0 +1,91 @@
+{
+    "version": "2026.2.4",
+    "description": "JetBrains 的 IDE 产品，用于 Java 和 Kotlin 开发 | A IDE by JetBrains for Java and Kotlin development",
+    "homepage": "https://www.jetbrains.com/idea",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.jetbrains.com/idea/idea-2026.2.4.exe",
+            "hash": "b44afef7ecb05bbd1ec09f1b4e0491d5d3140539ecb01b427d3288d55285bd19"
+        },
+        "arm64": {
+            "url": "https://download.jetbrains.com/idea/idea-2026.2.4-aarch64.exe",
+            "hash": "6d087e604d36775ec49b8d737cc61e9f6f979bac614c60ef2c83a8bdd5318920"
+        }
+    },
+    "bin": [
+        [
+            "app\\bin\\idea64.exe",
+            "Idea"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "app\\bin\\idea64.exe",
+            "IntelliJ IDEA 2026.2.4"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\JetBrains",
+        "$env:LocalAppData\\JetBrains"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$LogFile = '\"' + \"$env:TEMP\\Scoop_${app}@${version}_install.log\" + '\"'",
+        "A-Install-App -Uninstaller 'app\\bin\\Uninstall.exe' -ArgumentList '/S', \"/LOG=$LogFile\", \"/D=$dir\\app\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-App -ArgumentList '/S'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "JetBrains.IntelliJIDEA",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/idea/idea-$version.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/idea/idea-$version-aarch64.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_user.InstallerSha256"
+                }
+            }
+        },
+        "shortcuts": [
+            [
+                "app\\bin\\idea64.exe",
+                "IntelliJ IDEA $version"
+            ]
+        ]
+    }
+}

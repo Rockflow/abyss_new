@@ -1,0 +1,62 @@
+{
+    "version": "3.8.0",
+    "description": "汽水音乐，字节跳动的音乐平台 | A music platform by ByteDance",
+    "homepage": "https://music.douyin.com",
+    "license": {
+        "identifier": "Freemium"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://lf-luna-release.qishui.com/obj/luna-release/3.8.0/467160162/SodaMusic-v3.8.0-official-win32_x64.exe",
+            "hash": "b68e652e180c6938393468a847490baa490e3457e46cd90710dca1bef6d6a840"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Soda Music\\SodaMusicLauncher.exe",
+            "汽水音乐"
+        ]
+    ],
+    "link": "$env:AppData\\SodaMusic",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Soda Music\\unins000.exe'",
+        "A-Hold-App"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Manually 'app'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "ByteDance.SodaMusic",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

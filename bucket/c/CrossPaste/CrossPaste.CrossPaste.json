@@ -1,0 +1,56 @@
+{
+    "version": "2.3.1.2781",
+    "description": "跨设备的通用粘贴板 | Universal Pasteboard Across Devices",
+    "homepage": "https://crosspaste.com",
+    "license": {
+        "identifier": "AGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/CrossPaste/crosspaste-desktop/releases/download/2.3.1.2781/crosspaste-2.3.1-2781-windows-amd64.zip",
+            "hash": "9f80e956560c541d525d3faad94979db5fd1a993832fd3e081583055da87aced"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\bin\\CrossPaste.exe",
+            "CrossPaste"
+        ]
+    ],
+    "link": "$home\\.crosspaste",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/CrossPaste/crosspaste-desktop/releases/download/$matchHead.$buildVersion/crosspaste-$matchHead-$buildVersion-windows-amd64.zip"
+            }
+        }
+    }
+}

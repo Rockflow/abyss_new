@@ -1,0 +1,67 @@
+{
+    "version": "2026.9.2",
+    "description": "AI 编程 Agent | AI Programming Agent",
+    "homepage": "https://catpaw.meituan.com",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://s3plus.meituan.net/catpaw-external-resources/ide/win32-x64/stable/2026.9.2/catpaw-193dd236.exe",
+            "hash": "a671a0b78ee0da95abee62df28dddae6841991cda8be2b7ca171fc39b205dfde"
+        }
+    },
+    "env_add_path": "app\\bin",
+    "commands": "catpawai",
+    "shortcuts": [
+        [
+            "app\\CatPawAI.exe",
+            "CatPawAI"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\CatPawAI",
+        "$home\\.catpawai"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Meituan.CatPaw",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

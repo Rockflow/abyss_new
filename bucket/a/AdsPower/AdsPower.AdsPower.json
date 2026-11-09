@@ -1,0 +1,65 @@
+{
+    "version": "8.9.23",
+    "description": "一个指纹浏览器 | A No anti-detection browser",
+    "homepage": "https://www.adspower.net",
+    "license": {
+        "identifier": "Freemium",
+        "url": "https://www.adspower.net/terms-of-use"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://version.adspower.net/software/win64-global/8.9.23/AdsPower-Global-8.9.23-x64.exe",
+            "hash": "d50080db8f810a78513c079541774162195ce844fa14067f5dc3dc7e4aaf0649"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\AdsPower Global.exe",
+            "AdsPower Browser"
+        ]
+    ],
+    "link": "$env:AppData\\adspower_global",
+    "cleanup": "$env:LocalAppData\\adspower_global-updater",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall AdsPower Global.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "AdsPower.AdsPower",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

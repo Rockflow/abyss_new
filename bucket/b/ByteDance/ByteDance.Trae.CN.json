@@ -1,0 +1,67 @@
+{
+    "version": "3.4.14",
+    "description": "字节跳动的一个 AI 驱动的代码 IDE | An AI-powered code IDE by ByteDance",
+    "homepage": "https://www.trae.com.cn",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.99936/win32/TRAE_CN-Setup-x64.exe",
+            "hash": "47defb020bf17babf2120600302544f9a8e7a635aad5d694547fffb855630004"
+        }
+    },
+    "env_add_path": "app\\bin",
+    "commands": "trae-cn",
+    "shortcuts": [
+        [
+            "app\\Trae CN.exe",
+            "Trae CN"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\Trae CN",
+        "$home\\.trae-cn"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "ByteDance.Trae.CN",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

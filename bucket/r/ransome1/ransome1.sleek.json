@@ -1,0 +1,65 @@
+{
+    "version": "2.1.1",
+    "description": "一款基于 todo.txt 语法的开源待办事项管理器 | An open-source todo manager based on the todo.txt syntax",
+    "homepage": "https://github.com/ransome1/sleek",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ransome1/sleek/releases/download/v2.1.1/sleek-2.1.1-win-x64-Setup.exe",
+            "hash": "eef53426bc511f9611165b4f397351225a39ae041ee29ea41c438972bc980cde"
+        },
+        "arm64": {
+            "url": "https://github.com/ransome1/sleek/releases/download/v2.1.1/sleek-2.1.1-win-arm64-Setup.exe",
+            "hash": "04f9c71220953aca43acf451be5d0a2254d8fdebcdc37874214c84b12a90a012"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\sleek.exe",
+            "sleek"
+        ]
+    ],
+    "link": "$env:AppData\\sleek",
+    "cleanup": "$env:LocalAppData\\sleek-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall sleek.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ransome1/sleek/releases/download/v$version/sleek-$version-win-x64-Setup.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/ransome1/sleek/releases/download/v$version/sleek-$version-win-arm64-Setup.exe"
+            }
+        }
+    }
+}

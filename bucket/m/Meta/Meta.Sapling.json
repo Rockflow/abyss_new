@@ -1,0 +1,69 @@
+{
+    "version": "0.2.20261103-145137+6282ac56",
+    "description": "一个可扩展、用户友好的版本控制系统，兼容 Git | A Scalable, User-Friendly Source Control System, Compatible with Git",
+    "homepage": "https://sapling-scm.com",
+    "license": {
+        "identifier": "GPL-2.0"
+    },
+    "notes_cn": [
+        "Sapling 的命令行命令 sl.exe 与 PowerShell 中的内置命令 sl 冲突。",
+        "在 PowerShell 中运行下方命令以使用它:",
+        "  Set-Alias sl sl.exe -Force"
+    ],
+    "notes": [
+        "The name of the Sapling CLI sl.exe conflicts with the sl command built-in in PowerShell.",
+        "Use it in PowerShell via the following command:",
+        "  Set-Alias sl sl.exe -Force"
+    ],
+    "suggest": {
+        "Node.js": [
+            "abyss/OpenJS.NodeJS",
+            "abyss/OpenJS.NodeJS.LTS"
+        ],
+        "Git": "abyss/Git.Git"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/facebook/sapling/releases/download/0.2.20261103-145137+6282ac56/sapling-0.2.20261103-145137+6282ac56-windows-x64.zip",
+            "hash": "3f9283258ec8edbab3fe2d9e424318a7e496151578dbb620b97b11f3e04c06d6"
+        }
+    },
+    "extract_dir": "Sapling",
+    "extract_to": "app",
+    "bin": "app\\sl.exe",
+    "link": "$env:AppData\\sapling",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/facebook/sapling/releases/download/$version/sapling-$version-windows-x64.zip"
+            }
+        }
+    }
+}

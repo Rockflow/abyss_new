@@ -1,0 +1,59 @@
+{
+    "version": "3.5",
+    "description": "跨平台、轻量易用的开源 C/C++ 集成开发环境 | A powerful, lighweight and cross-platform C/C++ IDE",
+    "homepage": "https://github.com/royqh1979/RedPanda-CPP",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "notes_cn": "由于 Scoop 的命名限制, 'RoyQu.RedPanda-C++' 被命名为 'RoyQu.RedPanda-Cpp'。",
+    "notes": "Due to Scoop's naming limit, 'RoyQu.RedPanda-C++' is named 'RoyQu.RedPanda-Cpp'.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/royqh1979/RedPanda-CPP/releases/download/v3.5/RedPanda.C++.3.5.0.win64.MinGW64_15.3.0.Setup.exe#/dl.exe",
+            "hash": "a8d0cd5e0eca81f156b2b88e7e11525b9881de42962cc3848ece7728e88db223"
+        }
+    },
+    "location": "$env:ProgramFiles\\RedPanda-Cpp",
+    "link": "$env:AppData\\RedPandaIDE",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "RoyQu.RedPanda-C++"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64#/dl.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

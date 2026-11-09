@@ -1,0 +1,59 @@
+{
+    "version": "1.14.15",
+    "description": "一个 Markdown 编辑器和阅读器，所见即所得 | A Markdown editor and reader",
+    "homepage": "https://typora.io",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://support.typora.io/License-Agreement/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.typora.io/windows/typora-setup-x64-1.14.15.exe",
+            "hash": "038e2af96968cbd55b7c418c9ad40b2cf45ffc8cc04dbc1cc98488f40e0a5c62"
+        }
+    },
+    "bin": "app\\Typora.exe",
+    "shortcuts": [
+        [
+            "app\\Typora.exe",
+            "Typora"
+        ]
+    ],
+    "link": "$env:AppData\\Typora",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://typora.io/releases/windows_64.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.typora.io/windows/typora-setup-x64-$version.exe"
+            }
+        }
+    }
+}

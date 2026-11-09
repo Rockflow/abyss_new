@@ -1,0 +1,63 @@
+{
+    "version": "0.102.2933.0",
+    "description": "一组实用程序，供高级用户调整和简化他们的 Windows 体验以提高生产力 | A set of utilities for power users to tune and streamline their Windows experience for greater productivity",
+    "homepage": "https://github.com/microsoft/PowerToys",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/microsoft/PowerToys/releases/download/v0.102.2933.0/PowerToysUserSetup-0.102.2933.0-x64.exe",
+            "hash": "ec0fd364ae1689a5e8fbefb46bad5c274c7bf0fbe9e828e14c88b44432ada816"
+        },
+        "arm64": {
+            "url": "https://github.com/microsoft/PowerToys/releases/download/v0.102.2933.0/PowerToysUserSetup-0.102.2933.0-arm64.exe",
+            "hash": "fdc0f3d06000264dc0947e7b0ae3ec63d682c5ba13198fbfbd49149ef69a94f5"
+        }
+    },
+    "location": "$env:LocalAppData\\PowerToys",
+    "link": "$env:LocalAppData\\Microsoft\\PowerToys",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "Expand-DarkArchive \"$dir\\$fname\" \"$dir\\.tmp\"",
+        "Get-ChildItem $dir -Recurse -Filter '*.msi' | Select-Object -First 1 | ForEach-Object { Move-Item $_.FullName \"$dir\\dl.msi\" -Force }",
+        "Remove-Item \"$dir\\.tmp\", \"$dir\\$fname\" -Force -Recurse -ErrorAction SilentlyContinue",
+        "A-Install-Msi -ArgumentList '/i', \"`\"$dir\\dl.msi`\"\", '/passive', '/norestart'",
+        "A-Hold-App"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Manually",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/microsoft/PowerToys/releases/download/v$version/PowerToysUserSetup-$version-x64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/microsoft/PowerToys/releases/download/v$version/PowerToysUserSetup-$version-arm64.exe"
+            }
+        }
+    }
+}

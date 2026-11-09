@@ -1,0 +1,58 @@
+{
+    "version": "0.16.0",
+    "description": "Godot 版本管理器 (gdvm) 是一款旨在简化 Godot 引擎不同版本的安装、管理和切换的工具 | Godot Version Manager (gdvm) is a tool designed to simplify the installation, management, and switching between different versions of the Godot Engine",
+    "homepage": "https://gdvm.io",
+    "license": {
+        "identifier": "ISC"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/adalinesimonian/gdvm/releases/download/v0.16.0/gdvm-x86_64-pc-windows-msvc.exe#/gdvm.exe",
+            "hash": "9be1b8356926409c57a40caff9e615f01fc9707e616ce3a19d0d2a9c4154ee8d"
+        },
+        "arm64": {
+            "url": "https://github.com/adalinesimonian/gdvm/releases/download/v0.16.0/gdvm-aarch64-pc-windows-msvc.exe#/gdvm.exe",
+            "hash": "7a16f3997215133bebde38508addb863c5ba9c7eaab662d42e39cc3e20614815"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\gdvm.exe",
+    "link": "$home\\.gdvm",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/adalinesimonian/gdvm/releases/download/v$version/gdvm-x86_64-pc-windows-msvc.exe#/gdvm.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/adalinesimonian/gdvm/releases/download/v$version/gdvm-aarch64-pc-windows-msvc.exe#/gdvm.exe"
+            }
+        }
+    }
+}

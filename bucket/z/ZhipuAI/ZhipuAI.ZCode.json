@@ -1,0 +1,68 @@
+{
+    "version": "3.17.2",
+    "description": "一款专为长周期任务打造、由 Z.ai 提供技术支持的全功能智能自主开发环境（ADE） | A full-featured Agentic Development Environment (ADE) built for Long Horizon Tasks, powered by Z.ai",
+    "homepage": "https://zcode.z.ai",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.17.2/windows-x64/ZCode-3.17.2-win-x64.exe",
+            "hash": "41edab524e9636451ba9db3f4d78b68d166e5602401267a14e63317f89c43e48"
+        },
+        "arm64": {
+            "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.17.2/windows-arm64/ZCode-3.17.2-win-arm64.exe",
+            "hash": "dfdb84ad5298d8ddc689e6d93e021a89f1df1a697ad3a198bc14ff6f59244c08"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\ZCode.exe",
+            "ZCode"
+        ]
+    ],
+    "link": [
+        "$home\\.zcode",
+        "$home\\ZCodeProject",
+        "$env:AppData\\ZCode"
+    ],
+    "cleanup": "$env:LocalAppData\\@zcodedesktop-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall ZCode.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://zcode.z.ai/api/v2/releases/latest?target=windows&arch=x86_64",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn-zcode.z.ai/zcode/electron/releases/$version/windows-x64/ZCode-$version-win-x64.exe"
+            },
+            "arm64": {
+                "url": "https://cdn-zcode.z.ai/zcode/electron/releases/$version/windows-arm64/ZCode-$version-win-arm64.exe"
+            }
+        }
+    }
+}

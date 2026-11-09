@@ -1,0 +1,58 @@
+{
+    "version": "2.0.19",
+    "description": "一个开源、安全、跨平台的密码管理器 | An open-source, secure, and cross-platform password manager",
+    "homepage": "https://github.com/loganchef/Ciphora",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/loganchef/Ciphora/releases/download/v2.0.19/Ciphora_2.0.19_x64-setup.exe",
+            "hash": "a5077068f47db1db417e4da9ad9a100f77a32b003287f89f05bdb0617c2bc57b"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Ciphora.exe",
+            "Ciphora"
+        ]
+    ],
+    "link": "$env:AppData\\com.ciphora.password-manager",
+    "cleanup": "$env:LocalAppData\\com.ciphora.password-manager",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/loganchef/Ciphora/releases/download/v$version/Ciphora_$version_x64-setup.exe"
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "version": "2026.11.0",
+    "description": "多语言工具版本管理器、环境变量管理器和任务运行器 | Polyglot tool version manager, env vars manager and task runner",
+    "homepage": "https://mise.jdx.dev",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jdx/mise/releases/download/v2026.11.0/mise-v2026.11.0-windows-x64.zip",
+            "hash": "c366b0ac7afa78b44c859f984a40d2c8c65fe4017133a70edc15653f52e9be68"
+        },
+        "arm64": {
+            "url": "https://github.com/jdx/mise/releases/download/v2026.11.0/mise-v2026.11.0-windows-arm64.zip",
+            "hash": "5b18bc2508a32495bff74318ff0ed37c160f633200f626be2a70865766d819df"
+        }
+    },
+    "extract_dir": "mise",
+    "extract_to": "app",
+    "env_add_path_expand": "$env:LocalAppData\\mise\\shims",
+    "bin": "app\\bin\\mise.exe",
+    "link": [
+        "$home\\.config\\mise",
+        "$env:LocalAppData\\mise"
+    ],
+    "cleanup": "$home\\.local\\state\\mise",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jdx/mise/releases/download/v$version/mise-v$version-windows-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/jdx/mise/releases/download/v$version/mise-v$version-windows-arm64.zip"
+            }
+        }
+    }
+}

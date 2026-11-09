@@ -1,0 +1,59 @@
+{
+    "version": "1.39.52.38106",
+    "description": "用于拦截和修改 HTTP/1.1、H2 以及网页套接字流量的中间人 HTTP 调试代理工具 | MITM HTTP debugging proxy for intercepting and altering HTTP/1.1, H2, and WebSocket traffic",
+    "homepage": "https://www.fluxzy.io",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/haga-rak/fluxzy.core/releases/download/v1.39.52.38106/fluxzy-cli-1.39.52.38106-win-x64.zip",
+            "hash": "c0957fb3ebd0f7d1a79a47d669acb03e7b54a8afd128b23290449cdb77973ba6"
+        },
+        "arm64": {
+            "url": "https://github.com/haga-rak/fluxzy.core/releases/download/v1.39.52.38106/fluxzy-cli-1.39.52.38106-win-arm64.zip",
+            "hash": "9ab5fb1a175284f7afa6e5943da98ce64022183a4c0d62be0afb80a118c44992"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        "app\\fluxzy.exe",
+        "app\\fluxzynetcap.exe"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/haga-rak/fluxzy.core/releases/download/v$version/fluxzy-cli-$version-win-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/haga-rak/fluxzy.core/releases/download/v$version/fluxzy-cli-$version-win-arm64.zip"
+            }
+        }
+    }
+}

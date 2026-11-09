@@ -1,0 +1,68 @@
+{
+    "version": "7.4.1116",
+    "description": "一个更智能、更直观且更易读的 Shell | A smarter, more intuitive, and readable shell",
+    "homepage": "https://murex.rocks",
+    "license": {
+        "identifier": "GPL-2.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://nojs.murex.rocks/bin/latest/murex-windows-amd64.exe.zip",
+            "hash": "1f90c5d04f11edc97496bd8bbc7f99ab2b04d6f29079e2295a15a9130f887126",
+            "bin": [
+                [
+                    "app\\bin\\murex-7.4-windows-amd64.exe",
+                    "murex"
+                ]
+            ]
+        }
+    },
+    "extract_to": "app",
+    "link": [
+        "$home\\.murex_modules",
+        "$home\\.murex_preload",
+        "$home\\.murex_profile",
+        "$home\\.murex_history"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest",
+            "repo": "lmorg/murex"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://nojs.murex.rocks/bin/latest/murex-windows-amd64.exe.zip",
+                "bin": [
+                    [
+                        "app\\bin\\murex-$majorVersion.$minorVersion-windows-amd64.exe",
+                        "murex"
+                    ]
+                ]
+            }
+        }
+    }
+}

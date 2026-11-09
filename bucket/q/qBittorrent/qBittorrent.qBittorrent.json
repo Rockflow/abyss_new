@@ -1,0 +1,67 @@
+{
+    "version": "5.3.0",
+    "description": "免费（自由）可靠的 P2P Bittorent 客户端 | Free and reliable P2P Bittorent client",
+    "homepage": "https://www.qbittorrent.org",
+    "license": {
+        "identifier": "GPL-2.0-or-later|GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-5.3.0/qbittorrent_5.3.0_x64_setup.exe/download#/dl.exe",
+            "hash": "aff5b3bdc00d6e5773d6099ba30f9696dd3dfd1669ab0f64ce5c4e7168486436"
+        }
+    },
+    "conflicts": [
+        "qBittorrent.qBittorrent",
+        "c0re100.qBittorrent-Enhanced-Edition"
+    ],
+    "shortcuts": [
+        [
+            "app\\qbittorrent.exe",
+            "qBittorrent"
+        ]
+    ],
+    "link": "$env:AppData\\qBittorrent",
+    "cleanup": "$env:LocalAppData\\qBittorrent",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninst.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "qBittorrent.qBittorrent"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64#/dl.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

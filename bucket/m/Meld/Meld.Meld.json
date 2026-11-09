@@ -1,0 +1,55 @@
+{
+    "version": "3.22.2",
+    "description": "可视化差异与合并工具 | Visual diff and merge tool",
+    "homepage": "https://meldmerge.org",
+    "license": {
+        "identifier": "GPL-2.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.gnome.org/binaries/win32/meld/3.22/Meld-3.22.2-mingw.msi#/dl.msi_",
+            "hash": "e1525657ff0e0d9762619b4930fa758756d5e766967764bd12c2f3914f16ece8"
+        }
+    },
+    "location": "$env:ProgramFiles\\Meld",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Msi"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Msi"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Meld.Meld",
+            "ext": "msi"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64#/dl.msi_",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

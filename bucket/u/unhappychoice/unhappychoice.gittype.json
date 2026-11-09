@@ -1,0 +1,51 @@
+{
+    "version": "0.10.4",
+    "description": "一款命令行代码打字游戏，能将你的源代码转化为打字挑战 | A CLI code-typing game that turns your source code into typing challenges",
+    "homepage": "https://github.com/unhappychoice/gittype",
+    "license": {
+        "identifier": "MIT|Apache-2.0|..."
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/unhappychoice/gittype/releases/download/v0.10.4/gittype-v0.10.4-x86_64-pc-windows-msvc.zip",
+            "hash": "1962b3f56296ad9f495a5020abbd14266922f2d2cf45c897f3ad5dfff5622374"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\gittype.exe",
+    "link": "$home\\.gittype",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/unhappychoice/gittype/releases/download/v$version/gittype-v$version-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

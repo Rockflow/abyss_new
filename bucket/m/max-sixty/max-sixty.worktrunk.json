@@ -1,0 +1,54 @@
+{
+    "version": "0.81.0",
+    "description": "用于 Git 工作树管理的命令行界面，专为并行人工智能代理工作流设计 | CLI for Git worktree management, designed for parallel AI agent workflows",
+    "homepage": "https://worktrunk.dev",
+    "license": {
+        "identifier": "MIT|Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/max-sixty/worktrunk/releases/download/v0.81.0/worktrunk-x86_64-pc-windows-msvc.zip",
+            "hash": "389b595cb67482085419968939e329d61901cca9e959e4b6c288f01387b768b8"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        "app\\git-wt.exe",
+        "app\\wt.exe"
+    ],
+    "link": "$env:AppData\\worktrunk",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/max-sixty/worktrunk/releases/download/v$version/worktrunk-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

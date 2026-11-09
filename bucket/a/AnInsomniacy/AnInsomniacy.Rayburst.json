@@ -1,0 +1,63 @@
+{
+    "version": "4.1.1",
+    "description": "一款功能齐全的下载管理器 | A full-featured download manager",
+    "homepage": "https://rayburst.pages.dev",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/AnInsomniacy/rayburst/releases/download/v4.1.1/Rayburst_4.1.1_x64-setup.exe",
+            "hash": "1c82b728f95e310699d0a44f822b089d3f50b1593fe4417742efbe56914a8c45"
+        },
+        "arm64": {
+            "url": "https://github.com/AnInsomniacy/rayburst/releases/download/v4.1.1/Rayburst_4.1.1_arm64-setup.exe",
+            "hash": "190be7269341f87256e6ea3d7c82a9001024e7e5d16afb1a3f2e486c694bff52"
+        }
+    },
+    "location": "$env:ProgramFiles\\Rayburst",
+    "link": [
+        "$env:AppData\\dev.aninsomniacy.rayburst",
+        "$env:LocalAppData\\dev.aninsomniacy.rayburst"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/AnInsomniacy/rayburst/releases/download/v$version/Rayburst_$version_x64-setup.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/AnInsomniacy/rayburst/releases/download/v$version/Rayburst_$version_arm64-setup.exe"
+            }
+        }
+    }
+}

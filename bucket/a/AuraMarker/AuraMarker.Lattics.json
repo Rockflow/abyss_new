@@ -1,0 +1,63 @@
+{
+    "version": "4.3.2",
+    "description": "「类脑式」知识管理笔记与写作 | \"Brain-like\" Knowledge Management Notes",
+    "homepage": "https://lattics.zineapi.com",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://releases.zine.la/lattics/win/Lattics_win_installer_x64_4.3.2.exe",
+            "hash": "65e22229285a87f562e7516204b1af799b45deec9d605677ef2915f43eb69e41"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Lattics.exe",
+            "Lattics"
+        ]
+    ],
+    "link": "$env:AppData\\Lattics",
+    "cleanup": "$env:LocalAppData\\lattics-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall Lattics.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "AuraMarker.Lattics",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "version": "4.53.280",
+    "description": "一个团队沟通和协作工具 | A team communication and collaboration tool",
+    "homepage": "https://www.slack.com",
+    "license": {
+        "identifier": "Freemium"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.slack-edge.com/desktop-releases/windows/x64/4.53.280/Slack.msix",
+            "hash": "465b8d7bc14288e1f63e1101cb5b5f4add4e1146050ad4315d9c09e32eaff5cc"
+        },
+        "arm64": {
+            "url": "https://downloads.slack-edge.com/desktop-releases/windows/arm64/4.53.280/Slack.msix",
+            "hash": "144535aa325efb0debf6aee859a6c05927173013916fa1d8ad4007d40c4f2cdc"
+        }
+    },
+    "msix": "com.tinyspeck.slackdesktop_8yrtsj140pw4g",
+    "link": "$env:LocalAppData\\Packages\\com.tinyspeck.slackdesktop_8yrtsj140pw4g\\LocalCache\\Roaming\\Slack",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "SlackTechnologies.Slack",
+            "ext": "msix"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

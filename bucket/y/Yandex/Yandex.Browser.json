@@ -1,0 +1,60 @@
+{
+    "version": "26.10.0.1854",
+    "description": "Yandex 浏览器内置 Alice，可跨设备同步密码、书签和银行卡，浏览速度快且安全 | Yandex Browser delivers fast and secure browsing with built-in Alice and the ability to sync passwords, bookmarks, and bank cards across devices",
+    "homepage": "https://browser.yandex.com",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://yandex.com/legal/browser_agreement/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.cdn.yandex.net/browser/int/26_10_0_1854_119369/en/Yandex.exe",
+            "hash": "8d1c1f422c6e006f513c8e3997a30ba724973165550b6f96235a5ba740702c84"
+        }
+    },
+    "location": "$env:LocalAppData\\Yandex\\YandexBrowser",
+    "link": "$env:LocalAppData\\Yandex\\YandexBrowser\\User Data",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -ArgumentList '--silent','--do-not-launch-browser'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "$Uninstaller = Get-ChildItem \"$env:LocalAppData\\Yandex\\YandexBrowser\\Application\" setup.exe -Recurse | Sort-Object LastWriteTime -Descending | Select-Object -First 1",
+        "A-Uninstall-App -Uninstaller $Uninstaller.FullName -ArgumentList '--uninstall', '--force-uninstall'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Yandex.Browser",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

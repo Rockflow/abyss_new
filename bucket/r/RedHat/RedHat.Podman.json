@@ -1,0 +1,64 @@
+{
+    "version": "6.1.4",
+    "description": "用于开发、管理、运行 OCI 容器的无守护程序容器引擎 | A daemonless container engine for developing, managing, and running OCI Containers",
+    "homepage": "https://podman.io",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/podman-container-tools/podman/releases/download/v6.1.4/podman-installer-windows-amd64.msi#/dl.msi_",
+            "hash": "4a05240054cb990629cbe098db090c5c7848c44162c11910cabb45ca75a40d53"
+        },
+        "arm64": {
+            "url": "https://github.com/podman-container-tools/podman/releases/download/v6.1.4/podman-installer-windows-arm64.msi#/dl.msi_",
+            "hash": "a1b65ffa7dd60a5eceedd3df7fc5d1d005b8d21018ff9deaa15aeacfbc92cd6c"
+        }
+    },
+    "location": "$env:LocalAppData\\Programs\\Podman",
+    "commands": "podman",
+    "link": [
+        "$home\\.config\\containers\\podman",
+        "$home\\.local\\share\\containers",
+        "$env:AppData\\containers",
+        "$env:ProgramData\\containers"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Msi"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Msi",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/podman-container-tools/podman/releases/download/v$version/podman-installer-windows-amd64.msi#/dl.msi_"
+            },
+            "arm64": {
+                "url": "https://github.com/podman-container-tools/podman/releases/download/v$version/podman-installer-windows-arm64.msi#/dl.msi_"
+            }
+        }
+    }
+}

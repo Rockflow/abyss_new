@@ -1,0 +1,75 @@
+{
+    "version": "0.1.20261102-0.10.19-0.1.20261102",
+    "description": "MoonBit 是一种类似 Rust 的语言（支持垃圾回收），也是一个为 WebAssembly 体验优化的工具链 | MoonBit is a Rust-like language (with GC support) and toolchain optimized for WebAssembly experience",
+    "homepage": "https://www.moonbitlang.com",
+    "license": {
+        "identifier": "Apache-2.0,AGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://cli.moonbitlang.cn/binaries/latest/moonbit-windows-x86_64.zip",
+                "https://cli.moonbitlang.cn/cores/core-latest.zip"
+            ],
+            "hash": [
+                "13dcc26ff3009e93da4d3bdb2f41a9961179d60a621f1b8c56fecea24d6cdf96",
+                "218da5676a8cc0070dd171ae957997eadc8e840b42404af2dda197f513361ba8"
+            ]
+        }
+    },
+    "extract_to": [
+        "app\\.moon",
+        "app\\.moon\\lib"
+    ],
+    "env_set": {
+        "MOON_HOME": "$dir\\app\\.moon"
+    },
+    "env_add_path": "app\\.moon\\bin",
+    "persist": [
+        [
+            "app\\.moon\\registry",
+            ".moon\\registry"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "Push-Location \"$dir\\app\\.moon\\lib\\core\"",
+        "moon.exe bundle --warn-list -a --all --quiet 2>$null",
+        "moon.exe bundle --warn-list -a --target wasm-gc --quiet 2>$null",
+        "Pop-Location",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://cli.moonbitlang.com/version.json",
+        "jsonpath": "$..version",
+        "regex": "([\\d.]+).+?,.+?([\\d.]+).+?,.+?([\\d.]+)",
+        "replace": "${1}-${2}-${3}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": [
+                    "https://cli.moonbitlang.cn/binaries/latest/moonbit-windows-x86_64.zip",
+                    "https://cli.moonbitlang.cn/cores/core-latest.zip"
+                ]
+            }
+        }
+    }
+}

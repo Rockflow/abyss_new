@@ -1,0 +1,75 @@
+{
+    "version": "1.20.0",
+    "description": "哔哩哔哩 Bilibili 的 Windows 桌面客户端程序 | A windows client for Bilibili",
+    "homepage": "https://app.bilibili.com",
+    "license": {
+        "identifier": "Freemium"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.hdslb.com/mobile/pack/bili_win/30389763/public/bilibili-setup-v1.20.0.exe",
+            "hash": "1dfdea7d7ebb11405b80084fcce94d9fc06c002b9c527a4f57397753dd753372"
+        },
+        "arm64": {
+            "url": "https://dl.hdslb.com/mobile/pack/bili_win/30389763/public/bilibili-setup-v1.20.0.exe",
+            "hash": "1dfdea7d7ebb11405b80084fcce94d9fc06c002b9c527a4f57397753dd753372"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\bilibili\\哔哩哔哩.exe",
+            "Bilibili 哔哩哔哩"
+        ]
+    ],
+    "link": "$env:AppData\\bilibili",
+    "cleanup": "$env:LocalAppData\\bilibili-updater",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\bilibili\\卸载哔哩哔哩.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Bilibili.Bilibili",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

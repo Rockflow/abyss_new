@@ -1,0 +1,57 @@
+{
+    "version": "3.3.17",
+    "description": "一款开源免费的游戏变速工具，助您突破帧率限制，带来更流畅丝滑的游戏加速体验 | An open-source and free game speed tool that helps you break frame rate limitations and provides a smoother, silkier gaming acceleration experience",
+    "homepage": "https://github.com/game1024/OpenSpeedy",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/game1024/OpenSpeedy/releases/download/3.3.17/OpenSpeedy-3.3.17-portable-signed.zip",
+            "hash": "405b5aede1be27767c62e19a1bea587a25253cf485d54d3d4b1e81fc4a37b658"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\OpenSpeedy.exe",
+            "OpenSpeedy"
+        ]
+    ],
+    "link": "$env:AppData\\com.game1024.openspeedy",
+    "cleanup": "$env:LocalAppData\\com.game1024.openspeedy",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/game1024/OpenSpeedy/releases/download/$version/OpenSpeedy-$version-portable-signed.zip"
+            }
+        }
+    }
+}

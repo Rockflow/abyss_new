@@ -1,0 +1,65 @@
+{
+    "version": "3.4.12",
+    "description": "一款完全开源且端到端加密的笔记应用，可替代 Evernote | A fully open source & end-to-end encrypted note taking alternative to Evernote",
+    "homepage": "https://github.com/streetwriters/notesnook",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/streetwriters/notesnook/releases/download/v3.4.12/notesnook_win_x64.exe",
+            "hash": "eb97ee82ef862e50c30e535bf2f363a0286ab4ecd093c17177194d0d8757882c"
+        },
+        "arm64": {
+            "url": "https://github.com/streetwriters/notesnook/releases/download/v3.4.12/notesnook_win_arm64.exe",
+            "hash": "c3fca6edadb41cc172b47040a59df7a0643a6160d2c1186e15af9efb9708107c"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Notesnook.exe",
+            "Notesnook"
+        ]
+    ],
+    "link": "$env:AppData\\Notesnook",
+    "cleanup": "$env:LocalAppData\\@notesnookdesktop-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall Notesnook.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/streetwriters/notesnook/releases/download/v$version/notesnook_win_x64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/streetwriters/notesnook/releases/download/v$version/notesnook_win_arm64.exe"
+            }
+        }
+    }
+}

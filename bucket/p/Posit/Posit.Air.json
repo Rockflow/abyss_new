@@ -1,0 +1,56 @@
+{
+    "version": "0.13.0",
+    "description": "用 Rust 编写的 R 格式化工具和语言服务器 | R formatter and language server, written in Rust",
+    "homepage": "https://posit-dev.github.io/air",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/posit-dev/air/releases/download/0.13.0/air-x86_64-pc-windows-msvc.zip",
+            "hash": "5a72240c5899440bc57fde421f0444840365ebad9f55e4f971fc73ee2281f828"
+        },
+        "arm64": {
+            "url": "https://github.com/posit-dev/air/releases/download/0.13.0/air-aarch64-pc-windows-msvc.zip",
+            "hash": "1cf749a26939e2ee5f0401596281092bc576e0d731b96a8bd32e5efdf5e23c19"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\air.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/posit-dev/air/releases/download/$version/air-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/posit-dev/air/releases/download/$version/air-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

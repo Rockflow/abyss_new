@@ -1,0 +1,73 @@
+{
+    "version": "1.27.0-pre",
+    "description": "一款高性能的多人协作代码编辑器，由 Atom 和 Tree-sitter 的开发者打造 | A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter",
+    "homepage": "https://zed.dev",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0-pre/Zed-x86_64.exe",
+            "hash": "0631ae60a2264fa1f91429906af0b33cc6674e27628b3af95acc46bf27f8a569"
+        },
+        "arm64": {
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0-pre/Zed-aarch64.exe",
+            "hash": "35782310ea39c096e459536865e45528f6990ebf38f85694e206e0b72bd9efc2"
+        }
+    },
+    "conflicts": [
+        "ZedIndustries.Zed",
+        "ZedIndustries.Zed.Preview"
+    ],
+    "env_add_path": "app\\bin",
+    "commands": "zed",
+    "shortcuts": [
+        [
+            "app\\Zed.exe",
+            "Zed Preview"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\Zed",
+        "$env:LocalAppData\\Zed"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "preview"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zed-industries/zed/releases/download/v$version/Zed-x86_64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/zed-industries/zed/releases/download/v$version/Zed-aarch64.exe"
+            }
+        }
+    }
+}

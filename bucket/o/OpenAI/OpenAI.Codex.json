@@ -1,0 +1,70 @@
+{
+    "version": "0.166.0",
+    "description": "一款在终端中运行的开源本地编码代理 | An open-source local coding agent that runs in your terminal",
+    "homepage": "https://github.com/openai/codex",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.166.0/codex-x86_64-pc-windows-msvc.exe.zip",
+            "hash": "bf67d9662ed539f305849b74ad6420cc7b23aa2be07753710ca3db9134a0246d",
+            "bin": [
+                [
+                    "app\\codex-x86_64-pc-windows-msvc.exe",
+                    "codex"
+                ]
+            ]
+        },
+        "arm64": {
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.166.0/codex-aarch64-pc-windows-msvc.exe.zip",
+            "hash": "2025588829bb65deb4c92e27025a56091fa17bcf2f651262b7331fbffb078117",
+            "bin": [
+                [
+                    "app\\codex-aarch64-pc-windows-msvc.exe",
+                    "codex"
+                ]
+            ]
+        }
+    },
+    "extract_to": "app",
+    "link": "$home\\.codex",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        },
+        "regex": "rust-(.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/openai/codex/releases/download/rust-v$version/codex-x86_64-pc-windows-msvc.exe.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/openai/codex/releases/download/rust-v$version/codex-aarch64-pc-windows-msvc.exe.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "version": "6.2.43",
+    "description": "FFmpegFreeUI (3FUI) - ffmpeg 在 Windows 上的轻度专业交互外壳 | FFmpegFreeUI (3FUI) - A lightweight professional interactive shell for ffmpeg on Windows",
+    "homepage": "https://github.com/Lake1059/FFmpegFreeUI",
+    "license": {
+        "identifier": "MIT"
+    },
+    "suggest": {
+        "ffmpeg": [
+            "ffmpeg",
+            "abyss/Gyan.FFmpeg"
+        ]
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.43/FFmpegFreeUI.x64.exe#/FFmpegFreeUI.exe",
+            "hash": "5fe9f1adeb921cd9f22e496fb41258bfd83e2a510792382a946f34f4a54eda6c"
+        },
+        "arm64": {
+            "url": "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.43/FFmpegFreeUI.arm64.exe#/FFmpegFreeUI.exe",
+            "hash": "b077bc955e76ffc8c7b7e427cd269778309c4d445f516c251daa438b67cf7b04"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\FFmpegFreeUI.exe",
+            "FFmpegFreeUI"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\Settings.json",
+            "Settings.json"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Lake1059/FFmpegFreeUI/releases/download/$version/FFmpegFreeUI.x64.exe#/FFmpegFreeUI.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/Lake1059/FFmpegFreeUI/releases/download/$version/FFmpegFreeUI.arm64.exe#/FFmpegFreeUI.exe"
+            }
+        }
+    }
+}

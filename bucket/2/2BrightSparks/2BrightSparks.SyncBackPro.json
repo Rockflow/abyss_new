@@ -1,0 +1,66 @@
+{
+    "version": "12.1.34.0",
+    "description": "一款提供给专业人士用于备份、同步和恢复数据文件的工具 | The professional's tool to backup, synchronize, and restore data files",
+    "homepage": "https://www.2brightsparks.com/download-syncbackpro.html",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.2brightsparks.com/assets/software/SyncBack/SyncBackPro64_Setup.12.1.34.0.exe",
+            "hash": "b72c9dbe4acb155bde91073dcc8c658249cf6abce198124030f35647975f569b"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\SyncBackPro.exe",
+            "SyncBackPro"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\2BrightSparks\\SyncBackPro",
+        "$env:LocalAppData\\2BrightSparks\\SyncBackPro"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "2BrightSparks.SyncBackPro",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

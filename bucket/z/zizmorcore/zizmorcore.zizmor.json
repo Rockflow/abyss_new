@@ -1,0 +1,49 @@
+{
+    "version": "1.32.0",
+    "description": "用于 GitHub Actions 的静态分析工具 | A static analysis tool for GitHub Actions",
+    "homepage": "http://docs.zizmor.sh",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-pc-windows-msvc.zip",
+            "hash": "d284a16e09d9df4ce2c000357e7b59bd531be093bea5718a1ce225b449b59d49"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\zizmor.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zizmorcore/zizmor/releases/download/v$version/zizmor-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

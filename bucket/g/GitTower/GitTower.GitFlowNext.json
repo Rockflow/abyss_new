@@ -1,0 +1,60 @@
+{
+    "version": "2.1.0",
+    "description": "现代化的 git-flow 实现 | A modern reimplementation of git-flow",
+    "homepage": "https://github.com/gittower/git-flow-next",
+    "license": {
+        "identifier": "BSD-2-Clause"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/gittower/git-flow-next/releases/download/v2.1.0/git-flow-next-v2.1.0-windows-amd64.zip",
+            "hash": "9bfbc2746ea647fe664e0a5be375f7d7e144412d5031064f60efb1f8fbe1b656",
+            "bin": [
+                [
+                    "app\\git-flow-v2.1.0-windows-amd64.exe",
+                    "git-flow.exe"
+                ]
+            ]
+        }
+    },
+    "extract_to": "app",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/gittower/git-flow-next/releases/download/v$version/git-flow-next-v$version-windows-amd64.zip",
+                "bin": [
+                    [
+                        "app\\git-flow-v$version-windows-amd64.exe",
+                        "git-flow.exe"
+                    ]
+                ]
+            }
+        }
+    }
+}

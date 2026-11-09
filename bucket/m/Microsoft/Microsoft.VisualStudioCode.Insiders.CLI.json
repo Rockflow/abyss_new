@@ -1,0 +1,65 @@
+{
+    "version": "1.146.0-e576c7",
+    "description": "(Insiders 版本) vscode - 一个轻量级、功能强大，插件生态丰富的文件编辑器 | (Insiders Edition) vscode - A lightweight but powerful source code editor",
+    "homepage": "https://code.visualstudio.com",
+    "license": {
+        "identifier": "Microsoft Pre-Release Software License",
+        "url": "https://code.visualstudio.com/license/insiders"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://update.code.visualstudio.com/1.146.0-insider/cli-win32-x64/insider#/dl.7z",
+            "hash": "750d05d416807e9038c72629bbc86abf2d29ace41b05a109bf041ba8accb3df1"
+        },
+        "arm64": {
+            "url": "https://update.code.visualstudio.com/1.146.0-insider/cli-win32-arm64/insider#/dl.7z",
+            "hash": "045bcff8cf4e2b96855335350560eddfcec7fe4a187a80b5aa6650f206c76a83"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\code-insiders.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://update.code.visualstudio.com/api/update/cli-win32-x64/insider/latest",
+        "regex": "(?=.*?\"productVersion\":\"(?<version>[^;]+)-insider)(?=.*?\"version\":\"(?<hash>[0-9a-f]{6})[0-9a-f]+).*",
+        "replace": "${version}-${hash}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://update.code.visualstudio.com/$matchHead-insider/cli-win32-x64/insider#/dl.7z",
+                "hash": {
+                    "url": "https://update.code.visualstudio.com/api/update/cli-win32-x64/insider/latest",
+                    "jsonpath": "$.sha256hash"
+                }
+            },
+            "arm64": {
+                "url": "https://update.code.visualstudio.com/$matchHead-insider/cli-win32-arm64/insider#/dl.7z",
+                "hash": {
+                    "url": "https://update.code.visualstudio.com/api/update/cli-win32-arm64/insider/latest",
+                    "jsonpath": "$.sha256hash"
+                }
+            }
+        }
+    }
+}

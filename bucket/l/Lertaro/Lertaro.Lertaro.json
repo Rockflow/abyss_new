@@ -1,0 +1,66 @@
+{
+    "version": "5.12.2",
+    "description": "适用于 Windows 的高性能本地文件检索与效率启动工具 | High-performance local file search and productivity launcher for Windows",
+    "homepage": "https://lertaro.github.io",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.12.2/Lertaro-Setup.exe",
+            "hash": "ea6dcd0eae7a19ac72f732d78d554f22340c2e49141e049b9cbd770702903abf"
+        },
+        "arm64": {
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.12.2/Lertaro-Setup-arm64.exe",
+            "hash": "7d4ba2a12f1c2617d82eb71dbeeaa3251629cf5f038d8ff94c12d3ef1c6cd68c"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Lertaro.App.exe",
+            "Lertaro"
+        ]
+    ],
+    "link": "$env:LocalAppData\\Lertaro",
+    "cleanup": "$env:ProgramData\\Lertaro",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Lertaro/Lertaro/releases/download/v$version/Lertaro-Setup.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/Lertaro/Lertaro/releases/download/v$version/Lertaro-Setup-arm64.exe"
+            }
+        }
+    }
+}

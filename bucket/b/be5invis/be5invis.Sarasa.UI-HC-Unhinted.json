@@ -1,0 +1,43 @@
+{
+    "version": "1.0.43",
+    "description": "(UI: 非等宽/无连字/全宽破折号, HC: HongKong Chinese, Unhinted: No-FontHinting) 一款 2:1 等宽字体 | (UI: No-Monospace/No-Ligature/Full-width em dash, HC: HongKong Chinese, Unhinted: No-FontHinting) 2:1 monospaced font",
+    "homepage": "https://github.com/be5invis/Sarasa-Gothic",
+    "license": {
+        "identifier": "OFL-1.1"
+    },
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaUIHC-TTF-Unhinted-1.0.43.7z",
+    "hash": "abd648ea42ff1537d9046061bdf9c29a4b24f3f0231054793bdecc0dc8fe5ac9",
+    "conflicts": [
+        "be5invis.Sarasa.UI-HC",
+        "be5invis.Sarasa.UI-HC-Unhinted"
+    ],
+    "font": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v$version/SarasaUIHC-TTF-Unhinted-$version.7z"
+    }
+}

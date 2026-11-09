@@ -1,0 +1,65 @@
+{
+    "version": "1.8.1",
+    "description": "图吧工具箱 winUI3 版，现代化的 PC 硬件检测与系统维护工具集 | Modern toolkit for PC hardware detection and system maintenance",
+    "homepage": "https://tubawinui3.cn",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/luolangaga/tubatools/releases/download/v1.8.1/TubaWinUi3_Setup_1.8.1_x64.exe",
+            "hash": "b76ddb54ecc785fa423e4e494ed3757f5c792a040f21e6123209fa55ba467dc9"
+        },
+        "arm64": {
+            "url": "https://github.com/luolangaga/tubatools/releases/download/v1.8.1/TubaWinUi3_Setup_1.8.1_arm64.exe",
+            "hash": "6e383300d4e98936781eea1c08dee7715967960d46ed8023d9ff4f587098b0e5"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\TubaWinUi3.exe",
+            "图吧工具箱WinUi3"
+        ]
+    ],
+    "link": "$env:LocalAppData\\TubaWinUi3",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/luolangaga/tubatools/releases/download/v$version/TubaWinUi3_Setup_$version_x64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/luolangaga/tubatools/releases/download/v$version/TubaWinUi3_Setup_$version_arm64.exe"
+            }
+        }
+    }
+}

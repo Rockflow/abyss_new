@@ -1,0 +1,61 @@
+{
+    "version": "9.013",
+    "description": "一款由 3Dflow 提供，可根据照片自动重建三维模型的摄影测量软件解决方案 | A photogrammetry software solution by 3Dflow to automatically reconstruct 3D models from photos",
+    "homepage": "https://www.3dflow.net/3df-zephyr-free",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://3df-eu.fra1.digitaloceanspaces.com/9.013/3DF%20Zephyr%20Free%20v9.013%20(x64).exe",
+            "hash": "2c6402cbe8e9f170437d9894cc4445257571fab603960af3b71144eef8c256ce"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\3DF Zephyr Free.exe",
+            "3DF Zephyr Free"
+        ]
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "3Dflow.3DFZephyr.Free",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

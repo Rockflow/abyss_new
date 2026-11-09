@@ -1,0 +1,64 @@
+{
+    "version": "2.0.10",
+    "description": "一款即用即走的翻译、OCR 工具 | A ready-to-go translation ocr tool",
+    "homepage": "https://stranslate.zggsong.com",
+    "license": {
+        "identifier": "MIT"
+    },
+    "suggest": {
+        "runtime": "abyss/Microsoft.DotNet.DesktopRuntime.10"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/STranslate/STranslate/releases/download/v2.0.10/STranslate-win-Portable.zip",
+            "hash": "d63f4cef674ae2f6ef782e1c7fa43b2475e62aea0ad31c34b41ab5c9cb58abc5"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\STranslate.exe",
+    "shortcuts": [
+        [
+            "app\\STranslate.exe",
+            "STranslate"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\current\\PortableConfig",
+            "AppData\\Roaming\\STranslate"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/STranslate/STranslate/releases/download/v$version/STranslate-win-Portable.zip"
+            }
+        }
+    }
+}

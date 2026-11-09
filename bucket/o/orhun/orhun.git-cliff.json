@@ -1,0 +1,60 @@
+{
+    "version": "2.14.2",
+    "description": "一款高度可定制的变更日志生成器，遵循约定式提交规范 | A highly customizable Changelog Generator that follows Conventional Commit specifications",
+    "homepage": "https://git-cliff.org",
+    "license": {
+        "identifier": "Apache-2.0|MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/orhun/git-cliff/releases/download/v2.14.2/git-cliff-2.14.2-x86_64-pc-windows-msvc.zip",
+            "hash": "6ece2112b3f4af462190ecbea4aeb1315fff6af415629b597f84319073c31131"
+        },
+        "arm64": {
+            "url": "https://github.com/orhun/git-cliff/releases/download/v2.14.2/git-cliff-2.14.2-aarch64-pc-windows-msvc.zip",
+            "hash": "5fb69daea6e47daebd91abbd4c24cfb74c13547c96fa7e5a252f8f7a3c7585aa"
+        }
+    },
+    "extract_dir": "git-cliff-2.14.2",
+    "extract_to": "app",
+    "bin": "app\\git-cliff.exe",
+    "link": "$env:AppData\\git-cliff",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/orhun/git-cliff/releases/download/v$version/git-cliff-$version-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/orhun/git-cliff/releases/download/v$version/git-cliff-$version-aarch64-pc-windows-msvc.zip"
+            }
+        },
+        "extract_dir": "git-cliff-$version"
+    }
+}

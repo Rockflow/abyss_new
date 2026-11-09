@@ -1,0 +1,54 @@
+{
+    "version": "2.3.1",
+    "description": "使用 Win + 鼠标组合键，像在 KDE 系统中那样调整和移动 Windows 系统上的窗口 | Resize and move windows like in KDE on Windows with Win+Mouse",
+    "homepage": "https://github.com/alvesvaren/resizer2",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/alvesvaren/resizer2/releases/download/v2.3.1/resizer2-portable.exe#/resizer2.exe",
+            "hash": "ec7bfbc4974c120f6ff9d8d13c74f91a2d5d041581d289079d0db0e9c656d8be"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\resizer2.exe",
+            "Resizer 2"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/alvesvaren/resizer2/releases/download/v$version/resizer2-portable.exe#/resizer2.exe"
+            }
+        }
+    }
+}

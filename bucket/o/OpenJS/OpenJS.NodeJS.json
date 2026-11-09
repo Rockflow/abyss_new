@@ -1,0 +1,58 @@
+{
+    "version": "27.0.0-alpha.0.0.0",
+    "description": "一个免费、开源、跨平台的 JavaScript 运行时环境 | A free, open-source, cross-platform JavaScript runtime environment",
+    "homepage": "https://nodejs.org",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "notes_cn": "如果同时安装 OpenJS.NodeJS 的多个版本，会相互覆盖，仅保留最高版本。",
+    "notes": "If you install multiple versions of OpenJS.NodeJS, they will overwrite each other, keeping only the highest version.",
+    "architecture": {
+        "64bit": {
+            "url": "https://nodejs.org/dist/v27.0.0-alpha.0.0.0/node-v27.0.0-alpha.0.0.0-x64.msi#/dl.msi_",
+            "hash": "1a7d88eed4fa2eea94d4c38492552348c81ff6c54338205217e85a85d53edd16"
+        },
+        "arm64": {
+            "url": "https://nodejs.org/dist/v27.0.0-alpha.0.0.0/node-v27.0.0-alpha.0.0.0-arm64.msi#/dl.msi_",
+            "hash": "281a07f2feef054a0689b83f23233a21bd1fb5d4a1bbbe7ed756ab509bc21c2a"
+        }
+    },
+    "location": "$env:ProgramFiles\\nodejs",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Msi"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Msi"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://nodejs.org/dist/index.json",
+        "jsonpath": "$[0].version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-x64.msi#/dl.msi_"
+            },
+            "arm64": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-arm64.msi#/dl.msi_"
+            }
+        }
+    }
+}

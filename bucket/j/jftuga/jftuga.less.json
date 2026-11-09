@@ -1,0 +1,68 @@
+{
+    "version": "710",
+    "description": "一款免费的开源文件分页器 | A free, open-source file pager",
+    "homepage": "https://greenwoodsoftware.com/less",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jftuga/less-Windows/releases/download/less-v710/less-x64.zip",
+            "hash": "0c1c7a70085d1306b4a834ee2b52dd66706942c0297b3de51606417fcc727d26"
+        },
+        "arm64": {
+            "url": "https://github.com/jftuga/less-Windows/releases/download/less-v710/less-arm64.zip",
+            "hash": "54800ab6c068e74a760f557bbedac02a28ff4c09cc1b58af795b0681a89e7c52"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        "app\\less.exe",
+        "app\\lesskey.exe"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "jftuga.less",
+            "ext": "zip"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

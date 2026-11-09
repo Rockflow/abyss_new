@@ -1,0 +1,56 @@
+{
+    "version": "11.6.3",
+    "description": "一种能够让任意两台计算机简单且安全地传输文件和文件夹的工具 | A tool that allows any two computers to simply and securely transfer files and folders",
+    "homepage": "https://schollz.com/software/croc6",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/schollz/croc/releases/download/v11.6.3/croc_v11.6.3_Windows-64bit.zip",
+            "hash": "47b6c51aa4b4ae0370296926a33a0818338448ada38eb76519ad067932c61330"
+        },
+        "arm64": {
+            "url": "https://github.com/schollz/croc/releases/download/v11.6.3/croc_v11.6.3_Windows-ARM64.zip",
+            "hash": "c96224a81156c29a8625ffb64a8ae7088aede4242be17062c64c25d35f49b2e0"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\croc.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/schollz/croc/releases/download/v$version/croc_v$version_Windows-64bit.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/schollz/croc/releases/download/v$version/croc_v$version_Windows-ARM64.zip"
+            }
+        }
+    }
+}

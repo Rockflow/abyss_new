@@ -1,0 +1,43 @@
+{
+    "version": "1.0.43",
+    "description": "(Fixed: 等宽/无连字/半宽破折号, Slab: 有衬线, TC: Traditional Chinese) 一款 2:1 等宽字体 | (Fixed: Monospace/No-Ligature/Half-width em dash, Slab: Serifs, TC: Traditional Chinese) 2:1 monospaced font",
+    "homepage": "https://github.com/be5invis/Sarasa-Gothic",
+    "license": {
+        "identifier": "OFL-1.1"
+    },
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaFixedSlabTC-TTF-1.0.43.7z",
+    "hash": "f628845f872418bd919a6b0b9a6eedaed8e0b607ee25a063e172018fdd1692d2",
+    "conflicts": [
+        "be5invis.Sarasa.Fixed-Slab-TC",
+        "be5invis.Sarasa.Fixed-Slab-TC-Unhinted"
+    ],
+    "font": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v$version/SarasaFixedSlabTC-TTF-$version.7z"
+    }
+}

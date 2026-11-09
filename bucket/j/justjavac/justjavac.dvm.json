@@ -1,0 +1,58 @@
+{
+    "version": "1.11.7",
+    "description": "Deno 版本管理器 —— 轻松管理多个活跃的 deno 版本的方式 | Deno Version Manager - Easy way to manage multiple active deno versions",
+    "homepage": "https://dvm.deno.dev",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/justjavac/dvm/releases/download/v1.11.7/dvm-x86_64-pc-windows-msvc.zip",
+            "hash": "cdfcb965c5110b2952e2e4654f1944ee2b144ac1efa4ff23895964e517254389"
+        }
+    },
+    "extract_to": "app",
+    "env_set": {
+        "DVM_DIR": "$scoopdir\\persist\\@abyss\\.dvm"
+    },
+    "env_add_path": ".dvm\\bin",
+    "bin": "app\\dvm.exe",
+    "link": [
+        "$home\\.dvm",
+        "$home\\.dvmrc"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/justjavac/dvm/releases/download/v$version/dvm-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

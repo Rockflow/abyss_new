@@ -1,0 +1,52 @@
+{
+    "version": "0.4.15",
+    "description": "一款用于探索和分析数据集的高性能终端界面 | A high-performance terminal UI for exploring and analyzing datasets",
+    "homepage": "https://derekwisong.github.io/datui",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/derekwisong/datui/releases/download/v0.4.15/datui-v0.4.15-x86_64-pc-windows-msvc.zip",
+            "hash": "aff79c06955a4988ca7cdaf592740f102e43055fbd9836f36fd362122d826a2e"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\datui.exe",
+    "link": "$env:AppData\\datui",
+    "cleanup": "$env:LocalAppData\\datui",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/derekwisong/datui/releases/download/v$version/datui-v$version-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

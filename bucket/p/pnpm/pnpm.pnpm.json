@@ -1,0 +1,69 @@
+{
+    "version": "12.16.1",
+    "description": "一款快速且节省磁盘空间的 Node 包管理器 | A fast and disk space efficient Node package manager",
+    "homepage": "https://pnpm.io",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/pnpm/pnpm/releases/download/v12.16.1/pnpm-win32-x64.zip",
+            "hash": "253cd5caa8cdf3859a92995bdf1819d3b433690157616cc372af00d22eb0c6a4"
+        },
+        "arm64": {
+            "url": "https://github.com/pnpm/pnpm/releases/download/v12.16.1/pnpm-win32-arm64.zip",
+            "hash": "9b401cc731e86d70de4407621d4916a5ff3ad7c3de86b42d623280b629af9dda"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        "app\\pnpm.exe",
+        [
+            "app\\pnpm.exe",
+            "pnpx",
+            "dlx"
+        ]
+    ],
+    "link": [
+        "$env:LocalAppData\\pnpm",
+        "$env:LocalAppData\\pnpm-state",
+        "$env:LocalAppData\\pnpm-cache"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/pnpm/pnpm/releases/download/v$version/pnpm-win32-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/pnpm/pnpm/releases/download/v$version/pnpm-win32-arm64.zip"
+            }
+        }
+    }
+}

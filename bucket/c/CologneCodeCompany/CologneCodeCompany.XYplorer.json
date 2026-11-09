@@ -1,0 +1,60 @@
+{
+    "version": "28.40.0600",
+    "description": "一个 Windows 上的第三方文件管理器 | A file manager for Windows",
+    "homepage": "https://www.xyplorer.com/index.php",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.xyplorer.com/purchase.php"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.xyplorer.com/download/xyplorer64_28.40.0600.zip",
+            "hash": "15366a095aec22084b8076f72198a11fcf99d24c494e69f9bcefd05aef089f3d"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\XYplorer.exe",
+    "shortcuts": [
+        [
+            "app\\XYplorer.exe",
+            "XYplorer"
+        ]
+    ],
+    "link": "$env:AppData\\XYplorer64",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe' -Installer (Get-ChildItem $dir -Filter XYplorer64*.exe -Recurse | Select-Object -First 1).FullName"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://www.xyplorer.com",
+        "regex": "version.+?(([\\d.]+){3,})"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.xyplorer.com/download/xyplorer64_$version.zip"
+            }
+        }
+    }
+}

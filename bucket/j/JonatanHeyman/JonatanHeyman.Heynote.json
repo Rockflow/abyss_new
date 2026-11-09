@@ -1,0 +1,58 @@
+{
+    "version": "2.9.1",
+    "description": "为开发人员提供的专用便签本 | A dedicated scratchpad for developers",
+    "homepage": "https://heynote.com",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/heyman/heynote/releases/download/v2.9.1/Heynote_2.9.1.exe",
+            "hash": "71695a55867c7ed32dcc7f3e7837f50c02f44fa2a9f79614f65bfc71ddd8cd82"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Heynote.exe",
+            "Heynote"
+        ]
+    ],
+    "link": "$env:AppData\\Heynote",
+    "cleanup": "$env:LocalAppData\\heynote-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall Heynote.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/heyman/heynote/releases/download/v$version/Heynote_$version.exe"
+            }
+        }
+    }
+}

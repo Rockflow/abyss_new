@@ -1,0 +1,58 @@
+{
+    "version": "2.11.1",
+    "description": "一个 Git 钩子管理器和项目代码检查工具 | A git hook manager and project linting tool",
+    "homepage": "https://hk.jdx.dev",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jdx/hk/releases/download/v2.11.1/hk-x86_64-pc-windows-msvc.zip",
+            "hash": "60b925d9734cd6bec5fab78b9c825b39b2ad9b1c9d9f03b685423c2d21ae9a8c"
+        },
+        "arm64": {
+            "url": "https://github.com/jdx/hk/releases/download/v2.11.1/hk-aarch64-pc-windows-msvc.zip",
+            "hash": "d080df635a59590e19ac7062e0a975b520e5a8d35dc4e9217cea6784302f9ac0"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\hk.exe",
+    "link": "$home\\.hkrc.pkl",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jdx/hk/releases/download/v$version/hk-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/jdx/hk/releases/download/v$version/hk-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

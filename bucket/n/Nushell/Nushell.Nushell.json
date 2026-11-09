@@ -1,0 +1,72 @@
+{
+    "version": "0.116.1",
+    "description": "一种用 Rust 编写的新型 shell | A new type of shell written in Rust",
+    "homepage": "https://www.nushell.sh",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nushell/nushell/releases/download/0.116.1/nu-0.116.1-x86_64-pc-windows-msvc.zip",
+            "hash": "6658c9e61fe42c88326c1caa99e8dc9ad99bec6c0bc353e6ecb7c5d3f79feed7"
+        },
+        "arm64": {
+            "url": "https://github.com/nushell/nushell/releases/download/0.116.1/nu-0.116.1-aarch64-pc-windows-msvc.zip",
+            "hash": "e02a822226f4ea841cdfece707bac2a8b5888b3cfb6d4065a502e01ea5237092"
+        }
+    },
+    "conflicts": [
+        "Nushell.Nushell",
+        "Nushell.Nushell.Nightly"
+    ],
+    "extract_to": "app",
+    "bin": "app\\nu.exe",
+    "shortcuts": [
+        [
+            "app\\nu.exe",
+            "Nushell",
+            "--execute \"cd ~\""
+        ]
+    ],
+    "link": [
+        "$env:AppData\\nushell",
+        "$env:LocalAppData\\nushell"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/nushell/nushell/releases/download/$version/nu-$version-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/nushell/nushell/releases/download/$version/nu-$version-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

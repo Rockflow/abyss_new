@@ -1,0 +1,65 @@
+{
+    "version": "5.2.0.1",
+    "description": "快速、免费且完全可定制的图片查看器 | Fast, free and customizable picture viewer",
+    "homepage": "https://picview.org",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Ruben2776/PicView/releases/download/5.2.0.1/Setup-PicView-v5.2.0.1-win-x64.exe",
+            "hash": "cfdb8cb3fe1d6ed1f310a81d3df7296147e2a4900114fad702cc2b0c6a39d820"
+        },
+        "arm64": {
+            "url": "https://github.com/Ruben2776/PicView/releases/download/5.2.0.1/Setup-PicView-v5.2.0.1-win-arm64.exe",
+            "hash": "1a8e10acb35e167d1fd2b61f41757ab34fb41e683f540ef654dc50e7f2b3175a"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\PicView.exe",
+            "PicView"
+        ]
+    ],
+    "link": "$env:AppData\\Ruben2776\\PicView\\Config",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Ruben2776/PicView/releases/download/$version/Setup-PicView-v$version-win-x64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/Ruben2776/PicView/releases/download/$version/Setup-PicView-v$version-win-arm64.exe"
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "version": "0.15",
+    "description": "Notepad++ 的跨平台重新实现 | A cross-platform, reimplementation of Notepad++",
+    "homepage": "https://github.com/dail8859/NotepadNext",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dail8859/NotepadNext/releases/download/v0.15/NotepadNext-v0.15-win64.zip",
+            "hash": "148aa88d706bb67a7c1f3727953ed686204be52876336971634b0223e6ed2148"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\NotepadNext.exe",
+    "shortcuts": [
+        [
+            "app\\NotepadNext.exe",
+            "NotepadNext"
+        ]
+    ],
+    "link": "$env:AppData\\NotepadNext",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/dail8859/NotepadNext/releases/download/v$version/NotepadNext-v$version-win64.zip"
+            }
+        }
+    }
+}

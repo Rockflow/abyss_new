@@ -1,0 +1,68 @@
+{
+    "version": "2.0.39",
+    "description": "基于 Flutter 和 Rust 构建的现代跨平台 Clash 客户端 | A modern cross-platform Clash client built with Flutter and Rust",
+    "homepage": "https://github.com/Kindness-Kismet/Stelliberty",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.39/stelliberty-v2.0.39-win-x64.zip",
+            "hash": "962d5c87a930024f9462ccf7a781c1e7a03e8e3675bbe38a02372cc68c474112"
+        },
+        "arm64": {
+            "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v2.0.39/stelliberty-v2.0.39-win-arm64.zip",
+            "hash": "665cb039a7e29c96c43430b7aa35df49503b7825a7510314e03495343fe0a840"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\stelliberty.exe",
+            "Stelliberty"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\data\\settings.json",
+            "AppData\\Roaming\\stelliberty\\settings.json"
+        ]
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v$version/stelliberty-v$version-win-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/Kindness-Kismet/stelliberty/releases/download/v$version/stelliberty-v$version-win-arm64.zip"
+            }
+        }
+    }
+}

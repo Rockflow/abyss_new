@@ -1,0 +1,61 @@
+{
+    "version": "2.0.0.9",
+    "description": "奥创极速网页版的扩展功能 - 增益工具 | ASUS Gear Link Companion - Utility",
+    "homepage": "https://gearlink.asus.com",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "notes_cn": "卸载或更新后可能需要重新启动系统才能正常使用。",
+    "notes": "After uninstalling or updating, you may need to restart system to use it normally.",
+    "suggest": {
+        "Mouse": "abyss/ASUS.GearLink.MouseCompanion",
+        "Keyboard": "abyss/ASUS.GearLink.KeyBoardCompanion"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://gearlink.asus.com/local-services/00/windows/Gear%20Link_Utility%20Companion_2.0.0.9.zip",
+            "hash": "9f671a3737bf4efbe3d68c158fe3e0cef87eab665eccafffd9d820e5645326fd"
+        }
+    },
+    "location": "${env:ProgramFiles(x86)}\\ASUS\\Gear Link\\GearLink_UtilityCompanion",
+    "extract_dir": "Gear Link_Utility Companion_2.0.0.9",
+    "extract_to": "app",
+    "link": "$env:LocalAppData\\ASUS\\Gear Link\\GearLink_UtilityCompanion",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -UninstallerIsInstaller -Installer \"$dir\\app\\setup.exe\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process \"${env:ProgramFiles(x86)}\\ASUS\\Gear Link\"",
+        "A-Remove-Link",
+        "A-Uninstall-App -ArgumentList '/S', '-removeonly'"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://gearlink.asus.com/local-services/00/windows/manifest.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://gearlink.asus.com/local-services/00/windows/Gear%20Link_Utility%20Companion_$version.zip"
+            }
+        },
+        "extract_dir": "Gear Link_Utility Companion_$version"
+    }
+}

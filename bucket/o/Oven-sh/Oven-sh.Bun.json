@@ -1,0 +1,66 @@
+{
+    "version": "1.4.4",
+    "description": "速度极快的 JavaScript 运行时、打包工具、测试运行器和包管理器 | Incredibly fast JavaScript runtime, bundler, test runner, and package manager",
+    "homepage": "https://bun.sh",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-windows-x64.zip",
+            "hash": "cd2c0fccc78f3ede1f50ca827a15f063eda13d4d150a3d0674f4f6e323d864a5",
+            "extract_dir": "bun-windows-x64"
+        }
+    },
+    "extract_to": "app",
+    "env_set": {
+        "BUN_INSTALL_BIN": "$scoopdir\\persist\\@abyss\\.bun\\bin",
+        "BUN_INSTALL_GLOBAL_DIR": "$scoopdir\\persist\\@abyss\\.bun\\install\\global",
+        "BUN_INSTALL_CACHE_DIR": "$scoopdir\\persist\\@abyss\\.bun\\install\\cache"
+    },
+    "env_add_path": ".bun\\bin",
+    "bin": [
+        "app\\bun.exe",
+        [
+            "app\\bun.exe",
+            "bunx",
+            "x"
+        ]
+    ],
+    "link": "$home\\.bun",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        },
+        "regex": "bun-(.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/oven-sh/bun/releases/download/bun-v$version/bun-windows-x64.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "version": "0.20.0",
+    "description": "一个还算强大的 Web 思维导图 | A relatively powerful web mind map",
+    "homepage": "https://github.com/wanglin2/mind-map",
+    "license": {
+        "identifier": "Freemium"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/wanglin2/mind-map/releases/download/0.20.0/Setup.0.20.0.exe",
+            "hash": "0c4abf13a2ea098d514bb17004413e541959cf392d4fa1580a915edd954aa865"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\思绪思维导图.exe",
+            "思绪思维导图"
+        ]
+    ],
+    "link": "$env:AppData\\thoughts",
+    "cleanup": "$env:LocalAppData\\thoughts-updater",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall 思绪思维导图.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/wanglin2/mind-map/releases/download/$version/Setup.$version.exe"
+            }
+        }
+    }
+}

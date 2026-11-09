@@ -1,0 +1,52 @@
+{
+    "version": "2.6.2",
+    "description": "一个 SQL 数据库，您可以像 Git 存储库一样对其进行分叉、克隆、分支、合并、推送和拉取 | A SQL database that you can fork, clone, branch, merge, push and pull just like a Git repository",
+    "homepage": "https://www.dolthub.com",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dolthub/dolt/releases/download/v2.6.2/dolt-windows-amd64.zip",
+            "hash": "d804a06806a91b9e6acd2a0ac6ebec5c5d64756aff4572fa079fbc5499f1916c",
+            "extract_dir": "dolt-windows-amd64"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\bin\\dolt.exe",
+    "link": "$home\\.dolt",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/dolthub/dolt/releases/download/v$version/dolt-windows-amd64.zip"
+            }
+        }
+    }
+}

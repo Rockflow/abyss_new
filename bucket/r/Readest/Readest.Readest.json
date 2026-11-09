@@ -1,0 +1,64 @@
+{
+    "version": "0.12.16",
+    "description": "一款专为沉浸式深度阅读体验而设计的开源电子书阅读器 | An open-source ebook reader designed for immersive and deep reading experiences",
+    "homepage": "https://readest.com",
+    "license": {
+        "identifier": "AGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/readest/readest/releases/download/v0.12.16/Readest_0.12.16_x64-setup.exe#/dl.7z",
+            "hash": "8f2856a2de3679c92639228064e8832a79011736762b0de9b7d3eb600911680a"
+        },
+        "arm64": {
+            "url": "https://github.com/readest/readest/releases/download/v0.12.16/Readest_0.12.16_arm64-setup.exe#/dl.7z",
+            "hash": "aba12dc65a7406b752a8ea2d35c34d61d14b65f6332f4668b74373e0c234cb13"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\readest.exe",
+            "Readest"
+        ]
+    ],
+    "link": "$env:AppData\\com.bilingify.readest",
+    "cleanup": "$env:LocalAppData\\com.bilingify.readest",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/readest/readest/releases/download/v$version/Readest_$version_x64-setup.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/readest/readest/releases/download/v$version/Readest_$version_arm64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "version": "4.5.1",
+    "description": "一个用于管理多个 Node.js 版本的桌面应用程序 | A desktop application to manage multiple active Node.js versions",
+    "homepage": "https://github.com/1111mp/nvm-desktop",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/1111mp/nvm-desktop/releases/download/v4.5.1/NVM.Desktop_4.5.1_x64-setup.exe",
+            "hash": "d436c6d6ab7f551824f61f609181849fcd005d15cc592ce1875b22346cf2610d"
+        },
+        "arm64": {
+            "url": "https://github.com/1111mp/nvm-desktop/releases/download/v4.5.1/NVM.Desktop_4.5.1_arm64-setup.exe",
+            "hash": "f9121ab7a4775f00e55f7628e816a6d98786d475906e563bf6c17faf67ffb8f6"
+        }
+    },
+    "commands": "nvmd",
+    "shortcuts": [
+        [
+            "app\\nvm-desktop.exe",
+            "NVM Desktop"
+        ]
+    ],
+    "link": "$home\\.nvmd",
+    "cleanup": "$env:LocalAppData\\io.github.1111mp.nvm-desktop",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/1111mp/nvm-desktop/releases/download/v$version/NVM.Desktop_$version_x64-setup.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/1111mp/nvm-desktop/releases/download/v$version/NVM.Desktop_$version_arm64-setup.exe"
+            }
+        }
+    }
+}

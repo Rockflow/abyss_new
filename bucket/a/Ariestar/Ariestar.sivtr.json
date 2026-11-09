@@ -1,0 +1,53 @@
+{
+    "version": "0.8.3",
+    "description": "终端输出工作区 - 捕获、浏览、检索、选取并导出终端输出 | A terminal output workspace — capture, browse, search, select, and export terminal output",
+    "homepage": "https://github.com/Ariestar/sivtr",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Ariestar/sivtr/releases/download/v0.8.3/sivtr-v0.8.3-windows-x64.zip",
+            "hash": "a131b2f95c4336c70935d1e8a01890d385e44aa3c57c4d17cc8a101ea2362299",
+            "extract_dir": "sivtr-v0.8.3-windows-x64"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\sivtr.exe",
+    "link": "$env:AppData\\sivtr",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Ariestar/sivtr/releases/download/v$version/sivtr-v$version-windows-x64.zip",
+                "extract_dir": "sivtr-v$version-windows-x64"
+            }
+        }
+    }
+}

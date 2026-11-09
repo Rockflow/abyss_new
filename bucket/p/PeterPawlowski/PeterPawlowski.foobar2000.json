@@ -1,0 +1,65 @@
+{
+    "version": "2.26.2",
+    "description": "一款适用于 Windows 平台的高级免费音频播放器 | An advanced freeware audio player for the Windows platform",
+    "homepage": "https://www.foobar2000.org",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.foobar2000.org/license"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.foobar2000.org/files/foobar2000-x64_v2.26.2.exe",
+            "hash": "ffa739f87d9c374cb030426a2ab4bfb37959d0dbb892fdc742654c14d127f795"
+        }
+    },
+    "bin": "app\\foobar2000.exe",
+    "shortcuts": [
+        [
+            "app\\foobar2000.exe",
+            "Foobar2000"
+        ]
+    ],
+    "link": "$env:AppData\\foobar2000-v2",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "PeterPawlowski.foobar2000",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

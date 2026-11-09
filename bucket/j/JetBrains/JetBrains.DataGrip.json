@@ -1,0 +1,91 @@
+{
+    "version": "2026.2.6.1",
+    "description": "JetBrains 的 IDE 产品，用于处理数据库 | A IDE by JetBrains for database processing",
+    "homepage": "https://www.jetbrains.com/datagrip",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.jetbrains.com/datagrip/datagrip-2026.2.6.1.exe",
+            "hash": "bf5a6ea7fba46a0e3f4e451db4603850ac2c6456466b3b4eaf679519fdadae17"
+        },
+        "arm64": {
+            "url": "https://download.jetbrains.com/datagrip/datagrip-2026.2.6.1-aarch64.exe",
+            "hash": "0bfb767e3005c8d7dbea943c9c56d3b63d34140a433738214178d64511fd7c94"
+        }
+    },
+    "bin": [
+        [
+            "app\\bin\\datagrip64.exe",
+            "DataGrip"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "app\\bin\\datagrip64.exe",
+            "DataGrip 2026.2.6.1"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\JetBrains",
+        "$env:LocalAppData\\JetBrains"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$LogFile = '\"' + \"$env:TEMP\\Scoop_${app}@${version}_install.log\" + '\"'",
+        "A-Install-App -Uninstaller 'app\\bin\\Uninstall.exe' -ArgumentList '/S', \"/LOG=$LogFile\", \"/D=$dir\\app\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-App -ArgumentList '/S'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "JetBrains.DataGrip",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/datagrip/datagrip-$version.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/datagrip/datagrip-$version-aarch64.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_user.InstallerSha256"
+                }
+            }
+        },
+        "shortcuts": [
+            [
+                "app\\bin\\datagrip64.exe",
+                "DataGrip $version"
+            ]
+        ]
+    }
+}

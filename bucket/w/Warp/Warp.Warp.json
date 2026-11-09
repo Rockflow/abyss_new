@@ -1,0 +1,75 @@
+{
+    "version": "0.2026.07.22.09.01.stable_01",
+    "description": "一款内置 AI 和开发团队知识的智能终端 | The intelligent terminal with AI and your dev team's knowledge built-in",
+    "homepage": "https://www.warp.dev",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://www.warp.dev/terms-of-service"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://app.warp.dev/download/windows?version=v0.2026.07.22.09.01.stable_01&arch=x86_64#/dl.exe",
+            "hash": "d0c8a63d5872f05c835d280080cb6b5ecb84f789399cdd39893d3428037d5d0f"
+        },
+        "arm64": {
+            "url": "https://app.warp.dev/download/windows?version=v0.2026.07.22.09.01.stable_01&arch=arm64#/dl.exe",
+            "hash": "cd95f794223a7b7502d3833b9a5c05070ffa1cd93553c73e1068554c77001f88"
+        }
+    },
+    "env_add_path": "app\\bin",
+    "commands": "warp",
+    "shortcuts": [
+        [
+            "app\\warp.exe",
+            "Warp"
+        ]
+    ],
+    "link": "$env:LocalAppData\\warp\\Warp",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Warp.Warp"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64#/dl.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64#/dl.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

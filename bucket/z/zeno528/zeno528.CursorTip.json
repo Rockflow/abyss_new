@@ -1,0 +1,66 @@
+{
+    "version": "1.5.2",
+    "description": "轻量 Windows 桌面状态提示工具，在屏幕上实时显示键盘状态和剪贴板操作反馈 | A lightweight Windows desktop status prompt tool that displays real-time keyboard status and clipboard operation feedback on the screen",
+    "homepage": "https://github.com/zeno528/CursorTip",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zeno528/CursorTip/releases/download/v1.5.2/CursorTip_v1.5.2.zip",
+            "hash": "cf2cf68f6fa9f4a51afb5ff35e88b7450686cf77c0a7d73f5e86e4a99a0a1662"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\CursorTip_v1.5.2.exe",
+            "CursorTip"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\config.ini",
+            "config.ini"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zeno528/CursorTip/releases/download/v$version/CursorTip_v$version.zip"
+            }
+        },
+        "shortcuts": [
+            [
+                "app\\CursorTip_v$version.exe",
+                "CursorTip"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "version": "1.6.16",
+    "description": "ExHentai 本地漫画标签管理阅读应用 | ExHentai local manga tag-manager and reader",
+    "homepage": "https://github.com/SchneeHertz/exhentai-manga-manager",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SchneeHertz/exhentai-manga-manager/releases/download/v1.6.16/exhentai-manga-manager.Setup.1.6.16.exe",
+            "hash": "c0e95887aa8486915e4bba36977e5519ef10b029b101ca954b2a6dfdb931144b"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\exhentai-manga-manager.exe",
+            "exhentai-manga-manager"
+        ]
+    ],
+    "link": "$env:AppData\\exhentai-manga-manager",
+    "cleanup": "$env:LocalAppData\\exhentai-manga-manager-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall exhentai-manga-manager.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SchneeHertz/exhentai-manga-manager/releases/download/v$version/exhentai-manga-manager.Setup.$version.exe"
+            }
+        }
+    }
+}

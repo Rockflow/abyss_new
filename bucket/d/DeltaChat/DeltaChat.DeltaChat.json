@@ -1,0 +1,61 @@
+{
+    "version": "2.65.0",
+    "description": "适用于桌面端、带有聊天共享工具和游戏的去中心化私人即时通讯软件 | Decentralized private messenger with chat-shared tools and games for Desktop",
+    "homepage": "https://github.com/deltachat/deltachat-desktop",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/deltachat/deltachat-desktop/releases/download/v2.65.0/DeltaChat-2.65.0-Setup.x64.exe",
+            "hash": "272b0b7dc83a982707de3a0bdd0b9200d2fbfb312e0341243a4e7014049cd727"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\DeltaChat.exe",
+            "DeltaChat"
+        ]
+    ],
+    "link": "$env:LocalAppData\\DeltaChat",
+    "cleanup": [
+        "$env:LocalAppData\\deltachat-desktop-updater",
+        "$env:AppData\\DeltaChat"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall DeltaChat.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/deltachat/deltachat-desktop/releases/download/v$version/DeltaChat-$version-Setup.x64.exe"
+            }
+        }
+    }
+}

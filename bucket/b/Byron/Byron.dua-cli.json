@@ -1,0 +1,62 @@
+{
+    "version": "3.0.0",
+    "description": "一款方便查看指定目录磁盘空间占用情况的工具 | A tool to conveniently learn about the usage of disk space of a given directory",
+    "homepage": "https://github.com/Byron/dua-cli",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Byron/dua-cli/releases/download/v3.0.0/dua-v3.0.0-x86_64-pc-windows-msvc.zip",
+            "hash": "5426e4a62ae7c0a893cf7dad2ecdb7b1645b636c200ca2f767a302d0f0716a1f",
+            "extract_dir": "dua-v3.0.0-x86_64-pc-windows-msvc"
+        },
+        "arm64": {
+            "url": "https://github.com/Byron/dua-cli/releases/download/v3.0.0/dua-v3.0.0-aarch64-pc-windows-msvc.zip",
+            "hash": "8bb6338221caa7809c2a0f97641dea8a7ae75175c74385957c3dbb982c71b873",
+            "extract_dir": "dua-v3.0.0-aarch64-pc-windows-msvc"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\dua.exe",
+    "link": "$env:AppData\\dua-cli",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Byron/dua-cli/releases/download/v$version/dua-v$version-x86_64-pc-windows-msvc.zip",
+                "extract_dir": "dua-v$version-x86_64-pc-windows-msvc"
+            },
+            "arm64": {
+                "url": "https://github.com/Byron/dua-cli/releases/download/v$version/dua-v$version-aarch64-pc-windows-msvc.zip",
+                "extract_dir": "dua-v$version-aarch64-pc-windows-msvc"
+            }
+        }
+    }
+}

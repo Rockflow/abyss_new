@@ -1,0 +1,62 @@
+{
+    "version": "4.1.1",
+    "description": "一款轻量级、开源的通用代理客户端（Proxifier 替代方案），可为 Windows 和 macOS 上的应用程序提供透明代理路由 | A lightweight, open-source universal proxy client (Proxifier alternative) that provides transparent proxy routing for applications on Windows and macOS",
+    "homepage": "https://interceptsuite.com",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/InterceptSuite/ProxyBridge/releases/download/v4.1.1/ProxyBridge-Setup-4.1.1.exe",
+            "hash": "754f45fb31f3953b9b81005090f9a479f89827adb628cf2c76bc4139f673a152"
+        }
+    },
+    "bin": [
+        "app\\ProxyBridge.exe",
+        "app\\ProxyBridge_CLI.exe"
+    ],
+    "shortcuts": [
+        [
+            "app\\ProxyBridge.exe",
+            "ProxyBridge"
+        ]
+    ],
+    "link": "$env:AppData\\ProxyBridge",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninst.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/InterceptSuite/ProxyBridge/releases/download/v$version/ProxyBridge-Setup-$version.exe"
+            }
+        }
+    }
+}

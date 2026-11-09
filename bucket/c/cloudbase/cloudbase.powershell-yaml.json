@@ -1,0 +1,41 @@
+{
+    "version": "0.4.12",
+    "description": "一个用于解析 YAML 的 PowerShell 模块 | A PowerShell module for serializing and deserializing YAML",
+    "homepage": "https://www.powershellgallery.com/packages/powershell-yaml",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "url": "https://cdn.powershellgallery.com/packages/powershell-yaml.0.4.12.nupkg",
+    "hash": "d4602bc7a4a093766520422d53ca8b09acde162286fae11e2ee6c8edfea07810",
+    "psmodule": {
+        "name": "powershell-yaml"
+    },
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "psgallery": {
+            "channel": "stable"
+        }
+    },
+    "autoupdate": {
+        "url": "https://cdn.powershellgallery.com/packages/powershell-yaml.$version.nupkg"
+    }
+}

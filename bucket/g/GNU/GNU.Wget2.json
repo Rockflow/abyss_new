@@ -1,0 +1,54 @@
+{
+    "version": "2.2.1",
+    "description": "GNU Wget2 是 GNU Wget 的后续版本，它是一款文件及递归式网站下载工具 | GNU Wget2 is the successor of GNU Wget, a file and recursive website downloader",
+    "homepage": "https://github.com/rockdaboot/wget2",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/rockdaboot/wget2/releases/download/v2.2.1/wget2.exe",
+            "hash": "c65f66842888b878d1fad48294d1372553985b86613f279cf4ed9612c4f80428"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\wget2.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "GNU.Wget2",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+name: 🔢 Hash Error
+description: Open an issue about a package's hash is incorrect.
+title: "xxx@x.x.x: hash check failed"
+labels: ["bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      options:
+        - label: |
+            I have used the predefined issue title.
+              format: `package@version: hash check failed`
+              example: `1History.1History@2.4.5: hash check failed`
+          required: true
+        - label: I have verified that I am using the latest version of Scoop and abyss bucket.
+          required: true
+        - label: I have verified that this issue was created on GitHub.
+
+  - type: textarea
+    attributes:
+      label: Any information?
+      description: Your console output or other additional information.
+    validations:
+      required: false

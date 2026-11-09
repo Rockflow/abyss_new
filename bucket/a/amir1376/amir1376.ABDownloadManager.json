@@ -1,0 +1,57 @@
+{
+    "version": "1.11.4",
+    "description": "一款能加快你下载速度的下载管理器 | A download manager that speeds up your downloads",
+    "homepage": "https://abdownloadmanager.com",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/amir1376/ab-download-manager/releases/download/v1.11.4/ABDownloadManager_1.11.4_windows_x64.zip",
+            "hash": "5a549b823e4846718a95883bd71b5b43e2bdd026596cbc82fdf38f0253eb6da7"
+        }
+    },
+    "extract_dir": "ABDownloadManager",
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\ABDownloadManager.exe",
+            "ABDownloadManager"
+        ]
+    ],
+    "link": "$home\\.abdm",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/amir1376/ab-download-manager/releases/download/v$version/ABDownloadManager_$version_windows_x64.zip"
+            }
+        }
+    }
+}

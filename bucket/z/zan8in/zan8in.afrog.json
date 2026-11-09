@@ -1,0 +1,58 @@
+{
+    "version": "3.5.10",
+    "description": "一款适用于漏洞赏金、渗透测试和红队演练的安全工具 | A Security Tool for Bug Bounty, Pentest and Red Teaming",
+    "homepage": "https://github.com/zan8in/afrog",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zan8in/afrog/releases/download/v3.5.10/afrog_3.5.10_windows_amd64.zip",
+            "hash": "7b7fe5b7bf565a6872e756b76f176e77aabfa43888ad21b4497fe9be5e00b83c"
+        },
+        "arm64": {
+            "url": "https://github.com/zan8in/afrog/releases/download/v3.5.10/afrog_3.5.10_windows_arm64.zip",
+            "hash": "c41c197fc86c100fe155544e2a7c4cbb69ea53bb8f5c176dd92f7c6c2bdf8c9a"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\afrog.exe",
+    "link": "$home\\.config\\afrog",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zan8in/afrog/releases/download/v$version/afrog_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/zan8in/afrog/releases/download/v$version/afrog_$version_windows_arm64.zip"
+            }
+        }
+    }
+}

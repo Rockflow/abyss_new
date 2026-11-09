@@ -1,0 +1,64 @@
+{
+    "version": "1.145.0",
+    "description": "vscode - 一个轻量级、功能强大，插件生态丰富的文件编辑器 | vscode - A lightweight but powerful source code editor",
+    "homepage": "https://code.visualstudio.com",
+    "license": {
+        "identifier": "Microsoft Software License",
+        "url": "https://code.visualstudio.com/license/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://update.code.visualstudio.com/1.145.0/cli-win32-x64/stable#/dl.7z",
+            "hash": "80e0abd9f5a72aa67af0518589968a29bde6f2372353ecefb5aab752db6f2dde"
+        },
+        "arm64": {
+            "url": "https://update.code.visualstudio.com/1.145.0/cli-win32-arm64/stable#/dl.7z",
+            "hash": "adf1da1cd422caedf3511d4f68a838006cb330b371d8bf8c8b413bc1516366c6"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\code.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://update.code.visualstudio.com/api/update/cli-win32-x64/stable/latest",
+        "jsonpath": "$.productVersion"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://update.code.visualstudio.com/$version/cli-win32-x64/stable#/dl.7z",
+                "hash": {
+                    "url": "https://update.code.visualstudio.com/api/versions/$version/cli-win32-x64/stable",
+                    "jsonpath": "$.sha256hash"
+                }
+            },
+            "arm64": {
+                "url": "https://update.code.visualstudio.com/$version/cli-win32-arm64/stable#/dl.7z",
+                "hash": {
+                    "url": "https://update.code.visualstudio.com/api/versions/$version/cli-win32-arm64/stable",
+                    "jsonpath": "$.sha256hash"
+                }
+            }
+        }
+    }
+}

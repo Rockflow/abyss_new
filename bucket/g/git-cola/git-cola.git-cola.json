@@ -1,0 +1,59 @@
+{
+    "version": "4.19.0",
+    "description": "一款功能强大的 Git 图形用户界面，拥有流畅且直观的用户界面 | A powerful Git GUI with a slick and intuitive user interface",
+    "homepage": "https://git-cola.github.io",
+    "license": {
+        "identifier": "GPL-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/git-cola/git-cola/releases/download/v4.19.0/git-cola-4.19.0.windows.zip",
+            "hash": "b7f1e91ed246a4e00959a4146fda8822ee467a35e89e6447c81b1affa45d7d95"
+        }
+    },
+    "location": "$env:LocalAppData\\Programs\\git-cola",
+    "extract_to": "app",
+    "commands": [
+        "git-cola",
+        "git-dag"
+    ],
+    "link": "$home\\.config\\git-cola",
+    "cleanup": "$env:AppData\\git-cola.launch.pyw.log",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'uninstall.exe' -Installer \"$dir\\app\\git-cola-$version.exe\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/git-cola/git-cola/releases/download/v$version/git-cola-$version.windows.zip"
+            }
+        }
+    }
+}

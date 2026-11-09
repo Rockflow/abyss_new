@@ -1,0 +1,57 @@
+{
+    "version": "0.15.0",
+    "description": "一个开源的 Notion 替代品，数据和定制由你掌控 | An open-source alternative to Notion. You are in charge of your data and customizations",
+    "homepage": "https://www.appflowy.io",
+    "license": {
+        "identifier": "AGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.0/AppFlowy-0.15.0-windows-x86_64.zip",
+            "hash": "a8acbcb249c31c5b76654b9570e784730ec76e903ee49536dca1b1aa68240b48"
+        }
+    },
+    "extract_dir": "AppFlowy",
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\AppFlowy.exe",
+            "AppFlowy"
+        ]
+    ],
+    "link": "$env:AppData\\io.appflowy",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/$version/AppFlowy-$version-windows-x86_64.zip"
+            }
+        }
+    }
+}

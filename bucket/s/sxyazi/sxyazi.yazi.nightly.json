@@ -1,0 +1,59 @@
+{
+    "version": "nightly",
+    "description": "一个用 Rust 编写的终端文件管理器，基于非阻塞异步 I/O | A terminal file manager written in Rust, based on non-blocking async I/O",
+    "homepage": "https://yazi-rs.github.io",
+    "license": {
+        "identifier": "MIT"
+    },
+    "suggest": {
+        "fd": "abyss/sharkdp.fd",
+        "ripgrep": "abyss/BurntSushi.ripgrep.MSVC"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sxyazi/yazi/releases/download/nightly/yazi-x86_64-pc-windows-msvc.zip",
+            "hash": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+            "extract_dir": "yazi-x86_64-pc-windows-msvc"
+        },
+        "arm64": {
+            "url": "https://github.com/sxyazi/yazi/releases/download/nightly/yazi-aarch64-pc-windows-msvc.zip",
+            "hash": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+            "extract_dir": "yazi-aarch64-pc-windows-msvc"
+        }
+    },
+    "conflicts": [
+        "sxyazi.yazi",
+        "sxyazi.yazi.nightly"
+    ],
+    "extract_to": "app",
+    "env_set": {
+        "YAZI_FILE_ONE": "$env:ProgramFiles\\Git\\usr\\bin\\file.exe"
+    },
+    "bin": [
+        "app\\ya.exe",
+        "app\\yazi.exe"
+    ],
+    "link": "$env:AppData\\yazi",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ]
+}

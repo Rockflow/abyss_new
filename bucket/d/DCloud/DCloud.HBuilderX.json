@@ -1,0 +1,59 @@
+{
+    "version": "5.34.2026102909",
+    "description": "DCloud 旗下的代码编辑器 | A code editor by DCloud",
+    "homepage": "https://www.dcloud.io/hbuilderx.html",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://dcloud.io/license/hbuilder.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download1.dcloud.net.cn/download/HBuilderX.5.34.2026102909.zip",
+            "hash": "5ddef1fe3d61f9f11bd8f390b633f204eec00bd2c04fff270cbba21727c6eff4"
+        }
+    },
+    "extract_dir": "HBuilderX",
+    "extract_to": "app",
+    "bin": "app\\HBuilderX.exe",
+    "shortcuts": [
+        [
+            "app\\HBuilderX.exe",
+            "HBuilder X"
+        ]
+    ],
+    "link": "$env:AppData\\HBuilder X",
+    "cleanup": "$env:LocalAppData\\HBuilder X",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://download1.dcloud.net.cn/hbuilderx/release.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download1.dcloud.net.cn/download/HBuilderX.$version.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "version": "4.2.4",
+    "description": "语雀，阿里巴巴的笔记与文档知识库 | A knowledge base and note-taking tool by Alibaba",
+    "homepage": "https://www.yuque.com",
+    "license": {
+        "identifier": "Freemium"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://app.nlark.com/yuque-desktop/4.2.4.1336/BJ1979da138532447ea1c6e490994bfef4/Yuque-4.2.4.1336.exe",
+            "hash": "a0746a1da6fce09bd69dacee31fbd36e7656ab1ccfa6681bb3bd6c53d687888d"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\语雀.exe",
+            "语雀"
+        ]
+    ],
+    "link": "$env:AppData\\yuque-desktop",
+    "cleanup": "$env:LocalAppData\\yuque-desktop-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall 语雀.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Alibaba.Yuque",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

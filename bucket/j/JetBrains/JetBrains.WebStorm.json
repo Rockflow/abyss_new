@@ -1,0 +1,91 @@
+{
+    "version": "2026.2.4",
+    "description": "JetBrains 的 IDE 产品，用于 Web 开发 (JavaScript，TypeScript) | A IDE by JetBrains for web development (JavaScript, TypeScript)",
+    "homepage": "https://www.jetbrains.com/webstorm",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.jetbrains.com/webstorm/WebStorm-2026.2.4.exe",
+            "hash": "14e87d70b61e9880fdbf0fc43f7357099262761829cd6d576b2b1a72a1d7dd29"
+        },
+        "arm64": {
+            "url": "https://download.jetbrains.com/webstorm/WebStorm-2026.2.4-aarch64.exe",
+            "hash": "0c2c384e72a65071b178f3527ca3ef57cccbef85cc43fe14a106376c27f9555e"
+        }
+    },
+    "bin": [
+        [
+            "app\\bin\\webstorm64.exe",
+            "WebStorm"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "app\\bin\\webstorm64.exe",
+            "WebStorm 2026.2.4"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\JetBrains",
+        "$env:LocalAppData\\JetBrains"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$LogFile = '\"' + \"$env:TEMP\\Scoop_${app}@${version}_install.log\" + '\"'",
+        "A-Install-App -Uninstaller 'app\\bin\\Uninstall.exe' -ArgumentList '/S', \"/LOG=$LogFile\", \"/D=$dir\\app\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-App -ArgumentList '/S'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "JetBrains.WebStorm",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/webstorm/WebStorm-$version.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/webstorm/WebStorm-$version-aarch64.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_user.InstallerSha256"
+                }
+            }
+        },
+        "shortcuts": [
+            [
+                "app\\bin\\webstorm64.exe",
+                "WebStorm $version"
+            ]
+        ]
+    }
+}

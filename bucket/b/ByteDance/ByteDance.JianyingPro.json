@@ -1,0 +1,63 @@
+{
+    "version": "11.7.0.14652",
+    "description": "剪映专业版，一款全能易用的桌面端剪辑软件，让创作更简单 | A powerful desktop video editor with a simple interface, making it easy to create videos",
+    "homepage": "https://www.capcut.cn",
+    "license": {
+        "identifier": "Freemium"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://lf3-package.vlabstatic.com/obj/faceu-packages/Jianying_11_7_0_14652_jianyingpro_0_creatortool.exe",
+            "hash": "b2597b52bce9142ecfef4e08db39db74ef5aa2c782d1f67b730d109cad41caf1"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\JianyingPro.exe",
+            "剪映专业版"
+        ]
+    ],
+    "link": "$env:LocalAppData\\JianyingPro",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$InstallDir = '\"' + \"$dir\\app\" + '\"'",
+        "A-Install-App -ArgumentList '/silent_install=1', \"/install_path=$InstallDir\"",
+        "A-Hold-App"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Manually 'app'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "ByteDance.JianyingPro",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "version": "3.0.0",
+    "description": "一款基于终端的 markdown 阅读器 | A terminal based markdown reader",
+    "homepage": "https://github.com/charmbracelet/glow",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/charmbracelet/glow/releases/download/v3.0.0/glow_3.0.0_Windows_x86_64.zip",
+            "hash": "d8907e07436ecbb6738bc0e3bbf8aa6159e351f95082e9db3c3fc4200086f809",
+            "extract_dir": "glow_3.0.0_Windows_x86_64"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\glow.exe",
+    "link": "$env:LocalAppData\\glow",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/charmbracelet/glow/releases/download/v$version/glow_$version_Windows_x86_64.zip",
+                "extract_dir": "glow_$version_Windows_x86_64"
+            }
+        }
+    }
+}

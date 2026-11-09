@@ -1,0 +1,41 @@
+{
+    "version": "2.2.5.1",
+    "description": "一个 PowerShell 模块，包含用于发现、安装、更新和发布 PowerShell 产物 (如模块、DSC 资源、角色功能和脚本) 的命令 | PowerShell module with commands for discovering, installing, updating and publishing the PowerShell artifacts like Modules, DSC Resources, Role Capabilities and Scripts",
+    "homepage": "https://github.com/PowerShell/PSResourceGet",
+    "license": {
+        "identifier": "MIT"
+    },
+    "url": "https://cdn.powershellgallery.com/packages/powershellget.2.2.5.1.nupkg",
+    "hash": "dc84a1e545204ee99a6262f38855b5f46e984078f483be8a11af2a62827e90a6",
+    "psmodule": {
+        "name": "PowerShellGet"
+    },
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "psgallery": {
+            "channel": "stable"
+        }
+    },
+    "autoupdate": {
+        "url": "https://cdn.powershellgallery.com/packages/powershellget.$version.nupkg"
+    }
+}

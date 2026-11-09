@@ -1,0 +1,61 @@
+{
+    "version": "3.7.22",
+    "description": "一款免费的开源笔记和待办事项应用程序 | A free, open source note taking and to-do application",
+    "homepage": "https://joplinapp.org",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.22/Joplin-Setup-3.7.22.exe",
+            "hash": "ee11551239e7d680f76c6a4ddbc2362dda850981904fdb365298e4d43bf1df4d"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Joplin.exe",
+            "Joplin"
+        ]
+    ],
+    "link": "$home\\.config\\joplin-desktop",
+    "cleanup": [
+        "$env:AppData\\joplin",
+        "$env:LocalAppData\\@joplinapp-desktop-updater"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall Joplin.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/laurent22/joplin/releases/download/v$version/Joplin-Setup-$version.exe"
+            }
+        }
+    }
+}

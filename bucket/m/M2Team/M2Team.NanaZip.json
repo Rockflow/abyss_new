@@ -1,0 +1,54 @@
+{
+    "version": "7.0.1882.0",
+    "description": "7-Zip 的派生版本，专为现代 Windows 体验而设计 | The 7-Zip derivative intended for the modern Windows experience",
+    "homepage": "https://github.com/M2Team/NanaZip",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/M2Team/NanaZip/releases/download/7.0.1882.0/NanaZip_7.0.1882.0.msixbundle",
+            "hash": "c32c33e5a59a0d02db89f1e85889f942cd7b22ad81110289214187c20e2b6168"
+        },
+        "arm64": {
+            "url": "https://github.com/M2Team/NanaZip/releases/download/7.0.1882.0/NanaZip_7.0.1882.0.msixbundle",
+            "hash": "c32c33e5a59a0d02db89f1e85889f942cd7b22ad81110289214187c20e2b6168"
+        }
+    },
+    "msix": "40174MouriNaruto.NanaZip_gnj4mf6z9tkrc",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/M2Team/NanaZip/releases/download/$version/NanaZip_$version.msixbundle"
+            },
+            "arm64": {
+                "url": "https://github.com/M2Team/NanaZip/releases/download/$version/NanaZip_$version.msixbundle"
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "version": "9.0.2",
+    "description": "用于录制、转换和传输音频和视频的完整跨平台解决方案 | A complete, cross-platform solution to record, convert and stream audio and video",
+    "homepage": "https://www.gyan.dev/ffmpeg/builds",
+    "license": {
+        "identifier": "GPL-2.0-or-later|LGPL-2.0-or-later",
+        "url": "https://www.ffmpeg.org/legal.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/GyanD/codexffmpeg/releases/download/9.0.2/ffmpeg-9.0.2-full_build.zip",
+            "hash": "759d0a9831c436a0eb331ad36f236c06cb04aaa0005da46571f0e9d3d9206f6b",
+            "extract_dir": "ffmpeg-9.0.2-full_build"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        "app\\bin\\ffmpeg.exe",
+        "app\\bin\\ffplay.exe",
+        "app\\bin\\ffprobe.exe"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Gyan.FFmpeg",
+            "ext": "zip"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                },
+                "extract_dir": "ffmpeg-$version-full_build"
+            }
+        }
+    }
+}

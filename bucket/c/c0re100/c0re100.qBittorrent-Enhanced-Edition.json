@@ -1,0 +1,64 @@
+{
+    "version": "5.2.4.10",
+    "description": "非官方的 qBittorrent BitTorrent 客户端（增强版） | Unofficial qBittorrent BitTorrent client (Enhanced Edition)",
+    "homepage": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
+    "license": {
+        "identifier": "GPL-2.0-or-later|GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-5.2.4.10/qbittorrent_enhanced_5.2.4.10_x64_setup.exe",
+            "hash": "d76fe0df0513fe85a5af4e936eda1a10d239b87e148e546af9aa4afc50d27dc2"
+        }
+    },
+    "conflicts": [
+        "qBittorrent.qBittorrent",
+        "c0re100.qBittorrent-Enhanced-Edition"
+    ],
+    "shortcuts": [
+        [
+            "app\\qbittorrent.exe",
+            "qBittorrent"
+        ]
+    ],
+    "link": "$env:AppData\\qBittorrent",
+    "cleanup": "$env:LocalAppData\\qBittorrent",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninst.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        },
+        "regex": "release-(.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$version/qbittorrent_enhanced_$version_x64_setup.exe"
+            }
+        }
+    }
+}

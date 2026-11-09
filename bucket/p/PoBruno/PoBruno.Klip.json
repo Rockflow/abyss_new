@@ -1,0 +1,57 @@
+{
+    "version": "1.5.0",
+    "description": "适用于 Windows 11 的剪贴板历史、截图与屏幕录制工具，突破系统原生功能的各项限制 | Clipboard history, screen capture and screen recording for Windows 11, without the native limits",
+    "homepage": "https://github.com/PoBruno/klip",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PoBruno/klip/releases/download/v1.5.0/Klip-Setup-1.5.0.exe",
+            "hash": "6cdab20d7fc32fbb71c9fa9331aefeb8b82575079b5e4f8c478eff32e0e2d618"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Klip.exe",
+            "Klip"
+        ]
+    ],
+    "link": "$env:LocalAppData\\Klip",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/PoBruno/klip/releases/download/v$version/Klip-Setup-$version.exe"
+            }
+        }
+    }
+}

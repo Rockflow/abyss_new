@@ -1,0 +1,61 @@
+{
+    "version": "0.46.0",
+    "description": "Jujutsu，又叫 jj，是一款既简单又强大的与 Git 兼容的版本控制系统 | Jujutsu, also called jj, is a Git-compatible VCS that is both simple and powerful",
+    "homepage": "https://jj-vcs.dev",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "suggest": {
+        "TUI": "abyss/IbrahimDursun.jjui"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jj-vcs/jj/releases/download/v0.46.0/jj-v0.46.0-x86_64-pc-windows-msvc.zip",
+            "hash": "c42316b10df04611bc65029a18bcb2d92636edddb6871d511f7bb4233e999b83"
+        },
+        "arm64": {
+            "url": "https://github.com/jj-vcs/jj/releases/download/v0.46.0/jj-v0.46.0-aarch64-pc-windows-msvc.zip",
+            "hash": "f6f0552d0e292e3e62aa7fd21f4b15e9b6644d4939db908ed6d6b04b5b0a7907"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\jj.exe",
+    "link": "$env:AppData\\jj",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jj-vcs/jj/releases/download/v$version/jj-v$version-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/jj-vcs/jj/releases/download/v$version/jj-v$version-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

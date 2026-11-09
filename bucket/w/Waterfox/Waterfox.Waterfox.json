@@ -1,0 +1,59 @@
+{
+    "version": "6.7.7",
+    "description": "Waterfox 基于 Firefox 构建，是一款注重隐私的网页浏览器，其设计旨在为你提供上网时的速度、控制权和安心体验 | Waterfox is built on Firefox, and is the privacy-focused web browser engineered to give you speed, control, and peace of mind on the internet",
+    "homepage": "https://www.waterfox.com",
+    "license": {
+        "identifier": "MPL-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.waterfox.com/waterfox/releases/6.7.7/WINNT_x86_64/Waterfox%20Setup%206.7.7.exe",
+            "hash": "5fb1d40603908d6125fae69a4fa9dac4ba999b90c766ca9a812238f8fe37ec42"
+        }
+    },
+    "location": "$env:ProgramFiles\\Waterfox",
+    "link": "$env:AppData\\Waterfox",
+    "cleanup": "$env:LocalAppData\\Waterfox",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'uninstall\\helper.exe' -ArgumentList '/S', '/PreventRebootRequired=true'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Waterfox.Waterfox",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

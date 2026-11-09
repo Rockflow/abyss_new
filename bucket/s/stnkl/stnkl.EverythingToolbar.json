@@ -1,0 +1,57 @@
+{
+    "version": "3.5.0",
+    "description": "由 Everything 提供支持的 Windows 任务栏的即时文件搜索集成 | Instant file search integration for the Windows taskbar powered by Everything",
+    "homepage": "https://github.com/srwi/EverythingToolbar",
+    "license": {
+        "identifier": "MIT,Apache,..."
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/srwi/EverythingToolbar/releases/download/3.5.0/EverythingToolbar-3.5.0-x64.exe",
+            "hash": "5443ed74370bc1c5c269f4dd1c6b15babdaf08bdc55514f47002c82f720fd6d5"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\EverythingToolbar.Launcher.exe",
+            "EverythingToolbar"
+        ]
+    ],
+    "link": "$env:AppData\\EverythingToolbar",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version-x64.exe"
+            }
+        }
+    }
+}

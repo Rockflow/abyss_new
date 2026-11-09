@@ -1,0 +1,54 @@
+{
+    "version": "12.35.2",
+    "description": "API 开发协作平台 | The Collaboration Platform for API Development",
+    "homepage": "https://www.postman.com",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.pstmn.io/download/version/12.35.2/windows_64#/dl.exe",
+            "hash": "801001c37fb968c7d028772076682cdd30f66feba7876ef16148e795494bcdae"
+        }
+    },
+    "location": "$env:LocalAppData\\Postman",
+    "link": [
+        "$env:AppData\\Postman",
+        "$home\\Postman"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'Update.exe' -ArgumentList '--silent'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App -ArgumentList '--uninstall'"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://dl.pstmn.io/changelog?channel=stable&platform=win64",
+        "jsonpath": "$.changelog[0].name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dl.pstmn.io/download/version/$version/windows_64#/dl.exe"
+            }
+        }
+    }
+}

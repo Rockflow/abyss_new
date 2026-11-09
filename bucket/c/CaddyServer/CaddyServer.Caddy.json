@@ -1,0 +1,56 @@
+{
+    "version": "2.11.8",
+    "description": "快速且可扩展的多平台 HTTP/1-2-3 Web 服务器，具备自动 HTTPS 功能 | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+    "homepage": "https://caddyserver.com",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.8/caddy_2.11.8_windows_amd64.zip",
+            "hash": "eaf062366aeba9d782af7f70edb4b49097652be1af31e8141f9f2761aa25cb1f"
+        },
+        "arm64": {
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.8/caddy_2.11.8_windows_arm64.zip",
+            "hash": "ac5fbbac1464bb1e1df7d39d68324d8986bc6e7343895efca5cbfcc5a2d17cf9"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\caddy.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/caddyserver/caddy/releases/download/v$version/caddy_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/caddyserver/caddy/releases/download/v$version/caddy_$version_windows_arm64.zip"
+            }
+        }
+    }
+}

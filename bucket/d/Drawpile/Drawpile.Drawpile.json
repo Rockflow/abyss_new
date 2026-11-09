@@ -1,0 +1,58 @@
+{
+    "version": "2.3.1",
+    "description": "一款绘图程序，能让你与他人在同一画布上共同进行绘制、涂色和制作动画 | A drawing program that lets you draw, paint and animate together with others on the same canvas",
+    "homepage": "https://drawpile.net",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/drawpile/Drawpile/releases/download/2.3.1/Drawpile-2.3.1-x86_64.zip",
+            "hash": "74a8f2974a6f0fa2aa370dd7237ef3fe4c877895446d253289edff0f455b4ea0",
+            "extract_dir": "Drawpile-2.3.1-x86_64"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\drawpile.exe",
+            "Drawpile"
+        ]
+    ],
+    "link": "$env:AppData\\drawpile",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/drawpile/Drawpile/releases/download/$version/Drawpile-$version-x86_64.zip",
+                "extract_dir": "Drawpile-$version-x86_64"
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "version": "2.2.2",
+    "description": "用于为你的离线音乐库批量下载 LRC 同步歌词的工具 | Utility for mass-downloading LRC synced lyrics for your offline music library",
+    "homepage": "https://github.com/tranxuanthang/lrcget",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tranxuanthang/lrcget/releases/download/2.2.2/LRCGET_2.2.2_x64-setup.exe",
+            "hash": "843e7af70fe10f5c99f176d878aab82198e3ac7ad8ff175505fd617714d93860"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\LRCGET.exe",
+            "LRCGET"
+        ]
+    ],
+    "link": "$env:AppData\\net.lrclib.lrcget",
+    "cleanup": "$env:LocalAppData\\net.lrclib.lrcget",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tranxuanthang/lrcget/releases/download/$version/LRCGET_$version_x64-setup.exe"
+            }
+        }
+    }
+}

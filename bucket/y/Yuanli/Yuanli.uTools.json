@@ -1,0 +1,64 @@
+{
+    "version": "8.0.2",
+    "description": "新一代效率工具平台，自由组合插件应用，打造专属你的趁手工具集 | A modern, simple, and extensible desktop software that allows you to create a handy toolset by freely choosing from a rich set of plugins",
+    "homepage": "https://u.tools",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://u.tools/agreement.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://open.u-tools.cn/download/uTools-8.0.2.exe",
+            "hash": "fbbcc4b520d77b8f5ad336e98d89180ce868bf929583ee729c98f38c43809e44"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\utools\\uTools.exe",
+            "uTools"
+        ]
+    ],
+    "link": "$env:AppData\\uTools",
+    "cleanup": "$env:LocalAppData\\utools-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\utools\\Uninstall uTools.exe' -ArgumentList '/CurrentUser','/S',\"/D=$dir\\app\\utools\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Yuanli.uTools",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

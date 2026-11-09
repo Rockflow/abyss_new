@@ -1,0 +1,59 @@
+{
+    "version": "5.8.0",
+    "description": "开源终端/ssh/telnet/serialport/RDP/VNC/sftp/ftp 客户端 | Open-sourced terminal/ssh/telnet/serialport/RDP/VNC/sftp/ftp client",
+    "homepage": "https://github.com/electerm/electerm",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/electerm/electerm/releases/download/v5.8.0/electerm-5.8.0-win-x64-installer.exe",
+            "hash": "c1795b860d026f3ed6bba5c9ec9f03e67d65ae67e7f2be18acec6d390fbb166f"
+        }
+    },
+    "bin": "app\\electerm.exe",
+    "shortcuts": [
+        [
+            "app\\electerm.exe",
+            "electerm"
+        ]
+    ],
+    "link": "$env:AppData\\electerm",
+    "cleanup": "$env:LocalAppData\\electerm-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall electerm.exe' -ArgumentList '/CurrentUser','/S',\"/D=$dir\\app\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/electerm/electerm/releases/download/v$version/electerm-$version-win-x64-installer.exe"
+            }
+        }
+    }
+}

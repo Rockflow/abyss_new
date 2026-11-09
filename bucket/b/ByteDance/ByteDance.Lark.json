@@ -1,0 +1,64 @@
+{
+    "version": "8.3.14",
+    "description": "字节跳动下先进企业协作与管理平台(飞书的国际版本) | A cloud-based enterprise collaboration and management platform developed by ByteDance",
+    "homepage": "https://www.larksuite.com",
+    "license": {
+        "identifier": "Freemium"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://lf16-larkversion.larksuitecdn.com/obj/lark-version-sg/6285d53d/Lark-win32_ia32-8.3.14-signed.exe",
+            "hash": "8591425860379470e3bcd738ba0f8a81c2f255084c17bd029fe73c12c3ac9dfa"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Lark\\Lark.exe",
+            "Lark"
+        ]
+    ],
+    "link": "$env:AppData\\LarkInternational",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$InstallDir = '\"' + \"$dir\\app\" + '\"'",
+        "$LogDir = '\"' + \"$env:TEMP\\Scoop_${app}@${version}_logs\" + '\"'",
+        "A-Install-App -ArgumentList '--command=quiet_install', \"--target_dir=$InstallDir\", \"--log_dir=$LogDir\"",
+        "A-Hold-App"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Manually 'app'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "ByteDance.Lark",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX86",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x86_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "version": "2.3.2",
+    "description": "一个简约的第三方酷狗音乐概念版 | A simple third-party KuGou Concept Music",
+    "homepage": "https://github.com/hoowhoami/EchoMusic",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/hoowhoami/EchoMusic/releases/download/v2.3.2/EchoMusic-2.3.2-Windows-Setup-x64.exe",
+            "hash": "45d49f94e292958eede8e44c4c3af3fba5fddc30b562609ea47ab21709395ebd"
+        },
+        "arm64": {
+            "url": "https://github.com/hoowhoami/EchoMusic/releases/download/v2.3.2/EchoMusic-2.3.2-Windows-Setup-arm64.exe",
+            "hash": "b4cd79cea3aa02c8e4b2ab60a3b1648820d3c1cabbc218d52bbf846cfb0bc09e"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\EchoMusic.exe",
+            "EchoMusic"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\echo-music",
+        "$env:AppData\\echo-music-nodejs"
+    ],
+    "cleanup": "$env:LocalAppData\\echo-music-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall EchoMusic.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/hoowhoami/EchoMusic/releases/download/v$version/EchoMusic-$version-Windows-Setup-x64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/hoowhoami/EchoMusic/releases/download/v$version/EchoMusic-$version-Windows-Setup-arm64.exe"
+            }
+        }
+    }
+}

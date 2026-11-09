@@ -1,0 +1,51 @@
+{
+    "version": "0.16.4",
+    "description": "用 Go 语言编写的 PDF 处理器 | A PDF processor written in Go",
+    "homepage": "https://pdfcpu.io",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/pdfcpu/pdfcpu/releases/download/v0.16.4/pdfcpu_0.16.4_Windows_x86_64.zip",
+            "hash": "faf6c51d6f54d96a8c1ad5beee02143460b8ae97bd9630cbab1a253adaa43558",
+            "extract_dir": "pdfcpu_0.16.4_Windows_x86_64"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\pdfcpu.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/pdfcpu/pdfcpu/releases/download/v$version/pdfcpu_$version_Windows_x86_64.zip",
+                "extract_dir": "pdfcpu_$version_Windows_x86_64"
+            }
+        }
+    }
+}

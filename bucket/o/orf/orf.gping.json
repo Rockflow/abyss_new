@@ -1,0 +1,50 @@
+{
+    "version": "1.21.0",
+    "description": "带有图表 的 Ping | Ping, but with a graph",
+    "homepage": "https://github.com/orf/gping",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/orf/gping/releases/download/gping-v1.21.0/gping-Windows-msvc-x86_64.zip",
+            "hash": "0de92fab46f4de8ac63f6d3247e9426bf430fae08d231bb513987dc7ea5b331d"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\gping.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        },
+        "regex": "gping-(.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/orf/gping/releases/download/gping-v$version/gping-Windows-msvc-x86_64.zip"
+            }
+        }
+    }
+}

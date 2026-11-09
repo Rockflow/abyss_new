@@ -1,0 +1,69 @@
+{
+    "version": "2.12.6",
+    "description": "一个基于 electron 的音乐软件 | An electron-based music player",
+    "homepage": "https://github.com/lyswhut/lx-music-desktop",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-win_x64-green.7z",
+            "hash": "a07d2a15dbcf06ce689bf8b99c64241b06deb28fdfb6ffe79b6dcdfbb0d157a5"
+        },
+        "arm64": {
+            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-win_arm64-green.7z",
+            "hash": "e657c9db17be85fdc6cd6b6b15de6f51a2e98cb869bb0f7ad77201b06641d01c"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        [
+            "app\\lx-music-desktop.exe",
+            "lx-music"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "app\\lx-music-desktop.exe",
+            "lx-music"
+        ]
+    ],
+    "link": "$env:AppData\\lx-music-desktop",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v$version/lx-music-desktop-v$version-win_x64-green.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v$version/lx-music-desktop-v$version-win_arm64-green.7z"
+            }
+        }
+    }
+}

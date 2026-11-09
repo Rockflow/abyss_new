@@ -1,0 +1,56 @@
+{
+    "version": "4.3.0",
+    "description": "用于探索和测试 API 的开源集成开发环境 (Postman/Insomnia 的轻量级替代品) | Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)",
+    "homepage": "https://www.usebruno.com",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/usebruno/bruno/releases/download/v4.3.0/bruno_4.3.0_x64_win.zip",
+            "hash": "d00a649e0120168f26b630aa3253c36f2fdc9a84b1a13ff6fd96abc48f7be3f0"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\Bruno.exe",
+            "Bruno"
+        ]
+    ],
+    "link": "$env:AppData\\bruno",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/usebruno/bruno/releases/download/v$version/bruno_$version_x64_win.zip"
+            }
+        }
+    }
+}

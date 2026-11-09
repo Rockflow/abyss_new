@@ -1,0 +1,62 @@
+{
+    "version": "0.13.0",
+    "description": "一款现代化、高性能且轻量级的 WSL 实例管理控制面板 | A modern, high-performance, and lightweight WSL instance management dashboard",
+    "homepage": "https://github.com/owu/wsl-dashboard",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/owu/wsl-dashboard/releases/download/v0.13.0/WSLDashboard.0.13.0.Portable.x64.zip",
+            "hash": "804f7f047f723031124c87765c659fabcba9784a5874e170746935984ee5d19d"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\WSLDashboard.0.13.0.Portable.x64.exe",
+            "WSL Dashboard"
+        ]
+    ],
+    "link": "$home\\.wsldashboard",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/owu/wsl-dashboard/releases/download/v$version/WSLDashboard.$version.Portable.x64.zip"
+            }
+        },
+        "shortcuts": [
+            [
+                "app\\WSLDashboard.$version.Portable.x64.exe",
+                "WSL Dashboard"
+            ]
+        ]
+    }
+}

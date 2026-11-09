@@ -1,0 +1,65 @@
+{
+    "version": "0.6.65",
+    "description": "轻量跨平台数据库客户端，支持100多种数据库 | lightweight cross-platform database client for 100+ databases",
+    "homepage": "https://dbxio.com",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/t8y2/dbx/releases/download/v0.6.65/DBX_0.6.65_x64-setup.exe",
+            "hash": "f957b20561d30bbc2de487f775bdc34918a640f7bb051a5b80e5f2d40a2aa5ec"
+        },
+        "arm64": {
+            "url": "https://github.com/t8y2/dbx/releases/download/v0.6.65/DBX_0.6.65_arm64-setup.exe",
+            "hash": "23d9190c1927fe90f17ea0c45504db5b397c848ca81989dad443e35346674724"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\DBX.exe",
+            "DBX"
+        ]
+    ],
+    "link": "$env:AppData\\com.dbx.app",
+    "cleanup": "$env:LocalAppData\\com.dbx.app",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/t8y2/dbx/releases/download/v$version/DBX_$version_x64-setup.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/t8y2/dbx/releases/download/v$version/DBX_$version_arm64-setup.exe"
+            }
+        }
+    }
+}

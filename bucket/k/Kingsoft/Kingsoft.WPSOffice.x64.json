@@ -1,0 +1,61 @@
+{
+    "version": "12.1.0.29158",
+    "description": "一站式办公服务平台 | Complete office suite with PDF editor",
+    "homepage": "https://www.wps.cn",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_x64_29158.exe",
+            "hash": "1dd9f29797fa6d0a17a7f9ccc7ffef052f8a89327669570b77455a56fb9c4e3f"
+        }
+    },
+    "conflicts": [
+        "Kingsoft.WPSOffice",
+        "Kingsoft.WPSOffice.CN",
+        "Kingsoft.WPSOffice.x64"
+    ],
+    "location": "$env:LocalAppData\\kingsoft\\WPS Office",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -ArgumentList '/S', '-agreelicense'",
+        "A-Hold-App"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Manually"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Kingsoft.WPSOffice.x64",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "version": "0.71.1",
+    "description": "一款快速的反向代理，它能让位于网络地址转换 (NAT) 或防火墙后的本地服务器暴露在互联网上 | A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet",
+    "homepage": "https://gofrp.org",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/fatedier/frp/releases/download/v0.71.1/frp_0.71.1_windows_amd64.zip",
+            "hash": "b90074b2b6a1d792a7a40f085ac6d276bcab2d1bc60201f8a86ca53ce65ce821",
+            "extract_dir": "frp_0.71.1_windows_amd64"
+        },
+        "arm64": {
+            "url": "https://github.com/fatedier/frp/releases/download/v0.71.1/frp_0.71.1_windows_arm64.zip",
+            "hash": "6c25afb4058f7708937db7064836fec593e941de0e6c2c255982335a9b16d370",
+            "extract_dir": "frp_0.71.1_windows_arm64"
+        }
+    },
+    "extract_to": "app",
+    "bin": [
+        [
+            "app\\frpc.exe",
+            "frpc",
+            "-c \"$dir\\app\\frpc.toml\""
+        ],
+        [
+            "app\\frps.exe",
+            "frps",
+            "-c \"$dir\\app\\frps.toml\""
+        ]
+    ],
+    "persist": [
+        [
+            "app\\frpc.toml",
+            "frpc.toml"
+        ],
+        [
+            "app\\frps.toml",
+            "frps.toml"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/fatedier/frp/releases/download/v$version/frp_$version_windows_amd64.zip",
+                "extract_dir": "frp_$version_windows_amd64"
+            },
+            "arm64": {
+                "url": "https://github.com/fatedier/frp/releases/download/v$version/frp_$version_windows_arm64.zip",
+                "extract_dir": "frp_$version_windows_arm64"
+            }
+        }
+    }
+}

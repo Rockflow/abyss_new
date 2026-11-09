@@ -1,0 +1,58 @@
+{
+    "version": "0.8.1",
+    "description": "一个轻量级、低内存占用的 SSH / 终端客户端 | A lightweight, low-memory SSH / terminal client",
+    "homepage": "https://github.com/jeff141/meatshell",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jeff141/meatshell/releases/download/v0.8.1/meatshell-v0.8.1-windows-x86_64.zip",
+            "hash": "da6a4cceff2671f2bb758f724c4a620064d1e2bc2f144e6e8966ab2d81f5ea3c",
+            "extract_dir": "meatshell-v0.8.1-windows-x86_64"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\meatshell.exe",
+            "meatshell"
+        ]
+    ],
+    "link": "$env:AppData\\meatshell",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jeff141/meatshell/releases/download/v$version/meatshell-v$version-windows-x86_64.zip",
+                "extract_dir": "meatshell-v$version-windows-x86_64"
+            }
+        }
+    }
+}

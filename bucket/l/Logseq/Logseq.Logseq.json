@@ -1,0 +1,59 @@
+{
+    "version": "2.0.2",
+    "description": "一个以隐私为首要原则的开源知识管理与协作平台 | A privacy-first, open-source platform for knowledge management and collaboration",
+    "homepage": "https://logseq.com",
+    "license": {
+        "identifier": "AGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-win-x64-2.0.2.zip",
+            "hash": "3332383c730bf8c0bd6bda9d5c60b669399f3ce9a1bee688dda12bfaaa5457db"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\Logseq.exe",
+            "Logseq"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\Logseq",
+        "$home\\.logseq"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/logseq/logseq/releases/download/$version/Logseq-win-x64-$version.zip"
+            }
+        }
+    }
+}

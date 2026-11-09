@@ -1,0 +1,41 @@
+{
+    "version": "5.0.4",
+    "description": "一个用 PowerShell 编写的构建自动化工具 | A build automation tool written in PowerShell",
+    "homepage": "https://psake.dev",
+    "license": {
+        "identifier": "MIT"
+    },
+    "url": "https://cdn.powershellgallery.com/packages/psake.5.0.4.nupkg",
+    "hash": "729b6161fa19e62ac0154c777eae76098ceb0b69292aedb3ce70e2e283ea319e",
+    "psmodule": {
+        "name": "psake"
+    },
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "psgallery": {
+            "channel": "stable"
+        }
+    },
+    "autoupdate": {
+        "url": "https://cdn.powershellgallery.com/packages/psake.$version.nupkg"
+    }
+}

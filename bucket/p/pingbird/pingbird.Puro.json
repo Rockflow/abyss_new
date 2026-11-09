@@ -1,0 +1,57 @@
+{
+    "version": "1.5.0",
+    "description": "一款强大的 Flutter 版本安装与升级工具 | A powerful tool for installing and upgrading Flutter versions",
+    "homepage": "https://puro.dev",
+    "license": {
+        "identifier": "BSD-3-Clause"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://puro.dev/builds/1.5.0/windows-x64/puro.exe",
+            "hash": "d376d2eb270f476eacd68fa05b35fd53cc9308faca0148f346f152b25e714ccf"
+        }
+    },
+    "extract_to": "app",
+    "env_add_path_expand": "$home\\.puro\\envs\\default\\flutter\\bin",
+    "bin": "app\\puro.exe",
+    "link": "$home\\.puro",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "pingbird.Puro",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

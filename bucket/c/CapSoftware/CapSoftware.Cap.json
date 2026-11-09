@@ -1,0 +1,60 @@
+{
+    "version": "0.6.2",
+    "description": "美观且便于分享的屏幕录制内容 | Beautiful, shareable screen recordings",
+    "homepage": "https://cap.so",
+    "license": {
+        "identifier": "AGPL-3.0-or-later|MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://cap.so/download/windows#/dl.exe",
+            "hash": "8b7b32f84ee9e27a7a04df2a0dabadb78fe95f8fbde2cc4fc0a80be4ea7ba05c"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Cap.exe",
+            "Cap"
+        ]
+    ],
+    "link": "$env:AppData\\so.cap.desktop",
+    "cleanup": "$env:LocalAppData\\so.cap.desktop",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest",
+            "repo": "CapSoftware/Cap"
+        },
+        "regex": "cap-(.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cap.so/download/windows#/dl.exe"
+            }
+        }
+    }
+}

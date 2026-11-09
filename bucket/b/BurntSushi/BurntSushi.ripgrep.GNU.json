@@ -1,0 +1,61 @@
+{
+    "version": "15.2.0",
+    "description": "一种面向行的搜索工具，可递归地在当前目录中搜索正则表达式模式 | A line-oriented search tool that recursively searches the current directory for a regex pattern",
+    "homepage": "https://github.com/BurntSushi/ripgrep",
+    "license": {
+        "identifier": "Unlicense|MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-pc-windows-gnu.zip",
+            "hash": "5dbdc225a3ce064314fc05b6de8423a08a7b681764c1a276ff8263feaf68c7d6",
+            "extract_dir": "ripgrep-15.2.0-x86_64-pc-windows-gnu"
+        }
+    },
+    "extract_to": "app",
+    "env_set": {
+        "RIPGREP_CONFIG_PATH": "$scoopdir\\persist\\@abyss\\.ripgreprc"
+    },
+    "bin": "app\\rg.exe",
+    "link": "$home\\.ripgreprc",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "BurntSushi.ripgrep.GNU",
+            "ext": "zip"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                },
+                "extract_dir": "ripgrep-$version-x86_64-pc-windows-gnu"
+            }
+        }
+    }
+}

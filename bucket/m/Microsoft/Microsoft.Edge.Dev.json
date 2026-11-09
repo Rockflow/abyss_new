@@ -1,0 +1,69 @@
+{
+    "version": "159.0.4378.0",
+    "description": "(Dev 版本) 微软 Edge 浏览器 - 一款由微软创建和开发的跨平台网络浏览器 | (Dev version) Microsoft Edge - A cross-platform web browser created and developed by Microsoft",
+    "homepage": "https://www.microsoft.com/edge",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.microsoft.com/servicesagreement"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.microsoft.com/download/56839e65-d038-42f0-9329-5b952898db35/MicrosoftEdgeDevEnterpriseX64.msi#/dl.msi_",
+            "hash": "e9973b65ae87a260af1a70dd846fcad82b1c8f68b7d67b155cd98c402f462bd3"
+        },
+        "arm64": {
+            "url": "https://download.microsoft.com/download/56839e65-d038-42f0-9329-5b952898db35/MicrosoftEdgeDevEnterpriseARM64.msi#/dl.msi_",
+            "hash": "46b6ad53fdfce3d54e5f40b2dd073018cc7f01d8253a46e40a086a4b40fa53d2"
+        }
+    },
+    "location": "${env:ProgramFiles(x86)}\\Microsoft\\Edge Dev",
+    "link": "$env:LocalAppData\\Microsoft\\Edge Dev\\User Data",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Msi"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Msi",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Microsoft.Edge.Dev",
+            "ext": "msi"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64#/dl.msi_",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64#/dl.msi_",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

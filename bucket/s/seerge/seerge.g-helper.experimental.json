@@ -1,0 +1,64 @@
+{
+    "version": "0.288",
+    "description": "适用于华硕笔记本电脑的轻量级开源控制工具 (手动风扇控制) | Lightweight control tool for Asus laptops (Manual Fan Control)",
+    "homepage": "https://github.com/seerge/g-helper-experimental-release",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "depends": "abyss/namazso.PawnIO",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/seerge/g-helper-experimental-release/releases/download/v0.288/GHelper.zip",
+            "hash": "085c8e67835365a8e6529c4f1a2a9c885f26dfac4c805e89f2e4f6af6299b4c8"
+        }
+    },
+    "conflicts": [
+        "seerge.g-helper",
+        "seerge.g-helper.experimental"
+    ],
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\GHelper.exe",
+            "G-Helper"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\GHelper",
+        "$env:ProgramData\\GHelper"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/seerge/g-helper-experimental-release/releases/download/v$version/GHelper.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "version": "5.1.0",
+    "description": "终端中的网易云音乐播放器 | A netease music player in terminal",
+    "homepage": "https://github.com/go-musicfox/go-musicfox",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v5.1.0/go-musicfox_5.1.0_windows_amd64.zip",
+            "hash": "a931153dfbe7eb90493a3980094a68485ce131edc2e2893d5431b139c3b34be3",
+            "extract_dir": "go-musicfox_5.1.0_windows_amd64"
+        },
+        "arm64": {
+            "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v5.1.0/go-musicfox_5.1.0_windows_arm64.zip",
+            "hash": "e6a8d61053a1f94028c49b4daae062d8739ac8d375c98fcf8cb0e912e202e4af",
+            "extract_dir": "go-musicfox_5.1.0_windows_arm64"
+        }
+    },
+    "extract_to": "app",
+    "env_set": {
+        "MUSICFOX_ROOT": "$scoopdir\\persist\\@abyss\\AppData\\Roaming\\go-musicfox"
+    },
+    "bin": "app\\musicfox.exe",
+    "link": "$env:AppData\\go-musicfox",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v$version/go-musicfox_$version_windows_amd64.zip",
+                "extract_dir": "go-musicfox_$version_windows_amd64"
+            },
+            "arm64": {
+                "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v$version/go-musicfox_$version_windows_arm64.zip",
+                "extract_dir": "go-musicfox_$version_windows_arm64"
+            }
+        }
+    }
+}

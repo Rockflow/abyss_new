@@ -1,0 +1,63 @@
+{
+    "version": "6.35.2.7075",
+    "description": "一个强大的下载管理器 | A powerful download manager",
+    "homepage": "https://www.freedownloadmanager.org",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe",
+            "hash": "6a3c5beacaa9dce8c70967e4cbf541533ce9438722028b605f7b05c3d1c1fbbb"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\fdm.exe",
+            "Free Download Manager"
+        ]
+    ],
+    "link": "$env:LocalAppData\\Softdeluxe\\Free Download Manager",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "SoftDeluxe.FreeDownloadManager",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "version": "9.5.0.4050",
+    "description": "字节跳动的一款多合一在线视频编辑软件(剪映专业版的国际版本)，具有逐帧轨道编辑器和云存储等，让创作、上传和分享更加容易 | An all-in-one online video editing software which makes creation, upload & share easier, with frame by frame track editor, cloud drive etc",
+    "homepage": "https://www.capcut.com",
+    "license": {
+        "identifier": "Freemium"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_5_0_4050_capcutpc_0_creatortool.exe",
+            "hash": "e3755d1798fdea572e4a781e5b39f759b3f2c32cc5d590e71006df7b6f00664f"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\CapCut.exe",
+            "CapCut"
+        ]
+    ],
+    "link": "$env:LocalAppData\\CapCut",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$InstallDir = '\"' + \"$dir\\app\" + '\"'",
+        "A-Install-App -ArgumentList '/silent_install=1', \"/install_path=$InstallDir\"",
+        "A-Hold-App"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Uninstall-Manually 'app'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "ByteDance.CapCut",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "version": "2026.2.5",
+    "description": "JetBrains 的 IDE 产品，用于 Rust 开发 | A IDE by JetBrains for Rust development",
+    "homepage": "https://www.jetbrains.com/rust",
+    "license": {
+        "identifier": "Unknown",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.jetbrains.com/rustrover/RustRover-2026.2.5.exe",
+            "hash": "961b29ccb20eb527bad193a2035a92ff36e81cce8fece74d64c640f409de29f1"
+        },
+        "arm64": {
+            "url": "https://download.jetbrains.com/rustrover/RustRover-2026.2.5-aarch64.exe",
+            "hash": "57c49e9fd5bc9e7f4e96e126fbab7cf97ae503a028a8bb8460b70133945a2d90"
+        }
+    },
+    "bin": [
+        [
+            "app\\bin\\rustrover64.exe",
+            "RustRover"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "app\\bin\\rustrover64.exe",
+            "RustRover 2026.2.5"
+        ]
+    ],
+    "link": [
+        "$env:AppData\\JetBrains",
+        "$env:LocalAppData\\JetBrains"
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "$LogFile = '\"' + \"$env:TEMP\\Scoop_${app}@${version}_install.log\" + '\"'",
+        "A-Install-App -Uninstaller 'app\\bin\\Uninstall.exe' -ArgumentList '/S', \"/LOG=$LogFile\", \"/D=$dir\\app\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-App -ArgumentList '/S'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "JetBrains.RustRover",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/rustrover/RustRover-$version.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/rustrover/RustRover-$version-aarch64.exe",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_user.InstallerSha256"
+                }
+            }
+        },
+        "shortcuts": [
+            [
+                "app\\bin\\rustrover64.exe",
+                "RustRover $version"
+            ]
+        ]
+    }
+}

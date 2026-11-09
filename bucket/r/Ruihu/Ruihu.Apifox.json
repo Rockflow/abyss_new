@@ -1,0 +1,63 @@
+{
+    "version": "2.8.52",
+    "description": "API 设计、开发、测试一体化协作平台 | All-in-one collaboration platform for API documentation, API debugging, API Mock and API test automation",
+    "homepage": "https://apifox.com",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://file-assets.apifox.com/download/2.8.52/Apifox-2.8.52.exe",
+            "hash": "2508a49622dfd5b9fe45644bcf47583cfac7e85fbea4fdeb784a72d0f1611f3d"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Apifox.exe",
+            "Apifox"
+        ]
+    ],
+    "link": "$env:AppData\\apifox",
+    "cleanup": "$env:LocalAppData\\apifox-updater",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\Uninstall Apifox.exe' -ArgumentList '/CurrentUser','/S',\"/D=$dir\\app\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process \"$env:AppData\\apifox\"",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Ruihu.Apifox",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

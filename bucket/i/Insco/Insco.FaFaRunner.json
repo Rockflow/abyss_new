@@ -1,0 +1,55 @@
+{
+    "version": "3.2.2.397",
+    "description": "发发跑酷 - 享受流畅的游戏体验、惊艳的画面和无尽的乐趣 | FaFa Runner - Enjoy smooth gameplay, stunning graphics, and endless fun",
+    "homepage": "https://www.fafarunner.com",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/fafarunner/fafarunner/releases/download/v3.2.2.397/fafarunner-3.2.2.397-windows-setup-x64.exe",
+            "hash": "8ad666bdf58aecf38bc75362ad088ceffdd7aeae92167446a304980a844c8107"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\FaFaRunner.exe",
+            "FaFa Runner"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/fafarunner/fafarunner/releases/download/v$version/fafarunner-$version-windows-setup-x64.exe"
+            }
+        }
+    }
+}

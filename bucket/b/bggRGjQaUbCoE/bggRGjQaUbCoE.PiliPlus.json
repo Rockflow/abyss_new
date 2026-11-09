@@ -1,0 +1,60 @@
+{
+    "version": "2.2.0.2",
+    "description": "使用 Flutter 开发的 BiliBili 第三方客户端 | A third-party BiliBili client developed using Flutter",
+    "homepage": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.2/PiliPlus_windows_2.2.0+5598_x64_portable.zip",
+            "hash": "ad4117e5eec1705916cc86ef6a9790a46dd82324519fcc92d004e53297c98c19"
+        }
+    },
+    "extract_dir": "PiliPlus-Win",
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\piliplus.exe",
+            "PiliPlus"
+        ]
+    ],
+    "link": "$env:AppData\\com.example\\piliplus",
+    "cleanup": "$env:LocalAppData\\com.example\\piliplus",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest",
+            "raw": true
+        },
+        "regex": "/download/([^/]+)/PiliPlus_windows_(?<main>[\\d.]+)%2B(?<build>\\d+)_x64_portable.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$version/PiliPlus_windows_$matchMain+$matchBuild_x64_portable.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "version": "156.0.8078.132",
+    "description": "基于 Chromium 的浏览器，集成了由 Perplexity 驱动的先进人工智能功能 | A Chromium-based browser that integrates advanced AI capabilities powered by Perplexity",
+    "homepage": "https://perplexity.ai/comet",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.perplexity.ai/rest/browser/download?platform=win_x64&channel=stable#/dl.exe",
+            "hash": "74605c34ca289c43094ddc71aa9eda870d8d62047dddc8b853bb69aa81c8be21"
+        }
+    },
+    "location": "$env:ProgramFiles\\Perplexity\\Comet",
+    "link": "$env:LocalAppData\\Perplexity\\Comet\\User Data",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -ArgumentList '--system-level','--do-not-launch-chrome'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "$Uninstaller = Get-ChildItem \"$env:ProgramFiles\\Perplexity\\Comet\\Application\" setup.exe -Recurse | Sort-Object LastWriteTime -Descending | Select-Object -First 1",
+        "A-Uninstall-App -Uninstaller $Uninstaller.FullName -ArgumentList '--chrome','--uninstall','--system-level','--multi-install','--force-uninstall'",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Perplexity.Comet"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.perplexity.ai/rest/browser/download?platform=win_x64&channel=stable#/dl.exe"
+            }
+        }
+    }
+}

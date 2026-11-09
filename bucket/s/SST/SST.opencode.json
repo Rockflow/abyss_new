@@ -1,0 +1,63 @@
+{
+    "version": "2.2.5",
+    "description": "专为终端打造的 AI 编程助手 | The AI coding agent built for the terminal",
+    "homepage": "https://opencode.ai",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://registry.npmjs.org/@opencode/cli-windows-x64/-/cli-windows-x64-2.2.5.tgz",
+            "hash": "7a9e1dbe80965b75ace78d512c91ce4e6c9e4683fa5a5a25b00ff0b736f1c15c"
+        },
+        "arm64": {
+            "url": "https://registry.npmjs.org/@opencode/cli-windows-arm64/-/cli-windows-arm64-2.2.5.tgz",
+            "hash": "0aec456e313a0bd4c65dd6e3834bf6a3005280a311d8cc449933931ccbbbe389"
+        }
+    },
+    "extract_dir": "package\\bin",
+    "extract_to": "app",
+    "bin": "app\\opencode.exe",
+    "link": [
+        "$home\\.config\\opencode",
+        "$home\\.local\\share\\opencode",
+        "$home\\.local\\state\\opencode"
+    ],
+    "cleanup": "$home\\.cache\\opencode",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://registry.npmjs.org/@opencode/cli/latest",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://registry.npmjs.org/@opencode/cli-windows-x64/-/cli-windows-x64-$version.tgz"
+            },
+            "arm64": {
+                "url": "https://registry.npmjs.org/@opencode/cli-windows-arm64/-/cli-windows-arm64-$version.tgz"
+            }
+        }
+    }
+}

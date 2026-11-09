@@ -1,0 +1,51 @@
+{
+    "version": "2.9.5",
+    "description": "另一个适用于 Nginx 的 Web 用户界面 | Yet another Web UI for Nginx",
+    "homepage": "https://nginxui.com",
+    "license": {
+        "identifier": "AGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/0xJacky/nginx-ui/releases/download/v2.9.5/nginx-ui-windows-64.zip",
+            "hash": "005dd4364bd416f2fe4d7a42908a1babbf65492ca1e2d85d7aa3c9895873416d"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\nginx-ui.exe",
+    "link": "$env:LocalAppData\\nginx-ui",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/0xJacky/nginx-ui/releases/download/v$version/nginx-ui-windows-64.zip"
+            }
+        }
+    }
+}

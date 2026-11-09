@@ -1,0 +1,67 @@
+{
+    "version": "2.57.0",
+    "description": "面向终端的 DeepSeek 原生 AI 编码智能体 | A DeepSeek-native AI coding agent for your terminal",
+    "homepage": "https://reasonix.io",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v2.57.0/reasonix-windows-amd64.zip",
+            "hash": "67aac2edce218e2243de271af73754b60ab8e56cdc1f454a5ba5d7ace76a55f5"
+        },
+        "arm64": {
+            "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v2.57.0/reasonix-windows-arm64.zip",
+            "hash": "7027dd367fbd41bc174a16918fe3a932b3dbe0cf72a8bf19725c99b9d235daaf"
+        }
+    },
+    "extract_to": "app",
+    "env_set_shared": {
+        "REASONIX_HOME": {
+            "value": "$scoopdir\\persist\\@abyss\\AppData\\Roaming\\reasonix",
+            "owner": [
+                "ESEngine.ReasonixCLI",
+                "ESEngine.ReasonixDesktop"
+            ]
+        }
+    },
+    "bin": "app\\reasonix.exe",
+    "link": "$env:AppData\\reasonix",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "stable"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v$version/reasonix-windows-amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v$version/reasonix-windows-arm64.zip"
+            }
+        }
+    }
+}

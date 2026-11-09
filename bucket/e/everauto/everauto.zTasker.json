@@ -1,0 +1,66 @@
+{
+    "version": "2.3.13",
+    "description": "一个自动化任务工具 | A task automation tool",
+    "homepage": "https://www.everauto.net",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.everauto.net/down/zTasker_2.3.13_Setup.exe",
+            "hash": "8192ca7f020e4aed96f0a162ed466b232cb508c56ca1e7158db357a6ae89c552"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\zTasker.exe",
+            "zTasker"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\User",
+            "AppData\\Local\\zTasker\\User"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "everauto.zTasker",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX86",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x86_user.InstallerSha256"
+                }
+            }
+        }
+    }
+}

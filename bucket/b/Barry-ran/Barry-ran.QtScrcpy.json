@@ -1,0 +1,62 @@
+{
+    "version": "4.2.1",
+    "description": "通过 TCP/IP 或 USB 显示和控制 Android 设备 | Display and control Android device via TCP/IP or USB",
+    "homepage": "https://github.com/barry-ran/QtScrcpy",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/barry-ran/QtScrcpy/releases/download/v4.2.1/QtScrcpy-win-x64-v4.2.1.zip",
+            "hash": "130f5c6f5d2dde1afb58775daf65060e9be007e7825f70c26c7121414f175c82",
+            "extract_dir": "QtScrcpy-win-x64-v4.2.1"
+        }
+    },
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\QtScrcpy.exe",
+            "QtScrcpy"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\config",
+            "config"
+        ]
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/barry-ran/QtScrcpy/releases/download/v$version/QtScrcpy-win-x64-v$version.zip",
+                "extract_dir": "QtScrcpy-win-x64-v$version"
+            }
+        }
+    }
+}

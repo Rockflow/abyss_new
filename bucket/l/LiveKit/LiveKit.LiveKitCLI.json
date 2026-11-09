@@ -1,0 +1,56 @@
+{
+    "version": "2.19.3",
+    "description": "LiveKit 的命令行界面 | Command line interface to LiveKit",
+    "homepage": "https://livekit.io",
+    "license": {
+        "identifier": "Apache-2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/livekit/livekit-cli/releases/download/v2.19.3/lk_2.19.3_windows_amd64.zip",
+            "hash": "ed46adcca5d570ceebf0a6fd1bb25439fd37c0a0863fd1db6671f2689d9f6924"
+        },
+        "arm64": {
+            "url": "https://github.com/livekit/livekit-cli/releases/download/v2.19.3/lk_2.19.3_windows_arm64.zip",
+            "hash": "97a4d3bdbc02441ea1658c2cc7e5a7d987571d3cdde4dea6b7f4f902f1742a12"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\lk.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/livekit/livekit-cli/releases/download/v$version/lk_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/livekit/livekit-cli/releases/download/v$version/lk_$version_windows_arm64.zip"
+            }
+        }
+    }
+}

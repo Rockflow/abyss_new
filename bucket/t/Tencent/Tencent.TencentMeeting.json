@@ -1,0 +1,60 @@
+{
+    "version": "3.47.2.405",
+    "description": "腾讯会议，腾讯的一款视频会议软件 | A meeting software by Tencent",
+    "homepage": "https://meeting.tencent.com",
+    "license": {
+        "identifier": "Freemium"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://updatecdn.meeting.qq.com/cos/bb80d852af40cbffe3ed5e22f27d7a86/TencentMeeting_0300000000_3.47.2.405_x86_64.publish.exe",
+            "hash": "1c7a862cfca4b3faeb1cf9c2244e97f09accf65c0256e690d7c3f7f2f99c71f7"
+        }
+    },
+    "location": "$env:ProgramFiles\\Tencent\\WeMeet",
+    "link": "$env:AppData\\Tencent\\WeMeet",
+    "cleanup": "$env:AppData\\WeMeetApp",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -ArgumentList '/SilentInstall=0','/StartProcess=0'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "$Uninstaller = Get-ChildItem \"$env:ProgramFiles\\Tencent\\WeMeet\" WeMeetUninstall.exe -Recurse | Sort-Object LastWriteTime -Descending | Select-Object -First 1",
+        "A-Remove-Link",
+        "A-Uninstall-App -Uninstaller $Uninstaller.FullName"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Tencent.TencentMeeting",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

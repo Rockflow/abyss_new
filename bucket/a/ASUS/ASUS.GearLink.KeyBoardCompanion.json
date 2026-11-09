@@ -1,0 +1,59 @@
+{
+    "version": "3.1.0.10",
+    "description": "奥创极速网页版的扩展功能 - 键盘 | ASUS Gear Link Companion - Keyboard",
+    "homepage": "https://gearlink.asus.com",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "suggest": {
+        "Utility": "abyss/ASUS.GearLink.UtilityCompanion",
+        "Mouse": "abyss/ASUS.GearLink.MouseCompanion"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://gearlink.asus.com/local-services/02/windows/Gear%20Link_KB%20Companion_3.1.0.10.zip",
+            "hash": "6d08daf2fe0752eeded6b7919b7d01829182660b806f2dfe23806ebf2ae79373"
+        }
+    },
+    "location": "${env:ProgramFiles(x86)}\\ASUS\\Gear Link\\KB",
+    "extract_dir": "Gear Link_KB Companion_3.1.0.10\\SetupFiles",
+    "extract_to": "app",
+    "link": "$env:LocalAppData\\ASUS\\Gear Link\\KB",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -UninstallerIsInstaller -Installer \"$dir\\app\\setup.exe\""
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App -ArgumentList '/S', '-removeonly'"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://gearlink.asus.com/local-services/02/windows/manifest.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://gearlink.asus.com/local-services/02/windows/Gear%20Link_KB%20Companion_$version.zip"
+            }
+        },
+        "extract_dir": "Gear Link_KB Companion_$version\\SetupFiles"
+    }
+}

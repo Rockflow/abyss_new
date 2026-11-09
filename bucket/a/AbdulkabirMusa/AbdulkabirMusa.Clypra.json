@@ -1,0 +1,58 @@
+{
+    "version": "1.6.0",
+    "description": "一款现代化的开源视频编辑器，配备专业的时间轴界面 | A modern, open-source video editor featuring a professional timeline interface",
+    "homepage": "https://clypra.abdulkabirmusa.com",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/AIEraDev/Clypra/releases/download/v1.6.0/Clypra_1.6.0_x64-setup.exe",
+            "hash": "619748f1f7282b4dd57a941acb7a80775c20186c9c220f696036065ba80a7b8f"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Clypra.exe",
+            "Clypra"
+        ]
+    ],
+    "link": "$env:AppData\\com.clypra.editor",
+    "cleanup": "$env:LocalAppData\\com.clypra.editor",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'app\\uninstall.exe'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/AIEraDev/Clypra/releases/download/v$version/Clypra_$version_x64-setup.exe"
+            }
+        }
+    }
+}

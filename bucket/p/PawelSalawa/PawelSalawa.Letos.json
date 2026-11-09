@@ -1,0 +1,64 @@
+{
+    "version": "4.0.4",
+    "description": "用于浏览和编辑 SQLite 数据库文件的桌面应用程序 | Desktop application for browsing and editing SQLite database files",
+    "homepage": "https://letos.org",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/pawelsalawa/letos/releases/download/4.0.4/Letos-4.0.4-windows-x64-setup.exe",
+            "hash": "c470431db62977a1b38d27dc41ac2e593b52b2415184ce4b18e9ace90a1a41d2"
+        },
+        "arm64": {
+            "url": "https://github.com/pawelsalawa/letos/releases/download/4.0.4/Letos-4.0.4-windows-arm64-setup.exe",
+            "hash": "c3e224f8d3f7269acbe786195ee102b5d831e0230ff4a066c65a871fe0ddd13b"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\letos.exe",
+            "Letos"
+        ]
+    ],
+    "link": "$env:AppData\\letos.org\\Letos",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/pawelsalawa/letos/releases/download/$version/Letos-$version-windows-x64-setup.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/pawelsalawa/letos/releases/download/$version/Letos-$version-windows-arm64-setup.exe"
+            }
+        }
+    }
+}

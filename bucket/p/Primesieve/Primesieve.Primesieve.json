@@ -1,0 +1,56 @@
+{
+    "version": "12.16",
+    "description": "一个使用埃拉托斯特尼筛法生成质数的命令行程序 | A command-line program that generates primes using the sieve of Eratosthenes algorithm",
+    "homepage": "https://github.com/kimwalisch/primesieve",
+    "license": {
+        "identifier": "BSD-2-Clause"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kimwalisch/primesieve/releases/download/v12.16/primesieve-12.16-win-x64.zip",
+            "hash": "e8a2263790eca6845512d0f474e686f25d23b85d690901ea5149df61d0586425"
+        },
+        "arm64": {
+            "url": "https://github.com/kimwalisch/primesieve/releases/download/v12.16/primesieve-12.16-win-arm64.zip",
+            "hash": "f405cbc7675c833702967fde5c547826a83e102182cb5e308ecb5973fee1bfd0"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\primesieve.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/kimwalisch/primesieve/releases/download/v$version/primesieve-$version-win-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/kimwalisch/primesieve/releases/download/v$version/primesieve-$version-win-arm64.zip"
+            }
+        }
+    }
+}

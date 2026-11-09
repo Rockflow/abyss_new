@@ -1,0 +1,75 @@
+{
+    "version": "153.6.0",
+    "description": "Firefox 火狐浏览器是一款免费开源的网络浏览器，由 Mozilla 基金会及其子公司开发 | Firefox Browser is a free, open-source web browser developed by the Mozilla Foundation and its subsidiaries",
+    "homepage": "https://www.mozilla.org/firefox",
+    "license": {
+        "identifier": "MPL-2.0",
+        "url": "https://www.mozilla.org/MPL/2.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/153.6.0esr/win64/en-US/Firefox%20Setup%20153.6.0esr.exe",
+            "hash": "f367f2e4714ad86459e1f383848ea1633216a424aee28b4977ab0d52b4901151"
+        },
+        "arm64": {
+            "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/153.6.0esr/win64-aarch64/en-US/Firefox%20Setup%20153.6.0esr.exe",
+            "hash": "223c46fdd674439349a78b946101a065b19f2edbcf50632047cd29257ba701d8"
+        }
+    },
+    "conflicts": [
+        "Mozilla.Firefox",
+        "Mozilla.Firefox.ESR"
+    ],
+    "location": "$env:ProgramFiles\\Mozilla Firefox",
+    "link": "$env:AppData\\Mozilla\\Firefox",
+    "cleanup": "$env:LocalAppData\\Mozilla\\Firefox",
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-App -Uninstaller 'uninstall\\helper.exe' -ArgumentList '/S', '/PreventRebootRequired=true'"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link",
+        "A-Uninstall-App"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "Mozilla.Firefox.ESR",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            },
+            "arm64": {
+                "url": "$matchArm64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.arm64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

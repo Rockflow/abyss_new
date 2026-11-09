@@ -1,0 +1,67 @@
+{
+    "version": "1.2.25+2802",
+    "description": "简单且强大的代理工具，支持 clash/sing-box 的路由规则 | Simple & Powerful proxy utility, Support routing rules for clash/sing-box",
+    "homepage": "https://github.com/KaringX/karing",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/KaringX/karing/releases/download/v1.2.25.2802/karing_1.2.25.2802_windows_x64.exe",
+            "hash": "b94ac8b8ce4bcfd6229c81d684367ac546434dab790dc4be148696c6ca24018f"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Karing\\karing.exe",
+            "Karing"
+        ]
+    ],
+    "persist": [
+        [
+            "app\\profiles",
+            "AppData\\Roaming\\karing\\karing"
+        ]
+    ],
+    "admin": true,
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install",
+        "A-Install-Inno"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Uninstall-Inno"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "winget": {
+            "id": "KaringX.Karing",
+            "ext": "exe"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchX64",
+                "hash": {
+                    "url": "_.json",
+                    "jsonpath": "$.x64_machine.InstallerSha256"
+                }
+            }
+        }
+    }
+}

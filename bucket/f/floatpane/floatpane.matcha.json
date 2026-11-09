@@ -1,0 +1,61 @@
+{
+    "version": "1.2.0",
+    "description": "一款美观、实用的终端邮件客户端 | A beautiful and functional email client for your terminal",
+    "homepage": "https://matcha.floatpane.com",
+    "license": {
+        "identifier": "MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/floatpane/matcha/releases/download/v1.2.0/matcha_1.2.0_windows_amd64.zip",
+            "hash": "e39da026e347c1bf6571101641c3af3491093df007efe1636a31a9495e1499ee"
+        },
+        "arm64": {
+            "url": "https://github.com/floatpane/matcha/releases/download/v1.2.0/matcha_1.2.0_windows_arm64.zip",
+            "hash": "fdd1975831a02b128b06357f8f3eed7dc8b3ffc31ac611a4caaa44845a345489"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\matcha.exe",
+    "link": [
+        "$home\\.config\\matcha",
+        "$home\\.cache\\matcha"
+    ],
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/floatpane/matcha/releases/download/v$version/matcha_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/floatpane/matcha/releases/download/v$version/matcha_$version_windows_arm64.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "3.9.2",
+    "description": "一个文本编辑器 | A text editor",
+    "homepage": "https://github.com/cxasm/notepad--",
+    "license": {
+        "identifier": "GPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/cxasm/notepad--/releases/download/notepad-v3.9.2/Notepad--v3.9.2-win10-portable.zip",
+            "hash": "68e95ba7b5f97e98e60ef571ecd8a1e99f7a88052e99cabc4bf25eb7b1eae910"
+        }
+    },
+    "extract_dir": "Notepad--v3.9.2-win10-portable",
+    "extract_to": "app",
+    "bin": "app\\Notepad--.exe",
+    "shortcuts": [
+        [
+            "app\\Notepad--.exe",
+            "Notepad--"
+        ]
+    ],
+    "link": "$env:AppData\\notepad",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        },
+        "regex": "notepad-(.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cxasm/notepad--/releases/download/notepad-v$version/Notepad--v$version-win10-portable.zip"
+            }
+        },
+        "extract_dir": "Notepad--v$version-win10-portable"
+    }
+}

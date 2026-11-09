@@ -1,0 +1,51 @@
+{
+    "version": "17.3.2",
+    "description": "用于处理 JSON Schema 的命令行界面 (CLI) | The CLI for working with JSON Schema",
+    "homepage": "https://github.com/sourcemeta/jsonschema",
+    "license": {
+        "identifier": "AGPL-3.0-or-later"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sourcemeta/jsonschema/releases/download/v17.3.2/jsonschema-17.3.2-windows-x86_64.zip",
+            "hash": "789caec9846fa902d79cbe81e18b093b0fe741066b23213823e7bbc1e61d0999",
+            "extract_dir": "jsonschema-17.3.2-windows-x86_64"
+        }
+    },
+    "extract_to": "app",
+    "bin": "app\\bin\\jsonschema.exe",
+    "pre_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = 'abyss' }",
+        ". $bucketsdir\\$bucket\\util\\_.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "github": {
+            "channel": "latest"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sourcemeta/jsonschema/releases/download/v$version/jsonschema-$version-windows-x86_64.zip",
+                "extract_dir": "jsonschema-$version-windows-x86_64"
+            }
+        }
+    }
+}
