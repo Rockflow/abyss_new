@@ -1,5 +1,5 @@
 {
-    "version": "0.0.97",
+    "version": "0.0.100",
     "description": "一款速度极快的 Python 类型检查器和语言服务器，用 Rust 编写 | An extremely fast Python type checker and language server, written in Rust",
     "homepage": "https://docs.astral.sh/ty",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/astral-sh/ty/releases/download/0.0.97/ty-x86_64-pc-windows-msvc.zip",
-            "hash": "02c5348449d29d44d4987ee8593fb53ff2efc53d9f7ccd971309d1cc15e4870c"
+            "url": "https://github.com/astral-sh/ty/releases/download/0.0.100/ty-x86_64-pc-windows-msvc.zip",
+            "hash": "bc3ba4794b31664182e4d5ea7c56619bcc9e58091eafc11f527b0f78f4fe4546"
         },
         "arm64": {
-            "url": "https://github.com/astral-sh/ty/releases/download/0.0.97/ty-aarch64-pc-windows-msvc.zip",
-            "hash": "98ea96d1cfb39a59626afc3e8c34828b859036175146392b395a6c3bbebc0f8a"
+            "url": "https://github.com/astral-sh/ty/releases/download/0.0.100/ty-aarch64-pc-windows-msvc.zip",
+            "hash": "7eb6eb8eb947f7a97e9bbd2066184f8b59bbd5908537637344f00fe02ad8bf30"
         }
     },
     "extract_to": "app",
