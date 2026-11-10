@@ -46,10 +46,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/gvcgo/version-manager/releases/download/v$version/vmr_windows-amd64.zip"
+                "url": "https://github.com/gvcgo/version-manager/releases/download/v$version/vmr-x86_64-pc-windows-msvc.zip"
             },
             "arm64": {
-                "url": "https://github.com/gvcgo/version-manager/releases/download/v$version/vmr_windows-arm64.zip"
+                "url": "https://github.com/gvcgo/version-manager/releases/download/v$version/vmr-aarch64-pc-windows-msvc.zip"
             }
         }
     }

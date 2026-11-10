@@ -49,7 +49,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/JetpackDuba/Gitnuro/releases/download/v$version/Gitnuro_Windows_Portable_v$version.zip"
+                "url": "https://github.com/JetpackDuba/Gitnuro/releases/download/$version/Gitnuro_Windows_Portable_v$version.zip"
             }
         }
     }

@@ -40,7 +40,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/linebender/resvg/releases/download/v$version/resvg-win64.zip"
+                "url": "https://github.com/linebender/resvg/releases/download/v$version/resvg-win-x86_64.zip"
             }
         }
     }

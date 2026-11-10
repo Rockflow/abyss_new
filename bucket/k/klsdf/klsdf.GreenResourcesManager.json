@@ -57,7 +57,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/klsdf/GreenResourcesManager/releases/download/v$version/GRM.$version.zip"
+                "url": "https://github.com/klsdf/GreenResourcesManager/releases/download/v$version/GRM_$version.zip"
             }
         }
     }
