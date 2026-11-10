@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "pdfcpu/pdfcpu"
-        }
+        "github": "https://github.com/pdfcpu/pdfcpu"
     },
     "autoupdate": {
         "architecture": {

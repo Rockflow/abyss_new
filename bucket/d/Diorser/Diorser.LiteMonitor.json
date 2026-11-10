@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Diorser/LiteMonitor"
-        }
+        "github": "https://github.com/Diorser/LiteMonitor"
     },
     "autoupdate": {
         "architecture": {

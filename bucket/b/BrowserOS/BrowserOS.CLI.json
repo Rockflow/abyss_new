@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "stable",
-            "repo": "browseros-ai/BrowserOS"
-        },
+        "github": "https://github.com/browseros-ai/BrowserOS",
         "regex": "browseros-cli-(.+)"
     },
     "autoupdate": {

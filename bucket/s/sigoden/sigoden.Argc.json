@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sigoden/argc"
-        }
+        "github": "https://github.com/sigoden/argc"
     },
     "autoupdate": {
         "architecture": {

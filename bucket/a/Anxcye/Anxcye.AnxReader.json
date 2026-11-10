@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Anxcye/anx-reader"
-        }
+        "github": "https://github.com/Anxcye/anx-reader"
     },
     "autoupdate": {
         "architecture": {

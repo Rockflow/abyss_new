@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "wixtoolset/wix3"
-        },
+        "github": "https://github.com/wixtoolset/wix3",
         "regex": "wix(\\d)(\\d+)(\\d)",
         "replace": "${1}.${2}.${3}"
     },

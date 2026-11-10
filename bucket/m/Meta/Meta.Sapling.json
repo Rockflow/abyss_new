@@ -55,10 +55,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "facebook/sapling"
-        }
+        "github": "https://github.com/facebook/sapling"
     },
     "autoupdate": {
         "architecture": {

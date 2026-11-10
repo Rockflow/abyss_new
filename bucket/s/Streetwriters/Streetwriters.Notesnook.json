@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "streetwriters/notesnook"
-        }
+        "github": "https://github.com/streetwriters/notesnook"
     },
     "autoupdate": {
         "architecture": {

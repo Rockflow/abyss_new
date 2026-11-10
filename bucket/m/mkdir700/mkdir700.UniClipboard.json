@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "UniClipboard/UniClipboard"
-        }
+        "github": "https://github.com/UniClipboard/UniClipboard"
     },
     "autoupdate": {
         "architecture": {

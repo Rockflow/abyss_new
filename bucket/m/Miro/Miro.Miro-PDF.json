@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "vincent-uden/miro"
-        }
+        "github": "https://github.com/vincent-uden/miro"
     },
     "autoupdate": {
         "architecture": {

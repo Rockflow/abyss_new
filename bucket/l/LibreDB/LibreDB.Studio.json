@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "libredb/libredb-studio"
-        }
+        "github": "https://github.com/libredb/libredb-studio"
     },
     "autoupdate": {
         "architecture": {

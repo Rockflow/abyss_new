@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "cjpais/Handy"
-        }
+        "github": "https://github.com/cjpais/Handy"
     },
     "autoupdate": {
         "architecture": {

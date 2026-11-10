@@ -52,10 +52,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "localsend/localsend"
-        }
+        "github": "https://github.com/localsend/localsend"
     },
     "autoupdate": {
         "architecture": {

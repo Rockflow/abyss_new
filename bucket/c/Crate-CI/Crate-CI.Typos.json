@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "crate-ci/typos"
-        }
+        "github": "https://github.com/crate-ci/typos"
     },
     "autoupdate": {
         "architecture": {

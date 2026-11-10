@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "gulbanana/gg"
-        }
+        "github": "https://github.com/gulbanana/gg"
     },
     "autoupdate": {
         "architecture": {

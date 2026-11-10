@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "orf/gping"
-        },
+        "github": "https://github.com/orf/gping",
         "regex": "gping-(.+)"
     },
     "autoupdate": {

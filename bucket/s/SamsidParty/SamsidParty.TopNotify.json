@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "SamsidParty/TopNotify"
-        }
+        "github": "https://github.com/SamsidParty/TopNotify"
     },
     "autoupdate": {
         "architecture": {

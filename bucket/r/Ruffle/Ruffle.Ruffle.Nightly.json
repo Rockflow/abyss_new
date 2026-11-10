@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "newest",
-            "repo": "ruffle-rs/ruffle"
-        },
+        "github": "https://github.com/ruffle-rs/ruffle",
         "regex": "nightly-(.+)"
     },
     "autoupdate": {

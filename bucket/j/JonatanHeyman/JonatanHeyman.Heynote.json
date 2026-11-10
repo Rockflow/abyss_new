@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "heyman/heynote"
-        }
+        "github": "https://github.com/heyman/heynote"
     },
     "autoupdate": {
         "architecture": {

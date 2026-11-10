@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "livekit/livekit-cli"
-        }
+        "github": "https://github.com/livekit/livekit-cli"
     },
     "autoupdate": {
         "architecture": {

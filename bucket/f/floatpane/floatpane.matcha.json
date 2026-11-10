@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "floatpane/matcha"
-        }
+        "github": "https://github.com/floatpane/matcha"
     },
     "autoupdate": {
         "architecture": {

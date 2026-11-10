@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "514-labs/dnsglobe"
-        }
+        "github": "https://github.com/514-labs/dnsglobe"
     },
     "autoupdate": {
         "architecture": {

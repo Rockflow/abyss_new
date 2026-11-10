@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "yang991178/fluent-reader"
-        }
+        "github": "https://github.com/yang991178/fluent-reader"
     },
     "autoupdate": {
         "architecture": {

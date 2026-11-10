@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Skardyy/mcat"
-        }
+        "github": "https://github.com/Skardyy/mcat"
     },
     "autoupdate": {
         "architecture": {

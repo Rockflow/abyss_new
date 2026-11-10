@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "CapSoftware/Cap"
-        },
+        "github": "https://github.com/CapSoftware/Cap",
         "regex": "cap-(.+)"
     },
     "autoupdate": {

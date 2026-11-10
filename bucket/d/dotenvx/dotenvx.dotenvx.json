@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "dotenvx/dotenvx"
-        }
+        "github": "https://github.com/dotenvx/dotenvx"
     },
     "autoupdate": {
         "architecture": {

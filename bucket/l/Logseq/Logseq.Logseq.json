@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "logseq/logseq"
-        }
+        "github": "https://github.com/logseq/logseq"
     },
     "autoupdate": {
         "architecture": {

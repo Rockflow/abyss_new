@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sedwards2009/extraterm"
-        }
+        "github": "https://github.com/sedwards2009/extraterm"
     },
     "autoupdate": {
         "architecture": {

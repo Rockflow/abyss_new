@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ahmet-cetinkaya/whph"
-        }
+        "github": "https://github.com/ahmet-cetinkaya/whph"
     },
     "autoupdate": {
         "architecture": {

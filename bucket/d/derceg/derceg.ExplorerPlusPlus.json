@@ -49,10 +49,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "derceg/explorerplusplus"
-        },
+        "github": "https://github.com/derceg/explorerplusplus",
         "regex": "version-(.+)"
     },
     "autoupdate": {

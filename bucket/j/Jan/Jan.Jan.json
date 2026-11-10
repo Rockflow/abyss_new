@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "menloresearch/jan"
-        }
+        "github": "https://github.com/menloresearch/jan"
     },
     "autoupdate": {
         "architecture": {

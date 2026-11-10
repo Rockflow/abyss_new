@@ -50,10 +50,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "stable",
-            "repo": "oxc-project/oxc"
-        },
+        "github": "https://github.com/oxc-project/oxc",
         "regex": "oxlint_(.+)"
     },
     "autoupdate": {

@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "charmbracelet/skate"
-        }
+        "github": "https://github.com/charmbracelet/skate"
     },
     "autoupdate": {
         "architecture": {

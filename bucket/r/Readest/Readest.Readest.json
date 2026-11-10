@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "readest/readest"
-        }
+        "github": "https://github.com/readest/readest"
     },
     "autoupdate": {
         "architecture": {

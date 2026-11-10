@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "getzola/zola"
-        }
+        "github": "https://github.com/getzola/zola"
     },
     "autoupdate": {
         "architecture": {

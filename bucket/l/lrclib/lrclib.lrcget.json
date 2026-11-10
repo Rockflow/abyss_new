@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "tranxuanthang/lrcget"
-        }
+        "github": "https://github.com/tranxuanthang/lrcget"
     },
     "autoupdate": {
         "architecture": {

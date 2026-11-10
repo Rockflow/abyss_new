@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ClementTsang/bottom"
-        }
+        "github": "https://github.com/ClementTsang/bottom"
     },
     "autoupdate": {
         "architecture": {

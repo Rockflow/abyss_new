@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "simoarpe/ziggity"
-        }
+        "github": "https://github.com/simoarpe/ziggity"
     },
     "autoupdate": {
         "architecture": {

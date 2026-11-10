@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "vkbo/novelWriter"
-        }
+        "github": "https://github.com/vkbo/novelWriter"
     },
     "autoupdate": {
         "architecture": {

@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ClementNerma/Trasher"
-        }
+        "github": "https://github.com/ClementNerma/Trasher"
     },
     "autoupdate": {
         "architecture": {

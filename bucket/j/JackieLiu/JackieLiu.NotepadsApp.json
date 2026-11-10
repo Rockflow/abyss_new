@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "0x7c13/Notepads"
-        }
+        "github": "https://github.com/0x7c13/Notepads"
     },
     "autoupdate": {
         "architecture": {

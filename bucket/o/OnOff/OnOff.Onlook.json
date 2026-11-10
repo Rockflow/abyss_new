@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "onlook-dev/onlook"
-        }
+        "github": "https://github.com/onlook-dev/onlook"
     },
     "autoupdate": {
         "architecture": {

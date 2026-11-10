@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "microsoft/edit"
-        }
+        "github": "https://github.com/microsoft/edit"
     },
     "autoupdate": {
         "architecture": {

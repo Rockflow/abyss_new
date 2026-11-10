@@ -49,10 +49,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "TermoraDev/termora"
-        }
+        "github": "https://github.com/TermoraDev/termora"
     },
     "autoupdate": {
         "architecture": {

@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "InkTimeRecord/TTime"
-        }
+        "github": "https://github.com/InkTimeRecord/TTime"
     },
     "autoupdate": {
         "architecture": {

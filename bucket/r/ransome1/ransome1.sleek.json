@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ransome1/sleek"
-        }
+        "github": "https://github.com/ransome1/sleek"
     },
     "autoupdate": {
         "architecture": {

@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "manuelernestog/weektodo"
-        }
+        "github": "https://github.com/manuelernestog/weektodo"
     },
     "autoupdate": {
         "architecture": {

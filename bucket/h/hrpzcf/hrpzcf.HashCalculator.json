@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "hrpzcf/HashCalculator"
-        }
+        "github": "https://github.com/hrpzcf/HashCalculator"
     },
     "autoupdate": {
         "architecture": {

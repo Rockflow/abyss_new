@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "GopeedLab/gopeed"
-        }
+        "github": "https://github.com/GopeedLab/gopeed"
     },
     "autoupdate": {
         "architecture": {

@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "barry-ran/QtScrcpy"
-        }
+        "github": "https://github.com/barry-ran/QtScrcpy"
     },
     "autoupdate": {
         "architecture": {

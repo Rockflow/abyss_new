@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zan8in/afrog"
-        }
+        "github": "https://github.com/zan8in/afrog"
     },
     "autoupdate": {
         "architecture": {

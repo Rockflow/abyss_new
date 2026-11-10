@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "team-ide/teamide"
-        }
+        "github": "https://github.com/team-ide/teamide"
     },
     "autoupdate": {
         "architecture": {

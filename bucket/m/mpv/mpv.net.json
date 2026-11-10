@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "mpvnet-player/mpv.net"
-        }
+        "github": "https://github.com/mpvnet-player/mpv.net"
     },
     "autoupdate": {
         "architecture": {

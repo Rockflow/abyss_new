@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "SubtitleEdit/subtitleedit"
-        }
+        "github": "https://github.com/SubtitleEdit/subtitleedit"
     },
     "autoupdate": {
         "architecture": {

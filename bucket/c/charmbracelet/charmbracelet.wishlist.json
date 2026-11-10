@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "charmbracelet/wishlist"
-        }
+        "github": "https://github.com/charmbracelet/wishlist"
     },
     "autoupdate": {
         "architecture": {

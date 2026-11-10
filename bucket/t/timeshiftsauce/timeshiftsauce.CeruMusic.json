@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "timeshiftsauce/CeruMusic"
-        }
+        "github": "https://github.com/timeshiftsauce/CeruMusic"
     },
     "autoupdate": {
         "architecture": {

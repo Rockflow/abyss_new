@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "lmorg/murex"
-        }
+        "github": "https://github.com/lmorg/murex"
     },
     "autoupdate": {
         "architecture": {

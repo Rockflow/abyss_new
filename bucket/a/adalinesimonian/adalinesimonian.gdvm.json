@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "adalinesimonian/gdvm"
-        }
+        "github": "https://github.com/adalinesimonian/gdvm"
     },
     "autoupdate": {
         "architecture": {

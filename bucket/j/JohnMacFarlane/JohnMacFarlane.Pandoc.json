@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jgm/pandoc"
-        }
+        "github": "https://github.com/jgm/pandoc"
     },
     "autoupdate": {
         "architecture": {

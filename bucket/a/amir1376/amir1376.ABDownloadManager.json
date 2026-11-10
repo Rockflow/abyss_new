@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "amir1376/ab-download-manager"
-        }
+        "github": "https://github.com/amir1376/ab-download-manager"
     },
     "autoupdate": {
         "architecture": {

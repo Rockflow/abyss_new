@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "DearVa/Everywhere"
-        }
+        "github": "https://github.com/DearVa/Everywhere"
     },
     "autoupdate": {
         "architecture": {

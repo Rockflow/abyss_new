@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Boeing/config-file-validator"
-        }
+        "github": "https://github.com/Boeing/config-file-validator"
     },
     "autoupdate": {
         "architecture": {

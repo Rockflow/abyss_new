@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "tsl0922/ttyd"
-        }
+        "github": "https://github.com/tsl0922/ttyd"
     },
     "autoupdate": {
         "architecture": {

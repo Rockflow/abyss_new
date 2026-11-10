@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ayangweb/BongoCat"
-        }
+        "github": "https://github.com/ayangweb/BongoCat"
     },
     "autoupdate": {
         "architecture": {

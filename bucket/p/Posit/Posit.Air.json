@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "posit-dev/air"
-        }
+        "github": "https://github.com/posit-dev/air"
     },
     "autoupdate": {
         "architecture": {

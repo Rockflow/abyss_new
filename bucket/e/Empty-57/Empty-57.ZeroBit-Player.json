@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Empty-57/ZeroBit-Player"
-        }
+        "github": "https://github.com/Empty-57/ZeroBit-Player"
     },
     "autoupdate": {
         "architecture": {

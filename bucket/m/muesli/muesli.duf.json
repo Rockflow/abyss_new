@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "muesli/duf"
-        }
+        "github": "https://github.com/muesli/duf"
     },
     "autoupdate": {
         "architecture": {

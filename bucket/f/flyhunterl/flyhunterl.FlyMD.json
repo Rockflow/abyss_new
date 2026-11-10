@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "flyhunterl/flymd"
-        }
+        "github": "https://github.com/flyhunterl/flymd"
     },
     "autoupdate": {
         "architecture": {

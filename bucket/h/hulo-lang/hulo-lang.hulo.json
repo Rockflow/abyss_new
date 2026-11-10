@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "hulo-lang/hulo"
-        }
+        "github": "https://github.com/hulo-lang/hulo"
     },
     "autoupdate": {
         "architecture": {

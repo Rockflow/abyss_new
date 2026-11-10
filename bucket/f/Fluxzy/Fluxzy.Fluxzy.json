@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "haga-rak/fluxzy.core"
-        }
+        "github": "https://github.com/haga-rak/fluxzy.core"
     },
     "autoupdate": {
         "architecture": {

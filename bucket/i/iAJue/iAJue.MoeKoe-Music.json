@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "iAJue/MoeKoeMusic"
-        }
+        "github": "https://github.com/iAJue/MoeKoeMusic"
     },
     "autoupdate": {
         "architecture": {

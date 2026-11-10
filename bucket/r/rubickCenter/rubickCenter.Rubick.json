@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "rubickCenter/rubick"
-        }
+        "github": "https://github.com/rubickCenter/rubick"
     },
     "autoupdate": {
         "architecture": {

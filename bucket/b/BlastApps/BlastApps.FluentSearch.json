@@ -50,10 +50,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "adirh3/Fluent-Search"
-        }
+        "github": "https://github.com/adirh3/Fluent-Search"
     },
     "autoupdate": {
         "architecture": {

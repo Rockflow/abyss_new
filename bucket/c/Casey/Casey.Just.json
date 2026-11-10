@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "casey/just"
-        }
+        "github": "https://github.com/casey/just"
     },
     "autoupdate": {
         "architecture": {

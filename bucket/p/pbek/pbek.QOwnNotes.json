@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "pbek/QOwnNotes"
-        }
+        "github": "https://github.com/pbek/QOwnNotes"
     },
     "autoupdate": {
         "architecture": {

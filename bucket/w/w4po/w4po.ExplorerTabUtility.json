@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "w4po/ExplorerTabUtility"
-        }
+        "github": "https://github.com/w4po/ExplorerTabUtility"
     },
     "autoupdate": {
         "architecture": {

@@ -57,10 +57,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sxyazi/yazi"
-        }
+        "github": "https://github.com/sxyazi/yazi"
     },
     "autoupdate": {
         "architecture": {

@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "xfangfang/wiliwili"
-        }
+        "github": "https://github.com/xfangfang/wiliwili"
     },
     "autoupdate": {
         "architecture": {

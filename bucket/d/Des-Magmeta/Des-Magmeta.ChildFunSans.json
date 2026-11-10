@@ -29,10 +29,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Des-Magmeta/ChildFunSans"
-        }
+        "github": "https://github.com/Des-Magmeta/ChildFunSans"
     },
     "autoupdate": {
         "url": "https://github.com/Des-Magmeta/ChildFunSans/releases/download/v$version/ChildFunSans.ttf"

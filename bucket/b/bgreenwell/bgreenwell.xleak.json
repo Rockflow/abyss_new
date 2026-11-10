@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "bgreenwell/xleak"
-        }
+        "github": "https://github.com/bgreenwell/xleak"
     },
     "autoupdate": {
         "architecture": {

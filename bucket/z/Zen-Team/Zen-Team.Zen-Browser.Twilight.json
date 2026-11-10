@@ -48,9 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "repo": "zen-browser/desktop"
-        },
+        "github": "https://github.com/zen-browser/desktop",
         "regex": "Twilight build - ([\\d\\w.]+) \\(([\\d-]+)",
         "replace": "${1}-${2}"
     },

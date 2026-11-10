@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Foundry376/Mailspring"
-        }
+        "github": "https://github.com/Foundry376/Mailspring"
     },
     "autoupdate": {
         "architecture": {

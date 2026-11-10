@@ -33,10 +33,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "bostrot/PowerToysRunPluginWinget"
-        }
+        "github": "https://github.com/bostrot/PowerToysRunPluginWinget"
     },
     "autoupdate": {
         "architecture": {

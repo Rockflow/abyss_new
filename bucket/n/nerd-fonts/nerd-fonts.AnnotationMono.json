@@ -29,10 +29,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ryanoasis/nerd-fonts"
-        }
+        "github": "https://github.com/ryanoasis/nerd-fonts"
     },
     "autoupdate": {
         "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/AnnotationMono.zip"

@@ -78,10 +78,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "PowerShell/PowerShell"
-        }
+        "github": "https://github.com/PowerShell/PowerShell"
     },
     "autoupdate": {
         "architecture": {

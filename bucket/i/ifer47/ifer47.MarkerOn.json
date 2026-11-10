@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ifer47/markeron"
-        }
+        "github": "https://github.com/ifer47/markeron"
     },
     "autoupdate": {
         "architecture": {

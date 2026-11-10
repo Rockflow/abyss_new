@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "vercel/hyper"
-        }
+        "github": "https://github.com/vercel/hyper"
     },
     "autoupdate": {
         "architecture": {

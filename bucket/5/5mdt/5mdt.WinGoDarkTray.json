@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "5mdt/WinGoDarkTray"
-        }
+        "github": "https://github.com/5mdt/WinGoDarkTray"
     },
     "autoupdate": {
         "architecture": {

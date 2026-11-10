@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "loganchef/Ciphora"
-        }
+        "github": "https://github.com/loganchef/Ciphora"
     },
     "autoupdate": {
         "architecture": {

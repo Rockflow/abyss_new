@@ -50,10 +50,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zhitongblog/solomd"
-        }
+        "github": "https://github.com/zhitongblog/solomd"
     },
     "autoupdate": {
         "architecture": {

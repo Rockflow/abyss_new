@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zizmorcore/zizmor"
-        }
+        "github": "https://github.com/zizmorcore/zizmor"
     },
     "autoupdate": {
         "architecture": {

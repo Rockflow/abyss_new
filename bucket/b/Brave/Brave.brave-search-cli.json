@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "brave/brave-search-cli"
-        }
+        "github": "https://github.com/brave/brave-search-cli"
     },
     "autoupdate": {
         "architecture": {

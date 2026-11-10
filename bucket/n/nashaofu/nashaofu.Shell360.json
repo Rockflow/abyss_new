@@ -54,10 +54,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "nashaofu/shell360"
-        }
+        "github": "https://github.com/nashaofu/shell360"
     },
     "autoupdate": {
         "architecture": {

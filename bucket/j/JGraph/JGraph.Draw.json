@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jgraph/drawio-desktop"
-        }
+        "github": "https://github.com/jgraph/drawio-desktop"
     },
     "autoupdate": {
         "architecture": {

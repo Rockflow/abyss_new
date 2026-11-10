@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "nexmoe/VidBee"
-        }
+        "github": "https://github.com/nexmoe/VidBee"
     },
     "autoupdate": {
         "architecture": {

@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "kweatherman/Folcolor"
-        }
+        "github": "https://github.com/kweatherman/Folcolor"
     },
     "autoupdate": {
         "architecture": {

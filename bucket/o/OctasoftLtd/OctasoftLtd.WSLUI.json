@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "octasoft-ltd/wsl-ui"
-        }
+        "github": "https://github.com/octasoft-ltd/wsl-ui"
     },
     "autoupdate": {
         "architecture": {

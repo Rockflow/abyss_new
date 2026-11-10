@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "charmbracelet/sequin"
-        }
+        "github": "https://github.com/charmbracelet/sequin"
     },
     "autoupdate": {
         "architecture": {

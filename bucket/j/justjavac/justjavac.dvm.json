@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "justjavac/dvm"
-        }
+        "github": "https://github.com/justjavac/dvm"
     },
     "autoupdate": {
         "architecture": {

@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "tamasfe/taplo"
-        }
+        "github": "https://github.com/tamasfe/taplo"
     },
     "autoupdate": {
         "architecture": {

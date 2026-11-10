@@ -50,10 +50,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "neovim/neovim"
-        }
+        "github": "https://github.com/neovim/neovim"
     },
     "autoupdate": {
         "architecture": {

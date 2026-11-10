@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "agalwood/Motrix"
-        }
+        "github": "https://github.com/agalwood/Motrix"
     },
     "autoupdate": {
         "architecture": {

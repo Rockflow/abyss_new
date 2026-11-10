@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Pulover/PuloversMacroCreator"
-        }
+        "github": "https://github.com/Pulover/PuloversMacroCreator"
     },
     "autoupdate": {
         "architecture": {

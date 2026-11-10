@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "oldj/SwitchHosts"
-        }
+        "github": "https://github.com/oldj/SwitchHosts"
     },
     "autoupdate": {
         "architecture": {

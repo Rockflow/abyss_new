@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "koodo-reader/koodo-reader"
-        }
+        "github": "https://github.com/koodo-reader/koodo-reader"
     },
     "autoupdate": {
         "architecture": {

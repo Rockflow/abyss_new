@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "brave/brave-browser"
-        }
+        "github": "https://github.com/brave/brave-browser"
     },
     "autoupdate": {
         "architecture": {

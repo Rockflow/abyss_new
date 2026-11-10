@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "CatVinci-Studio/Textus"
-        }
+        "github": "https://github.com/CatVinci-Studio/Textus"
     },
     "autoupdate": {
         "architecture": {

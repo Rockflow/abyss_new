@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "michidk/vscli"
-        }
+        "github": "https://github.com/michidk/vscli"
     },
     "autoupdate": {
         "architecture": {

@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Equicord/Equibop"
-        }
+        "github": "https://github.com/Equicord/Equibop"
     },
     "autoupdate": {
         "architecture": {

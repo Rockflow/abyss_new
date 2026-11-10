@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zeno528/CursorTip"
-        }
+        "github": "https://github.com/zeno528/CursorTip"
     },
     "autoupdate": {
         "architecture": {

@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "mulaRahul/keyviz"
-        }
+        "github": "https://github.com/mulaRahul/keyviz"
     },
     "autoupdate": {
         "architecture": {

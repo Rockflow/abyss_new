@@ -32,10 +32,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "dfinke/PSClaudeCode"
-        }
+        "github": "https://github.com/dfinke/PSClaudeCode"
     },
     "autoupdate": {
         "url": "https://github.com/dfinke/PSClaudeCode/archive/refs/tags/v$version.zip",

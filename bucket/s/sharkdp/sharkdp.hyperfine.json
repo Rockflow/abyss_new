@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sharkdp/hyperfine"
-        }
+        "github": "https://github.com/sharkdp/hyperfine"
     },
     "autoupdate": {
         "architecture": {

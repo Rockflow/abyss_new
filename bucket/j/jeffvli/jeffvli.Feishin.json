@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jeffvli/feishin"
-        }
+        "github": "https://github.com/jeffvli/feishin"
     },
     "autoupdate": {
         "architecture": {

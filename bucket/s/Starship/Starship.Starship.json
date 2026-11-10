@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "starship/starship"
-        }
+        "github": "https://github.com/starship/starship"
     },
     "autoupdate": {
         "architecture": {

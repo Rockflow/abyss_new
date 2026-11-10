@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "RSSNext/Folo"
-        },
+        "github": "https://github.com/RSSNext/Folo",
         "regex": "desktop/(.+)"
     },
     "autoupdate": {

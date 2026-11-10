@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Kyome22/RunCat_for_windows"
-        }
+        "github": "https://github.com/Kyome22/RunCat_for_windows"
     },
     "autoupdate": {
         "architecture": {

@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "caddyserver/caddy"
-        }
+        "github": "https://github.com/caddyserver/caddy"
     },
     "autoupdate": {
         "architecture": {

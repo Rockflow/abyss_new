@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zouwei/moraya"
-        }
+        "github": "https://github.com/zouwei/moraya"
     },
     "autoupdate": {
         "architecture": {

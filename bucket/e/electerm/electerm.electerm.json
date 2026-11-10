@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "electerm/electerm"
-        }
+        "github": "https://github.com/electerm/electerm"
     },
     "autoupdate": {
         "architecture": {

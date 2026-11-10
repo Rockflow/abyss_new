@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "fastfetch-cli/fastfetch"
-        }
+        "github": "https://github.com/fastfetch-cli/fastfetch"
     },
     "autoupdate": {
         "architecture": {

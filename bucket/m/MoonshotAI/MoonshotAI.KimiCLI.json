@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "MoonshotAI/kimi-cli"
-        }
+        "github": "https://github.com/MoonshotAI/kimi-cli"
     },
     "autoupdate": {
         "architecture": {

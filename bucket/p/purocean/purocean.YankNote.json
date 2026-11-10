@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "purocean/yn"
-        }
+        "github": "https://github.com/purocean/yn"
     },
     "autoupdate": {
         "architecture": {

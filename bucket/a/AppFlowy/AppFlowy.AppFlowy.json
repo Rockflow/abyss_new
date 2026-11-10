@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "AppFlowy-IO/AppFlowy"
-        }
+        "github": "https://github.com/AppFlowy-IO/AppFlowy"
     },
     "autoupdate": {
         "architecture": {

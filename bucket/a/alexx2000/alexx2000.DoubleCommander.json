@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "doublecmd/doublecmd"
-        }
+        "github": "https://github.com/doublecmd/doublecmd"
     },
     "autoupdate": {
         "architecture": {

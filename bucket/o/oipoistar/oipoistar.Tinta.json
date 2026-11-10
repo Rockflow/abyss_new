@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "oipoistar/tinta"
-        }
+        "github": "https://github.com/oipoistar/tinta"
     },
     "autoupdate": {
         "architecture": {

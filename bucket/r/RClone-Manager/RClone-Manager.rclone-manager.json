@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Zarestia-Dev/rclone-manager"
-        }
+        "github": "https://github.com/Zarestia-Dev/rclone-manager"
     },
     "autoupdate": {
         "architecture": {

@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "klembot/twinejs"
-        }
+        "github": "https://github.com/klembot/twinejs"
     },
     "autoupdate": {
         "architecture": {

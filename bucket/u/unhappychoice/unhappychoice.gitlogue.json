@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "unhappychoice/gitlogue"
-        }
+        "github": "https://github.com/unhappychoice/gitlogue"
     },
     "autoupdate": {
         "architecture": {

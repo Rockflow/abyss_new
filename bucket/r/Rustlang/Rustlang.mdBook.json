@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "rust-lang/mdBook"
-        }
+        "github": "https://github.com/rust-lang/mdBook"
     },
     "autoupdate": {
         "architecture": {

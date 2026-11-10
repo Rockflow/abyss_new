@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "itchyny/gojq"
-        }
+        "github": "https://github.com/itchyny/gojq"
     },
     "autoupdate": {
         "architecture": {

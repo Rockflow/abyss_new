@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "microsoft/tgrep"
-        }
+        "github": "https://github.com/microsoft/tgrep"
     },
     "autoupdate": {
         "architecture": {

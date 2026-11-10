@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "lordaimer/iris"
-        }
+        "github": "https://github.com/lordaimer/iris"
     },
     "autoupdate": {
         "architecture": {

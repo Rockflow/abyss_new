@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "pamburus/termframe"
-        }
+        "github": "https://github.com/pamburus/termframe"
     },
     "autoupdate": {
         "architecture": {

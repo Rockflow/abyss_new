@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "appshubcc/Bettbox"
-        }
+        "github": "https://github.com/appshubcc/Bettbox"
     },
     "autoupdate": {
         "architecture": {

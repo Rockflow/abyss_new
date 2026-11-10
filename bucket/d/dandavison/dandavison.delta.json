@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "dandavison/delta"
-        }
+        "github": "https://github.com/dandavison/delta"
     },
     "autoupdate": {
         "architecture": {

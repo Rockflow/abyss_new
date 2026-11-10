@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "CoreyHayward/PowerToys-Run-ClipboardManager"
-        }
+        "github": "https://github.com/CoreyHayward/PowerToys-Run-ClipboardManager"
     },
     "autoupdate": {
         "architecture": {

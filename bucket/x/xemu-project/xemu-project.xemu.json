@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "xemu-project/xemu"
-        }
+        "github": "https://github.com/xemu-project/xemu"
     },
     "autoupdate": {
         "architecture": {

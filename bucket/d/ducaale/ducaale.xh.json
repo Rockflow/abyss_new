@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ducaale/xh"
-        }
+        "github": "https://github.com/ducaale/xh"
     },
     "autoupdate": {
         "architecture": {

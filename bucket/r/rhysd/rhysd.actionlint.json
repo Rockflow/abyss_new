@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "rhysd/actionlint"
-        }
+        "github": "https://github.com/rhysd/actionlint"
     },
     "autoupdate": {
         "architecture": {

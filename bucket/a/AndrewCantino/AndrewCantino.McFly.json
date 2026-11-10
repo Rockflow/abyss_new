@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "cantino/mcfly"
-        }
+        "github": "https://github.com/cantino/mcfly"
     },
     "autoupdate": {
         "architecture": {

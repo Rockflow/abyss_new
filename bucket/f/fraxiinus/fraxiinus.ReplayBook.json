@@ -54,10 +54,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "fraxiinus/ReplayBook"
-        }
+        "github": "https://github.com/fraxiinus/ReplayBook"
     },
     "autoupdate": {
         "architecture": {

@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ajeetdsouza/zoxide"
-        }
+        "github": "https://github.com/ajeetdsouza/zoxide"
     },
     "autoupdate": {
         "architecture": {

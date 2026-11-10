@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "suiginko/moetype"
-        }
+        "github": "https://github.com/suiginko/moetype"
     },
     "autoupdate": {
         "url": "https://github.com/suiginko/moetype/releases/download/$version/moqi_moe.dict.yaml"

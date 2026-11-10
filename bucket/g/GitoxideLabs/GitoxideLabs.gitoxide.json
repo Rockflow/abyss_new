@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "GitoxideLabs/gitoxide"
-        }
+        "github": "https://github.com/GitoxideLabs/gitoxide"
     },
     "autoupdate": {
         "architecture": {

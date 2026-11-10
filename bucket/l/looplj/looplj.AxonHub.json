@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "looplj/axonhub"
-        }
+        "github": "https://github.com/looplj/axonhub"
     },
     "autoupdate": {
         "architecture": {

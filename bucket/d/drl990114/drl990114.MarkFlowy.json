@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "drl990114/MarkFlowy"
-        }
+        "github": "https://github.com/drl990114/MarkFlowy"
     },
     "autoupdate": {
         "architecture": {

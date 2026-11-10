@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "guiyumin/vget"
-        }
+        "github": "https://github.com/guiyumin/vget"
     },
     "autoupdate": {
         "architecture": {

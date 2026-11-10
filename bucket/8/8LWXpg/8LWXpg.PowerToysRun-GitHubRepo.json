@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "8LWXpg/PowerToysRun-GitHubRepo"
-        }
+        "github": "https://github.com/8LWXpg/PowerToysRun-GitHubRepo"
     },
     "autoupdate": {
         "architecture": {

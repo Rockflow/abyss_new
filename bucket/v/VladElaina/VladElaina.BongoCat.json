@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "vladelaina/BongoCat"
-        }
+        "github": "https://github.com/vladelaina/BongoCat"
     },
     "autoupdate": {
         "architecture": {

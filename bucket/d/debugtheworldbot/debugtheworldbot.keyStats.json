@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "debugtheworldbot/keyStats"
-        }
+        "github": "https://github.com/debugtheworldbot/keyStats"
     },
     "autoupdate": {
         "architecture": {

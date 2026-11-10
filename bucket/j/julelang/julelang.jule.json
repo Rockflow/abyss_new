@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "julelang/jule"
-        },
+        "github": "https://github.com/julelang/jule",
         "regex": "jule(.+)"
     },
     "autoupdate": {

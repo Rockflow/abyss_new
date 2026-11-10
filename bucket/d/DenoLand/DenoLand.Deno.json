@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "denoland/deno"
-        }
+        "github": "https://github.com/denoland/deno"
     },
     "autoupdate": {
         "architecture": {

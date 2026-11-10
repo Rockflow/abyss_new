@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "LanRhyme/MicYou"
-        }
+        "github": "https://github.com/LanRhyme/MicYou"
     },
     "autoupdate": {
         "architecture": {

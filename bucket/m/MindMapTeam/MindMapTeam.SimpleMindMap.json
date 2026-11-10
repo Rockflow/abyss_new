@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "wanglin2/mind-map"
-        }
+        "github": "https://github.com/wanglin2/mind-map"
     },
     "autoupdate": {
         "architecture": {

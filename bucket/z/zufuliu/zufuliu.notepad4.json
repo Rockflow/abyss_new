@@ -69,10 +69,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zufuliu/notepad4"
-        }
+        "github": "https://github.com/zufuliu/notepad4"
     },
     "autoupdate": {
         "architecture": {

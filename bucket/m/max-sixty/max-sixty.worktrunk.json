@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "max-sixty/worktrunk"
-        }
+        "github": "https://github.com/max-sixty/worktrunk"
     },
     "autoupdate": {
         "architecture": {

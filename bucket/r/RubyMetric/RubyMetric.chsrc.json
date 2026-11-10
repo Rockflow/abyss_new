@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "RubyMetric/chsrc"
-        }
+        "github": "https://github.com/RubyMetric/chsrc"
     },
     "autoupdate": {
         "architecture": {

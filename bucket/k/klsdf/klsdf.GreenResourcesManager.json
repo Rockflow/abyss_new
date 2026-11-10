@@ -52,10 +52,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "klsdf/GreenResourcesManager"
-        }
+        "github": "https://github.com/klsdf/GreenResourcesManager"
     },
     "autoupdate": {
         "architecture": {

@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "gittower/git-flow-next"
-        }
+        "github": "https://github.com/gittower/git-flow-next"
     },
     "autoupdate": {
         "architecture": {

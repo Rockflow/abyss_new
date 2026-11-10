@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "cmakefmt/cmakefmt"
-        }
+        "github": "https://github.com/cmakefmt/cmakefmt"
     },
     "autoupdate": {
         "architecture": {

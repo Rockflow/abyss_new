@@ -29,10 +29,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "microsoft/cascadia-code"
-        }
+        "github": "https://github.com/microsoft/cascadia-code"
     },
     "autoupdate": {
         "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/CascadiaCode-$version.zip"

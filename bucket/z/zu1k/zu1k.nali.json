@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zu1k/nali"
-        }
+        "github": "https://github.com/zu1k/nali"
     },
     "autoupdate": {
         "architecture": {

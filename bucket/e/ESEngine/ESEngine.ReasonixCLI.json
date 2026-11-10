@@ -50,10 +50,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "stable",
-            "repo": "esengine/DeepSeek-Reasonix"
-        }
+        "github": "https://github.com/esengine/DeepSeek-Reasonix"
     },
     "autoupdate": {
         "architecture": {

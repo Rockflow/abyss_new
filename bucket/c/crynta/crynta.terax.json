@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "crynta/terax-ai"
-        }
+        "github": "https://github.com/crynta/terax-ai"
     },
     "autoupdate": {
         "architecture": {

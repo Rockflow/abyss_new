@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "AmintaCCCP/GithubStarsManager"
-        }
+        "github": "https://github.com/AmintaCCCP/GithubStarsManager"
     },
     "autoupdate": {
         "architecture": {

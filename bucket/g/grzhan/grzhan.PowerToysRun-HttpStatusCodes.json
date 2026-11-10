@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "grzhan/HttpStatusCodePowerToys"
-        }
+        "github": "https://github.com/grzhan/HttpStatusCodePowerToys"
     },
     "autoupdate": {
         "architecture": {

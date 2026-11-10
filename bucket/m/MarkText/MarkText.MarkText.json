@@ -49,10 +49,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "marktext/marktext"
-        }
+        "github": "https://github.com/marktext/marktext"
     },
     "autoupdate": {
         "architecture": {

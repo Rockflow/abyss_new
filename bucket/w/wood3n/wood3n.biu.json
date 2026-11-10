@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "wood3n/biu"
-        }
+        "github": "https://github.com/wood3n/biu"
     },
     "autoupdate": {
         "architecture": {

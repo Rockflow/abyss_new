@@ -53,10 +53,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "NickeManarin/ScreenToGif"
-        }
+        "github": "https://github.com/NickeManarin/ScreenToGif"
     },
     "autoupdate": {
         "architecture": {

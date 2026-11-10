@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "glzr-io/glazewm"
-        }
+        "github": "https://github.com/glzr-io/glazewm"
     },
     "autoupdate": {
         "architecture": {

@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "biomejs/biome"
-        },
+        "github": "https://github.com/biomejs/biome",
         "regex": "@biomejs/biome@(.+)"
     },
     "autoupdate": {

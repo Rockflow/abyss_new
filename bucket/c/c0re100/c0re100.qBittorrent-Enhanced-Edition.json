@@ -49,10 +49,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "c0re100/qBittorrent-Enhanced-Edition"
-        },
+        "github": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
         "regex": "release-(.+)"
     },
     "autoupdate": {

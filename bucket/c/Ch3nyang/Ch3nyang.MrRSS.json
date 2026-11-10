@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "WCY-dt/MrRSS"
-        }
+        "github": "https://github.com/WCY-dt/MrRSS"
     },
     "autoupdate": {
         "architecture": {

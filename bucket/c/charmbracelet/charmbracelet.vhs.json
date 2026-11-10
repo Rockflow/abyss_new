@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "charmbracelet/vhs"
-        }
+        "github": "https://github.com/charmbracelet/vhs"
     },
     "autoupdate": {
         "architecture": {

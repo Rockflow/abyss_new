@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "noahgorstein/jqp"
-        }
+        "github": "https://github.com/noahgorstein/jqp"
     },
     "autoupdate": {
         "architecture": {

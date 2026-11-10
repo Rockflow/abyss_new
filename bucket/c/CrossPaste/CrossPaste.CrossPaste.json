@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "CrossPaste/crosspaste-desktop"
-        }
+        "github": "https://github.com/CrossPaste/crosspaste-desktop"
     },
     "autoupdate": {
         "architecture": {

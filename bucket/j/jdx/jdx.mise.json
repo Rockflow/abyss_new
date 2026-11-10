@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jdx/mise"
-        }
+        "github": "https://github.com/jdx/mise"
     },
     "autoupdate": {
         "architecture": {

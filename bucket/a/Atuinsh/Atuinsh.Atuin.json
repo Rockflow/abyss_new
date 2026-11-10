@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "atuinsh/atuin"
-        }
+        "github": "https://github.com/atuinsh/atuin"
     },
     "autoupdate": {
         "architecture": {

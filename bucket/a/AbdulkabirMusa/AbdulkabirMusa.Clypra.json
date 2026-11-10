@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "AIEraDev/Clypra"
-        }
+        "github": "https://github.com/AIEraDev/Clypra"
     },
     "autoupdate": {
         "architecture": {

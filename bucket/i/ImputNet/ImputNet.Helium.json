@@ -54,10 +54,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "imputnet/helium-windows"
-        }
+        "github": "https://github.com/imputnet/helium-windows"
     },
     "autoupdate": {
         "architecture": {

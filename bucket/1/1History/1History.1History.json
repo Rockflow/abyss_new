@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "localfirstapp/1History"
-        }
+        "github": "https://github.com/localfirstapp/1History"
     },
     "autoupdate": {
         "architecture": {

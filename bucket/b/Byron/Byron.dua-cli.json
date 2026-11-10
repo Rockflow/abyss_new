@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Byron/dua-cli"
-        }
+        "github": "https://github.com/Byron/dua-cli"
     },
     "autoupdate": {
         "architecture": {

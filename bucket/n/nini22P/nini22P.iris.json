@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "nini22P/iris"
-        }
+        "github": "https://github.com/nini22P/iris"
     },
     "autoupdate": {
         "architecture": {

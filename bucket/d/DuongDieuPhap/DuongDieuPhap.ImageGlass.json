@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "d2phap/ImageGlass"
-        }
+        "github": "https://github.com/d2phap/ImageGlass"
     },
     "autoupdate": {
         "architecture": {

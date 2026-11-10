@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "tiny-craft/tiny-rdm"
-        }
+        "github": "https://github.com/tiny-craft/tiny-rdm"
     },
     "autoupdate": {
         "architecture": {

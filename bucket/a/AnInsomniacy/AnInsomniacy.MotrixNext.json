@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "AnInsomniacy/motrix-next"
-        },
+        "github": "https://github.com/AnInsomniacy/motrix-next",
         "max": "3"
     },
     "autoupdate": {

@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "VoltiusApp/voltius"
-        }
+        "github": "https://github.com/VoltiusApp/voltius"
     },
     "autoupdate": {
         "architecture": {

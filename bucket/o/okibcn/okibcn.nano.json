@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "okibcn/nano-for-windows"
-        }
+        "github": "https://github.com/okibcn/nano-for-windows"
     },
     "autoupdate": {
         "architecture": {

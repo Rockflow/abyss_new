@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "BluePointLilac/ContextMenuManager"
-        }
+        "github": "https://github.com/BluePointLilac/ContextMenuManager"
     },
     "autoupdate": {
         "architecture": {

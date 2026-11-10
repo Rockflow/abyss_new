@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "pbatard/rufus"
-        }
+        "github": "https://github.com/pbatard/rufus"
     },
     "autoupdate": {
         "architecture": {

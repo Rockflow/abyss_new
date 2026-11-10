@@ -54,10 +54,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "astral-sh/uv"
-        }
+        "github": "https://github.com/astral-sh/uv"
     },
     "autoupdate": {
         "architecture": {

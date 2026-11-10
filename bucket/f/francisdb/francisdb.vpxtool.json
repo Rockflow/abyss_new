@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "francisdb/vpxtool"
-        }
+        "github": "https://github.com/francisdb/vpxtool"
     },
     "autoupdate": {
         "architecture": {

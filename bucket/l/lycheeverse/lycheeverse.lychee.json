@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "lycheeverse/lychee"
-        },
+        "github": "https://github.com/lycheeverse/lychee",
         "regex": "lychee-(.+)"
     },
     "autoupdate": {

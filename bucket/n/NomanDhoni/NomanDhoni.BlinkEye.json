@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "nomandhoni-cs/blink-eye"
-        }
+        "github": "https://github.com/nomandhoni-cs/blink-eye"
     },
     "autoupdate": {
         "architecture": {

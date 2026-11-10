@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "xiaobaimc/myune_music"
-        }
+        "github": "https://github.com/xiaobaimc/myune_music"
     },
     "autoupdate": {
         "architecture": {

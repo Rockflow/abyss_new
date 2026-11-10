@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "dooit-org/dooit"
-        }
+        "github": "https://github.com/dooit-org/dooit"
     },
     "autoupdate": {
         "architecture": {

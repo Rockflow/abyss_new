@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "fafarunner/fafarunner"
-        }
+        "github": "https://github.com/fafarunner/fafarunner"
     },
     "autoupdate": {
         "architecture": {

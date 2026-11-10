@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "charmbracelet/crush"
-        }
+        "github": "https://github.com/charmbracelet/crush"
     },
     "autoupdate": {
         "architecture": {

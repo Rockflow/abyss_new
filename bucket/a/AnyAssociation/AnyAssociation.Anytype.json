@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "anyproto/anytype-ts"
-        }
+        "github": "https://github.com/anyproto/anytype-ts"
     },
     "autoupdate": {
         "architecture": {

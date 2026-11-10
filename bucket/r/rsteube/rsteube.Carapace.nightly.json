@@ -59,10 +59,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "carapace-sh/nightly"
-        },
+        "github": "https://github.com/carapace-sh/nightly",
         "regex": "/download/([^/]+)/carapace-bin_(?<ver>[\\d.]+)-SNAPSHOT-(?<hash>[a-f0-9]+)_windows_amd64.zip"
     },
     "autoupdate": {

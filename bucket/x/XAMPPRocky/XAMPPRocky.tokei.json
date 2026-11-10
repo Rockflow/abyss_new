@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "XAMPPRocky/tokei"
-        }
+        "github": "https://github.com/XAMPPRocky/tokei"
     },
     "autoupdate": {
         "architecture": {

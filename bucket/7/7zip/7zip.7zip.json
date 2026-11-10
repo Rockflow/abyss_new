@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ip7z/7zip"
-        }
+        "github": "https://github.com/ip7z/7zip"
     },
     "autoupdate": {
         "architecture": {

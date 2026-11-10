@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "orhun/git-cliff"
-        }
+        "github": "https://github.com/orhun/git-cliff"
     },
     "autoupdate": {
         "architecture": {

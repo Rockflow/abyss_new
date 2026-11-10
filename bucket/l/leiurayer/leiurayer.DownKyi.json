@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "leiurayer/downkyi"
-        }
+        "github": "https://github.com/leiurayer/downkyi"
     },
     "autoupdate": {
         "architecture": {

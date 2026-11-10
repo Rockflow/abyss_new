@@ -40,9 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "repo": "amzxyz/RIME-LMDG"
-        },
+        "github": "https://github.com/amzxyz/RIME-LMDG",
         "jsonpath": "$.assets[?(@.name == 'wanxiang-lts-zh-hans.gram')].updated_at",
         "regex": "(\\d+)-(\\d+)-(\\d+)T(\\d+):(\\d+):(\\d+)Z",
         "replace": "${1}.${2}.${3}.${4}${5}${6}"

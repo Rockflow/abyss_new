@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "uutils/sed"
-        }
+        "github": "https://github.com/uutils/sed"
     },
     "autoupdate": {
         "architecture": {

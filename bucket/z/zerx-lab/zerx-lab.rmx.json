@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zerx-lab/rmx"
-        }
+        "github": "https://github.com/zerx-lab/rmx"
     },
     "autoupdate": {
         "architecture": {

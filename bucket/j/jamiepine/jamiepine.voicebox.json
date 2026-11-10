@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jamiepine/voicebox"
-        }
+        "github": "https://github.com/jamiepine/voicebox"
     },
     "autoupdate": {
         "architecture": {

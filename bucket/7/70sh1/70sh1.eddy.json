@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "70sh1/eddy"
-        }
+        "github": "https://github.com/70sh1/eddy"
     },
     "autoupdate": {
         "architecture": {

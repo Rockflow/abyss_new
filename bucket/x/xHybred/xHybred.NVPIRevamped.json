@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "xHybred/NvidiaProfileInspectorRevamped"
-        }
+        "github": "https://github.com/xHybred/NvidiaProfileInspectorRevamped"
     },
     "autoupdate": {
         "architecture": {

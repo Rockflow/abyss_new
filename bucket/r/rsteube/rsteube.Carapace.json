@@ -59,10 +59,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "carapace-sh/carapace-bin"
-        }
+        "github": "https://github.com/carapace-sh/carapace-bin"
     },
     "autoupdate": {
         "architecture": {

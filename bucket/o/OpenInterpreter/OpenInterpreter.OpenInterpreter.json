@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "openinterpreter/openinterpreter"
-        },
+        "github": "https://github.com/openinterpreter/openinterpreter",
         "regex": "rust-(.+)"
     },
     "autoupdate": {

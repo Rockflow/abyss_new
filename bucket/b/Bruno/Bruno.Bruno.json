@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "usebruno/bruno"
-        }
+        "github": "https://github.com/usebruno/bruno"
     },
     "autoupdate": {
         "architecture": {

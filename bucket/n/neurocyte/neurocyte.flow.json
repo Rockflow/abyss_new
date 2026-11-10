@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "neurocyte/flow"
-        }
+        "github": "https://github.com/neurocyte/flow"
     },
     "autoupdate": {
         "architecture": {

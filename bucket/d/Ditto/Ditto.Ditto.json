@@ -52,10 +52,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sabrogden/Ditto"
-        }
+        "github": "https://github.com/sabrogden/Ditto"
     },
     "autoupdate": {
         "architecture": {

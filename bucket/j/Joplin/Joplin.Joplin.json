@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "laurent22/joplin"
-        }
+        "github": "https://github.com/laurent22/joplin"
     },
     "autoupdate": {
         "architecture": {

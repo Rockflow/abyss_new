@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "bggRGjQaUbCoE/PiliPlus"
-        },
+        "github": "https://github.com/bggRGjQaUbCoE/PiliPlus",
         "regex": "/download/([^/]+)/PiliPlus_windows_(?<main>[\\d.]+)%2B(?<build>\\d+)_x64_portable.zip"
     },
     "autoupdate": {

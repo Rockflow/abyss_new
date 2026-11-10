@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "simonmichael/hledger"
-        }
+        "github": "https://github.com/simonmichael/hledger"
     },
     "autoupdate": {
         "architecture": {

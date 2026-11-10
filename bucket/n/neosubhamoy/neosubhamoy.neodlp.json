@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "neosubhamoy/neodlp"
-        }
+        "github": "https://github.com/neosubhamoy/neodlp"
     },
     "autoupdate": {
         "architecture": {

@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "github/copilot-cli"
-        }
+        "github": "https://github.com/github/copilot-cli"
     },
     "autoupdate": {
         "architecture": {

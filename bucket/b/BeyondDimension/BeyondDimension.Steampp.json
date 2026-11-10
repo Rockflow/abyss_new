@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "BeyondDimension/SteamTools"
-        }
+        "github": "https://github.com/BeyondDimension/SteamTools"
     },
     "autoupdate": {
         "architecture": {

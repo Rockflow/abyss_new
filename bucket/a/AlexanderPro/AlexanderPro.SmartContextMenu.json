@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "AlexanderPro/SmartContextMenu"
-        }
+        "github": "https://github.com/AlexanderPro/SmartContextMenu"
     },
     "autoupdate": {
         "architecture": {

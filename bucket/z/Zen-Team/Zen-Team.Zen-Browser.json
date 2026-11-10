@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zen-browser/desktop"
-        }
+        "github": "https://github.com/zen-browser/desktop"
     },
     "autoupdate": {
         "architecture": {

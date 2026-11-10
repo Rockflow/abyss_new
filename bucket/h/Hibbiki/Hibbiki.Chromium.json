@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Hibbiki/chromium-win64"
-        }
+        "github": "https://github.com/Hibbiki/chromium-win64"
     },
     "autoupdate": {
         "architecture": {

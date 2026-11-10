@@ -49,10 +49,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Schniz/fnm"
-        }
+        "github": "https://github.com/Schniz/fnm"
     },
     "autoupdate": {
         "architecture": {

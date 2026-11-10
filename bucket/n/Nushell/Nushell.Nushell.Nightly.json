@@ -55,10 +55,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "newest",
-            "repo": "nushell/nightly"
-        },
+        "github": "https://github.com/nushell/nightly",
         "regex": "(.+)(?<hash>\\+.+)"
     },
     "autoupdate": {

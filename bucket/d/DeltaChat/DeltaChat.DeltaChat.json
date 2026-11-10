@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "deltachat/deltachat-desktop"
-        }
+        "github": "https://github.com/deltachat/deltachat-desktop"
     },
     "autoupdate": {
         "architecture": {

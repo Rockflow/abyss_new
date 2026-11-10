@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sourcegit-scm/sourcegit"
-        }
+        "github": "https://github.com/sourcegit-scm/sourcegit"
     },
     "autoupdate": {
         "architecture": {

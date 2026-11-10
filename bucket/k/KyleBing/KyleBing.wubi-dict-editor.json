@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "KyleBing/wubi-dict-editor"
-        }
+        "github": "https://github.com/KyleBing/wubi-dict-editor"
     },
     "autoupdate": {
         "architecture": {

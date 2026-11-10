@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Sigil-Ebook/PageEdit"
-        }
+        "github": "https://github.com/Sigil-Ebook/PageEdit"
     },
     "autoupdate": {
         "architecture": {

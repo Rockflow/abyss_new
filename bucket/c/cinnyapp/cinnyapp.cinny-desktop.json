@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "cinnyapp/cinny-desktop"
-        }
+        "github": "https://github.com/cinnyapp/cinny-desktop"
     },
     "autoupdate": {
         "architecture": {

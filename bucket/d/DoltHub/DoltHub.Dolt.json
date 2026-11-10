@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "dolthub/dolt"
-        }
+        "github": "https://github.com/dolthub/dolt"
     },
     "autoupdate": {
         "architecture": {

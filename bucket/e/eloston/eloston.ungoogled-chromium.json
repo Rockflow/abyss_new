@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ungoogled-software/ungoogled-chromium-windows"
-        }
+        "github": "https://github.com/ungoogled-software/ungoogled-chromium-windows"
     },
     "autoupdate": {
         "architecture": {

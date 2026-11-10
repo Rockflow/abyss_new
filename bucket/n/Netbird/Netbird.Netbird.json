@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "netbirdio/netbird"
-        }
+        "github": "https://github.com/netbirdio/netbird"
     },
     "autoupdate": {
         "architecture": {

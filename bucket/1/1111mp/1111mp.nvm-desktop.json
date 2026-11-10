@@ -50,10 +50,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "1111mp/nvm-desktop"
-        }
+        "github": "https://github.com/1111mp/nvm-desktop"
     },
     "autoupdate": {
         "architecture": {

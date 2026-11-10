@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zaps166/QMPlay2"
-        }
+        "github": "https://github.com/zaps166/QMPlay2"
     },
     "autoupdate": {
         "architecture": {

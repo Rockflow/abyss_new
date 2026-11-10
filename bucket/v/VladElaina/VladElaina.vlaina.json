@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "vladelaina/vlaina"
-        }
+        "github": "https://github.com/vladelaina/vlaina"
     },
     "autoupdate": {
         "architecture": {

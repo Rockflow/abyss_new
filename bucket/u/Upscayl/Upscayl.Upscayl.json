@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "upscayl/upscayl"
-        }
+        "github": "https://github.com/upscayl/upscayl"
     },
     "autoupdate": {
         "architecture": {

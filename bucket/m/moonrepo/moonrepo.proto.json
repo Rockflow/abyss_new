@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "moonrepo/proto"
-        }
+        "github": "https://github.com/moonrepo/proto"
     },
     "autoupdate": {
         "architecture": {

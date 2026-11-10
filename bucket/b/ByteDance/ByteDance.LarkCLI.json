@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "larksuite/cli"
-        }
+        "github": "https://github.com/larksuite/cli"
     },
     "autoupdate": {
         "architecture": {

@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "lin-ycv/EverythingPowerToys"
-        }
+        "github": "https://github.com/lin-ycv/EverythingPowerToys"
     },
     "autoupdate": {
         "architecture": {

@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "gerardog/gsudo"
-        }
+        "github": "https://github.com/gerardog/gsudo"
     },
     "autoupdate": {
         "architecture": {

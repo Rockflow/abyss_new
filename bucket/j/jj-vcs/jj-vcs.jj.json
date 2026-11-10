@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jj-vcs/jj"
-        }
+        "github": "https://github.com/jj-vcs/jj"
     },
     "autoupdate": {
         "architecture": {

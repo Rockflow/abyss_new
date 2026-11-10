@@ -52,10 +52,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "lyswhut/lx-music-desktop"
-        }
+        "github": "https://github.com/lyswhut/lx-music-desktop"
     },
     "autoupdate": {
         "architecture": {

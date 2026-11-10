@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "spacedriveapp/spacedrive"
-        }
+        "github": "https://github.com/spacedriveapp/spacedrive"
     },
     "autoupdate": {
         "architecture": {

@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "simeji/jid"
-        }
+        "github": "https://github.com/simeji/jid"
     },
     "autoupdate": {
         "architecture": {

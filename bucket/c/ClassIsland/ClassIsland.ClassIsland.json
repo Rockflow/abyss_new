@@ -52,10 +52,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ClassIsland/ClassIsland"
-        }
+        "github": "https://github.com/ClassIsland/ClassIsland"
     },
     "autoupdate": {
         "architecture": {

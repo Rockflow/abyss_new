@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "infiniact/homebrew-iaterm"
-        }
+        "github": "https://github.com/infiniact/homebrew-iaterm"
     },
     "autoupdate": {
         "architecture": {

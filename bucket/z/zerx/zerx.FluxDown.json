@@ -58,10 +58,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zerx-lab/FluxDown"
-        }
+        "github": "https://github.com/zerx-lab/FluxDown"
     },
     "autoupdate": {
         "architecture": {

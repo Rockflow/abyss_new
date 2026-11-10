@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "nilaoda/N_m3u8DL-RE"
-        }
+        "github": "https://github.com/nilaoda/N_m3u8DL-RE"
     },
     "autoupdate": {
         "architecture": {

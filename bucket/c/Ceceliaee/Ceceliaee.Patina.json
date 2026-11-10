@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Ceceliaee/patina"
-        }
+        "github": "https://github.com/Ceceliaee/patina"
     },
     "autoupdate": {
         "architecture": {

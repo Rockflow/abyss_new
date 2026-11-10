@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "0xJacky/nginx-ui"
-        }
+        "github": "https://github.com/0xJacky/nginx-ui"
     },
     "autoupdate": {
         "architecture": {

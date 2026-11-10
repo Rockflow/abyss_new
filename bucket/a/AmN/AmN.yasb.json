@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "amnweb/yasb"
-        }
+        "github": "https://github.com/amnweb/yasb"
     },
     "autoupdate": {
         "architecture": {

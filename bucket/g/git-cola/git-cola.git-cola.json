@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "git-cola/git-cola"
-        }
+        "github": "https://github.com/git-cola/git-cola"
     },
     "autoupdate": {
         "architecture": {

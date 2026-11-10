@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "SchneeHertz/exhentai-manga-manager"
-        }
+        "github": "https://github.com/SchneeHertz/exhentai-manga-manager"
     },
     "autoupdate": {
         "architecture": {

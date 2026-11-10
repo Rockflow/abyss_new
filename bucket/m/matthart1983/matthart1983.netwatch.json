@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "matthart1983/netwatch"
-        }
+        "github": "https://github.com/matthart1983/netwatch"
     },
     "autoupdate": {
         "architecture": {

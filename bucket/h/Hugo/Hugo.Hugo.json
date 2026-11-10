@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "gohugoio/hugo"
-        }
+        "github": "https://github.com/gohugoio/hugo"
     },
     "autoupdate": {
         "architecture": {

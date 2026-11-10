@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "xpipe-io/xpipe"
-        }
+        "github": "https://github.com/xpipe-io/xpipe"
     },
     "autoupdate": {
         "architecture": {

@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "wavetermdev/waveterm"
-        }
+        "github": "https://github.com/wavetermdev/waveterm"
     },
     "autoupdate": {
         "architecture": {

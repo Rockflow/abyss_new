@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "clash-verge-rev/clash-verge-rev"
-        }
+        "github": "https://github.com/clash-verge-rev/clash-verge-rev"
     },
     "autoupdate": {
         "architecture": {

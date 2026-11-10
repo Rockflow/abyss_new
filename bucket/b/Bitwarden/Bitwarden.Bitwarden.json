@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "stable",
-            "repo": "bitwarden/clients"
-        },
+        "github": "https://github.com/bitwarden/clients",
         "regex": "desktop-(.+)"
     },
     "autoupdate": {

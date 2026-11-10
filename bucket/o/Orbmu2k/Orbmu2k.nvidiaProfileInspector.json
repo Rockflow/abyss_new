@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Orbmu2k/nvidiaProfileInspector"
-        }
+        "github": "https://github.com/Orbmu2k/nvidiaProfileInspector"
     },
     "autoupdate": {
         "architecture": {

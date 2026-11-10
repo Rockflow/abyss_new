@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "JetpackDuba/Gitnuro"
-        }
+        "github": "https://github.com/JetpackDuba/Gitnuro"
     },
     "autoupdate": {
         "architecture": {

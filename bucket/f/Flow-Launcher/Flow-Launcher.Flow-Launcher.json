@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Flow-Launcher/Flow.Launcher"
-        }
+        "github": "https://github.com/Flow-Launcher/Flow.Launcher"
     },
     "autoupdate": {
         "architecture": {

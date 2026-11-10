@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "modem-dev/hunk"
-        }
+        "github": "https://github.com/modem-dev/hunk"
     },
     "autoupdate": {
         "architecture": {

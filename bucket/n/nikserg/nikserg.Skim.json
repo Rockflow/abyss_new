@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "nikserg/skim"
-        }
+        "github": "https://github.com/nikserg/skim"
     },
     "autoupdate": {
         "architecture": {

@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "asciinema/agg"
-        }
+        "github": "https://github.com/asciinema/agg"
     },
     "autoupdate": {
         "architecture": {

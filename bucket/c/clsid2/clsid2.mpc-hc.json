@@ -54,10 +54,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "clsid2/mpc-hc"
-        }
+        "github": "https://github.com/clsid2/mpc-hc"
     },
     "autoupdate": {
         "architecture": {

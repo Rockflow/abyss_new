@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "schollz/croc"
-        }
+        "github": "https://github.com/schollz/croc"
     },
     "autoupdate": {
         "architecture": {

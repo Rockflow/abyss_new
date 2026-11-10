@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "AnkioTomas/qqpet"
-        }
+        "github": "https://github.com/AnkioTomas/qqpet"
     },
     "autoupdate": {
         "architecture": {

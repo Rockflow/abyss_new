@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "voidint/g"
-        }
+        "github": "https://github.com/voidint/g"
     },
     "autoupdate": {
         "architecture": {

@@ -56,10 +56,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "2dust/v2rayN"
-        }
+        "github": "https://github.com/2dust/v2rayN"
     },
     "autoupdate": {
         "architecture": {

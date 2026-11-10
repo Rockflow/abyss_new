@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "tryandromeda/andromeda"
-        }
+        "github": "https://github.com/tryandromeda/andromeda"
     },
     "autoupdate": {
         "architecture": {

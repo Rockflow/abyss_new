@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "beekeeper-studio/beekeeper-studio"
-        }
+        "github": "https://github.com/beekeeper-studio/beekeeper-studio"
     },
     "autoupdate": {
         "architecture": {

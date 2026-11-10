@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "PoBruno/klip"
-        }
+        "github": "https://github.com/PoBruno/klip"
     },
     "autoupdate": {
         "architecture": {

@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Devolutions/UniGetUI"
-        }
+        "github": "https://github.com/Devolutions/UniGetUI"
     },
     "autoupdate": {
         "architecture": {

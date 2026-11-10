@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "onozaty/treecat"
-        }
+        "github": "https://github.com/onozaty/treecat"
     },
     "autoupdate": {
         "architecture": {

@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "santhosh-tekuri/boon"
-        }
+        "github": "https://github.com/santhosh-tekuri/boon"
     },
     "autoupdate": {
         "architecture": {

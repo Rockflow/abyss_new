@@ -50,10 +50,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "STranslate/STranslate"
-        }
+        "github": "https://github.com/STranslate/STranslate"
     },
     "autoupdate": {
         "architecture": {

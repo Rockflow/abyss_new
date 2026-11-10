@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "saber-notes/saber"
-        }
+        "github": "https://github.com/saber-notes/saber"
     },
     "autoupdate": {
         "architecture": {

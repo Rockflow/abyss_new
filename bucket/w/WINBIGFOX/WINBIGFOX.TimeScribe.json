@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "WINBIGFOX/TimeScribe"
-        }
+        "github": "https://github.com/WINBIGFOX/TimeScribe"
     },
     "autoupdate": {
         "architecture": {

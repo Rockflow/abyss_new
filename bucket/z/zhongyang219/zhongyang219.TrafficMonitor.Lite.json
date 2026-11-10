@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zhongyang219/TrafficMonitor"
-        }
+        "github": "https://github.com/zhongyang219/TrafficMonitor"
     },
     "autoupdate": {
         "architecture": {

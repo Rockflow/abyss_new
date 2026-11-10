@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Ruben2776/PicView"
-        }
+        "github": "https://github.com/Ruben2776/PicView"
     },
     "autoupdate": {
         "architecture": {

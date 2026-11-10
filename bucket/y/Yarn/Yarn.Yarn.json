@@ -63,10 +63,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "yarnpkg/yarn"
-        }
+        "github": "https://github.com/yarnpkg/yarn"
     },
     "autoupdate": {
         "architecture": {

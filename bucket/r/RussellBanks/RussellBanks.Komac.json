@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "russellbanks/Komac"
-        }
+        "github": "https://github.com/russellbanks/Komac"
     },
     "autoupdate": {
         "architecture": {

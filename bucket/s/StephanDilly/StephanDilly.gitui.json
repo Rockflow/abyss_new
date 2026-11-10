@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "gitui-org/gitui"
-        }
+        "github": "https://github.com/gitui-org/gitui"
     },
     "autoupdate": {
         "architecture": {

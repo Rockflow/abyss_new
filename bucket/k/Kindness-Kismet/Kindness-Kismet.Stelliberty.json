@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Kindness-Kismet/Stelliberty"
-        }
+        "github": "https://github.com/Kindness-Kismet/Stelliberty"
     },
     "autoupdate": {
         "architecture": {

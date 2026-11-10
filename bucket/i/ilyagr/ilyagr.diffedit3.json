@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ilyagr/diffedit3"
-        }
+        "github": "https://github.com/ilyagr/diffedit3"
     },
     "autoupdate": {
         "architecture": {

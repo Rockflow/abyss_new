@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Predidit/oneAnime"
-        }
+        "github": "https://github.com/Predidit/oneAnime"
     },
     "autoupdate": {
         "architecture": {

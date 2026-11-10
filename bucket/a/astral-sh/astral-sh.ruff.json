@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "astral-sh/ruff"
-        }
+        "github": "https://github.com/astral-sh/ruff"
     },
     "autoupdate": {
         "architecture": {

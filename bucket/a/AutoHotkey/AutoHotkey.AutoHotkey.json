@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "AutoHotkey/AutoHotkey"
-        }
+        "github": "https://github.com/AutoHotkey/AutoHotkey"
     },
     "autoupdate": {
         "architecture": {

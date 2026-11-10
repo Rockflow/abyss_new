@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "XiaoYouChR/Ghost-Downloader-3"
-        }
+        "github": "https://github.com/XiaoYouChR/Ghost-Downloader-3"
     },
     "autoupdate": {
         "architecture": {

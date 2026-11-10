@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Kong/insomnia"
-        },
+        "github": "https://github.com/Kong/insomnia",
         "regex": "core@(.+)"
     },
     "autoupdate": {

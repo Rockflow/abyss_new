@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "pranshuparmar/witr"
-        }
+        "github": "https://github.com/pranshuparmar/witr"
     },
     "autoupdate": {
         "architecture": {

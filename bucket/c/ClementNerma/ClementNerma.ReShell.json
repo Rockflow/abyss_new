@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ClementNerma/ReShell"
-        }
+        "github": "https://github.com/ClementNerma/ReShell"
     },
     "autoupdate": {
         "architecture": {

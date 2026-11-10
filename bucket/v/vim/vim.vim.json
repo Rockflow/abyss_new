@@ -114,10 +114,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "vim/vim-win32-installer"
-        }
+        "github": "https://github.com/vim/vim-win32-installer"
     },
     "autoupdate": {
         "architecture": {

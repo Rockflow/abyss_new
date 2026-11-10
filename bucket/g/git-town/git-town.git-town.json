@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "git-town/git-town"
-        }
+        "github": "https://github.com/git-town/git-town"
     },
     "autoupdate": {
         "architecture": {

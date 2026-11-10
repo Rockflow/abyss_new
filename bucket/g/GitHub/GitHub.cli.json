@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "cli/cli"
-        }
+        "github": "https://github.com/cli/cli"
     },
     "autoupdate": {
         "architecture": {

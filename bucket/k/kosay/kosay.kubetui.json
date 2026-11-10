@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sarub0b0/kubetui"
-        }
+        "github": "https://github.com/sarub0b0/kubetui"
     },
     "autoupdate": {
         "architecture": {

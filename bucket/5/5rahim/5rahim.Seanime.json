@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "5rahim/seanime"
-        }
+        "github": "https://github.com/5rahim/seanime"
     },
     "autoupdate": {
         "architecture": {

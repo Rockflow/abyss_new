@@ -69,10 +69,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "LGUG2Z/komorebi"
-        }
+        "github": "https://github.com/LGUG2Z/komorebi"
     },
     "autoupdate": {
         "architecture": {

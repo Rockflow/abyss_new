@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "hoowhoami/EchoMusic"
-        }
+        "github": "https://github.com/hoowhoami/EchoMusic"
     },
     "autoupdate": {
         "architecture": {

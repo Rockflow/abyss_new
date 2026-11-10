@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "microsoft/XmlNotepad"
-        }
+        "github": "https://github.com/microsoft/XmlNotepad"
     },
     "autoupdate": {
         "architecture": {

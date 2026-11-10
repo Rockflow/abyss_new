@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "bootandy/dust"
-        }
+        "github": "https://github.com/bootandy/dust"
     },
     "autoupdate": {
         "architecture": {

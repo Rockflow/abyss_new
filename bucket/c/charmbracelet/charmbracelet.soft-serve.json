@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "charmbracelet/soft-serve"
-        }
+        "github": "https://github.com/charmbracelet/soft-serve"
     },
     "autoupdate": {
         "architecture": {

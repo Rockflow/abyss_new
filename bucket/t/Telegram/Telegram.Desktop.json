@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "telegramdesktop/tdesktop"
-        }
+        "github": "https://github.com/telegramdesktop/tdesktop"
     },
     "autoupdate": {
         "architecture": {

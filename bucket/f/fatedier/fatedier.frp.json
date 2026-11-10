@@ -62,10 +62,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "fatedier/frp"
-        }
+        "github": "https://github.com/fatedier/frp"
     },
     "autoupdate": {
         "architecture": {

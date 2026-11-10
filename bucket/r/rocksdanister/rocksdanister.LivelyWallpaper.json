@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "rocksdanister/lively"
-        }
+        "github": "https://github.com/rocksdanister/lively"
     },
     "autoupdate": {
         "architecture": {

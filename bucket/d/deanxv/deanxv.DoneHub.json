@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "deanxv/done-hub"
-        }
+        "github": "https://github.com/deanxv/done-hub"
     },
     "autoupdate": {
         "architecture": {

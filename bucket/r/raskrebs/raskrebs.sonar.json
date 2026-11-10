@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "raskrebs/sonar"
-        }
+        "github": "https://github.com/raskrebs/sonar"
     },
     "autoupdate": {
         "architecture": {

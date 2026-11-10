@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "srwi/EverythingToolbar"
-        }
+        "github": "https://github.com/srwi/EverythingToolbar"
     },
     "autoupdate": {
         "architecture": {

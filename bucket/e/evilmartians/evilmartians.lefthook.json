@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "evilmartians/lefthook"
-        }
+        "github": "https://github.com/evilmartians/lefthook"
     },
     "autoupdate": {
         "architecture": {

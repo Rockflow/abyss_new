@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "charmbracelet/freeze"
-        }
+        "github": "https://github.com/charmbracelet/freeze"
     },
     "autoupdate": {
         "architecture": {

@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zladovan/gorched"
-        }
+        "github": "https://github.com/zladovan/gorched"
     },
     "autoupdate": {
         "architecture": {

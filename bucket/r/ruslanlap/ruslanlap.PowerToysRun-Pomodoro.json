@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ruslanlap/PowerToysRun-Pomodoro"
-        }
+        "github": "https://github.com/ruslanlap/PowerToysRun-Pomodoro"
     },
     "autoupdate": {
         "architecture": {

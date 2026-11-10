@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "tarcode-apps/BatteryMode"
-        }
+        "github": "https://github.com/tarcode-apps/BatteryMode"
     },
     "autoupdate": {
         "architecture": {

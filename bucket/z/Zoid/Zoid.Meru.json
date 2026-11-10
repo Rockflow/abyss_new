@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zoidsh/meru"
-        }
+        "github": "https://github.com/zoidsh/meru"
     },
     "autoupdate": {
         "architecture": {

@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "owu/wsl-dashboard"
-        }
+        "github": "https://github.com/owu/wsl-dashboard"
     },
     "autoupdate": {
         "architecture": {

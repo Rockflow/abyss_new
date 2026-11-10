@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "abhixdd/ghgrab"
-        }
+        "github": "https://github.com/abhixdd/ghgrab"
     },
     "autoupdate": {
         "architecture": {

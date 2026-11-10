@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "kunkundi/crossdesk"
-        }
+        "github": "https://github.com/kunkundi/crossdesk"
     },
     "autoupdate": {
         "architecture": {

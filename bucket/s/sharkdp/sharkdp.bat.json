@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sharkdp/bat"
-        }
+        "github": "https://github.com/sharkdp/bat"
     },
     "autoupdate": {
         "architecture": {

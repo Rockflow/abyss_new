@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jqlang/jq"
-        },
+        "github": "https://github.com/jqlang/jq",
         "regex": "jq-(.+)"
     },
     "autoupdate": {

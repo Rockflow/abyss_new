@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "DuckDuckStudio/Sundry"
-        }
+        "github": "https://github.com/DuckDuckStudio/Sundry"
     },
     "autoupdate": {
         "architecture": {

@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ghost-him/ZeroLaunch-rs"
-        }
+        "github": "https://github.com/ghost-him/ZeroLaunch-rs"
     },
     "autoupdate": {
         "architecture": {

@@ -54,10 +54,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "siyuan-note/siyuan"
-        }
+        "github": "https://github.com/siyuan-note/siyuan"
     },
     "autoupdate": {
         "architecture": {

@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "superfly/flyctl"
-        }
+        "github": "https://github.com/superfly/flyctl"
     },
     "autoupdate": {
         "architecture": {

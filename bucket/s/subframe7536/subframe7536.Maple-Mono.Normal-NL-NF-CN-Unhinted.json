@@ -33,10 +33,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "subframe7536/maple-font"
-        }
+        "github": "https://github.com/subframe7536/maple-font"
     },
     "autoupdate": {
         "url": "https://github.com/subframe7536/maple-font/releases/download/v$version/MapleMonoNormalNL-NF-CN-unhinted.zip"

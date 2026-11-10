@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Mintplex-Labs/anything-llm"
-        }
+        "github": "https://github.com/Mintplex-Labs/anything-llm"
     },
     "autoupdate": {
         "architecture": {

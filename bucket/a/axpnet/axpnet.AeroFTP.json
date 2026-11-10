@@ -53,10 +53,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "axpdev-lab/aeroftp"
-        }
+        "github": "https://github.com/axpdev-lab/aeroftp"
     },
     "autoupdate": {
         "architecture": {

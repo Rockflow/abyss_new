@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "game1024/OpenSpeedy"
-        }
+        "github": "https://github.com/game1024/OpenSpeedy"
     },
     "autoupdate": {
         "architecture": {

@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "4gray/iptvnator"
-        }
+        "github": "https://github.com/4gray/iptvnator"
     },
     "autoupdate": {
         "architecture": {

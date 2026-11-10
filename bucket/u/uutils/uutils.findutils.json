@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "uutils/findutils"
-        }
+        "github": "https://github.com/uutils/findutils"
     },
     "autoupdate": {
         "architecture": {

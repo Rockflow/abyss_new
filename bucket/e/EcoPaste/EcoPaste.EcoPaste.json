@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "EcoPasteHub/EcoPaste"
-        }
+        "github": "https://github.com/EcoPasteHub/EcoPaste"
     },
     "autoupdate": {
         "architecture": {

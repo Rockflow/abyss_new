@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "flameshot-org/flameshot"
-        }
+        "github": "https://github.com/flameshot-org/flameshot"
     },
     "autoupdate": {
         "architecture": {

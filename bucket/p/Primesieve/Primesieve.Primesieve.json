@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "kimwalisch/primesieve"
-        }
+        "github": "https://github.com/kimwalisch/primesieve"
     },
     "autoupdate": {
         "architecture": {

@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "N0I0C0K/PowerTranslator"
-        }
+        "github": "https://github.com/N0I0C0K/PowerTranslator"
     },
     "autoupdate": {
         "architecture": {

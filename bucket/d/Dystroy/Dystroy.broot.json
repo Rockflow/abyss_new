@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Canop/broot"
-        }
+        "github": "https://github.com/Canop/broot"
     },
     "autoupdate": {
         "architecture": {

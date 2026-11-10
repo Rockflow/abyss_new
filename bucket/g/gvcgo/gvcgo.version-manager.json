@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "gvcgo/version-manager"
-        }
+        "github": "https://github.com/gvcgo/version-manager"
     },
     "autoupdate": {
         "architecture": {

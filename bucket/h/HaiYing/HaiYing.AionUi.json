@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "iOfficeAI/AionUi"
-        }
+        "github": "https://github.com/iOfficeAI/AionUi"
     },
     "autoupdate": {
         "architecture": {

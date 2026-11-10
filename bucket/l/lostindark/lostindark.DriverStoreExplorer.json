@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "lostindark/DriverStoreExplorer"
-        }
+        "github": "https://github.com/lostindark/DriverStoreExplorer"
     },
     "autoupdate": {
         "architecture": {

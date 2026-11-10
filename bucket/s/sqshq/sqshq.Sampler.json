@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sqshq/sampler"
-        }
+        "github": "https://github.com/sqshq/sampler"
     },
     "autoupdate": {
         "architecture": {

@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "xushengfeng/eSearch"
-        }
+        "github": "https://github.com/xushengfeng/eSearch"
     },
     "autoupdate": {
         "architecture": {

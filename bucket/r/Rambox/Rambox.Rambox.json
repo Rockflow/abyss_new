@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ramboxapp/download"
-        }
+        "github": "https://github.com/ramboxapp/download"
     },
     "autoupdate": {
         "architecture": {

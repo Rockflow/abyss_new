@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "arimxyer/models"
-        }
+        "github": "https://github.com/arimxyer/models"
     },
     "autoupdate": {
         "architecture": {

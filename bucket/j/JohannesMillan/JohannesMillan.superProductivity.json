@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "johannesjo/super-productivity"
-        }
+        "github": "https://github.com/johannesjo/super-productivity"
     },
     "autoupdate": {
         "architecture": {

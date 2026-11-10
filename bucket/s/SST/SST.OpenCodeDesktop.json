@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "anomalyco/opencode"
-        }
+        "github": "https://github.com/anomalyco/opencode"
     },
     "autoupdate": {
         "architecture": {

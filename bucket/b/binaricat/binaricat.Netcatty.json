@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "binaricat/Netcatty"
-        }
+        "github": "https://github.com/binaricat/Netcatty"
     },
     "autoupdate": {
         "architecture": {

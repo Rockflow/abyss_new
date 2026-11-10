@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "direnv/direnv"
-        }
+        "github": "https://github.com/direnv/direnv"
     },
     "autoupdate": {
         "architecture": {

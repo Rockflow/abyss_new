@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zellij-org/zellij"
-        }
+        "github": "https://github.com/zellij-org/zellij"
     },
     "autoupdate": {
         "architecture": {

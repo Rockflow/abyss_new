@@ -52,10 +52,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "VSCodium/vscodium"
-        }
+        "github": "https://github.com/VSCodium/vscodium"
     },
     "autoupdate": {
         "architecture": {

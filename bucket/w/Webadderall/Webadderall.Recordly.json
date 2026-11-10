@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "webadderall/Recordly"
-        }
+        "github": "https://github.com/webadderall/Recordly"
     },
     "autoupdate": {
         "architecture": {

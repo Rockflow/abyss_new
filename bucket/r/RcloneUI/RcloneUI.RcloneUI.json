@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "rclone-ui/rclone-ui"
-        }
+        "github": "https://github.com/rclone-ui/rclone-ui"
     },
     "autoupdate": {
         "architecture": {

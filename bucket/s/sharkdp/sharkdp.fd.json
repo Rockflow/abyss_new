@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sharkdp/fd"
-        }
+        "github": "https://github.com/sharkdp/fd"
     },
     "autoupdate": {
         "architecture": {

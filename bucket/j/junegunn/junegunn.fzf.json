@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "junegunn/fzf"
-        }
+        "github": "https://github.com/junegunn/fzf"
     },
     "autoupdate": {
         "architecture": {

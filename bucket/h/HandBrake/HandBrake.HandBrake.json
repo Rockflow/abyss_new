@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "HandBrake/HandBrake"
-        }
+        "github": "https://github.com/HandBrake/HandBrake"
     },
     "autoupdate": {
         "architecture": {

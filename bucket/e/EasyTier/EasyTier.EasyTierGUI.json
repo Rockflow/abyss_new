@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "EasyTier/EasyTier"
-        }
+        "github": "https://github.com/EasyTier/EasyTier"
     },
     "autoupdate": {
         "architecture": {

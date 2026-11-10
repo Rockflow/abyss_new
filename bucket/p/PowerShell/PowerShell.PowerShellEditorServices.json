@@ -34,10 +34,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "PowerShell/PowerShellEditorServices"
-        }
+        "github": "https://github.com/PowerShell/PowerShellEditorServices"
     },
     "autoupdate": {
         "url": "https://github.com/PowerShell/PowerShellEditorServices/releases/download/v$version/PowerShellEditorServices.zip"

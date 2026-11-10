@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "imsyy/SPlayer"
-        }
+        "github": "https://github.com/imsyy/SPlayer"
     },
     "autoupdate": {
         "architecture": {

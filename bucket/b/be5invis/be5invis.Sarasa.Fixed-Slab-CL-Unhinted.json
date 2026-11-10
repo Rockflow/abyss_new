@@ -33,10 +33,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "be5invis/Sarasa-Gothic"
-        }
+        "github": "https://github.com/be5invis/Sarasa-Gothic"
     },
     "autoupdate": {
         "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v$version/SarasaFixedSlabCL-TTF-Unhinted-$version.7z"

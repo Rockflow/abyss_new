@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "DonutWare/Fladder"
-        }
+        "github": "https://github.com/DonutWare/Fladder"
     },
     "autoupdate": {
         "architecture": {

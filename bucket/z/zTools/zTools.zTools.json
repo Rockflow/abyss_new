@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ZToolsCenter/ZTools"
-        }
+        "github": "https://github.com/ZToolsCenter/ZTools"
     },
     "autoupdate": {
         "architecture": {

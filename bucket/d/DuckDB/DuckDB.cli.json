@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "duckdb/duckdb"
-        }
+        "github": "https://github.com/duckdb/duckdb"
     },
     "autoupdate": {
         "architecture": {

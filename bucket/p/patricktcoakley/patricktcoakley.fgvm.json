@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "patricktcoakley/fgvm"
-        }
+        "github": "https://github.com/patricktcoakley/fgvm"
     },
     "autoupdate": {
         "architecture": {

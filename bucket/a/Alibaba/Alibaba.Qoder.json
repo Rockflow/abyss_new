@@ -49,10 +49,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "QoderAI/changelog"
-        }
+        "github": "https://github.com/QoderAI/changelog"
     },
     "autoupdate": {
         "architecture": {

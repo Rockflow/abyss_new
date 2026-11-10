@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "vladelaina/Catime"
-        }
+        "github": "https://github.com/vladelaina/Catime"
     },
     "autoupdate": {
         "architecture": {

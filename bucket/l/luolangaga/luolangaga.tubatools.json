@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "luolangaga/tubatools"
-        }
+        "github": "https://github.com/luolangaga/tubatools"
     },
     "autoupdate": {
         "architecture": {

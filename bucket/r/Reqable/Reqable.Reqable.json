@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "reqable/reqable-app"
-        }
+        "github": "https://github.com/reqable/reqable-app"
     },
     "autoupdate": {
         "architecture": {

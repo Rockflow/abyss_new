@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "picguard/picguard"
-        }
+        "github": "https://github.com/picguard/picguard"
     },
     "autoupdate": {
         "architecture": {

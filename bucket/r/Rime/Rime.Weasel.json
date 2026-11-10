@@ -66,10 +66,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "rime/weasel"
-        }
+        "github": "https://github.com/rime/weasel"
     },
     "autoupdate": {
         "architecture": {

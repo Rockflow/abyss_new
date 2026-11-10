@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "9001/copyparty"
-        }
+        "github": "https://github.com/9001/copyparty"
     },
     "autoupdate": {
         "architecture": {

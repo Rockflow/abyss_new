@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "farion1231/cc-switch"
-        }
+        "github": "https://github.com/farion1231/cc-switch"
     },
     "autoupdate": {
         "architecture": {

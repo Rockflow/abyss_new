@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "lasantosr/intelli-shell"
-        }
+        "github": "https://github.com/lasantosr/intelli-shell"
     },
     "autoupdate": {
         "architecture": {

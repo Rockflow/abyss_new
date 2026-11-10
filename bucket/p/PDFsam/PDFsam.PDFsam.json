@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "torakiki/pdfsam"
-        }
+        "github": "https://github.com/torakiki/pdfsam"
     },
     "autoupdate": {
         "architecture": {

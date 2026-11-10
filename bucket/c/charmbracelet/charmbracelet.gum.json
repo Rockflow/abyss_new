@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "charmbracelet/gum"
-        }
+        "github": "https://github.com/charmbracelet/gum"
     },
     "autoupdate": {
         "architecture": {

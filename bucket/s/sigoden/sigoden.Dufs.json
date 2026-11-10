@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sigoden/dufs"
-        }
+        "github": "https://github.com/sigoden/dufs"
     },
     "autoupdate": {
         "architecture": {

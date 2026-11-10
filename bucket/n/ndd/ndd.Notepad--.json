@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "cxasm/notepad--"
-        },
+        "github": "https://github.com/cxasm/notepad--",
         "regex": "notepad-(.+)"
     },
     "autoupdate": {

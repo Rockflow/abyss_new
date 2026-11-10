@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jimuzhe/tiez-clipboard"
-        }
+        "github": "https://github.com/jimuzhe/tiez-clipboard"
     },
     "autoupdate": {
         "architecture": {

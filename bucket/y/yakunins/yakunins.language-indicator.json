@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "yakunins/language-indicator"
-        }
+        "github": "https://github.com/yakunins/language-indicator"
     },
     "autoupdate": {
         "architecture": {

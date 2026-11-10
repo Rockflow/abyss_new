@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "sipeed/picoclaw"
-        }
+        "github": "https://github.com/sipeed/picoclaw"
     },
     "autoupdate": {
         "architecture": {

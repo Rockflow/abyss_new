@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "commercialhaskell/stack"
-        }
+        "github": "https://github.com/commercialhaskell/stack"
     },
     "autoupdate": {
         "architecture": {

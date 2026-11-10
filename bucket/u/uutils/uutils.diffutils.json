@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "uutils/diffutils"
-        }
+        "github": "https://github.com/uutils/diffutils"
     },
     "autoupdate": {
         "architecture": {

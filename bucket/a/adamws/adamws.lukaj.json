@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "adamws/lukaj"
-        }
+        "github": "https://github.com/adamws/lukaj"
     },
     "autoupdate": {
         "architecture": {

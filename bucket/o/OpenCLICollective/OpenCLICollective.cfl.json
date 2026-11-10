@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "open-cli-collective/confluence-cli"
-        }
+        "github": "https://github.com/open-cli-collective/confluence-cli"
     },
     "autoupdate": {
         "architecture": {

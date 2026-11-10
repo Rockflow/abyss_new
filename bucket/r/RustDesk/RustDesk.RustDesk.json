@@ -49,10 +49,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "rustdesk/rustdesk"
-        }
+        "github": "https://github.com/rustdesk/rustdesk"
     },
     "autoupdate": {
         "architecture": {

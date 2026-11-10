@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "1zilc/fishing-funds"
-        }
+        "github": "https://github.com/1zilc/fishing-funds"
     },
     "autoupdate": {
         "architecture": {

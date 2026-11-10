@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "CrowdStrike/perseus"
-        }
+        "github": "https://github.com/CrowdStrike/perseus"
     },
     "autoupdate": {
         "architecture": {

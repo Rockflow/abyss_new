@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "athasdev/athas"
-        }
+        "github": "https://github.com/athasdev/athas"
     },
     "autoupdate": {
         "architecture": {

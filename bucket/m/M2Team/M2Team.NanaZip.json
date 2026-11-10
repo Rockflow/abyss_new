@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "M2Team/NanaZip"
-        }
+        "github": "https://github.com/M2Team/NanaZip"
     },
     "autoupdate": {
         "architecture": {

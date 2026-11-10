@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "github/app"
-        }
+        "github": "https://github.com/github/app"
     },
     "autoupdate": {
         "architecture": {

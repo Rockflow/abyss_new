@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "St0ff3l/fileterm"
-        }
+        "github": "https://github.com/St0ff3l/fileterm"
     },
     "autoupdate": {
         "architecture": {

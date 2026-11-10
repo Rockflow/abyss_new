@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "t8y2/dbx"
-        }
+        "github": "https://github.com/t8y2/dbx"
     },
     "autoupdate": {
         "architecture": {

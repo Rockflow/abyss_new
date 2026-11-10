@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "tree-sitter/tree-sitter"
-        }
+        "github": "https://github.com/tree-sitter/tree-sitter"
     },
     "autoupdate": {
         "architecture": {

@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zyedidia/micro"
-        }
+        "github": "https://github.com/zyedidia/micro"
     },
     "autoupdate": {
         "architecture": {

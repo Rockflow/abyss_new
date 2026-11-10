@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "StudentWeis/ropy"
-        }
+        "github": "https://github.com/StudentWeis/ropy"
     },
     "autoupdate": {
         "architecture": {

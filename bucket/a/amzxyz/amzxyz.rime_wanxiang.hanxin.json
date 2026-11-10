@@ -64,10 +64,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "amzxyz/rime_wanxiang"
-        }
+        "github": "https://github.com/amzxyz/rime_wanxiang"
     },
     "autoupdate": {
         "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v$version/rime-wanxiang-hanxin-fuzhu.zip"

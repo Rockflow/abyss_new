@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "wm94i/Work_Review"
-        }
+        "github": "https://github.com/wm94i/Work_Review"
     },
     "autoupdate": {
         "architecture": {

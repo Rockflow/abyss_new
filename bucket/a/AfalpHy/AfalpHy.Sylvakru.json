@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "AfalpHy/sylvakru"
-        }
+        "github": "https://github.com/AfalpHy/sylvakru"
     },
     "autoupdate": {
         "architecture": {

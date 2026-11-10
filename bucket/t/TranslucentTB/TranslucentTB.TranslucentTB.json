@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "TranslucentTB/TranslucentTB"
-        }
+        "github": "https://github.com/TranslucentTB/TranslucentTB"
     },
     "autoupdate": {
         "architecture": {

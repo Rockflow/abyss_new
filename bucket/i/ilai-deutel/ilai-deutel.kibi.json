@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ilai-deutel/kibi"
-        }
+        "github": "https://github.com/ilai-deutel/kibi"
     },
     "autoupdate": {
         "architecture": {

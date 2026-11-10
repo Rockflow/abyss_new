@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zhongyang219/MusicPlayer2"
-        }
+        "github": "https://github.com/zhongyang219/MusicPlayer2"
     },
     "autoupdate": {
         "architecture": {

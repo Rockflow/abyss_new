@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "pamburus/hl"
-        }
+        "github": "https://github.com/pamburus/hl"
     },
     "autoupdate": {
         "architecture": {

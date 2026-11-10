@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "derekwisong/datui"
-        }
+        "github": "https://github.com/derekwisong/datui"
     },
     "autoupdate": {
         "architecture": {

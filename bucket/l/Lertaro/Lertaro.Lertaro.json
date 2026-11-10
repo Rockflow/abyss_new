@@ -49,10 +49,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Lertaro/Lertaro"
-        }
+        "github": "https://github.com/Lertaro/Lertaro"
     },
     "autoupdate": {
         "architecture": {

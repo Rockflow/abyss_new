@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "nearai/ironclaw"
-        },
+        "github": "https://github.com/nearai/ironclaw",
         "regex": "ironclaw-(.+)"
     },
     "autoupdate": {

@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "kingToolbox/WindTerm"
-        }
+        "github": "https://github.com/kingToolbox/WindTerm"
     },
     "autoupdate": {
         "architecture": {

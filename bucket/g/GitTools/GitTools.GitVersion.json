@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "GitTools/GitVersion"
-        }
+        "github": "https://github.com/GitTools/GitVersion"
     },
     "autoupdate": {
         "architecture": {

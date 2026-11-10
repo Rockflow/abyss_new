@@ -56,10 +56,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "zed-industries/zed"
-        }
+        "github": "https://github.com/zed-industries/zed"
     },
     "autoupdate": {
         "architecture": {

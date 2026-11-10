@@ -65,10 +65,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "microsoft/terminal"
-        }
+        "github": "https://github.com/microsoft/terminal"
     },
     "autoupdate": {
         "architecture": {

@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "skim-rs/skim"
-        }
+        "github": "https://github.com/skim-rs/skim"
     },
     "autoupdate": {
         "architecture": {

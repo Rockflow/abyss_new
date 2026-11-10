@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "dyad-sh/dyad"
-        }
+        "github": "https://github.com/dyad-sh/dyad"
     },
     "autoupdate": {
         "architecture": {

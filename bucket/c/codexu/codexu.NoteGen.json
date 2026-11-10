@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "codexu/note-gen"
-        },
+        "github": "https://github.com/codexu/note-gen",
         "regex": "note-gen-(.+)"
     },
     "autoupdate": {

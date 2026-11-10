@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Julien-cpsn/ATAC"
-        }
+        "github": "https://github.com/Julien-cpsn/ATAC"
     },
     "autoupdate": {
         "architecture": {

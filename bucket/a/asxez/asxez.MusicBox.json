@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "asxez/MusicBox"
-        }
+        "github": "https://github.com/asxez/MusicBox"
     },
     "autoupdate": {
         "architecture": {

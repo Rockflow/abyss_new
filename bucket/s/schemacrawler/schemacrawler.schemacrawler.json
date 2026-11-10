@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "schemacrawler/SchemaCrawler-Installers"
-        }
+        "github": "https://github.com/schemacrawler/SchemaCrawler-Installers"
     },
     "autoupdate": {
         "architecture": {

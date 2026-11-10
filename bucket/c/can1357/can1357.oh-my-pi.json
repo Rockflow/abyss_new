@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "can1357/oh-my-pi"
-        }
+        "github": "https://github.com/can1357/oh-my-pi"
     },
     "autoupdate": {
         "architecture": {

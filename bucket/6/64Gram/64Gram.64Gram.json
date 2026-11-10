@@ -47,10 +47,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "TDesktop-x64/tdesktop"
-        }
+        "github": "https://github.com/TDesktop-x64/tdesktop"
     },
     "autoupdate": {
         "architecture": {

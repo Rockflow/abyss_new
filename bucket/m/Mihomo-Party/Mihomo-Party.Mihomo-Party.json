@@ -61,10 +61,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "mihomo-party-org/clash-party"
-        }
+        "github": "https://github.com/mihomo-party-org/clash-party"
     },
     "autoupdate": {
         "architecture": {

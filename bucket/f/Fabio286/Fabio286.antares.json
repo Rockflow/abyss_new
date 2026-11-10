@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "antares-sql/antares"
-        }
+        "github": "https://github.com/antares-sql/antares"
     },
     "autoupdate": {
         "architecture": {

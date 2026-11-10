@@ -36,10 +36,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "ameshkov/dnslookup"
-        }
+        "github": "https://github.com/ameshkov/dnslookup"
     },
     "autoupdate": {
         "architecture": {

@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Predidit/Kazumi"
-        }
+        "github": "https://github.com/Predidit/Kazumi"
     },
     "autoupdate": {
         "architecture": {

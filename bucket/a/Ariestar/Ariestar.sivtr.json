@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Ariestar/sivtr"
-        }
+        "github": "https://github.com/Ariestar/sivtr"
     },
     "autoupdate": {
         "architecture": {

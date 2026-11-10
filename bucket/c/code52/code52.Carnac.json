@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Code52/carnac"
-        }
+        "github": "https://github.com/Code52/carnac"
     },
     "autoupdate": {
         "architecture": {

@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "drawpile/Drawpile"
-        }
+        "github": "https://github.com/drawpile/Drawpile"
     },
     "autoupdate": {
         "architecture": {

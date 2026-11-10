@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "PLFJY/ContextMenuMgr"
-        }
+        "github": "https://github.com/PLFJY/ContextMenuMgr"
     },
     "autoupdate": {
         "architecture": {

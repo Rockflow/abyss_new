@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "go-musicfox/go-musicfox"
-        }
+        "github": "https://github.com/go-musicfox/go-musicfox"
     },
     "autoupdate": {
         "architecture": {

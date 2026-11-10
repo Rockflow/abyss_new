@@ -42,10 +42,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Ferry-200/coriander_player"
-        }
+        "github": "https://github.com/Ferry-200/coriander_player"
     },
     "autoupdate": {
         "architecture": {

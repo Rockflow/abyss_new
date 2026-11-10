@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "linebender/resvg"
-        }
+        "github": "https://github.com/linebender/resvg"
     },
     "autoupdate": {
         "architecture": {

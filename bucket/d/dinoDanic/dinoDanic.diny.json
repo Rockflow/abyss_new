@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "dinoDanic/diny"
-        }
+        "github": "https://github.com/dinoDanic/diny"
     },
     "autoupdate": {
         "architecture": {

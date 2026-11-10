@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "mikefarah/yq"
-        }
+        "github": "https://github.com/mikefarah/yq"
     },
     "autoupdate": {
         "architecture": {

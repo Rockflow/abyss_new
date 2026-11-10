@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Molunerfinn/PicGo"
-        }
+        "github": "https://github.com/Molunerfinn/PicGo"
     },
     "autoupdate": {
         "architecture": {

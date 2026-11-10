@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "branhill/windows-11-context-menu-manager"
-        }
+        "github": "https://github.com/branhill/windows-11-context-menu-manager"
     },
     "autoupdate": {
         "architecture": {

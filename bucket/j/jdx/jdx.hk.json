@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jdx/hk"
-        }
+        "github": "https://github.com/jdx/hk"
     },
     "autoupdate": {
         "architecture": {

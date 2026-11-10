@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "axllent/mailpit"
-        }
+        "github": "https://github.com/axllent/mailpit"
     },
     "autoupdate": {
         "architecture": {

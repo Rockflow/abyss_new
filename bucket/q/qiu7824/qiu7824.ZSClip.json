@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "qiu7824/zsclip"
-        }
+        "github": "https://github.com/qiu7824/zsclip"
     },
     "autoupdate": {
         "architecture": {

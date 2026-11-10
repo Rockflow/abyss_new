@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "venera-app/venera"
-        }
+        "github": "https://github.com/venera-app/venera"
     },
     "autoupdate": {
         "architecture": {

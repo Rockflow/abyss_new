@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "open-ani/animeko"
-        }
+        "github": "https://github.com/open-ani/animeko"
     },
     "autoupdate": {
         "architecture": {

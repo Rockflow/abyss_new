@@ -55,10 +55,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "idursun/jjui"
-        }
+        "github": "https://github.com/idursun/jjui"
     },
     "autoupdate": {
         "architecture": {

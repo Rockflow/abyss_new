@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jeff141/meatshell"
-        }
+        "github": "https://github.com/jeff141/meatshell"
     },
     "autoupdate": {
         "architecture": {

@@ -55,10 +55,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "nushell/nushell"
-        }
+        "github": "https://github.com/nushell/nushell"
     },
     "autoupdate": {
         "architecture": {

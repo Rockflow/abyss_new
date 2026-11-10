@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "keeweb/keeweb"
-        }
+        "github": "https://github.com/keeweb/keeweb"
     },
     "autoupdate": {
         "architecture": {

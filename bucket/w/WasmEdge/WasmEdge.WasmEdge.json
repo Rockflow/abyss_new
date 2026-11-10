@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "WasmEdge/WasmEdge"
-        }
+        "github": "https://github.com/WasmEdge/WasmEdge"
     },
     "autoupdate": {
         "architecture": {

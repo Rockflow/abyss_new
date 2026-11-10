@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "chthollyphile/folia-major"
-        }
+        "github": "https://github.com/chthollyphile/folia-major"
     },
     "autoupdate": {
         "architecture": {

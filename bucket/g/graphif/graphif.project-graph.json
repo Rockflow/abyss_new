@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "graphif/project-graph"
-        }
+        "github": "https://github.com/graphif/project-graph"
     },
     "autoupdate": {
         "architecture": {

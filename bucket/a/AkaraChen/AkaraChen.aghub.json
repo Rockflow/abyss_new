@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "AkaraChen/aghub"
-        }
+        "github": "https://github.com/AkaraChen/aghub"
     },
     "autoupdate": {
         "architecture": {

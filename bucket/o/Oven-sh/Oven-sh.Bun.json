@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "oven-sh/bun"
-        },
+        "github": "https://github.com/oven-sh/bun",
         "regex": "bun-(.+)"
     },
     "autoupdate": {

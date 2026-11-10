@@ -52,10 +52,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "openai/codex"
-        },
+        "github": "https://github.com/openai/codex",
         "regex": "rust-(.+)"
     },
     "autoupdate": {

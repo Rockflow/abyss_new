@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "PixiEditor/PixiEditor"
-        }
+        "github": "https://github.com/PixiEditor/PixiEditor"
     },
     "autoupdate": {
         "architecture": {

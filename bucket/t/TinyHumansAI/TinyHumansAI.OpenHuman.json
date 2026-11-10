@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "tinyhumansai/openhuman"
-        }
+        "github": "https://github.com/tinyhumansai/openhuman"
     },
     "autoupdate": {
         "architecture": {

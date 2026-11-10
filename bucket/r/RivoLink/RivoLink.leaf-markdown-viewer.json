@@ -37,10 +37,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "RivoLink/leaf"
-        }
+        "github": "https://github.com/RivoLink/leaf"
     },
     "autoupdate": {
         "architecture": {

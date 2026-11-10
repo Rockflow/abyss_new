@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Kuddev/pebrel"
-        }
+        "github": "https://github.com/Kuddev/pebrel"
     },
     "autoupdate": {
         "architecture": {

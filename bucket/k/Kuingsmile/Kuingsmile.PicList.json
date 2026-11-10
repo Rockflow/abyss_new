@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Kuingsmile/PicList"
-        }
+        "github": "https://github.com/Kuingsmile/PicList"
     },
     "autoupdate": {
         "architecture": {

@@ -52,10 +52,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "rizonesoft/Notepad3"
-        },
+        "github": "https://github.com/rizonesoft/Notepad3",
         "regex": "RELEASE_(.+)"
     },
     "autoupdate": {

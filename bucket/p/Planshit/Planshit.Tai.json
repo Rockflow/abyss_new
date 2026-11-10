@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Planshit/Tai"
-        }
+        "github": "https://github.com/Planshit/Tai"
     },
     "autoupdate": {
         "architecture": {

@@ -46,10 +46,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "b00nz/mVolt"
-        }
+        "github": "https://github.com/b00nz/mVolt"
     },
     "autoupdate": {
         "architecture": {

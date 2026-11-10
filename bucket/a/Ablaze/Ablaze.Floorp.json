@@ -40,10 +40,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Floorp-Projects/Floorp"
-        }
+        "github": "https://github.com/Floorp-Projects/Floorp"
     },
     "autoupdate": {
         "architecture": {

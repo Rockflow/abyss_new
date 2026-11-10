@@ -52,10 +52,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "AutoDarkMode/Windows-Auto-Night-Mode"
-        }
+        "github": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode"
     },
     "autoupdate": {
         "architecture": {

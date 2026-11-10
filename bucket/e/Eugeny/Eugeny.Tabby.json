@@ -51,10 +51,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Eugeny/tabby"
-        }
+        "github": "https://github.com/Eugeny/tabby"
     },
     "autoupdate": {
         "architecture": {

@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "astral-sh/ty"
-        }
+        "github": "https://github.com/astral-sh/ty"
     },
     "autoupdate": {
         "architecture": {

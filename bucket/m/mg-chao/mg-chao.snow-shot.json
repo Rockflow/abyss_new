@@ -50,10 +50,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "mg-chao/snow-apps"
-        }
+        "github": "https://github.com/mg-chao/snow-apps"
     },
     "autoupdate": {
         "architecture": {

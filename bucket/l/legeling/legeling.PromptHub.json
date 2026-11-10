@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "legeling/PromptHub"
-        }
+        "github": "https://github.com/legeling/PromptHub"
     },
     "autoupdate": {
         "architecture": {

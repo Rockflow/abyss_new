@@ -49,10 +49,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "seerge/g-helper"
-        }
+        "github": "https://github.com/seerge/g-helper"
     },
     "autoupdate": {
         "architecture": {

@@ -53,10 +53,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "obsidianmd/obsidian-releases"
-        }
+        "github": "https://github.com/obsidianmd/obsidian-releases"
     },
     "autoupdate": {
         "architecture": {

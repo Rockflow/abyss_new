@@ -48,10 +48,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "viarotel-org/escrcpy"
-        }
+        "github": "https://github.com/viarotel-org/escrcpy"
     },
     "autoupdate": {
         "architecture": {

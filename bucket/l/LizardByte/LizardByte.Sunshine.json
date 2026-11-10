@@ -57,10 +57,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "LizardByte/Sunshine"
-        }
+        "github": "https://github.com/LizardByte/Sunshine"
     },
     "autoupdate": {
         "architecture": {

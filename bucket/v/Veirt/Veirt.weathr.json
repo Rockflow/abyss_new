@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Veirt/weathr"
-        }
+        "github": "https://github.com/Veirt/weathr"
     },
     "autoupdate": {
         "architecture": {

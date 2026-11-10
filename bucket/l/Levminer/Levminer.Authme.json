@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Levminer/authme"
-        }
+        "github": "https://github.com/Levminer/authme"
     },
     "autoupdate": {
         "architecture": {

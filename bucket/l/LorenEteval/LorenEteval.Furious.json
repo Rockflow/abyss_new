@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "LorenEteval/Furious"
-        }
+        "github": "https://github.com/LorenEteval/Furious"
     },
     "autoupdate": {
         "architecture": {

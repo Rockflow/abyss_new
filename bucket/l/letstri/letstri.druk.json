@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "letstri/druk"
-        }
+        "github": "https://github.com/letstri/druk"
     },
     "autoupdate": {
         "architecture": {

@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "aleksey-hoffman/sigma-file-manager"
-        }
+        "github": "https://github.com/aleksey-hoffman/sigma-file-manager"
     },
     "autoupdate": {
         "architecture": {

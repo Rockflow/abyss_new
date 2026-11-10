@@ -43,10 +43,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "dail8859/NotepadNext"
-        }
+        "github": "https://github.com/dail8859/NotepadNext"
     },
     "autoupdate": {
         "architecture": {

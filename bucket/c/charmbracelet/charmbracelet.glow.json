@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "charmbracelet/glow"
-        }
+        "github": "https://github.com/charmbracelet/glow"
     },
     "autoupdate": {
         "architecture": {

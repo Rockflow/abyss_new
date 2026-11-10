@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "altair-graphql/altair"
-        }
+        "github": "https://github.com/altair-graphql/altair"
     },
     "autoupdate": {
         "architecture": {

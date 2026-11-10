@@ -45,10 +45,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "mosheng1/QuickClipboard"
-        }
+        "github": "https://github.com/mosheng1/QuickClipboard"
     },
     "autoupdate": {
         "architecture": {

@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "jhspetersson/fselect"
-        }
+        "github": "https://github.com/jhspetersson/fselect"
     },
     "autoupdate": {
         "architecture": {

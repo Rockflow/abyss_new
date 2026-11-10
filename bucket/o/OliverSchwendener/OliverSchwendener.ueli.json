@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "oliverschwendener/ueli"
-        }
+        "github": "https://github.com/oliverschwendener/ueli"
     },
     "autoupdate": {
         "architecture": {

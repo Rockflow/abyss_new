@@ -39,10 +39,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "josephburnett/jd"
-        }
+        "github": "https://github.com/josephburnett/jd"
     },
     "autoupdate": {
         "architecture": {

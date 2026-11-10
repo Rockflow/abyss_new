@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "QingJ01/Pebble"
-        }
+        "github": "https://github.com/QingJ01/Pebble"
     },
     "autoupdate": {
         "architecture": {

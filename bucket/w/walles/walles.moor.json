@@ -38,10 +38,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "walles/moor"
-        }
+        "github": "https://github.com/walles/moor"
     },
     "autoupdate": {
         "architecture": {

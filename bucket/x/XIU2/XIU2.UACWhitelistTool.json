@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "XIU2/UACWhitelistTool"
-        }
+        "github": "https://github.com/XIU2/UACWhitelistTool"
     },
     "autoupdate": {
         "architecture": {

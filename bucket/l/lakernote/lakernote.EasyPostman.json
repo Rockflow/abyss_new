@@ -50,10 +50,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "lakernote/EasyPostman"
-        }
+        "github": "https://github.com/lakernote/EasyPostman"
     },
     "autoupdate": {
         "architecture": {

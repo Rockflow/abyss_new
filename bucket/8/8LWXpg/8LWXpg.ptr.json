@@ -41,10 +41,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "8LWXpg/ptr"
-        }
+        "github": "https://github.com/8LWXpg/ptr"
     },
     "autoupdate": {
         "architecture": {

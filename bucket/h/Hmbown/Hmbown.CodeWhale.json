@@ -53,10 +53,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "Hmbown/CodeWhale"
-        }
+        "github": "https://github.com/Hmbown/CodeWhale"
     },
     "autoupdate": {
         "architecture": {

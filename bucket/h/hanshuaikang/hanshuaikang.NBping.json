@@ -35,10 +35,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "hanshuaikang/nping"
-        }
+        "github": "https://github.com/hanshuaikang/nping"
     },
     "autoupdate": {
         "architecture": {

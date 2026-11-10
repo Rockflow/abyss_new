@@ -44,10 +44,7 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": {
-            "channel": "latest",
-            "repo": "mountain-loop/yaak"
-        }
+        "github": "https://github.com/mountain-loop/yaak"
     },
     "autoupdate": {
         "architecture": {
