@@ -1,5 +1,5 @@
 {
-    "version": "0.6.65",
+    "version": "0.6.68",
     "description": "轻量跨平台数据库客户端，支持100多种数据库 | lightweight cross-platform database client for 100+ databases",
     "homepage": "https://dbxio.com",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/t8y2/dbx/releases/download/v0.6.65/DBX_0.6.65_x64-setup.exe",
-            "hash": "f957b20561d30bbc2de487f775bdc34918a640f7bb051a5b80e5f2d40a2aa5ec"
+            "url": "https://github.com/t8y2/dbx/releases/download/v0.6.68/DBX_0.6.68_x64-setup.exe",
+            "hash": "0a83157f2818d32c960714ab87be1a4da727380878076026c44125cc0bd1e8f0"
         },
         "arm64": {
-            "url": "https://github.com/t8y2/dbx/releases/download/v0.6.65/DBX_0.6.65_arm64-setup.exe",
-            "hash": "23d9190c1927fe90f17ea0c45504db5b397c848ca81989dad443e35346674724"
+            "url": "https://github.com/t8y2/dbx/releases/download/v0.6.68/DBX_0.6.68_arm64-setup.exe",
+            "hash": "c1a9d7746688237ecc3f9a98863488241de71e0b6e8e6226b6c6177430bb96c2"
         }
     },
     "shortcuts": [
