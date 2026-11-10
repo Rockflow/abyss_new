@@ -1,5 +1,5 @@
 {
-    "version": "3.64.1",
+    "version": "3.64.2",
     "description": "一个开源桌面应用程序，它将您的 Gmail 使用体验从浏览器带到桌面 | An open-source desktop application that brings your Gmail experience out of the browser and onto your desktop",
     "homepage": "https://meru.so",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zoidsh/meru/releases/download/v3.64.1/Meru-Setup-3.64.1.exe",
-            "hash": "1e03f63299a8f1ecc09ea752d45cdac6643b7d9241b6b073e9c4d7b78001d697"
+            "url": "https://github.com/zoidsh/meru/releases/download/v3.64.2/Meru-Setup-3.64.2.exe",
+            "hash": "a757e844f56089d0e7c3d10f4f83451f2a4cd506df91deda15fdfbdffcfa73e1"
         },
         "arm64": {
-            "url": "https://github.com/zoidsh/meru/releases/download/v3.64.1/Meru-Setup-3.64.1.exe",
-            "hash": "1e03f63299a8f1ecc09ea752d45cdac6643b7d9241b6b073e9c4d7b78001d697"
+            "url": "https://github.com/zoidsh/meru/releases/download/v3.64.2/Meru-Setup-3.64.2.exe",
+            "hash": "a757e844f56089d0e7c3d10f4f83451f2a4cd506df91deda15fdfbdffcfa73e1"
         }
     },
     "shortcuts": [
