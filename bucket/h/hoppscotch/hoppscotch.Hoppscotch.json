@@ -1,5 +1,5 @@
 {
-    "version": "26.10.0-0",
+    "version": "26.10.1-0",
     "description": "一款可跨平台运行的桌面应用程序，助力你创建和管理各类 API 请求 | A cross-platform desktop application that helps you create and manage API requests",
     "homepage": "https://hoppscotch.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/hoppscotch/releases/releases/download/v26.10.0-0/Hoppscotch_SelfHost_win_x64_portable.zip",
-            "hash": "c148fb304902d755dffb67641a2b492af420ee9579a72dfe05c647248f8920f5"
+            "url": "https://github.com/hoppscotch/releases/releases/download/v26.10.1-0/Hoppscotch_SelfHost_win_x64_portable.zip",
+            "hash": "015202965e0d37845829da53bd030107af1f14b62a67fefcbac87127a10d9be0"
         }
     },
     "extract_to": "app",
