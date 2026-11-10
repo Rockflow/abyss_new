@@ -11,7 +11,7 @@
         "rime": "abyss/Rime.Weasel",
         "model": "abyss/amzxyz.rime_wanxiang.model"
     },
-    "url": "https://github.com/suiginko/moetype/releases/download/20260517/tone_moe.dict.yaml",
+    "url": "https://github.com/suiginko/moetype/releases/download/20260517/moe.dict.yaml",
     "hash": "ce5ecf1f24e3deb1430b8b6d64c037cfd9e7e97b5ac8835faaa2e9e6635b5946",
     "conflicts": [
         "suiginko.moetype.flypy",
@@ -48,6 +48,6 @@
         "github": "https://github.com/suiginko/moetype"
     },
     "autoupdate": {
-        "url": "https://github.com/suiginko/moetype/releases/download/$version/tone_moe.dict.yaml"
+        "url": "https://github.com/suiginko/moetype/releases/download/$version/moe.dict.yaml"
     }
 }

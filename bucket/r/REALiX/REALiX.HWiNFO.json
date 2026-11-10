@@ -74,7 +74,8 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "url": "https://www.hwinfo.com/ver.txt"
+        "url": "https://www.hwinfo.com/ver.txt",
+        "regex": "^([\\d.]+-\\d+)"
     },
     "autoupdate": {
         "architecture": {

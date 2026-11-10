@@ -66,15 +66,12 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/rime/weasel",
+        "url": "https://github.com/rime/weasel/releases/expanded_assets/latest",
         "regex": "weasel-(?<version>\\d+\\.\\d+\\.\\d+\\.\\d+)\\.(?<hash>[0-9a-f]+)-installer\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/rime/weasel/releases/download/latest/weasel-$version.$matchHash-installer.exe"
-            },
-            "arm64": {
                 "url": "https://github.com/rime/weasel/releases/download/latest/weasel-$version.$matchHash-installer.exe"
             }
         }

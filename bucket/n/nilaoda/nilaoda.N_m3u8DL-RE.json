@@ -39,15 +39,19 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/nilaoda/N_m3u8DL-RE"
+        "github": "https://github.com/nilaoda/N_m3u8DL-RE",
+        "script": [
+            "(($page | ConvertFrom-Json).assets | Where-Object { $_.name -match 'N_m3u8DL-RE_.*_win-x64_[\\d]+\\.zip$' })[0].browser_download_url"
+        ],
+        "regex": "download/v(?<version>[\\d.]+(?:-[\\w]+)?)/N_m3u8DL-RE_v[\\d.]+(?:-[\\w]+)?_win-x64_(?<date>[\\d]+)\\.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v$version/N_m3u8DL-RE_v$version_win-x64_20260629.zip"
+                "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v$version/N_m3u8DL-RE_v$version_win-x64_$matchDate.zip"
             },
             "arm64": {
-                "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v$version/N_m3u8DL-RE_v$version_win-arm64_20260629.zip"
+                "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v$version/N_m3u8DL-RE_v$version_win-arm64_$matchDate.zip"
             }
         }
     }

@@ -45,8 +45,12 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "url": "https://www.dingtalk.com/win/d/qd=oversea",
-        "redirect": true,
+        "script": [
+            "$req = [System.Net.HttpWebRequest]::Create('https://www.dingtalk.com/win/d/qd=oversea')",
+            "$req.AllowAutoRedirect = $false",
+            "$req.UserAgent = 'Mozilla/5.0'",
+            "$req.GetResponse().Headers['Location']"
+        ],
         "regex": "DingTalk_v([\\d.]+)\\.exe"
     },
     "autoupdate": {

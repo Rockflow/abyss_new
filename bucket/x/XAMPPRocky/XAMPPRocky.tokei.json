@@ -35,7 +35,12 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/XAMPPRocky/tokei"
+        "github": "https://github.com/XAMPPRocky/tokei",
+        "script": [
+            "$a = ($page | ConvertFrom-Json).assets",
+            "if ($a) { ($a | Where-Object { $_.name -match 'tokei.*windows-msvc\\.exe$' } | Select-Object -First 1).browser_download_url }"
+        ],
+        "regex": "download/v([\\d.]+(?:-[\\w.]+)?)/"
     },
     "autoupdate": {
         "architecture": {

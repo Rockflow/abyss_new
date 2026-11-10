@@ -45,7 +45,10 @@
     ],
     "checkver": {
         "github": "https://github.com/bggRGjQaUbCoE/PiliPlus",
-        "regex": "/download/([^/]+)/PiliPlus_windows_(?<main>[\\d.]+)%2B(?<build>\\d+)_x64_portable.zip"
+        "script": [
+            "(($page | ConvertFrom-Json).assets | Where-Object { $_.name -match 'x64_portable\\.zip$' })[0].browser_download_url"
+        ],
+        "regex": "download/(?<version>[\\d.]+)/PiliPlus_windows_(?<main>[\\d.]+)%2B(?<build>\\d+)_x64_portable\\.zip"
     },
     "autoupdate": {
         "architecture": {

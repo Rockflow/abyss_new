@@ -52,7 +52,7 @@
     ],
     "checkver": {
         "github": "https://github.com/oven-sh/bun",
-        "regex": "bun-(.+)"
+        "regex": "bun-v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

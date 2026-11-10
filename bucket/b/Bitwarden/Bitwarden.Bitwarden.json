@@ -1,5 +1,5 @@
 {
-    "version": "2026.10.3",
+    "version": "2026.10.4",
     "description": "适用于个人、团队和企业组织的密码管理解决方案 | Password management solutions for individuals, teams, and business organizations",
     "homepage": "https://bitwarden.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-Installer-2026.10.3.exe",
-            "hash": "95fdabb86b73df3324710f1dea16eb52d92362ff1fee6ff04f390e173f7738d7"
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-Installer-2026.10.4.exe",
+            "hash": "aaedfeaf73511b9095a5009454bb037a053c9a60e7c5ed23717b7b6047193a13"
         }
     },
     "shortcuts": [
@@ -45,7 +45,7 @@
     ],
     "checkver": {
         "github": "https://github.com/bitwarden/clients",
-        "regex": "desktop-(.+)"
+        "regex": "desktop-v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

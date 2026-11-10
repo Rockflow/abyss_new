@@ -44,16 +44,20 @@
     ],
     "checkver": {
         "github": "https://github.com/zerx-lab/FluxDown",
-        "regex": "cli-(.+)"
+        "script": [
+            "$a = ($page | ConvertFrom-Json).assets",
+            "if ($a) { ($a | Where-Object { $_.name -match '^FluxDown-CLI-[\\d.]+-windows-x64\\.zip$' } | Select-Object -First 1).browser_download_url }"
+        ],
+        "regex": "download/v(?<version>[\\d.]+)/FluxDown-CLI"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/zerx-lab/FluxDown/releases/download/cli-v$version/FluxDown-CLI-$version-windows-x64.zip",
+                "url": "https://github.com/zerx-lab/FluxDown/releases/download/v$version/FluxDown-CLI-$version-windows-x64.zip",
                 "extract_dir": "fluxdown-cli-$version-windows-x64"
             },
             "arm64": {
-                "url": "https://github.com/zerx-lab/FluxDown/releases/download/cli-v$version/FluxDown-CLI-$version-windows-arm64.zip",
+                "url": "https://github.com/zerx-lab/FluxDown/releases/download/v$version/FluxDown-CLI-$version-windows-arm64.zip",
                 "extract_dir": "fluxdown-cli-$version-windows-arm64"
             }
         }

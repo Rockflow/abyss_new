@@ -43,7 +43,8 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/qt-creator/qt-creator"
+        "github": "https://github.com/qt-creator/qt-creator",
+        "regex": "v(\\d+\\.\\d+\\.\\d+(?:-rc\\d+)?)"
     },
     "autoupdate": {
         "architecture": {

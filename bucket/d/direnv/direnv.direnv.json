@@ -1,5 +1,5 @@
 {
-    "version": "2.37.1",
+    "version": "2.38.2",
     "description": "用于管理当前目录下环境变量的 Shell 扩展 | Shell extension to manage environment variables per current directory",
     "homepage": "https://direnv.net",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/direnv/direnv/releases/download/v2.37.1/direnv.windows-amd64#/direnv.exe",
-            "hash": "d96fc8b7cf020c2d4c1dbbc2ccec5fd1cab05b51c491f02c8527a7fa6c50a1cd"
+            "url": "https://github.com/direnv/direnv/releases/download/v2.38.2/direnv.windows-amd64.exe#/direnv.exe",
+            "hash": "62a6a16a3473b8e03c2cdc4e2099655bd4284f6da92122b96d78cdce724d4064"
         },
         "arm64": {
-            "url": "https://github.com/direnv/direnv/releases/download/v2.37.1/direnv.windows-arm64#/direnv.exe",
-            "hash": "6802f722f5ef12562d6e3e15c26f39e34b337e5be12ea22f17284552cd782298"
+            "url": "https://github.com/direnv/direnv/releases/download/v2.38.2/direnv.windows-arm64.exe#/direnv.exe",
+            "hash": "d764268f5090ef9fb3b0219c410feaaa00dc514454e47b40d179d207e7190d35"
         }
     },
     "extract_to": "app",
@@ -49,10 +49,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/direnv/direnv/releases/download/v$version/direnv.windows-amd64#/direnv.exe"
+                "url": "https://github.com/direnv/direnv/releases/download/v$version/direnv.windows-amd64.exe#/direnv.exe"
             },
             "arm64": {
-                "url": "https://github.com/direnv/direnv/releases/download/v$version/direnv.windows-arm64#/direnv.exe"
+                "url": "https://github.com/direnv/direnv/releases/download/v$version/direnv.windows-arm64.exe#/direnv.exe"
             }
         }
     }

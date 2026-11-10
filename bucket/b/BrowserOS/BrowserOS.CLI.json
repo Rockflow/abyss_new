@@ -41,8 +41,12 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/browseros-ai/BrowserOS",
-        "regex": "browseros-cli-(.+)"
+        "github": "https://api.github.com/repos/browseros-ai/BrowserOS/releases?per_page=100",
+        "script": [
+            "$r = $page | ConvertFrom-Json",
+            "($r | ForEach-Object { $_.assets | Where-Object { $_.name -eq 'browseros-cli_windows_amd64.exe' } } | Select-Object -First 1).browser_download_url"
+        ],
+        "regex": "browseros-cli-v([\\d.]+)/"
     },
     "autoupdate": {
         "architecture": {

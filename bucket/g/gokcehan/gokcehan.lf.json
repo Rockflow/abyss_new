@@ -40,7 +40,8 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/gokcehan/lf"
+        "github": "https://github.com/gokcehan/lf",
+        "regex": "(?:^|/)(r[\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

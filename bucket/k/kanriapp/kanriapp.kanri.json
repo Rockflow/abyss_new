@@ -45,7 +45,7 @@
     ],
     "checkver": {
         "github": "https://github.com/kanriapp/kanri",
-        "regex": "app-(.+)"
+        "regex": "app-v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

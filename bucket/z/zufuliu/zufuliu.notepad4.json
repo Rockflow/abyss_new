@@ -69,7 +69,8 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/zufuliu/notepad4"
+        "github": "https://github.com/zufuliu/notepad4",
+        "regex": "v?(\\d[\\d.]+r\\d+)"
     },
     "autoupdate": {
         "architecture": {

@@ -1,7 +1,7 @@
 {
-    "version": "2026.10.26.011209",
+    "version": "2026.11.10.012243",
     "description": "Rime 小狼毫配置: 万象语法模型 | Rime Weasel Configuration: Wanxiang syntax model",
-    "homepage": "https://github.com/amzxyz/RIME-LMDG",
+    "homepage": "https://github.com/amzxyz/rime-wanxiang-data",
     "license": {
         "identifier": "CC-BY-4.0"
     },
@@ -11,8 +11,8 @@
         "rime": "abyss/Rime.Weasel",
         "input-schemes": "abyss/amzxyz.rime_wanxiang.base"
     },
-    "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram",
-    "hash": "e34500ab44626dc039a0641792ecba98ab63307646eb3d29186be56608ffe094",
+    "url": "https://github.com/amzxyz/rime-wanxiang-data/releases/download/LTS/wanxiang-lts-zh-hans.gram",
+    "hash": "3457b69f5fe0fc4f5d211c878bbfa2e2361b90639952c9845c8e31e9d047cde6",
     "admin": true,
     "pre_install": [
         "if (!$bucket) { $bucket = 'abyss' }",
@@ -40,12 +40,12 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/amzxyz/RIME-LMDG",
+        "github": "https://api.github.com/repos/amzxyz/rime-wanxiang-data/releases/tags/LTS",
         "jsonpath": "$.assets[?(@.name == 'wanxiang-lts-zh-hans.gram')].updated_at",
         "regex": "(\\d+)-(\\d+)-(\\d+)T(\\d+):(\\d+):(\\d+)Z",
         "replace": "${1}.${2}.${3}.${4}${5}${6}"
     },
     "autoupdate": {
-        "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
+        "url": "https://github.com/amzxyz/rime-wanxiang-data/releases/download/LTS/wanxiang-lts-zh-hans.gram"
     }
 }

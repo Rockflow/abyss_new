@@ -45,7 +45,7 @@
     ],
     "checkver": {
         "github": "https://github.com/codexu/note-gen",
-        "regex": "note-gen-(.+)"
+        "regex": "note-gen-v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

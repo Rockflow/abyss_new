@@ -55,7 +55,9 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/facebook/sapling"
+        "github": "https://github.com/meta/sapling",
+        "regex": "([\\d.]+-\\d+)(?:\\+|%2B)(?<slib>[\\w]+)",
+        "replace": "${1}+${2}"
     },
     "autoupdate": {
         "architecture": {

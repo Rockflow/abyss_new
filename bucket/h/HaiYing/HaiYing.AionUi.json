@@ -48,7 +48,12 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/iOfficeAI/AionUi"
+        "github": "https://github.com/iOfficeAI/AionUi",
+        "script": [
+            "$a = ($page | ConvertFrom-Json).assets",
+            "if ($a) { ($a | Where-Object { $_.name -match '^AionUi-[\\d.]+-win-x64\\.exe$' } | Select-Object -First 1).browser_download_url }"
+        ],
+        "regex": "download/v([\\d.]+)/"
     },
     "autoupdate": {
         "architecture": {

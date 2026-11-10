@@ -39,7 +39,7 @@
     ],
     "checkver": {
         "github": "https://github.com/nearai/ironclaw",
-        "regex": "ironclaw-(.+)"
+        "regex": "ironclaw-v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

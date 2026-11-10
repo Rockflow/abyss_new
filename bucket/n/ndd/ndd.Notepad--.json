@@ -45,7 +45,7 @@
     ],
     "checkver": {
         "github": "https://github.com/cxasm/notepad--",
-        "regex": "notepad-(.+)"
+        "regex": "notepad-v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

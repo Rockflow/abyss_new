@@ -45,7 +45,7 @@
     ],
     "checkver": {
         "github": "https://github.com/RSSNext/Folo",
-        "regex": "desktop/(.+)"
+        "regex": "desktop/v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

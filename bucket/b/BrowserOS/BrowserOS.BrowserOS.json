@@ -1,5 +1,5 @@
 {
-    "version": "0.51.0",
+    "version": "0.52.1.1",
     "description": "一个原生运行人工智能代理的开源 Chromium 浏览器分支 | An open-source chromium browser fork that runs AI agents natively",
     "homepage": "https://browseros.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/browseros-ai/BrowserOS/releases/download/v0.51.0/BrowserOS_v0.51.0_x64_installer.exe",
-            "hash": "080e2ab5380b339ee89d992c53fa40bf22ab422da14f47328321c091169f9b92"
+            "url": "https://github.com/browseros-ai/BrowserOS/releases/download/browserclaw%2Fv0.52.0/BrowserOS_neo_v0.52.1.1_x64_installer.exe",
+            "hash": "f9a8493dd8cbcf11b349ff41e434f5d67c301d99613ccc221f418385e361f2cd"
         }
     },
     "location": "$env:ProgramFiles\\Chromium\\Application",
@@ -44,12 +44,13 @@
     ],
     "checkver": {
         "github": "https://github.com/browseros-ai/BrowserOS",
-        "regex": "^([\\d.]+)$"
+        "script": "(($page | ConvertFrom-Json).assets | Where-Object { $_.name -match '^BrowserOS_neo_v[\\d.]+_x64_installer\\.exe$' })[0].browser_download_url",
+        "regex": "browserclaw(?:%2F|/)v(?<tag>[\\d.]+)/BrowserOS_neo_v(?<version>[\\d.]+)_x64_installer\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/browseros-ai/BrowserOS/releases/download/v$version/BrowserOS_v$version_x64_installer.exe"
+                "url": "https://github.com/browseros-ai/BrowserOS/releases/download/browserclaw%2Fv$matchTag/BrowserOS_neo_v$version_x64_installer.exe"
             }
         }
     }

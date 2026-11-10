@@ -47,7 +47,12 @@
         "A-Complete-Uninstall"
     ],
     "checkver": {
-        "github": "https://github.com/zouwei/moraya"
+        "github": "https://github.com/zouwei/moraya",
+        "script": [
+            "$a = ($page | ConvertFrom-Json).assets",
+            "if ($a) { ($a | Where-Object { $_.name -match '^Moraya_[\\d.]+_win_x64-setup\\.exe$' } | Select-Object -First 1).browser_download_url }"
+        ],
+        "regex": "download/v([\\d.]+)/"
     },
     "autoupdate": {
         "architecture": {
