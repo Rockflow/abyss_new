@@ -1,5 +1,5 @@
 {
-    "version": "5.3.0",
+    "version": "5.4.0",
     "description": "Subtitle Edit 是一款免费开源的视频字幕编辑器 | Subtitle Edit is a free and open source editor for video subtitles",
     "homepage": "http://www.nikse.dk/SubtitleEdit",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SubtitleEdit/subtitleedit/releases/download/v5.3.0/SubtitleEdit-Windows-x64-Setup.exe",
-            "hash": "d77f5ed24e55ec6d95e22d88f19ff6bf2c72ff48d2a1012f9a016712c2d61d3c"
+            "url": "https://github.com/SubtitleEdit/subtitleedit/releases/download/v5.4.0/SubtitleEdit-Windows-x64-Setup.exe",
+            "hash": "d7f83a1b618bb881e2f3b5b5ab7e8638b9b98007b2b5e40099bfcb7bb607fa8f"
         }
     },
     "shortcuts": [
