@@ -1,5 +1,5 @@
 {
-    "version": "0.5.1",
+    "version": "0.6.0",
     "description": "本地化 AI 代码助手，隐私保护，效率提升 | Localized AI code assistant, privacy protection, enhanced efficiency",
     "homepage": "https://hagicode.com/desktop",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HagiCode-org/desktop/releases/download/v0.5.1/Hagicode.Desktop.Setup.0.5.1-unsigned.exe",
-            "hash": "fa8c5a1bcf4af27ef51265d935288eb59097bf67c5c9400576fba4195a6a3dc8"
+            "url": "https://github.com/HagiCode-org/desktop/releases/download/v0.6.0/Hagicode.Desktop.Setup.0.6.0-unsigned.exe",
+            "hash": "bf263e8ed76e30c288379de0b2305c1fef719869b8b2c226f929897a81614981"
         }
     },
     "shortcuts": [
