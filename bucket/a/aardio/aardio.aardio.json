@@ -1,5 +1,5 @@
 {
-    "version": "46.26.0",
+    "version": "46.27.0",
     "description": "灵活而强大的动态语言 | A flexible and powerful dynamic language",
     "homepage": "https://www.aardio.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://www.aardio.com/download/ide/aardio46.26.0.7z",
-            "hash": "933aa4685d4294970052334e5b7cb579b8bbca443b2750057a0cb9ead9dd037c"
+            "url": "https://www.aardio.com/download/ide/aardio46.27.0.7z",
+            "hash": "496e576420b37399ad3091b819451dc3b593a1099c2548b7448dffae7e4182a3"
         }
     },
     "extract_to": "app",
