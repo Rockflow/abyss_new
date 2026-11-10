@@ -1,5 +1,5 @@
 {
-    "version": "2.9.5",
+    "version": "3.0.1",
     "description": "另一个适用于 Nginx 的 Web 用户界面 | Yet another Web UI for Nginx",
     "homepage": "https://nginxui.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/0xJacky/nginx-ui/releases/download/v2.9.5/nginx-ui-windows-64.zip",
-            "hash": "005dd4364bd416f2fe4d7a42908a1babbf65492ca1e2d85d7aa3c9895873416d"
+            "url": "https://github.com/0xJacky/nginx-ui/releases/download/v3.0.1/nginx-ui-windows-64.zip",
+            "hash": "a4a3848137fe094c64428bc080908c086b5440ff5eaae03b5c498ce0d7918a2d"
         }
     },
     "extract_to": "app",
