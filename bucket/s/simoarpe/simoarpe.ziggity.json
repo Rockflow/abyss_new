@@ -1,5 +1,5 @@
 {
-    "version": "0.56.0",
+    "version": "0.59.0",
     "description": "一个快速的、键盘驱动的 Git 终端 UI，用 Zig 编写 | A fast, keyboard driven terminal UI for Git, written in Zig",
     "homepage": "https://github.com/simoarpe/ziggity",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/simoarpe/ziggity/releases/download/v0.56.0/ziggity-v0.56.0-x86_64-windows-gnu.zip",
-            "hash": "81fd5678efa5f5709d1fcd8b169013eb56eeb44d47cdc89bbd3d9d71163a557a"
+            "url": "https://github.com/simoarpe/ziggity/releases/download/v0.59.0/ziggity-v0.59.0-x86_64-windows-gnu.zip",
+            "hash": "2c52c9b7be1496fd150136601e5a03ae5e1d706ecfee935f50b5449bbbdeaae1"
         }
     },
     "extract_to": "app",
