@@ -1,5 +1,5 @@
 {
-    "version": "2.2.6",
+    "version": "2.2.7",
     "description": "专为终端打造的 AI 编程助手 | The AI coding agent built for the terminal",
     "homepage": "https://opencode.ai",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://registry.npmjs.org/@opencode/cli-windows-x64/-/cli-windows-x64-2.2.6.tgz",
-            "hash": "a0af3e8be02b43294e5d1495b3dd1d7a8a3564a6ec7a4164c9f3fb1955aef3bf"
+            "url": "https://registry.npmjs.org/@opencode/cli-windows-x64/-/cli-windows-x64-2.2.7.tgz",
+            "hash": "666d684601380ad9f7b54a004c6fe61c2a94827fac4a6150ba131ea85e507977"
         },
         "arm64": {
-            "url": "https://registry.npmjs.org/@opencode/cli-windows-arm64/-/cli-windows-arm64-2.2.6.tgz",
-            "hash": "c6267b87204f4a0c31afe56658c08eb4d2c34ace9cd3919a8da297b7af12d3e3"
+            "url": "https://registry.npmjs.org/@opencode/cli-windows-arm64/-/cli-windows-arm64-2.2.7.tgz",
+            "hash": "4909131b2998e0350ba8adada6ffb31522193908d8f4a6d67b17b76c52a94f87"
         }
     },
     "extract_dir": "package\\bin",
