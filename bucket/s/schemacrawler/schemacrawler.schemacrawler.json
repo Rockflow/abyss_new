@@ -1,5 +1,5 @@
 {
-    "version": "18.0.1",
+    "version": "18.0.2",
     "description": "免费的数据库模式发现与理解工具 | Free database schema discovery and comprehension tool",
     "homepage": "https://www.schemacrawler.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/schemacrawler/SchemaCrawler-Installers/releases/download/v18.0.1/SchemaCrawler-18.0.1.msi#/dl.msi_",
-            "hash": "702c5ecf96657adaf2368ed7b1583c4583e0aeaf48d22f4c0db89eebda028c64"
+            "url": "https://github.com/schemacrawler/SchemaCrawler-Installers/releases/download/v18.0.2/SchemaCrawler-18.0.2.msi#/dl.msi_",
+            "hash": "c668ae4e845553ce0fb953241dd7fac65ae36f12da00061ac35f6155ebed3554"
         }
     },
     "location": "$env:ProgramFiles\\SchemaCrawler",
