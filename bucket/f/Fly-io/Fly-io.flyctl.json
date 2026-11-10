@@ -1,5 +1,5 @@
 {
-    "version": "0.5.3",
+    "version": "0.5.6",
     "description": "为 fly.io 服务提供的命令行工具 | Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/superfly/flyctl/releases/download/v0.5.3/flyctl_0.5.3_Windows_x86_64.zip",
-            "hash": "70f74e8a161c244c3f8d3032c31b7ba523d1e4a2b9fadc7ee8785e1a8bffc5ae"
+            "url": "https://github.com/superfly/flyctl/releases/download/v0.5.6/flyctl_0.5.6_Windows_x86_64.zip",
+            "hash": "6c0d641f2082aed5f97b88d5f6125fc2158fc4fa6ddafcde0bcac172cfe1f29c"
         },
         "arm64": {
-            "url": "https://github.com/superfly/flyctl/releases/download/v0.5.3/flyctl_0.5.3_Windows_arm64.zip",
-            "hash": "c1fdbefd571314207503fa5c470e7e17b8915f4695d094be4b4bbc457d8b43e5"
+            "url": "https://github.com/superfly/flyctl/releases/download/v0.5.6/flyctl_0.5.6_Windows_arm64.zip",
+            "hash": "903b8d8aeb75fd0b88eb28f70c8d0dffc1aa765760400107d5a85595772ec649"
         }
     },
     "extract_to": "app",
