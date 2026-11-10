@@ -49,7 +49,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/TypesettingTools/Aegisub/releases/download/v$version/Aegisub-$version.exe"
+                "url": "https://github.com/TypesettingTools/Aegisub/releases/download/v$version/Aegisub-$version-x64.exe"
             }
         }
     }
