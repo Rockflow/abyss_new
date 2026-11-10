@@ -1,5 +1,5 @@
 {
-    "version": "1.75.2",
+    "version": "1.76.0",
     "description": "一个用于在不同云存储提供商之间同步文件和目录的命令行程序 | A command-line program to sync files and directories to and from different cloud storage providers",
     "homepage": "https://rclone.org",
     "license": {
@@ -7,14 +7,14 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-windows-amd64.zip",
-            "hash": "8a9db2bad1dc79a65b3348fd857069598e2aab7cf4d118b77b1df23055aff818",
-            "extract_dir": "rclone-v1.75.2-windows-amd64"
+            "url": "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-windows-amd64.zip",
+            "hash": "8b4fd2737ade4e70c057ef4a49deb7cffe94b0fb9d7587c189d149823f21a1dc",
+            "extract_dir": "rclone-v1.76.0-windows-amd64"
         },
         "arm64": {
-            "url": "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-windows-arm64.zip",
-            "hash": "7eb9844c9e5b723b9ef28821891caa17f6d9d1a375c49365cbe04114cec8dcd9",
-            "extract_dir": "rclone-v1.75.2-windows-arm64"
+            "url": "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-windows-arm64.zip",
+            "hash": "c406c8a69a5a408e50624aa990fbb0a6266b3a4e83782a94de3cb96f50f86f10",
+            "extract_dir": "rclone-v1.76.0-windows-arm64"
         }
     },
     "extract_to": "app",
