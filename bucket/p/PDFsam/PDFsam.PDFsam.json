@@ -1,5 +1,5 @@
 {
-    "version": "6.0.9",
+    "version": "6.0.10",
     "description": "一款免费/自由、开源、多平台软件，用于拆分、合并、提取页面、混合和旋转 PDF 文件 | A free, open source, multi-platform software designed to split, merge, extract pages, mix and rotate PDF files",
     "homepage": "https://pdfsam.org",
     "license": {
@@ -7,9 +7,9 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/torakiki/pdfsam/releases/download/v6.0.9/pdfsam-basic-6.0.9-windows-x64.zip",
-            "hash": "b18838104c18dbdcb9afc705f026e12efd1a96ae5b899762e90e2199c6541d71",
-            "extract_dir": "pdfsam-basic-6.0.9-windows-x64\\pdfsam"
+            "url": "https://github.com/torakiki/pdfsam/releases/download/v6.0.10/pdfsam-basic-6.0.10-windows-x64.zip",
+            "hash": "2dc9410edf53fa1109c244c03a8533dcc2fc527a434240c017451722a4bbc148",
+            "extract_dir": "pdfsam-basic-6.0.10-windows-x64\\pdfsam"
         }
     },
     "extract_to": "app",
