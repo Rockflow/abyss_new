@@ -1,5 +1,5 @@
 {
-    "version": "1.0.12.1",
+    "version": "1.0.13",
     "description": "面向本地办公场景的 Windows 剪贴板增强工具 | A Windows clipboard enhancement tool for local office scenarios",
     "homepage": "https://github.com/qiu7824/zsclip",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/qiu7824/zsclip/releases/download/1.0.12.1/zsclip-v1.0.12.1-setup.exe",
-            "hash": "4931e7869bbed27f52a1c9149473946b66fe692bc314eeacfb8ab527bb888d89"
+            "url": "https://github.com/qiu7824/zsclip/releases/download/1.0.13/zsclip-v1.0.13-setup.exe",
+            "hash": "497396c6084d98bf52f68df4e23d7d023f9dbaee74d521ae964d99fe7f8f2316"
         }
     },
     "shortcuts": [
