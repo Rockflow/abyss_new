@@ -1,5 +1,5 @@
 {
-    "version": "6.2.43",
+    "version": "6.3.0",
     "description": "FFmpegFreeUI (3FUI) - ffmpeg 在 Windows 上的轻度专业交互外壳 | FFmpegFreeUI (3FUI) - A lightweight professional interactive shell for ffmpeg on Windows",
     "homepage": "https://github.com/Lake1059/FFmpegFreeUI",
     "license": {
@@ -13,12 +13,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.43/FFmpegFreeUI.x64.exe#/FFmpegFreeUI.exe",
-            "hash": "5fe9f1adeb921cd9f22e496fb41258bfd83e2a510792382a946f34f4a54eda6c"
+            "url": "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.3.0/FFmpegFreeUI.x64.exe#/FFmpegFreeUI.exe",
+            "hash": "61117378e4748cff088421ef878ab24cbd12737876084869f354396358f1e5d9"
         },
         "arm64": {
-            "url": "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.43/FFmpegFreeUI.arm64.exe#/FFmpegFreeUI.exe",
-            "hash": "b077bc955e76ffc8c7b7e427cd269778309c4d445f516c251daa438b67cf7b04"
+            "url": "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.3.0/FFmpegFreeUI.arm64.exe#/FFmpegFreeUI.exe",
+            "hash": "46029121573336e0a480062a72dfed7b8364195786ca1ec1a7caae8682116ae2"
         }
     },
     "extract_to": "app",
