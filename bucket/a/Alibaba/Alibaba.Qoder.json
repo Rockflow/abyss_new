@@ -1,5 +1,5 @@
 {
-    "version": "1.38.0",
+    "version": "1.39.0",
     "description": "用于现实软件的自主智能编程平台 | Agentic Coding Platform for Real Software",
     "homepage": "https://qoder.com",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.qoder.com/release/1.38.0/QoderIDEUserSetup-x64.exe",
-            "hash": "f90843dc4fa2739fa1885535c5967e0e1232aaffb790caded44ce29e1abf7ba9"
+            "url": "https://download.qoder.com/release/1.39.0/QoderIDEUserSetup-x64.exe",
+            "hash": "9d7f1fc11e79c3b08813733a85e21a08373d2dc00f516c2c7409620902a5b171"
         }
     },
     "env_add_path": "app\\bin",
