@@ -1,5 +1,5 @@
 {
-    "version": "0.12.0",
+    "version": "0.13.0",
     "description": "开源的新一代版本控制系统 | Next-generation, open source version control system",
     "homepage": "https://lore.org",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/EpicGames/lore/releases/download/v0.12.0/lore-v0.12.0-x86_64-pc-windows-msvc.zip",
-            "hash": "1cad5599cc2d02d93b6fe917d7ee856194601f67d3520c26220b789e25982e52"
+            "url": "https://github.com/EpicGames/lore/releases/download/v0.13.0/lore-v0.13.0-x86_64-pc-windows-msvc.zip",
+            "hash": "26b84459fd6ab2faa10d5f8eb8393848286935414210d7070dafffd97e4c1343"
         }
     },
     "extract_to": "app",
