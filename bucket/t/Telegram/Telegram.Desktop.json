@@ -1,5 +1,5 @@
 {
-    "version": "7.3.5",
+    "version": "7.4.1",
     "description": "一款基于云的移动端与桌面端通讯应用，主打安全性与运行速度 | A cloud-based mobile and desktop messaging app with a focus on security and speed",
     "homepage": "https://desktop.telegram.org",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.5/td-setup-win-x64-7.3.5.exe",
-            "hash": "a1884276d06cb33c459fa0a82887599d42bdeaa62cf8e077a39e57a325ed5454"
+            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.1/td-setup-win-x64-7.4.1.exe",
+            "hash": "863b1d183097fecc8d76cb8442bc22f0a1b1a0395bdb4fddfb6629df6f654de9"
         },
         "arm64": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.5/td-setup-win-arm-7.3.5.exe",
-            "hash": "4aa536944371d1321eb7ed01e419905f2502e01157865374957bbf5dc6b147ed"
+            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.1/td-setup-win-arm-7.4.1.exe",
+            "hash": "e853512749cb48344ab776982ae36eae78df55988a079f67096b4b55a9124b41"
         }
     },
     "shortcuts": [
