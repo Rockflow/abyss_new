@@ -1,5 +1,5 @@
 {
-    "version": "2.3.0",
+    "version": "2.3.1",
     "description": "一款简洁美观的终端工具，可让你在命令行界面内直接浏览并下载来自 GitHub、GitLab、Codeberg、Gitea 以及 Forgejo 的文件 | A simple, pretty terminal tool that lets you browse and download files from GitHub, GitLab, Codeberg, Gitea, and Forgejo",
     "homepage": "https://github.com/abhixdd/ghgrab",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/abhixdd/ghgrab/releases/download/v2.3.0/ghgrab-win32.exe#/ghgrab.exe",
-            "hash": "d8ebc6a95de2b3a56ef75e4ef1559af59ca569f2e2b9fc3c752b5d3c4c32b767"
+            "url": "https://github.com/abhixdd/ghgrab/releases/download/v2.3.1/ghgrab-win32.exe#/ghgrab.exe",
+            "hash": "4d8d4b5a0af259689a34b5b2c7d55aee861fb08a8050325aa2b3c6444dbc317b"
         }
     },
     "extract_to": "app",
