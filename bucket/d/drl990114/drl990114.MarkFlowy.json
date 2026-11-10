@@ -1,5 +1,5 @@
 {
-    "version": "1.2.3",
+    "version": "1.3.0",
     "description": "一个跨平台 Markdown 编辑器，但是更轻快、更智能、更纯粹 | A cross platform Markdown editor, but it is lighter, smarter, and purer",
     "homepage": "https://www.markflowy.cc",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/drl990114/MarkFlowy/releases/download/v1.2.3/MarkFlowy_v1.2.3_x64-setup.exe",
-            "hash": "68f9e0996ae4b95c855a69474d4d53925878c23fa43bb68be431d68162f4b82b"
+            "url": "https://github.com/drl990114/MarkFlowy/releases/download/v1.3.0/MarkFlowy_v1.3.0_x64-setup.exe",
+            "hash": "0be6ef50715cb7500685fb845e2ccc0676a52f37c87cf4fb4c7776ecbe7a5d6c"
         }
     },
     "shortcuts": [
