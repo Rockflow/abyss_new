@@ -1,5 +1,5 @@
 {
-    "version": "0.47.0",
+    "version": "0.49.0",
     "description": "一个 SVG 渲染库 | An SVG rendering library",
     "homepage": "https://github.com/linebender/resvg",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/linebender/resvg/releases/download/v0.47.0/resvg-win64.zip",
-            "hash": "5684e59ceaa53ce720b49efb441b0918ae99d04e8ce3f6f753664524592d67f1"
+            "url": "https://github.com/linebender/resvg/releases/download/v0.49.0/resvg-win-x86_64.zip",
+            "hash": "38af9631b37e61118a32a5ef31e6be6af083eda63b4c17ffc4fdc63e449277df"
         }
     },
     "extract_to": "app",
