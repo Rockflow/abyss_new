@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "nikserg/skim",
             "channel": "latest"
         }
     },

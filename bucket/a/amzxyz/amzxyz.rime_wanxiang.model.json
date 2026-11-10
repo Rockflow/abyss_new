@@ -41,8 +41,7 @@
     ],
     "checkver": {
         "github": {
-            "tag": "LTS",
-            "raw": true
+            "repo": "amzxyz/RIME-LMDG"
         },
         "jsonpath": "$.assets[?(@.name == 'wanxiang-lts-zh-hans.gram')].updated_at",
         "regex": "(\\d+)-(\\d+)-(\\d+)T(\\d+):(\\d+):(\\d+)Z",

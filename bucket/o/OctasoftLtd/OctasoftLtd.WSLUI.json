@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "octasoft-ltd/wsl-ui",
             "channel": "latest"
         }
     },

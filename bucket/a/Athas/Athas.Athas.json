@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "athasdev/athas",
             "channel": "latest"
         }
     },

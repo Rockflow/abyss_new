@@ -40,6 +40,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "schollz/croc",
             "channel": "latest"
         }
     },

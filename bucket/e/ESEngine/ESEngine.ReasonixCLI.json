@@ -51,6 +51,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "esengine/DeepSeek-Reasonix",
             "channel": "stable"
         }
     },

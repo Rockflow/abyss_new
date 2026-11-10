@@ -45,12 +45,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "FarManager.FarManager",
-            "ext": "msi"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

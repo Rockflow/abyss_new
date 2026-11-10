@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "tldr-pages/tlrc",
             "channel": "latest"
         }
     },

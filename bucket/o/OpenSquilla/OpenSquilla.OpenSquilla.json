@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "opensquilla/opensquilla",
             "channel": "latest"
         }
     },

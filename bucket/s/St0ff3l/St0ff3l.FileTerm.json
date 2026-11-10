@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "St0ff3l/fileterm",
             "channel": "latest"
         }
     },

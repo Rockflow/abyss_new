@@ -46,6 +46,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "wanglin2/mind-map",
             "channel": "latest"
         }
     },

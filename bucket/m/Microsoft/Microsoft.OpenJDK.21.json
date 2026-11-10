@@ -47,12 +47,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Microsoft.OpenJDK.21",
-            "ext": "msi"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

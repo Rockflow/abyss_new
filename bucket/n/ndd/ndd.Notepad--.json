@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "cxasm/notepad--",
             "channel": "latest"
         },
         "regex": "notepad-(.+)"

@@ -43,6 +43,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "ducaale/xh",
             "channel": "latest"
         }
     },

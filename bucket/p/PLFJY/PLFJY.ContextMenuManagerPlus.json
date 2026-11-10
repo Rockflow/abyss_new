@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "PLFJY/ContextMenuMgr",
             "channel": "latest"
         }
     },

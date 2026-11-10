@@ -50,6 +50,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "btpf/Alexandria",
             "channel": "latest"
         }
     },

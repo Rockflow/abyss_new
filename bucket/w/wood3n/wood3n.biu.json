@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "wood3n/biu",
             "channel": "latest"
         }
     },

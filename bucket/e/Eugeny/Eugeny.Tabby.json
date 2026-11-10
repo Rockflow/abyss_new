@@ -52,6 +52,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Eugeny/tabby",
             "channel": "latest"
         }
     },

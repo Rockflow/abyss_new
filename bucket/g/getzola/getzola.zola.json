@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "getzola/zola",
             "channel": "latest"
         }
     },

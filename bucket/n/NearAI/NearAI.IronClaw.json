@@ -39,6 +39,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "nearai/ironclaw",
             "channel": "latest"
         },
         "regex": "ironclaw-(.+)"

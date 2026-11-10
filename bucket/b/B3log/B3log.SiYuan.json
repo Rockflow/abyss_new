@@ -55,6 +55,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "siyuan-note/siyuan",
             "channel": "latest"
         }
     },

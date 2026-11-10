@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "ZToolsCenter/ZTools",
             "channel": "latest"
         }
     },

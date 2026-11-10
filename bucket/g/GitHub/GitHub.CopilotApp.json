@@ -52,6 +52,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "github/app",
             "channel": "latest"
         }
     },

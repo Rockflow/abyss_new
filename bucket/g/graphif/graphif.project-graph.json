@@ -44,6 +44,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "graphif/project-graph",
             "channel": "latest"
         }
     },

@@ -52,6 +52,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "pbek/QOwnNotes",
             "channel": "latest"
         }
     },

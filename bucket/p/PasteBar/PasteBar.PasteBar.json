@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "PasteBar/PasteBarApp",
             "channel": "latest"
         }
     },

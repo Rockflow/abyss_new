@@ -50,6 +50,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "derceg/explorerplusplus",
             "channel": "latest"
         },
         "regex": "version-(.+)"

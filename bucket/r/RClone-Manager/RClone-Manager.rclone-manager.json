@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Zarestia-Dev/rclone-manager",
             "channel": "latest"
         }
     },

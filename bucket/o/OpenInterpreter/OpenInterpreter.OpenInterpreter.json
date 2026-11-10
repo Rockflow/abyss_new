@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "openinterpreter/openinterpreter",
             "channel": "latest"
         },
         "regex": "rust-(.+)"

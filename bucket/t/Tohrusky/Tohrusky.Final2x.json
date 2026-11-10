@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "EutropicAI/Final2x",
             "channel": "latest"
         }
     },

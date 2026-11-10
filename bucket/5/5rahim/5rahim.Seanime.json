@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "5rahim/seanime",
             "channel": "latest"
         }
     },

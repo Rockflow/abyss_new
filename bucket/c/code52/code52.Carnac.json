@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Code52/carnac",
             "channel": "latest"
         }
     },

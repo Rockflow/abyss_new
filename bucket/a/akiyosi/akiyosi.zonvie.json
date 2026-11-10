@@ -51,6 +51,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "akiyosi/zonvie",
             "channel": "latest"
         }
     },

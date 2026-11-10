@@ -46,6 +46,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "dyang886/Game-Cheats-Manager",
             "channel": "latest"
         }
     },

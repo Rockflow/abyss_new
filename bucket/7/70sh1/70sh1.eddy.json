@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "70sh1/eddy",
             "channel": "latest"
         }
     },

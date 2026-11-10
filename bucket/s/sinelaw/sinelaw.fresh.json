@@ -38,6 +38,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "sinelaw/fresh",
             "channel": "latest"
         }
     },

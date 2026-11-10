@@ -30,11 +30,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "psgallery": {
-            "channel": "stable"
-        }
-    },
     "autoupdate": {
         "url": "https://cdn.powershellgallery.com/packages/winuishell.$version.nupkg"
     }

@@ -64,6 +64,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "yarnpkg/yarn",
             "channel": "latest"
         }
     },

@@ -65,12 +65,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Microsoft.Sysinternals.Autologon",
-            "ext": "zip"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

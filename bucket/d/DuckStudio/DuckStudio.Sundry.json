@@ -43,6 +43,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "DuckDuckStudio/Sundry",
             "channel": "latest"
         }
     },

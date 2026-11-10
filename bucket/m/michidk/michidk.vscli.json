@@ -39,6 +39,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "michidk/vscli",
             "channel": "latest"
         }
     },

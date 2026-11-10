@@ -55,6 +55,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "imputnet/helium-windows",
             "channel": "latest"
         }
     },

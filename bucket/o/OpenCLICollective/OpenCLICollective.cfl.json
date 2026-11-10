@@ -42,6 +42,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "open-cli-collective/confluence-cli",
             "channel": "latest"
         }
     },

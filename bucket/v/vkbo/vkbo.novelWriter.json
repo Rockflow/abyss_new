@@ -47,6 +47,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "vkbo/novelWriter",
             "channel": "latest"
         }
     },

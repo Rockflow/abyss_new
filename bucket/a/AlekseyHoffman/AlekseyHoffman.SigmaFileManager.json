@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "aleksey-hoffman/sigma-file-manager",
             "channel": "latest"
         }
     },

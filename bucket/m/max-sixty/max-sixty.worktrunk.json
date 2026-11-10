@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "max-sixty/worktrunk",
             "channel": "latest"
         }
     },

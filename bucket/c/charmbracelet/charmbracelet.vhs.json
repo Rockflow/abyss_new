@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "charmbracelet/vhs",
             "channel": "latest"
         }
     },

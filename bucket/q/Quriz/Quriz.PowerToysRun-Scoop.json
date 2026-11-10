@@ -38,6 +38,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Quriz/PowerToysRunScoop",
             "channel": "latest"
         }
     },

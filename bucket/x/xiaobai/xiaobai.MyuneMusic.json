@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "xiaobaimc/myune_music",
             "channel": "latest"
         }
     },

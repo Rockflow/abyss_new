@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "5mdt/WinGoDarkTray",
             "channel": "latest"
         }
     },

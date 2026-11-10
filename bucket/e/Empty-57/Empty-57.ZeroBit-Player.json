@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Empty-57/ZeroBit-Player",
             "channel": "latest"
         }
     },

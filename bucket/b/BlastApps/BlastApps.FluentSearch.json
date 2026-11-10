@@ -51,6 +51,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "adirh3/Fluent-Search",
             "channel": "latest"
         }
     },

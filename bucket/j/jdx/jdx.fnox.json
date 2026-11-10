@@ -42,6 +42,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "jdx/fnox",
             "channel": "latest"
         }
     },

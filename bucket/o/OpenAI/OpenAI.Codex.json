@@ -53,6 +53,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "openai/codex",
             "channel": "latest"
         },
         "regex": "rust-(.+)"

@@ -40,6 +40,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "rhysd/actionlint",
             "channel": "latest"
         }
     },

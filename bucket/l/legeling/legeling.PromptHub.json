@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "legeling/PromptHub",
             "channel": "latest"
         }
     },

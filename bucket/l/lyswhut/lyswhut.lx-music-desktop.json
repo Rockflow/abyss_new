@@ -53,6 +53,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "lyswhut/lx-music-desktop",
             "channel": "latest"
         }
     },

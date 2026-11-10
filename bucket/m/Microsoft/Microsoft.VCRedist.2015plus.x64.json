@@ -37,12 +37,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Microsoft.VCRedist.2015+.x64",
-            "ext": "exe"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

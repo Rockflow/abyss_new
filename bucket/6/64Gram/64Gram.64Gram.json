@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "TDesktop-x64/tdesktop",
             "channel": "latest"
         }
     },

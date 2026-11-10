@@ -52,6 +52,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Kindness-Kismet/Stelliberty",
             "channel": "latest"
         }
     },

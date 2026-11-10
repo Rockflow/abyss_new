@@ -52,6 +52,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "anomalyco/opencode",
             "channel": "latest"
         }
     },

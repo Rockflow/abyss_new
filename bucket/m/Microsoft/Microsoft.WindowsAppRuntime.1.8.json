@@ -37,12 +37,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Microsoft.WindowsAppRuntime.1.8",
-            "ext": "exe"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

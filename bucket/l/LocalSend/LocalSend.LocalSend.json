@@ -53,6 +53,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "localsend/localsend",
             "channel": "latest"
         }
     },

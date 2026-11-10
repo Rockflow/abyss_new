@@ -53,6 +53,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "ClassIsland/ClassIsland",
             "channel": "latest"
         }
     },

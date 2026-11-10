@@ -47,6 +47,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "flyhunterl/flymd",
             "channel": "latest"
         }
     },

@@ -67,8 +67,7 @@
     ],
     "checkver": {
         "github": {
-            "tag": "latest",
-            "raw": true
+            "repo": "rime/weasel"
         },
         "regex": "weasel-(?<version>\\d+\\.\\d+\\.\\d+\\.\\d+)\\.(?<hash>[0-9a-f]+)-installer\\.exe"
     },

@@ -42,6 +42,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "julelang/jule",
             "channel": "latest"
         },
         "regex": "jule(.+)"

@@ -63,12 +63,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Microsoft.WindowsTerminal.Preview",
-            "ext": "msixbundle"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

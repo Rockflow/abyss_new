@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "ayangweb/BongoCat",
             "channel": "latest"
         }
     },

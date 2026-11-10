@@ -53,6 +53,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "AutoDarkMode/Windows-Auto-Night-Mode",
             "channel": "latest"
         }
     },

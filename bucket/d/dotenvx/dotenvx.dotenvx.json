@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "dotenvx/dotenvx",
             "channel": "latest"
         }
     },

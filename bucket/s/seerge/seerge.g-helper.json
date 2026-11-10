@@ -50,6 +50,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "seerge/g-helper",
             "channel": "latest"
         }
     },

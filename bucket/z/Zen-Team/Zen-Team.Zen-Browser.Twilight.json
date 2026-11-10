@@ -49,8 +49,7 @@
     ],
     "checkver": {
         "github": {
-            "tag": "twilight-1",
-            "raw": true
+            "repo": "zen-browser/desktop"
         },
         "regex": "Twilight build - ([\\d\\w.]+) \\(([\\d-]+)",
         "replace": "${1}-${2}"

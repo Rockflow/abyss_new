@@ -40,12 +40,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Microsoft.DotNet.DesktopRuntime.8",
-            "ext": "exe"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

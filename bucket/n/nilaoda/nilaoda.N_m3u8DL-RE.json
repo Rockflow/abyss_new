@@ -40,6 +40,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "nilaoda/N_m3u8DL-RE",
             "channel": "latest"
         }
     },

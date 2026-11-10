@@ -42,6 +42,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "jdx/hk",
             "channel": "latest"
         }
     },

@@ -39,12 +39,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Waterfox.Waterfox",
-            "ext": "exe"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

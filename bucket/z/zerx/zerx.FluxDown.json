@@ -59,6 +59,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "zerx-lab/FluxDown",
             "channel": "latest"
         }
     },

@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "zhongyang219/TrafficMonitor",
             "channel": "latest"
         }
     },

@@ -44,6 +44,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "AppFlowy-IO/AppFlowy",
             "channel": "latest"
         }
     },

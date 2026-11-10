@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "twpayne/chezmoi",
             "channel": "latest"
         }
     },

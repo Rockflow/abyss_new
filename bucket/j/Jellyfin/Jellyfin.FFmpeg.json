@@ -37,12 +37,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Jellyfin.FFmpeg",
-            "ext": "zip"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

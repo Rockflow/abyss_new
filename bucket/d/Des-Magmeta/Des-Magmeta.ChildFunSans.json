@@ -30,6 +30,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Des-Magmeta/ChildFunSans",
             "channel": "latest"
         }
     },

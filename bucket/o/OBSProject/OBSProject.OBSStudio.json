@@ -47,6 +47,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "obsproject/obs-studio",
             "channel": "latest"
         }
     },

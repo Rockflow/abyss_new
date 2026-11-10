@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "tryandromeda/andromeda",
             "channel": "latest"
         }
     },

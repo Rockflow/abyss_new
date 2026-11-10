@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "open-ani/animeko",
             "channel": "latest"
         }
     },

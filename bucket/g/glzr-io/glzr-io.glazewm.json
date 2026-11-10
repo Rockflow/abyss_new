@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "glzr-io/glazewm",
             "channel": "latest"
         }
     },

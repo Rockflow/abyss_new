@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "pot-app/pot-desktop",
             "channel": "latest"
         }
     },

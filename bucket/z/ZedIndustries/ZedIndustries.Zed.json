@@ -57,6 +57,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "zed-industries/zed",
             "channel": "latest"
         }
     },

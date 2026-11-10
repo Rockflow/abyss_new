@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "refactoringhq/tolaria",
             "channel": "latest"
         },
         "regex": "(\\d+)-(0)?(\\d+)-(0)?(\\d+)",

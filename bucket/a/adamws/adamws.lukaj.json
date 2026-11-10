@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "adamws/lukaj",
             "channel": "latest"
         }
     },

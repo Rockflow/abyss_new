@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "dooit-org/dooit",
             "channel": "latest"
         }
     },

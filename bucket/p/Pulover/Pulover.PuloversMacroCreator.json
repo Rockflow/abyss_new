@@ -47,6 +47,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Pulover/PuloversMacroCreator",
             "channel": "latest"
         }
     },

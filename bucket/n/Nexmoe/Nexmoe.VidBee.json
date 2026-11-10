@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "nexmoe/VidBee",
             "channel": "latest"
         }
     },

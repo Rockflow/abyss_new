@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "fastfetch-cli/fastfetch",
             "channel": "latest"
         }
     },

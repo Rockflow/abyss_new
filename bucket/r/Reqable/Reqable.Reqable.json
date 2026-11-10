@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "reqable/reqable-app",
             "channel": "latest"
         }
     },

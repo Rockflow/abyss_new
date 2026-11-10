@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "leiurayer/downkyi",
             "channel": "latest"
         }
     },

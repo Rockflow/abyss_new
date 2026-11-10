@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "vladelaina/vlaina",
             "channel": "latest"
         }
     },

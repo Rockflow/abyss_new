@@ -47,6 +47,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "keeweb/keeweb",
             "channel": "latest"
         }
     },

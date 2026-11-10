@@ -44,6 +44,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "DearVa/Everywhere",
             "channel": "latest"
         }
     },

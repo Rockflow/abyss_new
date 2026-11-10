@@ -43,6 +43,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "matthart1983/netwatch",
             "channel": "latest"
         }
     },

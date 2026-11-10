@@ -47,6 +47,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "drl990114/MarkFlowy",
             "channel": "latest"
         }
     },

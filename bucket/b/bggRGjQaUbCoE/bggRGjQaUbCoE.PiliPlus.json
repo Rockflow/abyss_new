@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "channel": "latest",
-            "raw": true
+            "repo": "bggRGjQaUbCoE/PiliPlus",
+            "channel": "latest"
         },
         "regex": "/download/([^/]+)/PiliPlus_windows_(?<main>[\\d.]+)%2B(?<build>\\d+)_x64_portable.zip"
     },

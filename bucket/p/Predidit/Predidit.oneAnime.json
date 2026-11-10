@@ -43,6 +43,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Predidit/oneAnime",
             "channel": "latest"
         }
     },

@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "cjpais/Handy",
             "channel": "latest"
         }
     },

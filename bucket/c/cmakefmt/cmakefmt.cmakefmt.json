@@ -39,6 +39,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "cmakefmt/cmakefmt",
             "channel": "latest"
         }
     },

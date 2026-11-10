@@ -43,12 +43,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Anydo.Anydo",
-            "ext": "exe"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

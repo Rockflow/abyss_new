@@ -40,6 +40,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "astral-sh/ruff",
             "channel": "latest"
         }
     },

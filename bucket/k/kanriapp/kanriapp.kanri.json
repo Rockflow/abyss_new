@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "kanriapp/kanri",
             "channel": "latest"
         },
         "regex": "app-(.+)"

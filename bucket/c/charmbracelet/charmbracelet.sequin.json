@@ -37,6 +37,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "charmbracelet/sequin",
             "channel": "latest"
         }
     },

@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "rclone-ui/rclone-ui",
             "channel": "latest"
         }
     },

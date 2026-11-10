@@ -42,6 +42,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "pamburus/termframe",
             "channel": "latest"
         }
     },

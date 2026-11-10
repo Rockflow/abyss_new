@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "uutils/diffutils",
             "channel": "latest"
         }
     },

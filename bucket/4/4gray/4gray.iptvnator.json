@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "4gray/iptvnator",
             "channel": "latest"
         }
     },

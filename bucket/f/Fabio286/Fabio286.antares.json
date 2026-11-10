@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "antares-sql/antares",
             "channel": "latest"
         }
     },

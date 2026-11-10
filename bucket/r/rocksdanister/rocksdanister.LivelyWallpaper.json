@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "rocksdanister/lively",
             "channel": "latest"
         }
     },

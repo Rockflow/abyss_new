@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "mltframework/shotcut",
             "channel": "latest"
         }
     },

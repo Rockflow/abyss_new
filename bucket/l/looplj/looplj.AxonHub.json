@@ -40,6 +40,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "looplj/axonhub",
             "channel": "latest"
         }
     },

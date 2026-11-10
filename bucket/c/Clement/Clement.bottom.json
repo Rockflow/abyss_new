@@ -38,6 +38,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "ClementTsang/bottom",
             "channel": "latest"
         }
     },

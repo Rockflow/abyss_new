@@ -47,6 +47,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Orbmu2k/nvidiaProfileInspector",
             "channel": "latest"
         }
     },

@@ -43,6 +43,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "haga-rak/fluxzy.core",
             "channel": "latest"
         }
     },

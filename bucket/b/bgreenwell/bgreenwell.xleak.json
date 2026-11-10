@@ -38,6 +38,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "bgreenwell/xleak",
             "channel": "latest"
         }
     },

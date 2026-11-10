@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "t8y2/dbx",
             "channel": "latest"
         }
     },

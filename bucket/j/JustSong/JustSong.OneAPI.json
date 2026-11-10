@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "songquanpeng/one-api",
             "channel": "latest"
         }
     },

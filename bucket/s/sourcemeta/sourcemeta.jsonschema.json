@@ -37,6 +37,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "sourcemeta/jsonschema",
             "channel": "latest"
         }
     },

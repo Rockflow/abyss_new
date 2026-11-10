@@ -55,6 +55,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "clsid2/mpc-hc",
             "channel": "latest"
         }
     },

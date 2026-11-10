@@ -52,6 +52,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "okibcn/nano-for-windows",
             "channel": "latest"
         }
     },

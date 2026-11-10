@@ -2,6 +2,8 @@ name: Excavator
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [excavator]
   schedule:
     # Daily at 01:23 UTC
     - cron: "23 1 * * *"
@@ -17,7 +19,7 @@ jobs:
   excavate:
     name: Excavate
     runs-on: windows-latest
-    continue-on-error: true
+    continue-on-error: false
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       SKIP_UPDATED: 1

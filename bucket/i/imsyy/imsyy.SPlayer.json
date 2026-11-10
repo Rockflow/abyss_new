@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "imsyy/SPlayer",
             "channel": "latest"
         }
     },

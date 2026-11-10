@@ -57,6 +57,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "2dust/v2rayN",
             "channel": "newest"
         }
     },

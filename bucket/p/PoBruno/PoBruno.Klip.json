@@ -44,6 +44,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "PoBruno/klip",
             "channel": "latest"
         }
     },

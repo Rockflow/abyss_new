@@ -47,6 +47,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "AkaraChen/aghub",
             "channel": "latest"
         }
     },

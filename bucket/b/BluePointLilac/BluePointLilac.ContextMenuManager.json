@@ -43,6 +43,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "BluePointLilac/ContextMenuManager",
             "channel": "latest"
         }
     },

@@ -44,6 +44,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "AutoHotkey/AutoHotkey",
             "channel": "latest"
         }
     },

@@ -53,6 +53,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "VSCodium/vscodium",
             "channel": "latest"
         }
     },

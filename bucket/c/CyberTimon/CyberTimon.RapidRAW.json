@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "CyberTimon/RapidRAW",
             "channel": "latest"
         }
     },

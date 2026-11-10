@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "JetpackDuba/Gitnuro",
             "channel": "latest"
         }
     },

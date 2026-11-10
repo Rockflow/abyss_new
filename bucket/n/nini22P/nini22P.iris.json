@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "nini22P/iris",
             "channel": "latest"
         }
     },

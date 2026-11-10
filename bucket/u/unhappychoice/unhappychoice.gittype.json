@@ -38,6 +38,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "unhappychoice/gittype",
             "channel": "latest"
         }
     },

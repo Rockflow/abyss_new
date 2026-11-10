@@ -38,6 +38,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "guiyumin/vget",
             "channel": "latest"
         }
     },

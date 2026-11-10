@@ -46,6 +46,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "vercel/hyper",
             "channel": "latest"
         }
     },

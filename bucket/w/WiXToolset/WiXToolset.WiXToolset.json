@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "wixtoolset/wix3",
             "channel": "latest"
         },
         "regex": "wix(\\d)(\\d+)(\\d)",

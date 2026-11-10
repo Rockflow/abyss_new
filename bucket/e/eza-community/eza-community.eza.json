@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "eza-community/eza",
             "channel": "latest"
         }
     },

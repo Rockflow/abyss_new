@@ -55,6 +55,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "fraxiinus/ReplayBook",
             "channel": "latest"
         }
     },

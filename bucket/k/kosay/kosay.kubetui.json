@@ -38,6 +38,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "sarub0b0/kubetui",
             "channel": "latest"
         }
     },

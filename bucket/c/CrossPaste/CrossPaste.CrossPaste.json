@@ -43,6 +43,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "CrossPaste/crosspaste-desktop",
             "channel": "latest"
         }
     },

@@ -43,6 +43,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "orhun/git-cliff",
             "channel": "latest"
         }
     },

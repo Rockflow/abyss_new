@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "casey/just",
             "channel": "latest"
         }
     },

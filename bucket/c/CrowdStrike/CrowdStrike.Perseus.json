@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "CrowdStrike/perseus",
             "channel": "latest"
         }
     },

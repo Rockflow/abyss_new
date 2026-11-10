@@ -52,6 +52,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "CherryHQ/cherry-studio",
             "channel": "latest"
         }
     },

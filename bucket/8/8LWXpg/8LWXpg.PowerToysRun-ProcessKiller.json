@@ -38,6 +38,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "8LWXpg/PowerToysRun-ProcessKiller",
             "channel": "latest"
         }
     },

@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "ilyagr/diffedit3",
             "channel": "latest"
         }
     },

@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "onozaty/reporg",
             "channel": "latest"
         }
     },

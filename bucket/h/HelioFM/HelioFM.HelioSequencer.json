@@ -44,12 +44,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "HelioFM.HelioSequencer",
-            "ext": "zip"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

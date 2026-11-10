@@ -50,6 +50,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "rustdesk/rustdesk",
             "channel": "latest"
         }
     },

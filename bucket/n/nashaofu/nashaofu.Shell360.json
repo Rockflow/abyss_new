@@ -55,6 +55,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "nashaofu/shell360",
             "channel": "latest"
         }
     },

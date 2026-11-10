@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "bitwarden/clients",
             "channel": "stable"
         },
         "regex": "desktop-(.+)"

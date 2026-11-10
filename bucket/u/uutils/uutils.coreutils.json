@@ -573,6 +573,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "uutils/coreutils",
             "channel": "latest"
         }
     },

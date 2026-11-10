@@ -47,6 +47,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "charmbracelet/crush",
             "channel": "latest"
         }
     },

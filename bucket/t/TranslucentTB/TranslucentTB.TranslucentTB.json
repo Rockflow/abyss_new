@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "TranslucentTB/TranslucentTB",
             "channel": "latest"
         }
     },

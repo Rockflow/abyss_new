@@ -52,6 +52,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Diorser/LiteMonitor",
             "channel": "latest"
         }
     },

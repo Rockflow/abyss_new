@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "hanshuaikang/nping",
             "channel": "latest"
         }
     },

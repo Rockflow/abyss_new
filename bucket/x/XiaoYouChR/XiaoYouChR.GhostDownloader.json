@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "XiaoYouChR/Ghost-Downloader-3",
             "channel": "latest"
         }
     },

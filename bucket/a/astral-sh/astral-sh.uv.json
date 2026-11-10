@@ -55,6 +55,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "astral-sh/uv",
             "channel": "latest"
         }
     },

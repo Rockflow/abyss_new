@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "hulo-lang/hulo",
             "channel": "latest"
         }
     },

@@ -42,12 +42,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Microsoft.Edge.Dev",
-            "ext": "msi"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

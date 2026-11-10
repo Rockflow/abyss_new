@@ -51,6 +51,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "freelensapp/freelens",
             "channel": "latest"
         }
     },

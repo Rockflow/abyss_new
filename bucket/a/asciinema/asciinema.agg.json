@@ -36,6 +36,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "asciinema/agg",
             "channel": "latest"
         }
     },

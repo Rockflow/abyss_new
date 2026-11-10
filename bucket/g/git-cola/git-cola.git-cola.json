@@ -46,6 +46,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "git-cola/git-cola",
             "channel": "latest"
         }
     },

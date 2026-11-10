@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "alvesvaren/resizer2",
             "channel": "latest"
         }
     },

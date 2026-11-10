@@ -79,6 +79,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "PowerShell/PowerShell",
             "channel": "latest"
         }
     },

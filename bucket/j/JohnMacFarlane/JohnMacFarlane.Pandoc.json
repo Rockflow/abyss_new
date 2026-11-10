@@ -39,6 +39,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "jgm/pandoc",
             "channel": "latest"
         }
     },

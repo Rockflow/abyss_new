@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "zaps166/QMPlay2",
             "channel": "latest"
         }
     },

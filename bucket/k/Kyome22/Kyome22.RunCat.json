@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Kyome22/RunCat_for_windows",
             "channel": "latest"
         }
     },

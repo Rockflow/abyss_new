@@ -55,6 +55,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "rejetto/hfs",
             "channel": "latest"
         }
     },

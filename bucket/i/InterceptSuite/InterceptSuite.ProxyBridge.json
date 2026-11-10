@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "InterceptSuite/ProxyBridge",
             "channel": "latest"
         }
     },

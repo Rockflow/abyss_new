@@ -49,6 +49,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "AmarBego/GitTop",
             "channel": "latest"
         }
     },

@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Floorp-Projects/Floorp",
             "channel": "latest"
         }
     },

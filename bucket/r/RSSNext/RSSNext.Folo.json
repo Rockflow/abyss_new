@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "RSSNext/Folo",
             "channel": "latest"
         },
         "regex": "desktop/(.+)"

@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "CatVinci-Studio/Textus",
             "channel": "latest"
         }
     },

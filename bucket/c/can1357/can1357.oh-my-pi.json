@@ -38,6 +38,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "can1357/oh-my-pi",
             "channel": "latest"
         }
     },

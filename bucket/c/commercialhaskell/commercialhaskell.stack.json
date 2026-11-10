@@ -37,6 +37,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "commercialhaskell/stack",
             "channel": "latest"
         }
     },

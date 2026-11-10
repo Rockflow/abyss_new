@@ -44,6 +44,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Kong/insomnia",
             "channel": "latest"
         },
         "regex": "core@(.+)"

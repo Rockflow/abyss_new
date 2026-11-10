@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "ghost-him/ZeroLaunch-rs",
             "channel": "latest"
         }
     },

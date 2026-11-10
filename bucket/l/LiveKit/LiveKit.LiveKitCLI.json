@@ -40,6 +40,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "livekit/livekit-cli",
             "channel": "latest"
         }
     },

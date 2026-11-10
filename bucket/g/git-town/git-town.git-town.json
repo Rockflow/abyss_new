@@ -42,6 +42,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "git-town/git-town",
             "channel": "latest"
         }
     },

@@ -44,6 +44,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Anxcye/anx-reader",
             "channel": "latest"
         }
     },

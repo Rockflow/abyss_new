@@ -54,6 +54,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "axpdev-lab/aeroftp",
             "channel": "latest"
         }
     },

@@ -41,6 +41,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "ClementNerma/ReShell",
             "channel": "latest"
         }
     },

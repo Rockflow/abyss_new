@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "HandBrake/HandBrake",
             "channel": "latest"
         }
     },

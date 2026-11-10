@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "aelassas/servy",
             "channel": "latest"
         }
     },

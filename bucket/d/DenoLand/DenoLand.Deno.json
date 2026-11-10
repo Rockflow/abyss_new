@@ -46,6 +46,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "denoland/deno",
             "channel": "latest"
         }
     },

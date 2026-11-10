@@ -44,6 +44,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "game1024/OpenSpeedy",
             "channel": "latest"
         }
     },

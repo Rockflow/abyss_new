@@ -36,12 +36,6 @@
         ". $bucketsdir\\$bucket\\util\\_.ps1",
         "A-Complete-Uninstall"
     ],
-    "checkver": {
-        "winget": {
-            "id": "Cosine.CLI",
-            "ext": "zip"
-        }
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {

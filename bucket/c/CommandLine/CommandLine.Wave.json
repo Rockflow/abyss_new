@@ -52,6 +52,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "wavetermdev/waveterm",
             "channel": "latest"
         }
     },

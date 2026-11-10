@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "hoppscotch/releases",
             "channel": "latest"
         }
     },

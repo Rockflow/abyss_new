@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "Flow-Launcher/Flow.Launcher",
             "channel": "latest"
         }
     },

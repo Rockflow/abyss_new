@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "GitoxideLabs/gitoxide",
             "channel": "latest"
         }
     },

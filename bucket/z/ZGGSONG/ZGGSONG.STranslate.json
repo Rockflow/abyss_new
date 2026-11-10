@@ -51,6 +51,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "STranslate/STranslate",
             "channel": "latest"
         }
     },

@@ -56,6 +56,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "nushell/nightly",
             "channel": "newest"
         },
         "regex": "(.+)(?<hash>\\+.+)"

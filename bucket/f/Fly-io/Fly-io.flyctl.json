@@ -46,6 +46,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "superfly/flyctl",
             "channel": "latest"
         }
     },

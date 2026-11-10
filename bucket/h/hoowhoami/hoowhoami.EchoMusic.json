@@ -52,6 +52,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "hoowhoami/EchoMusic",
             "channel": "latest"
         }
     },

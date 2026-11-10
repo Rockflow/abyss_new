@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "lapce/lapce",
             "channel": "latest"
         }
     },

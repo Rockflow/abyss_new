@@ -45,6 +45,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "mpvnet-player/mpv.net",
             "channel": "latest"
         }
     },

@@ -51,6 +51,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "zhitongblog/solomd",
             "channel": "latest"
         }
     },

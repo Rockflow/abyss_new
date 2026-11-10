@@ -44,6 +44,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "jgraph/drawio-desktop",
             "channel": "latest"
         }
     },

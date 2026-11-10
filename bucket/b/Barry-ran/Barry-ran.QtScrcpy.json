@@ -48,6 +48,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "barry-ran/QtScrcpy",
             "channel": "latest"
         }
     },

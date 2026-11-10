@@ -43,6 +43,7 @@
     ],
     "checkver": {
         "github": {
+            "repo": "koodo-reader/koodo-reader",
             "channel": "latest"
         }
     },
