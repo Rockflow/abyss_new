@@ -1,5 +1,5 @@
 {
-    "version": "4.4.6",
+    "version": "4.5.1",
     "description": "基于 AI 的下一代跨平台多线程下载器 | AI-powered next-generation cross-platform multithreaded downloader",
     "homepage": "https://www.gd3.top",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v4.4.6/Ghost-Downloader-v4.4.6-Windows-x86_64-Setup.exe",
-            "hash": "d4cc459f396a27f89c8c35155a040bcd73e06fecb5e9ce71ae38ec329866ae4c"
+            "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v4.5.1/Ghost-Downloader-v4.5.1-Windows-x86_64-Setup.exe",
+            "hash": "a69dde674632a69245a6f959d14771e89315c33f51d3269b5845e2f5d49412e7"
         },
         "arm64": {
-            "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v4.4.6/Ghost-Downloader-v4.4.6-Windows-arm64-Setup.exe",
-            "hash": "217bec7baac7df5ad702404912dddc3a8fdc21a9349f39ace531a6a04b43d8d9"
+            "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v4.5.1/Ghost-Downloader-v4.5.1-Windows-arm64-Setup.exe",
+            "hash": "608bcc6c8cfa9b492a3bf4b6724685540adc1783d52e1bbff861909c5285a9d2"
         }
     },
     "shortcuts": [
