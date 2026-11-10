@@ -1,5 +1,5 @@
 {
-    "version": "0.2.7",
+    "version": "0.2.8",
     "description": "一款跨平台的 SSH 和 SFTP 客户端 | A cross-platform SSH and SFTP client",
     "homepage": "https://nashaofu.github.io/shell360",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nashaofu/shell360/releases/download/v0.2.7/Shell360_0.2.7_x64-setup.exe",
-            "hash": "b307ae2b53daf0413ad837cd2ed088b6c26623a56f8f09d48815e433273997ab"
+            "url": "https://github.com/nashaofu/shell360/releases/download/v0.2.8/Shell360_0.2.8_x64-setup.exe",
+            "hash": "5da1e2a04b8bd5236b388fac5e3cfe4275607426274d1de581ea4ae6ab801b3c"
         },
         "arm64": {
-            "url": "https://github.com/nashaofu/shell360/releases/download/v0.2.7/Shell360_0.2.7_arm64-setup.exe",
-            "hash": "fd999c3dbf7372a5f6413cf57808d02fde5203cefc34fcb90b4baeed322ea101"
+            "url": "https://github.com/nashaofu/shell360/releases/download/v0.2.8/Shell360_0.2.8_arm64-setup.exe",
+            "hash": "745ffd76dd5e4d1214edb4a6c6a47637090bcd5640affd64adc4be54d00e629f"
         }
     },
     "shortcuts": [
