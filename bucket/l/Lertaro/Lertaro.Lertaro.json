@@ -1,5 +1,5 @@
 {
-    "version": "5.12.2",
+    "version": "5.12.9",
     "description": "适用于 Windows 的高性能本地文件检索与效率启动工具 | High-performance local file search and productivity launcher for Windows",
     "homepage": "https://lertaro.github.io",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.12.2/Lertaro-Setup.exe",
-            "hash": "ea6dcd0eae7a19ac72f732d78d554f22340c2e49141e049b9cbd770702903abf"
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.12.9/Lertaro-Setup.exe",
+            "hash": "80343834e37d576eedb16b0e16f52ab0da7e40ff876e426408146cbecb499a49"
         },
         "arm64": {
-            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.12.2/Lertaro-Setup-arm64.exe",
-            "hash": "7d4ba2a12f1c2617d82eb71dbeeaa3251629cf5f038d8ff94c12d3ef1c6cd68c"
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.12.9/Lertaro-Setup-arm64.exe",
+            "hash": "424600fff73565422c5f071ee52677912f46cbc097024dfe129d422300df6a36"
         }
     },
     "shortcuts": [
