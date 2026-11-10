@@ -1,5 +1,5 @@
 {
-    "version": "8.54-6090",
+    "version": "8.60-6120",
     "description": "适用于 Windows 和 DOS 的全面硬件分析、监测与报告 | Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS",
     "homepage": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REALiX/HWiNFO",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://www.sac.sk/download/utildiag/hwi_854.zip",
-            "hash": "657379140cea34ad504d5fc8815e6f5e71ece2c8d06ddb0ccb118c8afe43ca95",
+            "url": "https://www.sac.sk/download/utildiag/hwi_860.zip",
+            "hash": "0f7726ee30f6b040cc13aa9de5a19619545a00dd7515fc17ebea9f9f2996e83c",
             "bin": [
                 [
                     "app\\HWiNFO64.exe",
@@ -23,8 +23,8 @@
             ]
         },
         "arm64": {
-            "url": "https://www.sac.sk/download/utildiag/hwi_854.zip",
-            "hash": "657379140cea34ad504d5fc8815e6f5e71ece2c8d06ddb0ccb118c8afe43ca95",
+            "url": "https://www.sac.sk/download/utildiag/hwi_860.zip",
+            "hash": "0f7726ee30f6b040cc13aa9de5a19619545a00dd7515fc17ebea9f9f2996e83c",
             "bin": [
                 [
                     "app\\HWiNFO_ARM64.exe",
