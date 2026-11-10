@@ -1,5 +1,5 @@
 {
-    "version": "4.3.3",
+    "version": "4.3.6",
     "description": "一款专注于快速绘制节点图的桌面工具 | A software that focuses on quickly drawing diagrams",
     "homepage": "https://github.com/graphif/project-graph",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/graphif/project-graph/releases/download/v4.3.3/Project.Graph_4.3.3_x64-setup.exe",
-            "hash": "84700fb33c83935015d61b7b35a2893cfe6dd5635889ac3bad0e97913865eb52"
+            "url": "https://github.com/graphif/project-graph/releases/download/v4.3.6/Project.Graph_4.3.6_x64-setup.exe",
+            "hash": "6892a38619cac2a2d79b01ca94edee94fe9969d1f60f2fac3ac48efb36c39d3a"
         }
     },
     "shortcuts": [
