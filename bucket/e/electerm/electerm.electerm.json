@@ -1,5 +1,5 @@
 {
-    "version": "5.8.0",
+    "version": "5.10.0",
     "description": "开源终端/ssh/telnet/serialport/RDP/VNC/sftp/ftp 客户端 | Open-sourced terminal/ssh/telnet/serialport/RDP/VNC/sftp/ftp client",
     "homepage": "https://github.com/electerm/electerm",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/electerm/electerm/releases/download/v5.8.0/electerm-5.8.0-win-x64-installer.exe",
-            "hash": "c1795b860d026f3ed6bba5c9ec9f03e67d65ae67e7f2be18acec6d390fbb166f"
+            "url": "https://github.com/electerm/electerm/releases/download/v5.10.0/electerm-5.10.0-win-x64-installer.exe",
+            "hash": "a3e8f222663dd86cfafc21f0e3b0bc277ec4ed0b6202d5a08fa6047d51c06c78"
         }
     },
     "bin": "app\\electerm.exe",
