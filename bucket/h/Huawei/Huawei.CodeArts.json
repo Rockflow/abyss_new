@@ -1,5 +1,5 @@
 {
-    "version": "26.10.300-64f7d6a",
+    "version": "26.10.310-3bc2c59",
     "description": "华为云码道 CodeArts 代码智能体 | Huawei Cloud CodeArts Code Agent",
     "homepage": "https://codearts.huaweicloud.com/download.html",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://codearts-agent-obs-cdn.huaweicloud.com/codearts/ai/latest/codearts-agent-x64-26.10.300-64f7d6a.exe",
-            "hash": "0bf12428be7bea9df8d746fb22377cba75e89d6869426d34801e1f1014f5a53f"
+            "url": "https://codearts-agent-obs-cdn.huaweicloud.com/codearts/ai/latest/codearts-agent-x64-26.10.310-3bc2c59.exe",
+            "hash": "df0a5adc769998e7f198a117282053ef9d7c03d1dbe571061f535f17fb386039"
         }
     },
     "env_add_path": "app\\bin",
