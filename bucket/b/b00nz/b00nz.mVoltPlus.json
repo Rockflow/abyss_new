@@ -1,5 +1,5 @@
 {
-    "version": "0.50.11",
+    "version": "0.50.13",
     "description": "一个用于 NVIDIA GPU 调优和监控的应用程序 | a utility for NVIDIA GPU tuning and monitoring",
     "homepage": "https://github.com/b00nz/mVolt",
     "license": {
@@ -9,8 +9,8 @@
     "notes": "Due to Scoop's naming limit, 'b00nz.mVolt+' is named 'b00nz.mVoltPlus'.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/b00nz/mVolt/releases/download/v0.50.11/mVolt+.exe",
-            "hash": "bfefeae42ed7634ec8dacbfce6d394c1fab7c7cb1e316c02470841b629cf55d1"
+            "url": "https://github.com/b00nz/mVolt/releases/download/v0.50.13/mVolt+.exe",
+            "hash": "b92735bf3d9bf891392c1b3bf4626fbcbaf1d43f8e2bdf5c4436174a71841552"
         }
     },
     "extract_to": "app",
