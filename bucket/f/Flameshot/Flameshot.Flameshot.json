@@ -1,5 +1,5 @@
 {
-    "version": "14.0.0",
+    "version": "15.0.0",
     "description": "功能强大且使用简单的屏幕截图软件 | Powerful yet simple to use screenshot software",
     "homepage": "https://flameshot.org",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/flameshot-org/flameshot/releases/download/v14.0.0/Flameshot-14.0.0-win64.msi",
-            "hash": "b3c38680c792410812e787d48ac1825c771fb044380d45789719b9e8373327ea"
+            "url": "https://github.com/flameshot-org/flameshot/releases/download/v15.0.0/Flameshot-15.0.0-win64.msi",
+            "hash": "69b8245ab4cb060e70716f493a7b2319e0421649d3e1b194a1b81503f3199a2d"
         }
     },
     "extract_dir": "Flameshot",
