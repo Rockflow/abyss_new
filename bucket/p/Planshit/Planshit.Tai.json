@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Planshit/Tai",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Planshit/Tai"
         }
     },
     "autoupdate": {

@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "saber-notes/saber",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "saber-notes/saber"
         }
     },
     "autoupdate": {

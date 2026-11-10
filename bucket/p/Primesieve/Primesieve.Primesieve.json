@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "kimwalisch/primesieve",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "kimwalisch/primesieve"
         }
     },
     "autoupdate": {

@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ip7z/7zip",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ip7z/7zip"
         }
     },
     "autoupdate": {

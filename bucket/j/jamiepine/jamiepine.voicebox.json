@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "jamiepine/voicebox",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "jamiepine/voicebox"
         }
     },
     "autoupdate": {

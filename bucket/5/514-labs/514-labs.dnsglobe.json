@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "514-labs/dnsglobe",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "514-labs/dnsglobe"
         }
     },
     "autoupdate": {

@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "squidowl/halloy",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "squidowl/halloy"
         }
     },
     "autoupdate": {

@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "gulbanana/gg",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "gulbanana/gg"
         }
     },
     "autoupdate": {

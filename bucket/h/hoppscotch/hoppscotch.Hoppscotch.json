@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "hoppscotch/releases",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "hoppscotch/releases"
         }
     },
     "autoupdate": {

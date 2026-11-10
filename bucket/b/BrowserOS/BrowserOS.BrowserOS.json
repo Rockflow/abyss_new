@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "browseros-ai/BrowserOS",
-            "channel": "stable"
+            "channel": "stable",
+            "repo": "browseros-ai/BrowserOS"
         },
         "regex": "^([\\d.]+)$"
     },

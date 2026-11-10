@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "octasoft-ltd/wsl-ui",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "octasoft-ltd/wsl-ui"
         }
     },
     "autoupdate": {

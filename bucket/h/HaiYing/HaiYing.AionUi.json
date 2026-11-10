@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "iOfficeAI/AionUi",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "iOfficeAI/AionUi"
         }
     },
     "autoupdate": {

@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "vladelaina/Catime",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "vladelaina/Catime"
         }
     },
     "autoupdate": {

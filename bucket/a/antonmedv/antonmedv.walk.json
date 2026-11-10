@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "antonmedv/walk",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "antonmedv/walk"
         }
     },
     "autoupdate": {

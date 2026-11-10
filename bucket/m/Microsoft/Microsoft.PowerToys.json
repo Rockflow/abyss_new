@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "microsoft/PowerToys",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "microsoft/PowerToys"
         }
     },
     "autoupdate": {

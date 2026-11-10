@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "SamsidParty/TopNotify",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "SamsidParty/TopNotify"
         }
     },
     "autoupdate": {

@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "QL-Win/QuickLook",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "QL-Win/QuickLook"
         }
     },
     "autoupdate": {

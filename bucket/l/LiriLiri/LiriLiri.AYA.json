@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "liriliri/aya",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "liriliri/aya"
         }
     },
     "autoupdate": {

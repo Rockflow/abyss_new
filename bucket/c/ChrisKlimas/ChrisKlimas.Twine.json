@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "klembot/twinejs",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "klembot/twinejs"
         }
     },
     "autoupdate": {

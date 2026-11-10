@@ -41,8 +41,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "gittower/git-flow-next",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "gittower/git-flow-next"
         }
     },
     "autoupdate": {

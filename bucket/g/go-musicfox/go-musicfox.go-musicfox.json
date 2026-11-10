@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "go-musicfox/go-musicfox",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "go-musicfox/go-musicfox"
         }
     },
     "autoupdate": {

@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "onozaty/csvt",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "onozaty/csvt"
         }
     },
     "autoupdate": {

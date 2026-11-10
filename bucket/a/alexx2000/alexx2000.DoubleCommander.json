@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "doublecmd/doublecmd",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "doublecmd/doublecmd"
         }
     },
     "autoupdate": {

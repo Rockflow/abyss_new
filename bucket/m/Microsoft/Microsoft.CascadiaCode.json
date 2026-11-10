@@ -30,8 +30,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "microsoft/cascadia-code",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "microsoft/cascadia-code"
         }
     },
     "autoupdate": {

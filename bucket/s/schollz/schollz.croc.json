@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "schollz/croc",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "schollz/croc"
         }
     },
     "autoupdate": {

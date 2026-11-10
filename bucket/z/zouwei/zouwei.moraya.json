@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zouwei/moraya",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zouwei/moraya"
         }
     },
     "autoupdate": {

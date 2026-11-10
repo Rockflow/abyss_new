@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "KovaMD/Kova",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "KovaMD/Kova"
         }
     },
     "autoupdate": {

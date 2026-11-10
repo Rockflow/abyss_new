@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zhongyang219/MusicPlayer2",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zhongyang219/MusicPlayer2"
         }
     },
     "autoupdate": {

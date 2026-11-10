@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "axllent/mailpit",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "axllent/mailpit"
         }
     },
     "autoupdate": {

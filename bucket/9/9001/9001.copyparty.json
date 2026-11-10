@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "9001/copyparty",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "9001/copyparty"
         }
     },
     "autoupdate": {

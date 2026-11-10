@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "neovide/neovide",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "neovide/neovide"
         }
     },
     "autoupdate": {

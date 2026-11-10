@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "picguard/picguard",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "picguard/picguard"
         }
     },
     "autoupdate": {

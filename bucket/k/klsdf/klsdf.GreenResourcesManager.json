@@ -53,8 +53,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "klsdf/GreenResourcesManager",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "klsdf/GreenResourcesManager"
         }
     },
     "autoupdate": {

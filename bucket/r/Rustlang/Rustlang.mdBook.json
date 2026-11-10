@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "rust-lang/mdBook",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "rust-lang/mdBook"
         }
     },
     "autoupdate": {

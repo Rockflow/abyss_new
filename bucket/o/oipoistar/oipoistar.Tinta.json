@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "oipoistar/tinta",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "oipoistar/tinta"
         }
     },
     "autoupdate": {

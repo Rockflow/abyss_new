@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "AnInsomniacy/motrix-next",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "AnInsomniacy/motrix-next"
         },
         "max": "3"
     },

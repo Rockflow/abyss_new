@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "iAJue/MoeKoeMusic",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "iAJue/MoeKoeMusic"
         }
     },
     "autoupdate": {

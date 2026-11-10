@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "jimuzhe/tiez-clipboard",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "jimuzhe/tiez-clipboard"
         }
     },
     "autoupdate": {

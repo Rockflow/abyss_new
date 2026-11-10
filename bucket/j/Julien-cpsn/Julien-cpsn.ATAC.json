@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Julien-cpsn/ATAC",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Julien-cpsn/ATAC"
         }
     },
     "autoupdate": {

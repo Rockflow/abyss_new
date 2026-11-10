@@ -51,8 +51,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "espanso/espanso",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "espanso/espanso"
         }
     },
     "autoupdate": {

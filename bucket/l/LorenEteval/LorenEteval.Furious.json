@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "LorenEteval/Furious",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "LorenEteval/Furious"
         }
     },
     "autoupdate": {

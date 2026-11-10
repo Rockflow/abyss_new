@@ -53,8 +53,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "wez/wezterm",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "wez/wezterm"
         }
     },
     "autoupdate": {

@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "imsyy/SPlayer",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "imsyy/SPlayer"
         }
     },
     "autoupdate": {

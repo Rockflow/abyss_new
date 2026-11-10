@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "adalinesimonian/gdvm",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "adalinesimonian/gdvm"
         }
     },
     "autoupdate": {

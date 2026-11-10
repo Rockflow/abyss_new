@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "charmbracelet/wishlist",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "charmbracelet/wishlist"
         }
     },
     "autoupdate": {

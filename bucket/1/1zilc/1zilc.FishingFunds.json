@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "1zilc/fishing-funds",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "1zilc/fishing-funds"
         }
     },
     "autoupdate": {

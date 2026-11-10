@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "altsem/gitu",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "altsem/gitu"
         }
     },
     "autoupdate": {

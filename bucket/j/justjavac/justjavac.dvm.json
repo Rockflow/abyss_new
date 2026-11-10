@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "justjavac/dvm",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "justjavac/dvm"
         }
     },
     "autoupdate": {

@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "shanselman/winget-tui",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "shanselman/winget-tui"
         }
     },
     "autoupdate": {

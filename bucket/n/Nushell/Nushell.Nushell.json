@@ -56,8 +56,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "nushell/nushell",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "nushell/nushell"
         }
     },
     "autoupdate": {

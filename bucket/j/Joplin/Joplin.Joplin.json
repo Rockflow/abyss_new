@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "laurent22/joplin",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "laurent22/joplin"
         }
     },
     "autoupdate": {

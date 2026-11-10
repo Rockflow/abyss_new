@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "XimilalaXiang/DeLive",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "XimilalaXiang/DeLive"
         }
     },
     "autoupdate": {

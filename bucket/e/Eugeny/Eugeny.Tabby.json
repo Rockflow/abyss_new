@@ -52,8 +52,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Eugeny/tabby",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Eugeny/tabby"
         }
     },
     "autoupdate": {

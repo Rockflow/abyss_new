@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "tamasfe/taplo",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "tamasfe/taplo"
         }
     },
     "autoupdate": {

@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "walles/moor",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "walles/moor"
         }
     },
     "autoupdate": {

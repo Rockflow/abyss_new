@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "jesseduffield/lazygit",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "jesseduffield/lazygit"
         }
     },
     "autoupdate": {

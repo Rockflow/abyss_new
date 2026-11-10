@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "xpipe-io/xpipe",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "xpipe-io/xpipe"
         }
     },
     "autoupdate": {

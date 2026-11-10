@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "chrisant996/clink",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "chrisant996/clink"
         },
         "regex": "/v(?<tag>[\\d.]+)/clink\\.([\\d.]+)\\.(?<commit>[\\w.]+)\\.zip"
     },

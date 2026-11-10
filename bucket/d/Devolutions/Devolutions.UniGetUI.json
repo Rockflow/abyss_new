@@ -52,8 +52,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Devolutions/UniGetUI",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Devolutions/UniGetUI"
         }
     },
     "autoupdate": {

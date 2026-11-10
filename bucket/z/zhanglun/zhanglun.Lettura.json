@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zhanglun/lettura",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zhanglun/lettura"
         }
     },
     "autoupdate": {

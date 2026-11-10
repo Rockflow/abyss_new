@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zyedidia/micro",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zyedidia/micro"
         }
     },
     "autoupdate": {

@@ -58,8 +58,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "sxyazi/yazi",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "sxyazi/yazi"
         }
     },
     "autoupdate": {

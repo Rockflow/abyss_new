@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "xushengfeng/eSearch",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "xushengfeng/eSearch"
         }
     },
     "autoupdate": {

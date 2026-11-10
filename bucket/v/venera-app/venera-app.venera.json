@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "venera-app/venera",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "venera-app/venera"
         }
     },
     "autoupdate": {

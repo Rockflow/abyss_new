@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "gvcgo/version-manager",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "gvcgo/version-manager"
         }
     },
     "autoupdate": {

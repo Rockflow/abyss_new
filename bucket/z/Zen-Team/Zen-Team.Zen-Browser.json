@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zen-browser/desktop",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zen-browser/desktop"
         }
     },
     "autoupdate": {

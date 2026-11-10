@@ -55,8 +55,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "clsid2/mpc-hc",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "clsid2/mpc-hc"
         }
     },
     "autoupdate": {

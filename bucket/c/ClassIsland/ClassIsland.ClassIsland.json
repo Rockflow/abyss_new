@@ -53,8 +53,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ClassIsland/ClassIsland",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ClassIsland/ClassIsland"
         }
     },
     "autoupdate": {

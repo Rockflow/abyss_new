@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "M2Team/NanaZip",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "M2Team/NanaZip"
         }
     },
     "autoupdate": {

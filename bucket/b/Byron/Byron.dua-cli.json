@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Byron/dua-cli",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Byron/dua-cli"
         }
     },
     "autoupdate": {

@@ -52,8 +52,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "oven-sh/bun",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "oven-sh/bun"
         },
         "regex": "bun-(.+)"
     },

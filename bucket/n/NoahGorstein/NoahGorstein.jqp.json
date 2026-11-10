@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "noahgorstein/jqp",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "noahgorstein/jqp"
         }
     },
     "autoupdate": {

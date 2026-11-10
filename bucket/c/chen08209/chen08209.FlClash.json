@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "chen08209/FlClash",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "chen08209/FlClash"
         }
     },
     "autoupdate": {

@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "russellbanks/Komac",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "russellbanks/Komac"
         }
     },
     "autoupdate": {

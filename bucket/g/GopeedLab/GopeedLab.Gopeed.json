@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "GopeedLab/gopeed",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "GopeedLab/gopeed"
         }
     },
     "autoupdate": {

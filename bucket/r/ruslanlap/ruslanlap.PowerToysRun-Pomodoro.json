@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ruslanlap/PowerToysRun-Pomodoro",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ruslanlap/PowerToysRun-Pomodoro"
         }
     },
     "autoupdate": {

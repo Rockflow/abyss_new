@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "CoreyHayward/PowerToys-Run-ClipboardManager",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "CoreyHayward/PowerToys-Run-ClipboardManager"
         }
     },
     "autoupdate": {

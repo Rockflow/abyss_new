@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "beekeeper-studio/beekeeper-studio",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "beekeeper-studio/beekeeper-studio"
         }
     },
     "autoupdate": {

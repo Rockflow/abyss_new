@@ -30,8 +30,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ryanoasis/nerd-fonts",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ryanoasis/nerd-fonts"
         }
     },
     "autoupdate": {

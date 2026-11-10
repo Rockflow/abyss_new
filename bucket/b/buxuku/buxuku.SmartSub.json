@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "buxuku/SmartSub",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "buxuku/SmartSub"
         }
     },
     "autoupdate": {

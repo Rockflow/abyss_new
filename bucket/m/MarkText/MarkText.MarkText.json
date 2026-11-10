@@ -50,8 +50,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "marktext/marktext",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "marktext/marktext"
         }
     },
     "autoupdate": {

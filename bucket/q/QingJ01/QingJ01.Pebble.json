@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "QingJ01/Pebble",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "QingJ01/Pebble"
         }
     },
     "autoupdate": {

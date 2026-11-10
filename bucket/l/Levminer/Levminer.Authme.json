@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Levminer/authme",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Levminer/authme"
         }
     },
     "autoupdate": {

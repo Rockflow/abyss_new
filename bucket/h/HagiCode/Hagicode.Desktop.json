@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "HagiCode-org/desktop",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "HagiCode-org/desktop"
         }
     },
     "autoupdate": {

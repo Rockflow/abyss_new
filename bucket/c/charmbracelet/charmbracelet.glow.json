@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "charmbracelet/glow",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "charmbracelet/glow"
         }
     },
     "autoupdate": {

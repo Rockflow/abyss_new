@@ -65,8 +65,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "amzxyz/rime_wanxiang",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "amzxyz/rime_wanxiang"
         }
     },
     "autoupdate": {

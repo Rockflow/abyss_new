@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "AmintaCCCP/GithubStarsManager",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "AmintaCCCP/GithubStarsManager"
         }
     },
     "autoupdate": {

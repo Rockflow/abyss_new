@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "pamburus/hl",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "pamburus/hl"
         }
     },
     "autoupdate": {

@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zditor/zditor-docs",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zditor/zditor-docs"
         },
         "regex": "zditor-(.+)"
     },

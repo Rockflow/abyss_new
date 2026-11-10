@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ungoogled-software/ungoogled-chromium-windows",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ungoogled-software/ungoogled-chromium-windows"
         }
     },
     "autoupdate": {

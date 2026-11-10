@@ -41,8 +41,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "yakunins/language-indicator",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "yakunins/language-indicator"
         }
     },
     "autoupdate": {

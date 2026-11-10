@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "alexpasmantier/television",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "alexpasmantier/television"
         }
     },
     "autoupdate": {

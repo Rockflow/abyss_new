@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "voidtools/ES",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "voidtools/ES"
         }
     },
     "autoupdate": {

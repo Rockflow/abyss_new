@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "torakiki/pdfsam",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "torakiki/pdfsam"
         }
     },
     "autoupdate": {

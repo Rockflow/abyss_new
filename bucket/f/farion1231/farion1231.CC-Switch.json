@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "farion1231/cc-switch",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "farion1231/cc-switch"
         }
     },
     "autoupdate": {

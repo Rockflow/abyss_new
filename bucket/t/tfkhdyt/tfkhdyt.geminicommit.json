@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "tfkhdyt/geminicommit",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "tfkhdyt/geminicommit"
         }
     },
     "autoupdate": {

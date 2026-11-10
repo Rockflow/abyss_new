@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "fafarunner/fafarunner",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "fafarunner/fafarunner"
         }
     },
     "autoupdate": {

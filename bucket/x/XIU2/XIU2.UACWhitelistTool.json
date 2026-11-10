@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "XIU2/UACWhitelistTool",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "XIU2/UACWhitelistTool"
         }
     },
     "autoupdate": {

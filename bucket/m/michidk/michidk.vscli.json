@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "michidk/vscli",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "michidk/vscli"
         }
     },
     "autoupdate": {

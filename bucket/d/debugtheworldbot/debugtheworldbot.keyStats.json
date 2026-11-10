@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "debugtheworldbot/keyStats",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "debugtheworldbot/keyStats"
         }
     },
     "autoupdate": {

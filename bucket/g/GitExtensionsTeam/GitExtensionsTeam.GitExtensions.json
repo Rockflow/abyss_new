@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "gitextensions/gitextensions",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "gitextensions/gitextensions"
         },
         "jsonpath": "$..browser_download_url",
         "regex": "/v(?<tag>[\\d.]+)/GitExtensions-Portable-(?:x[\\d.]+)-(?<version>[\\d.]+)-(?<commit>[\\w]+).zip"

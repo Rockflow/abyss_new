@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "biomejs/biome",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "biomejs/biome"
         },
         "regex": "@biomejs/biome@(.+)"
     },

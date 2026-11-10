@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "atuinsh/atuin",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "atuinsh/atuin"
         }
     },
     "autoupdate": {

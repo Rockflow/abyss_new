@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "viarotel-org/escrcpy",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "viarotel-org/escrcpy"
         }
     },
     "autoupdate": {

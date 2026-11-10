@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "nubjs/nub",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "nubjs/nub"
         }
     },
     "autoupdate": {

@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "filebrowser/filebrowser",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "filebrowser/filebrowser"
         }
     },
     "autoupdate": {

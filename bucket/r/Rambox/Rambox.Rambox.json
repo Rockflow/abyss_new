@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ramboxapp/download",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ramboxapp/download"
         }
     },
     "autoupdate": {

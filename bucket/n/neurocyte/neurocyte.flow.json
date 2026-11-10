@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "neurocyte/flow",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "neurocyte/flow"
         }
     },
     "autoupdate": {

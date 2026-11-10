@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ahmet-cetinkaya/whph",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ahmet-cetinkaya/whph"
         }
     },
     "autoupdate": {

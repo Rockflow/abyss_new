@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "vincent-uden/miro",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "vincent-uden/miro"
         }
     },
     "autoupdate": {

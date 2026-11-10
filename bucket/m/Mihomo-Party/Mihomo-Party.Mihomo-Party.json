@@ -62,8 +62,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "mihomo-party-org/clash-party",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "mihomo-party-org/clash-party"
         }
     },
     "autoupdate": {

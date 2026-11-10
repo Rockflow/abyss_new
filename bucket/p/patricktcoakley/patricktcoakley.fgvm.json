@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "patricktcoakley/fgvm",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "patricktcoakley/fgvm"
         }
     },
     "autoupdate": {

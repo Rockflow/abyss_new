@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "dyad-sh/dyad",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "dyad-sh/dyad"
         }
     },
     "autoupdate": {

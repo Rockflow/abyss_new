@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "owu/wsl-dashboard",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "owu/wsl-dashboard"
         }
     },
     "autoupdate": {

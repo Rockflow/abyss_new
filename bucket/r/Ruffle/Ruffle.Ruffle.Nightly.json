@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ruffle-rs/ruffle",
-            "channel": "newest"
+            "channel": "newest",
+            "repo": "ruffle-rs/ruffle"
         },
         "regex": "nightly-(.+)"
     },

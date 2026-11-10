@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "sipeed/picoclaw",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "sipeed/picoclaw"
         }
     },
     "autoupdate": {

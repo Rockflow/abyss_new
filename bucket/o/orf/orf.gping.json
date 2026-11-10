@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "orf/gping",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "orf/gping"
         },
         "regex": "gping-(.+)"
     },

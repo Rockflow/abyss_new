@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "SubtitleEdit/subtitleedit",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "SubtitleEdit/subtitleedit"
         }
     },
     "autoupdate": {

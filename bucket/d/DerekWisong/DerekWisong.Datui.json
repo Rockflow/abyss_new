@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "derekwisong/datui",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "derekwisong/datui"
         }
     },
     "autoupdate": {

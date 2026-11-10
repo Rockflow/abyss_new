@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ClementNerma/Trasher",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ClementNerma/Trasher"
         }
     },
     "autoupdate": {

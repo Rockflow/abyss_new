@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "microsoft/edit",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "microsoft/edit"
         }
     },
     "autoupdate": {

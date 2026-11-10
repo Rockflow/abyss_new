@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "AIEraDev/Clypra",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "AIEraDev/Clypra"
         }
     },
     "autoupdate": {

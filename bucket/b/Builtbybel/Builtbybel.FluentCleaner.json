@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "builtbybel/FluentCleaner",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "builtbybel/FluentCleaner"
         }
     },
     "autoupdate": {

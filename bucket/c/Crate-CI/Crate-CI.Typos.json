@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "crate-ci/typos",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "crate-ci/typos"
         }
     },
     "autoupdate": {

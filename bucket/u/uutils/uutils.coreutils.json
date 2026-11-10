@@ -573,8 +573,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "uutils/coreutils",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "uutils/coreutils"
         }
     },
     "autoupdate": {

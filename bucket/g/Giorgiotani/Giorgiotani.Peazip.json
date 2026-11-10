@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "peazip/PeaZip",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "peazip/PeaZip"
         }
     },
     "autoupdate": {

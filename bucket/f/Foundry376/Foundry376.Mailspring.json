@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Foundry376/Mailspring",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Foundry376/Mailspring"
         }
     },
     "autoupdate": {

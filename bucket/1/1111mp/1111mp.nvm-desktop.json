@@ -51,8 +51,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "1111mp/nvm-desktop",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "1111mp/nvm-desktop"
         }
     },
     "autoupdate": {

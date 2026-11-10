@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "tree-sitter/tree-sitter",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "tree-sitter/tree-sitter"
         }
     },
     "autoupdate": {

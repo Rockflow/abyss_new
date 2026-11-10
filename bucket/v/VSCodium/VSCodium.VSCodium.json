@@ -53,8 +53,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "VSCodium/vscodium",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "VSCodium/vscodium"
         }
     },
     "autoupdate": {

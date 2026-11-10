@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "dail8859/NotepadNext",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "dail8859/NotepadNext"
         }
     },
     "autoupdate": {

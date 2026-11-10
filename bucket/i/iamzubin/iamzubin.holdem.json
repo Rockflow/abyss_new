@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "iamzubin/holdem",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "iamzubin/holdem"
         }
     },
     "autoupdate": {

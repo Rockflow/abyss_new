@@ -70,8 +70,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "LGUG2Z/komorebi",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "LGUG2Z/komorebi"
         }
     },
     "autoupdate": {

@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "sigoden/dufs",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "sigoden/dufs"
         }
     },
     "autoupdate": {

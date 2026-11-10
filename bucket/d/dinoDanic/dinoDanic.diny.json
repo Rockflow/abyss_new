@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "dinoDanic/diny",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "dinoDanic/diny"
         }
     },
     "autoupdate": {

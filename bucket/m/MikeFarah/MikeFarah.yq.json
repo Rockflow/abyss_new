@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "mikefarah/yq",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "mikefarah/yq"
         }
     },
     "autoupdate": {

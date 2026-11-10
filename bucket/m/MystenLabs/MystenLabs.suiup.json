@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "MystenLabs/suiup",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "MystenLabs/suiup"
         }
     },
     "autoupdate": {

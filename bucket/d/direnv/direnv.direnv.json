@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "direnv/direnv",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "direnv/direnv"
         }
     },
     "autoupdate": {

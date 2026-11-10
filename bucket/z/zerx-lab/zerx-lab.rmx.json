@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zerx-lab/rmx",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zerx-lab/rmx"
         }
     },
     "autoupdate": {

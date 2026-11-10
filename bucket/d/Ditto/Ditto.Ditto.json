@@ -53,8 +53,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "sabrogden/Ditto",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "sabrogden/Ditto"
         }
     },
     "autoupdate": {

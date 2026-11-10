@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "AmarBego/Rscoop",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "AmarBego/Rscoop"
         }
     },
     "autoupdate": {

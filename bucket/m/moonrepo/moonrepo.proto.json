@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "moonrepo/proto",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "moonrepo/proto"
         }
     },
     "autoupdate": {

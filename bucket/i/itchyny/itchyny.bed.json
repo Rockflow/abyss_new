@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "itchyny/bed",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "itchyny/bed"
         }
     },
     "autoupdate": {

@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "namazso/PawnIO.Setup",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "namazso/PawnIO.Setup"
         }
     },
     "autoupdate": {

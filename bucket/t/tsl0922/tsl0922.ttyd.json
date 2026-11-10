@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "tsl0922/ttyd",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "tsl0922/ttyd"
         }
     },
     "autoupdate": {

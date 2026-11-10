@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "w4po/ExplorerTabUtility",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "w4po/ExplorerTabUtility"
         }
     },
     "autoupdate": {

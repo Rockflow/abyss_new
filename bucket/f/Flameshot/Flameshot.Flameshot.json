@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "flameshot-org/flameshot",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "flameshot-org/flameshot"
         }
     },
     "autoupdate": {

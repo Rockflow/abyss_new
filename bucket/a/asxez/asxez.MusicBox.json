@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "asxez/MusicBox",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "asxez/MusicBox"
         }
     },
     "autoupdate": {

@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "EcoPasteHub/EcoPaste",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "EcoPasteHub/EcoPaste"
         }
     },
     "autoupdate": {

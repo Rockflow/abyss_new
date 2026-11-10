@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "AlexanderPro/SmartContextMenu",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "AlexanderPro/SmartContextMenu"
         }
     },
     "autoupdate": {

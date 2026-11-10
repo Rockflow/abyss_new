@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "podman-container-tools/podman",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "podman-container-tools/podman"
         }
     },
     "autoupdate": {

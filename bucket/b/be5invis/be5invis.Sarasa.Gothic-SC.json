@@ -34,8 +34,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "be5invis/Sarasa-Gothic",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "be5invis/Sarasa-Gothic"
         }
     },
     "autoupdate": {

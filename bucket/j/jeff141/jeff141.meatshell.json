@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "jeff141/meatshell",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "jeff141/meatshell"
         }
     },
     "autoupdate": {

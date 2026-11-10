@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "qiu7824/zsclip",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "qiu7824/zsclip"
         }
     },
     "autoupdate": {

@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "sedwards2009/extraterm",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "sedwards2009/extraterm"
         }
     },
     "autoupdate": {

@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "readest/readest",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "readest/readest"
         }
     },
     "autoupdate": {

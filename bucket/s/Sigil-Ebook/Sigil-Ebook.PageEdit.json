@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Sigil-Ebook/PageEdit",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Sigil-Ebook/PageEdit"
         }
     },
     "autoupdate": {

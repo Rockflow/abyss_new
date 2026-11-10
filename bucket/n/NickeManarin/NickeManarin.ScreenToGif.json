@@ -54,8 +54,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "NickeManarin/ScreenToGif",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "NickeManarin/ScreenToGif"
         }
     },
     "autoupdate": {

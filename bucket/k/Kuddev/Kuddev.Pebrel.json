@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Kuddev/pebrel",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Kuddev/pebrel"
         }
     },
     "autoupdate": {

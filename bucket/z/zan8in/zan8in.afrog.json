@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zan8in/afrog",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zan8in/afrog"
         }
     },
     "autoupdate": {

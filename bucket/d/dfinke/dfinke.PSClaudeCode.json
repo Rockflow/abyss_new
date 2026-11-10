@@ -33,8 +33,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "dfinke/PSClaudeCode",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "dfinke/PSClaudeCode"
         }
     },
     "autoupdate": {

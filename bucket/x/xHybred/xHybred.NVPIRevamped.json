@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "xHybred/NvidiaProfileInspectorRevamped",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "xHybred/NvidiaProfileInspectorRevamped"
         }
     },
     "autoupdate": {

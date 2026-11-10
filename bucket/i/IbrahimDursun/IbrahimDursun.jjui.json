@@ -56,8 +56,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "idursun/jjui",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "idursun/jjui"
         }
     },
     "autoupdate": {

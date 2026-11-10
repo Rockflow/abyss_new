@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "team-ide/teamide",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "team-ide/teamide"
         }
     },
     "autoupdate": {

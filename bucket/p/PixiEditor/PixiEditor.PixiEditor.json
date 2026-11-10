@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "PixiEditor/PixiEditor",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "PixiEditor/PixiEditor"
         }
     },
     "autoupdate": {

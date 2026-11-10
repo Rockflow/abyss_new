@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "lasantosr/intelli-shell",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "lasantosr/intelli-shell"
         }
     },
     "autoupdate": {

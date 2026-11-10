@@ -50,8 +50,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "TermoraDev/termora",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "TermoraDev/termora"
         }
     },
     "autoupdate": {

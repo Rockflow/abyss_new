@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "lsd-rs/lsd",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "lsd-rs/lsd"
         }
     },
     "autoupdate": {

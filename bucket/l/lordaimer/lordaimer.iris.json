@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "lordaimer/iris",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "lordaimer/iris"
         }
     },
     "autoupdate": {

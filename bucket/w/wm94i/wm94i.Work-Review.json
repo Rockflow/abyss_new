@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "wm94i/Work_Review",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "wm94i/Work_Review"
         }
     },
     "autoupdate": {

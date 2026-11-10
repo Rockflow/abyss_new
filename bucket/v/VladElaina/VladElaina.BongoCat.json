@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "vladelaina/BongoCat",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "vladelaina/BongoCat"
         }
     },
     "autoupdate": {

@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "branhill/windows-11-context-menu-manager",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "branhill/windows-11-context-menu-manager"
         }
     },
     "autoupdate": {

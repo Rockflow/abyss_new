@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "AnInsomniacy/rayburst",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "AnInsomniacy/rayburst"
         }
     },
     "autoupdate": {

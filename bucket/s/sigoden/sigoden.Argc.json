@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "sigoden/argc",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "sigoden/argc"
         }
     },
     "autoupdate": {

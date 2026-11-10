@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "RivoLink/leaf",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "RivoLink/leaf"
         }
     },
     "autoupdate": {

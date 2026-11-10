@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "RubyMetric/chsrc",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "RubyMetric/chsrc"
         }
     },
     "autoupdate": {

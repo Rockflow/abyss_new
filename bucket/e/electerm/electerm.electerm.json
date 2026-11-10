@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "electerm/electerm",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "electerm/electerm"
         }
     },
     "autoupdate": {

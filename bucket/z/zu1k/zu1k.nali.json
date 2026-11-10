@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zu1k/nali",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zu1k/nali"
         }
     },
     "autoupdate": {

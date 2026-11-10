@@ -37,8 +37,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "pdfcpu/pdfcpu",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "pdfcpu/pdfcpu"
         }
     },
     "autoupdate": {

@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "CrossPaste/crosspaste-desktop",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "CrossPaste/crosspaste-desktop"
         }
     },
     "autoupdate": {

@@ -60,8 +60,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "carapace-sh/carapace-bin",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "carapace-sh/carapace-bin"
         }
     },
     "autoupdate": {

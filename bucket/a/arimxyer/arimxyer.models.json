@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "arimxyer/models",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "arimxyer/models"
         }
     },
     "autoupdate": {

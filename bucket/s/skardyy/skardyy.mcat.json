@@ -37,8 +37,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Skardyy/mcat",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Skardyy/mcat"
         }
     },
     "autoupdate": {

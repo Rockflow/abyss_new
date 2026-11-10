@@ -50,8 +50,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "c0re100/qBittorrent-Enhanced-Edition",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "c0re100/qBittorrent-Enhanced-Edition"
         },
         "regex": "release-(.+)"
     },

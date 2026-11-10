@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "menloresearch/jan",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "menloresearch/jan"
         }
     },
     "autoupdate": {

@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "localfirstapp/1History",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "localfirstapp/1History"
         }
     },
     "autoupdate": {

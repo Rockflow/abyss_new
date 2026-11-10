@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Cishoon/md",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Cishoon/md"
         }
     },
     "autoupdate": {

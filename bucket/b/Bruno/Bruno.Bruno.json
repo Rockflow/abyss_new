@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "usebruno/bruno",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "usebruno/bruno"
         }
     },
     "autoupdate": {

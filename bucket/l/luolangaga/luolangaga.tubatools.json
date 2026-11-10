@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "luolangaga/tubatools",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "luolangaga/tubatools"
         }
     },
     "autoupdate": {

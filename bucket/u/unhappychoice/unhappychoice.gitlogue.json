@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "unhappychoice/gitlogue",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "unhappychoice/gitlogue"
         }
     },
     "autoupdate": {

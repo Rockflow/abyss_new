@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "josephburnett/jd",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "josephburnett/jd"
         }
     },
     "autoupdate": {

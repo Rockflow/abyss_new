@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "codexu/note-gen",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "codexu/note-gen"
         },
         "regex": "note-gen-(.+)"
     },

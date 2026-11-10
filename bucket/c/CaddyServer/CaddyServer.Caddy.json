@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "caddyserver/caddy",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "caddyserver/caddy"
         }
     },
     "autoupdate": {

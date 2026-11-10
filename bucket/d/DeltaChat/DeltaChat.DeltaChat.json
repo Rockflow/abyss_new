@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "deltachat/deltachat-desktop",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "deltachat/deltachat-desktop"
         }
     },
     "autoupdate": {

@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "8LWXpg/PowerToysRun-GitHubRepo",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "8LWXpg/PowerToysRun-GitHubRepo"
         }
     },
     "autoupdate": {

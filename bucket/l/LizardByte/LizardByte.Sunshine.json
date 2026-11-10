@@ -58,8 +58,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "LizardByte/Sunshine",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "LizardByte/Sunshine"
         }
     },
     "autoupdate": {

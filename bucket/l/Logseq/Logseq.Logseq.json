@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "logseq/logseq",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "logseq/logseq"
         }
     },
     "autoupdate": {

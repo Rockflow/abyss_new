@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "purocean/yn",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "purocean/yn"
         }
     },
     "autoupdate": {

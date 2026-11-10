@@ -63,8 +63,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "fatedier/frp",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "fatedier/frp"
         }
     },
     "autoupdate": {

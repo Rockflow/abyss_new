@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "TriliumNext/Trilium",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "TriliumNext/Trilium"
         }
     },
     "autoupdate": {

@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "cococonscious/koji",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "cococonscious/koji"
         }
     },
     "autoupdate": {

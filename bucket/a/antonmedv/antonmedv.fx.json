@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "antonmedv/fx",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "antonmedv/fx"
         }
     },
     "autoupdate": {

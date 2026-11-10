@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "francisdb/vpxtool",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "francisdb/vpxtool"
         }
     },
     "autoupdate": {

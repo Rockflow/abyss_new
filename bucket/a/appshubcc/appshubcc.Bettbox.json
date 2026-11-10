@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "appshubcc/Bettbox",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "appshubcc/Bettbox"
         }
     },
     "autoupdate": {

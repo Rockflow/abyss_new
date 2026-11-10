@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "bootandy/dust",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "bootandy/dust"
         }
     },
     "autoupdate": {

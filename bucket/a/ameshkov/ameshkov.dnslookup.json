@@ -37,8 +37,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ameshkov/dnslookup",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ameshkov/dnslookup"
         }
     },
     "autoupdate": {

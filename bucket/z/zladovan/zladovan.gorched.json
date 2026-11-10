@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zladovan/gorched",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zladovan/gorched"
         }
     },
     "autoupdate": {

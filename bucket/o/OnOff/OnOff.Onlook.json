@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "onlook-dev/onlook",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "onlook-dev/onlook"
         }
     },
     "autoupdate": {

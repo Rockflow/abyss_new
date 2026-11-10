@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "AnkioTomas/qqpet",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "AnkioTomas/qqpet"
         }
     },
     "autoupdate": {

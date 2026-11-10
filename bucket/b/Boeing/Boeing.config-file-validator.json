@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Boeing/config-file-validator",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Boeing/config-file-validator"
         }
     },
     "autoupdate": {

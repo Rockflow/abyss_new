@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "binaricat/Netcatty",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "binaricat/Netcatty"
         }
     },
     "autoupdate": {

@@ -58,8 +58,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "esengine/DeepSeek-Reasonix",
-            "channel": "stable"
+            "channel": "stable",
+            "repo": "esengine/DeepSeek-Reasonix"
         },
         "regex": "desktop-(.+)"
     },

@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "starship/starship",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "starship/starship"
         }
     },
     "autoupdate": {

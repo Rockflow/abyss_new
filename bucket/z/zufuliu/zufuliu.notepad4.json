@@ -70,8 +70,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zufuliu/notepad4",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zufuliu/notepad4"
         }
     },
     "autoupdate": {

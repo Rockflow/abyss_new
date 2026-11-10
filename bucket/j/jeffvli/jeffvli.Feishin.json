@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "jeffvli/feishin",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "jeffvli/feishin"
         }
     },
     "autoupdate": {

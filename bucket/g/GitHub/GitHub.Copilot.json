@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "github/copilot-cli",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "github/copilot-cli"
         }
     },
     "autoupdate": {

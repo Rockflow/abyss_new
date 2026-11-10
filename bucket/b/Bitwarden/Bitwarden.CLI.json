@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "bitwarden/clients",
-            "channel": "stable"
+            "channel": "stable",
+            "repo": "bitwarden/clients"
         },
         "regex": "cli-(.+)"
     },

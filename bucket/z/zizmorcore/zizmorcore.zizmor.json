@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zizmorcore/zizmor",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zizmorcore/zizmor"
         }
     },
     "autoupdate": {

@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "kunkundi/crossdesk",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "kunkundi/crossdesk"
         }
     },
     "autoupdate": {

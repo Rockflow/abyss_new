@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "gitify-app/gitify",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "gitify-app/gitify"
         }
     },
     "autoupdate": {

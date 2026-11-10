@@ -35,8 +35,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "PowerShell/PowerShellEditorServices",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "PowerShell/PowerShellEditorServices"
         }
     },
     "autoupdate": {

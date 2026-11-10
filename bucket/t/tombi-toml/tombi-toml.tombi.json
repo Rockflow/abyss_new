@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "tombi-toml/tombi",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "tombi-toml/tombi"
         }
     },
     "autoupdate": {

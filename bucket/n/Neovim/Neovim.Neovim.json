@@ -51,8 +51,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "neovim/neovim",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "neovim/neovim"
         }
     },
     "autoupdate": {

@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "simeji/jid",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "simeji/jid"
         }
     },
     "autoupdate": {

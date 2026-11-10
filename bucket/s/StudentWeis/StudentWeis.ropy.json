@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "StudentWeis/ropy",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "StudentWeis/ropy"
         }
     },
     "autoupdate": {

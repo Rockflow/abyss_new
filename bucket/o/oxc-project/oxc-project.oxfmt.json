@@ -51,8 +51,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "oxc-project/oxc",
-            "channel": "stable"
+            "channel": "stable",
+            "repo": "oxc-project/oxc"
         },
         "regex": "oxfmt_(.+)"
     },

@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "gerardog/gsudo",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "gerardog/gsudo"
         }
     },
     "autoupdate": {

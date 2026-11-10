@@ -52,8 +52,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "kingToolbox/WindTerm",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "kingToolbox/WindTerm"
         }
     },
     "autoupdate": {

@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "HuLaSpark/HuLa",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "HuLaSpark/HuLa"
         }
     },
     "autoupdate": {

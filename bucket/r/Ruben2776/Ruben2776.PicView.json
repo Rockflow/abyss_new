@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Ruben2776/PicView",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Ruben2776/PicView"
         }
     },
     "autoupdate": {

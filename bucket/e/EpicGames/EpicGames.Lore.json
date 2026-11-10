@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "EpicGames/lore",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "EpicGames/lore"
         }
     },
     "autoupdate": {

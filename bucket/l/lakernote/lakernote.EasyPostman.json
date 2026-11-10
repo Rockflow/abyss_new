@@ -51,8 +51,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "lakernote/EasyPostman",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "lakernote/EasyPostman"
         }
     },
     "autoupdate": {

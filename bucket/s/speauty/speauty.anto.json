@@ -41,8 +41,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "speauty/anto",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "speauty/anto"
         }
     },
     "autoupdate": {

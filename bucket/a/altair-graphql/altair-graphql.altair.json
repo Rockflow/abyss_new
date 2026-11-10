@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "altair-graphql/altair",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "altair-graphql/altair"
         }
     },
     "autoupdate": {

@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "jhspetersson/fselect",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "jhspetersson/fselect"
         }
     },
     "autoupdate": {

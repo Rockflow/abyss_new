@@ -67,8 +67,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "rime/weasel",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "rime/weasel"
         }
     },
     "autoupdate": {

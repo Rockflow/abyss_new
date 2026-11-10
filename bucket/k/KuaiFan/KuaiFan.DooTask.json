@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "kuaifan/dootask",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "kuaifan/dootask"
         }
     },
     "autoupdate": {

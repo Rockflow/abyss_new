@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "wanghongenpin/proxypin",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "wanghongenpin/proxypin"
         }
     },
     "autoupdate": {

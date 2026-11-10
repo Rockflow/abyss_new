@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "cantino/mcfly",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "cantino/mcfly"
         }
     },
     "autoupdate": {

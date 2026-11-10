@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "open-cli-collective/google-readonly",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "open-cli-collective/google-readonly"
         }
     },
     "autoupdate": {

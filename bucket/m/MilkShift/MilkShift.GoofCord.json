@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Milkshiift/GoofCord",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Milkshiift/GoofCord"
         }
     },
     "autoupdate": {

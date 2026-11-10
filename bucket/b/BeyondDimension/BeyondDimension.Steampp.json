@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "BeyondDimension/SteamTools",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "BeyondDimension/SteamTools"
         }
     },
     "autoupdate": {

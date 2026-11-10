@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "nxtrace/NTrace-core",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "nxtrace/NTrace-core"
         }
     },
     "autoupdate": {

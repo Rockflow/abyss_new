@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "dotenvx/dotenvx",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "dotenvx/dotenvx"
         }
     },
     "autoupdate": {

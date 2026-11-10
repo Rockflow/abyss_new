@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "suiginko/moetype",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "suiginko/moetype"
         }
     },
     "autoupdate": {

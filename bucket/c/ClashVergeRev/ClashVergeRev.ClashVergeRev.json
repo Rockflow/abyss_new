@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "clash-verge-rev/clash-verge-rev",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "clash-verge-rev/clash-verge-rev"
         }
     },
     "autoupdate": {

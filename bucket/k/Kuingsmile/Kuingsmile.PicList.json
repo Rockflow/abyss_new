@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Kuingsmile/PicList",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Kuingsmile/PicList"
         }
     },
     "autoupdate": {

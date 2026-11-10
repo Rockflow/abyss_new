@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Hibbiki/chromium-win64",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Hibbiki/chromium-win64"
         }
     },
     "autoupdate": {

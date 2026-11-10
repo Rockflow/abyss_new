@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Ferry-200/coriander_player",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Ferry-200/coriander_player"
         }
     },
     "autoupdate": {

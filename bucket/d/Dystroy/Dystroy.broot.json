@@ -37,8 +37,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Canop/broot",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Canop/broot"
         }
     },
     "autoupdate": {

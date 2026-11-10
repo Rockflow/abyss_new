@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "flyingpie/windows-terminal-quake",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "flyingpie/windows-terminal-quake"
         }
     },
     "autoupdate": {

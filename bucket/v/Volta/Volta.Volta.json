@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "volta-cli/volta",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "volta-cli/volta"
         }
     },
     "autoupdate": {

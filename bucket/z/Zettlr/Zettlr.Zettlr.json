@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Zettlr/Zettlr",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Zettlr/Zettlr"
         }
     },
     "autoupdate": {

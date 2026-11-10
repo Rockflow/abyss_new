@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "netbirdio/netbird",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "netbirdio/netbird"
         }
     },
     "autoupdate": {

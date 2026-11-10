@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "charmbracelet/mods",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "charmbracelet/mods"
         }
     },
     "autoupdate": {

@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "hrpzcf/HashCalculator",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "hrpzcf/HashCalculator"
         }
     },
     "autoupdate": {

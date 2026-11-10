@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "muesli/duf",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "muesli/duf"
         }
     },
     "autoupdate": {

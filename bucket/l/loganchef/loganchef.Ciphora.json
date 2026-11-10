@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "loganchef/Ciphora",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "loganchef/Ciphora"
         }
     },
     "autoupdate": {

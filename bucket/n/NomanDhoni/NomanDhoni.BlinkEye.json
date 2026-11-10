@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "nomandhoni-cs/blink-eye",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "nomandhoni-cs/blink-eye"
         }
     },
     "autoupdate": {

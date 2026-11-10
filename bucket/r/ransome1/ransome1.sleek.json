@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ransome1/sleek",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ransome1/sleek"
         }
     },
     "autoupdate": {

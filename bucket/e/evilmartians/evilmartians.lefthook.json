@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "evilmartians/lefthook",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "evilmartians/lefthook"
         }
     },
     "autoupdate": {

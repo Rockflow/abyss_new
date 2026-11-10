@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Ceceliaee/patina",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Ceceliaee/patina"
         }
     },
     "autoupdate": {

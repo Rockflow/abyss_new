@@ -56,8 +56,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "facebook/sapling",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "facebook/sapling"
         }
     },
     "autoupdate": {

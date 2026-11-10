@@ -51,8 +51,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "mg-chao/snow-apps",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "mg-chao/snow-apps"
         }
     },
     "autoupdate": {

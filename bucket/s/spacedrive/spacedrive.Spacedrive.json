@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "spacedriveapp/spacedrive",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "spacedriveapp/spacedrive"
         }
     },
     "autoupdate": {

@@ -37,8 +37,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "lycheeverse/lychee",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "lycheeverse/lychee"
         },
         "regex": "lychee-(.+)"
     },

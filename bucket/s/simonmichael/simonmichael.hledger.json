@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "simonmichael/hledger",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "simonmichael/hledger"
         }
     },
     "autoupdate": {

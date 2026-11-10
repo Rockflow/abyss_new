@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "chthollyphile/folia-major",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "chthollyphile/folia-major"
         }
     },
     "autoupdate": {

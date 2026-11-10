@@ -54,8 +54,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Hmbown/CodeWhale",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Hmbown/CodeWhale"
         }
     },
     "autoupdate": {

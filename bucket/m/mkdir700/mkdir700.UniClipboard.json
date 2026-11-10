@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "UniClipboard/UniClipboard",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "UniClipboard/UniClipboard"
         }
     },
     "autoupdate": {

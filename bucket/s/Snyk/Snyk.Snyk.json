@@ -41,8 +41,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "snyk/cli",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "snyk/cli"
         }
     },
     "autoupdate": {

@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "floatpane/matcha",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "floatpane/matcha"
         }
     },
     "autoupdate": {

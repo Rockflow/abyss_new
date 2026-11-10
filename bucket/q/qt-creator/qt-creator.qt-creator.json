@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "qt-creator/qt-creator",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "qt-creator/qt-creator"
         }
     },
     "autoupdate": {

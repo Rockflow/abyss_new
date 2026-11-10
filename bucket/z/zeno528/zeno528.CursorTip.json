@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zeno528/CursorTip",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zeno528/CursorTip"
         }
     },
     "autoupdate": {

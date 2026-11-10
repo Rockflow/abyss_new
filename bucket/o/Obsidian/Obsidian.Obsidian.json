@@ -54,8 +54,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "obsidianmd/obsidian-releases",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "obsidianmd/obsidian-releases"
         }
     },
     "autoupdate": {

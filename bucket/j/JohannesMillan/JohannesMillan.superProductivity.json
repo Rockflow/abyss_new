@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "johannesjo/super-productivity",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "johannesjo/super-productivity"
         }
     },
     "autoupdate": {

@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "cinnyapp/cinny-desktop",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "cinnyapp/cinny-desktop"
         }
     },
     "autoupdate": {

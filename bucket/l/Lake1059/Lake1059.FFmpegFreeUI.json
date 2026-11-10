@@ -57,8 +57,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Lake1059/FFmpegFreeUI",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Lake1059/FFmpegFreeUI"
         }
     },
     "autoupdate": {

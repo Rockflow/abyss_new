@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "YS-L/csvlens",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "YS-L/csvlens"
         }
     },
     "autoupdate": {

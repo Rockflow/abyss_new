@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "dolthub/dolt",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "dolthub/dolt"
         }
     },
     "autoupdate": {

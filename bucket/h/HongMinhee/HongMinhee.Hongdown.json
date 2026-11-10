@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "dahlia/hongdown",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "dahlia/hongdown"
         }
     },
     "autoupdate": {

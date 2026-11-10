@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "oldj/SwitchHosts",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "oldj/SwitchHosts"
         }
     },
     "autoupdate": {

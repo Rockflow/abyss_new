@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Bronya0/ES-King",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Bronya0/ES-King"
         }
     },
     "autoupdate": {

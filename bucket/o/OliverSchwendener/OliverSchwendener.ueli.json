@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "oliverschwendener/ueli",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "oliverschwendener/ueli"
         }
     },
     "autoupdate": {

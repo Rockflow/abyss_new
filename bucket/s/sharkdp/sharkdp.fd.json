@@ -37,8 +37,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "sharkdp/fd",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "sharkdp/fd"
         }
     },
     "autoupdate": {

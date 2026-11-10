@@ -49,8 +49,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Equicord/Equibop",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Equicord/Equibop"
         }
     },
     "autoupdate": {

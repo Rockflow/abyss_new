@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "raskrebs/sonar",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "raskrebs/sonar"
         }
     },
     "autoupdate": {

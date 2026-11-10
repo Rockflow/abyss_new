@@ -41,8 +41,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "gitui-org/gitui",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "gitui-org/gitui"
         }
     },
     "autoupdate": {

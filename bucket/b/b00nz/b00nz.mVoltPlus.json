@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "b00nz/mVolt",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "b00nz/mVolt"
         }
     },
     "autoupdate": {

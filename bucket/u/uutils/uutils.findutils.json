@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "uutils/findutils",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "uutils/findutils"
         }
     },
     "autoupdate": {

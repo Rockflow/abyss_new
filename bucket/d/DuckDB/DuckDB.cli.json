@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "duckdb/duckdb",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "duckdb/duckdb"
         }
     },
     "autoupdate": {

@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "SchneeHertz/exhentai-manga-manager",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "SchneeHertz/exhentai-manga-manager"
         }
     },
     "autoupdate": {

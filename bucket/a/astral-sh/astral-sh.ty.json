@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "astral-sh/ty",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "astral-sh/ty"
         }
     },
     "autoupdate": {

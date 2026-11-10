@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "0x7c13/Notepads",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "0x7c13/Notepads"
         }
     },
     "autoupdate": {

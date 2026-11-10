@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "xfangfang/wiliwili",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "xfangfang/wiliwili"
         }
     },
     "autoupdate": {

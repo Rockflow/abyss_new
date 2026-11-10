@@ -50,8 +50,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Lertaro/Lertaro",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Lertaro/Lertaro"
         }
     },
     "autoupdate": {

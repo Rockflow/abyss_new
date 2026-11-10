@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "TypesettingTools/Aegisub",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "TypesettingTools/Aegisub"
         }
     },
     "autoupdate": {

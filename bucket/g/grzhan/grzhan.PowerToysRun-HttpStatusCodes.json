@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "grzhan/HttpStatusCodePowerToys",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "grzhan/HttpStatusCodePowerToys"
         }
     },
     "autoupdate": {

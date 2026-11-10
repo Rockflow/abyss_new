@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "linebender/resvg",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "linebender/resvg"
         }
     },
     "autoupdate": {

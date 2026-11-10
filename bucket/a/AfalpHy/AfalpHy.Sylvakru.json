@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "AfalpHy/sylvakru",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "AfalpHy/sylvakru"
         }
     },
     "autoupdate": {

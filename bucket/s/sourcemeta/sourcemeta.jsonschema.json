@@ -37,8 +37,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "sourcemeta/jsonschema",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "sourcemeta/jsonschema"
         }
     },
     "autoupdate": {

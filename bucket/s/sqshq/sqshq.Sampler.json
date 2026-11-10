@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "sqshq/sampler",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "sqshq/sampler"
         }
     },
     "autoupdate": {

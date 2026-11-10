@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "pilgrimlyieu/Focust",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "pilgrimlyieu/Focust"
         }
     },
     "autoupdate": {

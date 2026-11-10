@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "brave/brave-browser",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "brave/brave-browser"
         }
     },
     "autoupdate": {

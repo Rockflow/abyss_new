@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "d2phap/ImageGlass",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "d2phap/ImageGlass"
         }
     },
     "autoupdate": {

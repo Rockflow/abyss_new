@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "deanxv/done-hub",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "deanxv/done-hub"
         }
     },
     "autoupdate": {

@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "0xJacky/nginx-ui",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "0xJacky/nginx-ui"
         }
     },
     "autoupdate": {

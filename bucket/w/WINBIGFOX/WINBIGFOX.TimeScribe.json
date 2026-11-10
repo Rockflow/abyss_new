@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "WINBIGFOX/TimeScribe",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "WINBIGFOX/TimeScribe"
         }
     },
     "autoupdate": {

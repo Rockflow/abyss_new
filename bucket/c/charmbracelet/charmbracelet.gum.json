@@ -37,8 +37,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "charmbracelet/gum",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "charmbracelet/gum"
         }
     },
     "autoupdate": {

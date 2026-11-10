@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "mulaRahul/keyviz",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "mulaRahul/keyviz"
         }
     },
     "autoupdate": {

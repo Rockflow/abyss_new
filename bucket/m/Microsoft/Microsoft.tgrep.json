@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "microsoft/tgrep",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "microsoft/tgrep"
         }
     },
     "autoupdate": {

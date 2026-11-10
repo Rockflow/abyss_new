@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "orhun/git-cliff",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "orhun/git-cliff"
         }
     },
     "autoupdate": {

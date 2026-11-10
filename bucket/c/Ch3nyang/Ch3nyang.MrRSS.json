@@ -52,8 +52,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "WCY-dt/MrRSS",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "WCY-dt/MrRSS"
         }
     },
     "autoupdate": {

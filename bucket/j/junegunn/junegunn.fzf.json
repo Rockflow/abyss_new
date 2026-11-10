@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "junegunn/fzf",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "junegunn/fzf"
         }
     },
     "autoupdate": {

@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "onozaty/treecat",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "onozaty/treecat"
         }
     },
     "autoupdate": {

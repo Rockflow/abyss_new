@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "typst/typst",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "typst/typst"
         }
     },
     "autoupdate": {

@@ -47,8 +47,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "tiny-craft/tiny-rdm",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "tiny-craft/tiny-rdm"
         }
     },
     "autoupdate": {

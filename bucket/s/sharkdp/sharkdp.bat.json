@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "sharkdp/bat",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "sharkdp/bat"
         }
     },
     "autoupdate": {

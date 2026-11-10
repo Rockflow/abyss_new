@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "upscayl/upscayl",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "upscayl/upscayl"
         }
     },
     "autoupdate": {

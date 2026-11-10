@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "lapce/lapce",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "lapce/lapce"
         }
     },
     "autoupdate": {

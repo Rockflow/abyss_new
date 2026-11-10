@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "CrowdStrike/perseus",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "CrowdStrike/perseus"
         }
     },
     "autoupdate": {

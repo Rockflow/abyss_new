@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "srwi/EverythingToolbar",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "srwi/EverythingToolbar"
         }
     },
     "autoupdate": {

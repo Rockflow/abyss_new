@@ -52,8 +52,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "github/app",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "github/app"
         }
     },
     "autoupdate": {

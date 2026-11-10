@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "MoonshotAI/kimi-cli",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "MoonshotAI/kimi-cli"
         }
     },
     "autoupdate": {

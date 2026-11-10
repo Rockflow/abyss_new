@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "DonutWare/Fladder",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "DonutWare/Fladder"
         }
     },
     "autoupdate": {

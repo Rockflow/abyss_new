@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "letstri/druk",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "letstri/druk"
         }
     },
     "autoupdate": {

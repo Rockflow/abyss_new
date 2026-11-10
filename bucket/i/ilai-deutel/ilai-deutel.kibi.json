@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ilai-deutel/kibi",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ilai-deutel/kibi"
         }
     },
     "autoupdate": {

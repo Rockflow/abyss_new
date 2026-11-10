@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "brave/brave-search-cli",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "brave/brave-search-cli"
         }
     },
     "autoupdate": {

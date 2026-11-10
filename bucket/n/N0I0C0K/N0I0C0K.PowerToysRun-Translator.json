@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "N0I0C0K/PowerTranslator",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "N0I0C0K/PowerTranslator"
         }
     },
     "autoupdate": {

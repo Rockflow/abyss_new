@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "mosheng1/QuickClipboard",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "mosheng1/QuickClipboard"
         }
     },
     "autoupdate": {

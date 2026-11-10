@@ -53,8 +53,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "pnpm/pnpm",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "pnpm/pnpm"
         }
     },
     "autoupdate": {

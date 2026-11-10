@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "pavlobu/deskreen",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "pavlobu/deskreen"
         }
     },
     "autoupdate": {

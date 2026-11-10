@@ -34,8 +34,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "subframe7536/maple-font",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "subframe7536/maple-font"
         }
     },
     "autoupdate": {

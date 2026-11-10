@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "GitTools/GitVersion",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "GitTools/GitVersion"
         }
     },
     "autoupdate": {

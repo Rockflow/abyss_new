@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "posit-dev/air",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "posit-dev/air"
         }
     },
     "autoupdate": {

@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "itchyny/gojq",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "itchyny/gojq"
         }
     },
     "autoupdate": {

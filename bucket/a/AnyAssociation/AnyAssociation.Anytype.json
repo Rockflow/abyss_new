@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "anyproto/anytype-ts",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "anyproto/anytype-ts"
         }
     },
     "autoupdate": {

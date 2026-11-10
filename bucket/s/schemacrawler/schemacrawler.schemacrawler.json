@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "schemacrawler/SchemaCrawler-Installers",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "schemacrawler/SchemaCrawler-Installers"
         }
     },
     "autoupdate": {

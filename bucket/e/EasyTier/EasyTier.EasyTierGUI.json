@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "EasyTier/EasyTier",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "EasyTier/EasyTier"
         }
     },
     "autoupdate": {

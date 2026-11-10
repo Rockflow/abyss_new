@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "timeshiftsauce/CeruMusic",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "timeshiftsauce/CeruMusic"
         }
     },
     "autoupdate": {

@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "abhixdd/ghgrab",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "abhixdd/ghgrab"
         }
     },
     "autoupdate": {

@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "kweatherman/Folcolor",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "kweatherman/Folcolor"
         }
     },
     "autoupdate": {

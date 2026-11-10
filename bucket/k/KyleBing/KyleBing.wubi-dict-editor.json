@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "KyleBing/wubi-dict-editor",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "KyleBing/wubi-dict-editor"
         }
     },
     "autoupdate": {

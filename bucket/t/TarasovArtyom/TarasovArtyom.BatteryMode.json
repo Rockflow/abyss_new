@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "tarcode-apps/BatteryMode",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "tarcode-apps/BatteryMode"
         }
     },
     "autoupdate": {

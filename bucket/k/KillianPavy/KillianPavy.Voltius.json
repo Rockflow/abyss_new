@@ -52,8 +52,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "VoltiusApp/voltius",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "VoltiusApp/voltius"
         }
     },
     "autoupdate": {

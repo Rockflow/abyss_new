@@ -41,8 +41,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "gokcehan/lf",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "gokcehan/lf"
         }
     },
     "autoupdate": {

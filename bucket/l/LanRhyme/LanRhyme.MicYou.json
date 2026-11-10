@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "LanRhyme/MicYou",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "LanRhyme/MicYou"
         }
     },
     "autoupdate": {

@@ -60,8 +60,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "carapace-sh/nightly",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "carapace-sh/nightly"
         },
         "regex": "/download/([^/]+)/carapace-bin_(?<ver>[\\d.]+)-SNAPSHOT-(?<hash>[a-f0-9]+)_windows_amd64.zip"
     },

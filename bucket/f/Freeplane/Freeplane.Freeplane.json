@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "freeplane/freeplane",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "freeplane/freeplane"
         },
         "regex": "release-(.+)"
     },

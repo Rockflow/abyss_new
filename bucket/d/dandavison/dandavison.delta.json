@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "dandavison/delta",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "dandavison/delta"
         }
     },
     "autoupdate": {

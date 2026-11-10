@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Ariestar/sivtr",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Ariestar/sivtr"
         }
     },
     "autoupdate": {

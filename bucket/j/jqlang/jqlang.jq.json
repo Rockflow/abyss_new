@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "jqlang/jq",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "jqlang/jq"
         },
         "regex": "jq-(.+)"
     },

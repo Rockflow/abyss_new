@@ -66,8 +66,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "microsoft/terminal",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "microsoft/terminal"
         }
     },
     "autoupdate": {

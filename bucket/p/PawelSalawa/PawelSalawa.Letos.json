@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "pawelsalawa/letos",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "pawelsalawa/letos"
         }
     },
     "autoupdate": {

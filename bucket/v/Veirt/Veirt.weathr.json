@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Veirt/weathr",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Veirt/weathr"
         }
     },
     "autoupdate": {

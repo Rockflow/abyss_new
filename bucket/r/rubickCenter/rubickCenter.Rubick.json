@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "rubickCenter/rubick",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "rubickCenter/rubick"
         }
     },
     "autoupdate": {

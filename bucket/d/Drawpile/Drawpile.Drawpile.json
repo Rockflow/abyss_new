@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "drawpile/Drawpile",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "drawpile/Drawpile"
         }
     },
     "autoupdate": {

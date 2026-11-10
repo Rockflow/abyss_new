@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "simoarpe/ziggity",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "simoarpe/ziggity"
         }
     },
     "autoupdate": {

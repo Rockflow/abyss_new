@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "xemu-project/xemu",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "xemu-project/xemu"
         }
     },
     "autoupdate": {

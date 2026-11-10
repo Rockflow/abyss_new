@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "pbatard/rufus",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "pbatard/rufus"
         }
     },
     "autoupdate": {

@@ -43,8 +43,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "agalwood/Motrix",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "agalwood/Motrix"
         }
     },
     "autoupdate": {

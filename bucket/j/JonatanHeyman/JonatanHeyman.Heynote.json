@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "heyman/heynote",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "heyman/heynote"
         }
     },
     "autoupdate": {

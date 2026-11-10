@@ -53,8 +53,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "rizonesoft/Notepad3",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "rizonesoft/Notepad3"
         },
         "regex": "RELEASE_(.+)"
     },

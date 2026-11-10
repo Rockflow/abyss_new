@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "modem-dev/hunk",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "modem-dev/hunk"
         }
     },
     "autoupdate": {

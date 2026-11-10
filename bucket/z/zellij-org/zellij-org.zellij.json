@@ -41,8 +41,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zellij-org/zellij",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "zellij-org/zellij"
         }
     },
     "autoupdate": {

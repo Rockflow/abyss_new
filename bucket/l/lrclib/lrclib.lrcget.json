@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "tranxuanthang/lrcget",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "tranxuanthang/lrcget"
         }
     },
     "autoupdate": {

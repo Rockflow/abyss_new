@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ifer47/markeron",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ifer47/markeron"
         }
     },
     "autoupdate": {

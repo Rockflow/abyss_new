@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "infiniact/homebrew-iaterm",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "infiniact/homebrew-iaterm"
         }
     },
     "autoupdate": {

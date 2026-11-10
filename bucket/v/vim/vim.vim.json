@@ -115,8 +115,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "vim/vim-win32-installer",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "vim/vim-win32-installer"
         }
     },
     "autoupdate": {

@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "jdx/aube",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "jdx/aube"
         }
     },
     "autoupdate": {

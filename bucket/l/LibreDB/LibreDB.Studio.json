@@ -38,8 +38,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "libredb/libredb-studio",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "libredb/libredb-studio"
         }
     },
     "autoupdate": {

@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "pranshuparmar/witr",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "pranshuparmar/witr"
         }
     },
     "autoupdate": {

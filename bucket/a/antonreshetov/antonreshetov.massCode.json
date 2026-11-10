@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "massCodeIO/massCode",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "massCodeIO/massCode"
         }
     },
     "autoupdate": {

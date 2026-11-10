@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "jdx/hk",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "jdx/hk"
         }
     },
     "autoupdate": {

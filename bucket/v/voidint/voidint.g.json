@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "voidint/g",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "voidint/g"
         }
     },
     "autoupdate": {

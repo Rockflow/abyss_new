@@ -37,8 +37,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "charmbracelet/soft-serve",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "charmbracelet/soft-serve"
         }
     },
     "autoupdate": {

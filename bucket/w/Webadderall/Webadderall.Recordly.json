@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "webadderall/Recordly",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "webadderall/Recordly"
         }
     },
     "autoupdate": {

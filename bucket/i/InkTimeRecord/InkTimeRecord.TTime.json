@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "InkTimeRecord/TTime",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "InkTimeRecord/TTime"
         }
     },
     "autoupdate": {

@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "uutils/sed",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "uutils/sed"
         }
     },
     "autoupdate": {

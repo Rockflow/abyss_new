@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "charmbracelet/freeze",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "charmbracelet/freeze"
         }
     },
     "autoupdate": {

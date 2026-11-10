@@ -36,8 +36,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "skim-rs/skim",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "skim-rs/skim"
         }
     },
     "autoupdate": {

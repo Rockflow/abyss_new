@@ -37,8 +37,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "chmln/sd",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "chmln/sd"
         }
     },
     "autoupdate": {

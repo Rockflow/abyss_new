@@ -41,8 +41,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "max-sixty/worktrunk",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "max-sixty/worktrunk"
         }
     },
     "autoupdate": {

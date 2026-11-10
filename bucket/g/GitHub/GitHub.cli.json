@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "cli/cli",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "cli/cli"
         }
     },
     "autoupdate": {

@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Predidit/Kazumi",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Predidit/Kazumi"
         }
     },
     "autoupdate": {

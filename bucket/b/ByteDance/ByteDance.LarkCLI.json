@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "larksuite/cli",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "larksuite/cli"
         }
     },
     "autoupdate": {

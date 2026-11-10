@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "ajeetdsouza/zoxide",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "ajeetdsouza/zoxide"
         }
     },
     "autoupdate": {

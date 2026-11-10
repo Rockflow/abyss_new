@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "mountain-loop/yaak",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "mountain-loop/yaak"
         }
     },
     "autoupdate": {

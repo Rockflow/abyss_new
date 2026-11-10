@@ -45,8 +45,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "neosubhamoy/neodlp",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "neosubhamoy/neodlp"
         }
     },
     "autoupdate": {

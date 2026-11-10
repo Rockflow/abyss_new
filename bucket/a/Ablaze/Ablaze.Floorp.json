@@ -41,8 +41,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "Floorp-Projects/Floorp",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "Floorp-Projects/Floorp"
         }
     },
     "autoupdate": {

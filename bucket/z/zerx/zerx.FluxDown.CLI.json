@@ -44,8 +44,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "zerx-lab/FluxDown",
-            "channel": "stable"
+            "channel": "stable",
+            "repo": "zerx-lab/FluxDown"
         },
         "regex": "cli-(.+)"
     },

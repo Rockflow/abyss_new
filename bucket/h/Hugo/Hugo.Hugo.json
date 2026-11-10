@@ -41,8 +41,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "gohugoio/hugo",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "gohugoio/hugo"
         }
     },
     "autoupdate": {

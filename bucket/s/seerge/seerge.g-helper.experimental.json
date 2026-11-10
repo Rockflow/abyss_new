@@ -51,8 +51,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "seerge/g-helper-experimental-release",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "seerge/g-helper-experimental-release"
         }
     },
     "autoupdate": {

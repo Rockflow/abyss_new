@@ -39,8 +39,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "WasmEdge/WasmEdge",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "WasmEdge/WasmEdge"
         }
     },
     "autoupdate": {

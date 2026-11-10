@@ -52,8 +52,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "telegramdesktop/tdesktop",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "telegramdesktop/tdesktop"
         }
     },
     "autoupdate": {

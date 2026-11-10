@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "eannchen/leetsolv",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "eannchen/leetsolv"
         }
     },
     "autoupdate": {

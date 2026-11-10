@@ -40,8 +40,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "rust-lang/rust-analyzer",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "rust-lang/rust-analyzer"
         }
     },
     "autoupdate": {

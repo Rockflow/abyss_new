@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "XiaomiMiMo/MiMo-Code",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "XiaomiMiMo/MiMo-Code"
         }
     },
     "autoupdate": {

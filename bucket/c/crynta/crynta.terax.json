@@ -48,8 +48,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "crynta/terax-ai",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "crynta/terax-ai"
         }
     },
     "autoupdate": {

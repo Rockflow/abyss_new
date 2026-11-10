@@ -34,8 +34,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "bostrot/PowerToysRunPluginWinget",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "bostrot/PowerToysRunPluginWinget"
         }
     },
     "autoupdate": {

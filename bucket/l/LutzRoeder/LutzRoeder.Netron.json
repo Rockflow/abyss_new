@@ -46,8 +46,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "lutzroeder/netron",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "lutzroeder/netron"
         }
     },
     "autoupdate": {

@@ -42,8 +42,8 @@
     ],
     "checkver": {
         "github": {
-            "repo": "8LWXpg/ptr",
-            "channel": "latest"
+            "channel": "latest",
+            "repo": "8LWXpg/ptr"
         }
     },
     "autoupdate": {
