@@ -1,5 +1,5 @@
 {
-    "version": "1.2.60",
+    "version": "1.2.90",
     "description": "轻量强大的桌面整理、文件收纳交互工具 | A lightweight yet powerful interactive tool for desktop organization and file management",
     "homepage": "https://pogget.vilinko.com",
     "license": {
@@ -8,11 +8,11 @@
     "architecture": {
         "64bit": {
             "url": "https://down1.vilinko.com/download/pogget.zip",
-            "hash": "fbaea17db90363df9fd4db76c4f68d45420a6b99fa98c35906b18f467ac23575"
+            "hash": "879a170861471cec28be1d4a9ec38b9a61575a6e31c04654cd9e4d3af3309e60"
         },
         "arm64": {
             "url": "https://down1.vilinko.com/download/pogget_arm64.zip",
-            "hash": "c2d76d0f67d9777a9c9a37ff829d93faf2063bd8742071fea1c515a701da2a63"
+            "hash": "6749c1e3c292adaeae448152c06507ce2ba3e471734266331de51e4273f5d61f"
         }
     },
     "extract_to": "app",
