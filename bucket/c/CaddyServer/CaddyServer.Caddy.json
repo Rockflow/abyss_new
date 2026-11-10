@@ -1,5 +1,5 @@
 {
-    "version": "2.11.8",
+    "version": "2.11.9",
     "description": "快速且可扩展的多平台 HTTP/1-2-3 Web 服务器，具备自动 HTTPS 功能 | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
     "homepage": "https://caddyserver.com",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.8/caddy_2.11.8_windows_amd64.zip",
-            "hash": "eaf062366aeba9d782af7f70edb4b49097652be1af31e8141f9f2761aa25cb1f"
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.9/caddy_2.11.9_windows_amd64.zip",
+            "hash": "ad93112d335ee687100c4c9f11bced16ca590377976b7fe7883882b9e797e472"
         },
         "arm64": {
-            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.8/caddy_2.11.8_windows_arm64.zip",
-            "hash": "ac5fbbac1464bb1e1df7d39d68324d8986bc6e7343895efca5cbfcc5a2d17cf9"
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.9/caddy_2.11.9_windows_arm64.zip",
+            "hash": "bdf5fa34e7f3646ee04f59634d66cbcbfa39516f08108d8661ff3ceb3913a0c7"
         }
     },
     "extract_to": "app",
