@@ -1,5 +1,5 @@
 {
-    "version": "1.11.0",
+    "version": "1.12.0",
     "description": "一款 Scoop 的桌面图形化界面 | A desktop GUI for Scoop",
     "homepage": "https://amarbego.github.io/Rscoop",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AmarBego/Rscoop/releases/download/v1.11.0/rscoop.exe",
-            "hash": "661a38ffa431571ea972d14384a3fb73744ce5f6c1b949e34727633788ecbb0f"
+            "url": "https://github.com/AmarBego/Rscoop/releases/download/v1.12.0/rscoop.exe",
+            "hash": "606e0bd6ba186ac42cb1d7289c0f69a84e73029f12745b7604dd96076b369070"
         }
     },
     "extract_to": "app",
