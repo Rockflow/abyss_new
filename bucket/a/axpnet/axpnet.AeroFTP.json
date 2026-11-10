@@ -1,5 +1,5 @@
 {
-    "version": "4.2.5",
+    "version": "4.2.7",
     "description": "一款现代化、多协议的文件管理器与 FTP 客户端，内置人工智能、云端同步功能，并配备军用级加密技术 | A modern, multi-protocol file manager and FTP client with integrated AI, cloud sync, and military-grade encryption",
     "homepage": "https://www.aeroftp.app",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/axpdev-lab/aeroftp/releases/download/v4.2.5/AeroFTP_4.2.5_x64-setup.exe",
-            "hash": "986fcc6a832dd6cc472f52fbef404a89f8a4de2f25b637c0c83904ddddff10e0"
+            "url": "https://github.com/axpdev-lab/aeroftp/releases/download/v4.2.7/AeroFTP_4.2.7_x64-setup.exe",
+            "hash": "f2cbacf754c80e5d7d5777aa49697869b92132a6f45a8fedcb2636d51ad2c2cc"
         }
     },
     "env_add_path": "app",
