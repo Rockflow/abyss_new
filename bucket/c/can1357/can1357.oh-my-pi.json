@@ -1,5 +1,5 @@
 {
-    "version": "18.16.0",
+    "version": "18.18.6",
     "description": "内置集成开发环境的代码智能代理 | A coding agent with the IDE wired in",
     "homepage": "https://omp.sh",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.16.0/omp-windows-x64.exe#/omp.exe",
-            "hash": "c249a9ed0a57c748fb1247d8ee9e2d0fe1b13229266ce74d8810a76a591e21fc"
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.18.6/omp-windows-x64.exe#/omp.exe",
+            "hash": "dfb15c27cb2ea192a94761c26aa5cd4eed54b1e0a5a85c02938ab07d769bc8f7"
         }
     },
     "extract_to": "app",
