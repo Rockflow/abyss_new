@@ -1,5 +1,5 @@
 {
-    "version": "0.7.5",
+    "version": "0.8.2",
     "description": "一个管理电脑内资源，并提供游戏化的综合管理器 | A comprehensive, free local multimedia resource manager",
     "homepage": "https://github.com/klsdf/GreenResourcesManager",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/klsdf/GreenResourcesManager/releases/download/v0.7.5/GRM.0.7.5.zip",
-            "hash": "e767fa79bd89e3e50c4669952dade56c6aae3d1aa14ab18c035755e4aa92cbab"
+            "url": "https://github.com/klsdf/GreenResourcesManager/releases/download/v0.8.2/GRM_0.8.2.zip",
+            "hash": "06f7ef030b3b6f2a01dd13be4212f32e60593af4ceac5fe260214c057f7a2bb6"
         }
     },
     "extract_dir": "win-unpacked",
