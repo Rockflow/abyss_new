@@ -1,5 +1,5 @@
 {
-    "version": "1.99.55",
+    "version": "1.99.56",
     "description": "带有广告拦截器的安全、快速且私密的网络浏览器 | Secure, Fast & Private Web Browser with Adblocker",
     "homepage": "https://brave.com",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.99.55/brave-v1.99.55-win32-x64.zip",
-            "hash": "ababc163488bfd58cab7ebe4a4057dd23227c81f5958f3a8597526a278fbae15"
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.99.56/brave-v1.99.56-win32-x64.zip",
+            "hash": "1f72b0ac331de0f5b1d10a94a4d88ad19e8126e0ee066b71b38be3f485bf98a8"
         },
         "arm64": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.99.55/brave-v1.99.55-win32-arm64.zip",
-            "hash": "fd6bb9fb6f776c102d74ddfc3091dd56afbd95a48e5a4ea02b80627595df1cfa"
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.99.56/brave-v1.99.56-win32-arm64.zip",
+            "hash": "cac1c7d34b069a163c4a1ae23f9abdbf3bd8dce63f92d4c84f354fc8d7601e6a"
         }
     },
     "extract_to": "app",
