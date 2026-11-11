@@ -1,5 +1,5 @@
 {
-    "version": "3.4.2",
+    "version": "3.5.1",
     "description": "一款免费、跨平台的开源字幕编辑软件 | A free, cross-platform open source tool for creating and modifying subtitles",
     "homepage": "https://www.aegisub.org",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TypesettingTools/Aegisub/releases/download/v3.4.2/Aegisub-3.4.2.exe",
-            "hash": "df0318afbc88aa461bb702a42a0d0b1203b88cec2d28b61691493766aefe784d"
+            "url": "https://github.com/TypesettingTools/Aegisub/releases/download/v3.5.1/Aegisub-3.5.1-x64.exe",
+            "hash": "a1c6e03f9e3117af36641f70146495b713b9dc821bd77f1a1e3fbf0c7ef13053"
         }
     },
     "shortcuts": [
