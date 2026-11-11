@@ -1,5 +1,5 @@
 {
-    "version": "7.6.9",
+    "version": "7.7.0",
     "description": "pwsh - 一个跨平台的 PowerShell Core | pwsh - A cross-platform PowerShell Core",
     "homepage": "https://github.com/PowerShell/PowerShell",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.9/PowerShell-7.6.9.msixbundle",
-            "hash": "da75c8aa23edda52e888fb586a46b923ab37a7c243719c2e8914b00130c5917a"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.7.0/PowerShell-7.7.0.msixbundle",
+            "hash": "e00c349858c2d273f29485541ece91617b435accdd5e3f156d68d5cb97740022"
         },
         "arm64": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.9/PowerShell-7.6.9.msixbundle",
-            "hash": "da75c8aa23edda52e888fb586a46b923ab37a7c243719c2e8914b00130c5917a"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.7.0/PowerShell-7.7.0.msixbundle",
+            "hash": "e00c349858c2d273f29485541ece91617b435accdd5e3f156d68d5cb97740022"
         }
     },
     "conflicts": [
