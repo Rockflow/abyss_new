@@ -1,5 +1,5 @@
 {
-    "version": "0.4.8",
+    "version": "0.6.7",
     "description": "一款基于 Rust 开发的下载管理器，支持 HTTP、FTP、BitTorrent 以及 HLS/DASH 流媒体协议 | A Rust-powered download manager with HTTP, FTP, BitTorrent and HLS/DASH streaming support",
     "homepage": "https://fluxdown.zerx.dev",
     "license": {
@@ -7,14 +7,14 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zerx-lab/FluxDown/releases/download/cli-v0.4.8/FluxDown-CLI-0.4.8-windows-x64.zip",
-            "hash": "2865bbb8bb12004fced83a90b0e02cecacd9a839c209a109f79a89bd2036901a",
-            "extract_dir": "fluxdown-cli-0.4.8-windows-x64"
+            "url": "https://github.com/zerx-lab/FluxDown/releases/download/v0.6.7/FluxDown-CLI-0.6.7-windows-x64.zip",
+            "hash": "e9faa375d39a871dab0d2e0ebcef32f9828a527732ff30f7fcb99bc0ca784951",
+            "extract_dir": "fluxdown-cli-0.6.7-windows-x64"
         },
         "arm64": {
-            "url": "https://github.com/zerx-lab/FluxDown/releases/download/cli-v0.4.8/FluxDown-CLI-0.4.8-windows-arm64.zip",
-            "hash": "0afd11c48f6b1c7fa1ac06528eea587c4a890519084c1a5c9cf518f598a9e214",
-            "extract_dir": "fluxdown-cli-0.4.8-windows-arm64"
+            "url": "https://github.com/zerx-lab/FluxDown/releases/download/v0.6.7/FluxDown-CLI-0.6.7-windows-arm64.zip",
+            "hash": "5b7bcdbc66784671c3fefa013c146bdfe235c26a2686e4036f4a34ce5d3d26e2",
+            "extract_dir": "fluxdown-cli-0.6.7-windows-arm64"
         }
     },
     "extract_to": "app",
