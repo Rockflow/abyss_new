@@ -1,5 +1,5 @@
 {
-    "version": "6.1.4",
+    "version": "6.2.0",
     "description": "用于开发、管理、运行 OCI 容器的无守护程序容器引擎 | A daemonless container engine for developing, managing, and running OCI Containers",
     "homepage": "https://podman.io",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/podman-container-tools/podman/releases/download/v6.1.4/podman-installer-windows-amd64.msi#/dl.msi_",
-            "hash": "4a05240054cb990629cbe098db090c5c7848c44162c11910cabb45ca75a40d53"
+            "url": "https://github.com/podman-container-tools/podman/releases/download/v6.2.0/podman-installer-windows-amd64.msi#/dl.msi_",
+            "hash": "e4070491d0dba7138a06afd8e89e87a54b75b997801b5a81c911bc2869a743e9"
         },
         "arm64": {
-            "url": "https://github.com/podman-container-tools/podman/releases/download/v6.1.4/podman-installer-windows-arm64.msi#/dl.msi_",
-            "hash": "a1b65ffa7dd60a5eceedd3df7fc5d1d005b8d21018ff9deaa15aeacfbc92cd6c"
+            "url": "https://github.com/podman-container-tools/podman/releases/download/v6.2.0/podman-installer-windows-arm64.msi#/dl.msi_",
+            "hash": "59fe8cd676a69ac0c7aaa1afdaabe1d46499f4dc4efa9f911ab6e9348892493a"
         }
     },
     "location": "$env:LocalAppData\\Programs\\Podman",
