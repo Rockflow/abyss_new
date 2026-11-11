@@ -1,5 +1,5 @@
 {
-    "version": "0.5.7",
+    "version": "0.5.8",
     "description": "微内核 AI Agent | A microkernel AI agent",
     "homepage": "https://opensquilla.ai",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/opensquilla/opensquilla/releases/download/v0.5.7/OpenSquilla-0.5.7-win-x64.exe",
-            "hash": "aef1a069455a57fa4280f4598410f164a9dc4b8975823e7226eac10db558fe44"
+            "url": "https://github.com/opensquilla/opensquilla/releases/download/v0.5.8/OpenSquilla-0.5.8-win-x64.exe",
+            "hash": "3d894c726a9fe3e57d2fb844b9a709449bca35e7aabc761bd8562feceae97fe0"
         }
     },
     "shortcuts": [
