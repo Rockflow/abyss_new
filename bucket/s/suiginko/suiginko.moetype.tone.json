@@ -1,5 +1,5 @@
 {
-    "version": "20260517",
+    "version": "20261025",
     "description": "Rime 小狼毫词库: 萌娘百科词库 (带声调) | Rime Weasel Dictionary: Moetype (tone)",
     "homepage": "https://github.com/suiginko/moetype",
     "license": {
@@ -11,8 +11,8 @@
         "rime": "abyss/Rime.Weasel",
         "model": "abyss/amzxyz.rime_wanxiang.model"
     },
-    "url": "https://github.com/suiginko/moetype/releases/download/20260517/moe.dict.yaml",
-    "hash": "ce5ecf1f24e3deb1430b8b6d64c037cfd9e7e97b5ac8835faaa2e9e6635b5946",
+    "url": "https://github.com/suiginko/moetype/releases/download/20261025/moe.dict.yaml",
+    "hash": "f0c8e6a6d61def8240cd02d1fdc8706f735265e983478a2ab9d1f3668973389a",
     "conflicts": [
         "suiginko.moetype.flypy",
         "suiginko.moetype.moqi",
