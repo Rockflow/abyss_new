@@ -1,5 +1,5 @@
 {
-    "version": "1.145.2",
+    "version": "1.145.3",
     "description": "vscode - 一个轻量级、功能强大，插件生态丰富的文件编辑器 | vscode - A lightweight but powerful source code editor",
     "homepage": "https://code.visualstudio.com",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://update.code.visualstudio.com/1.145.2/cli-win32-x64/stable#/dl.7z",
-            "hash": "c3b7e55fc45b666ab1d7eb0fc6011d45f6033096e9f60611b769f5f90297c72d"
+            "url": "https://update.code.visualstudio.com/1.145.3/cli-win32-x64/stable#/dl.7z",
+            "hash": "8945581e003d8e7d1eb45a0d840dacb2a3951f48f61dd92b45467c0db11a6b1c"
         },
         "arm64": {
-            "url": "https://update.code.visualstudio.com/1.145.2/cli-win32-arm64/stable#/dl.7z",
-            "hash": "1e21985fac5641623584ebae272de822a9bf2b2e65a45af690f9eebf57aa73a8"
+            "url": "https://update.code.visualstudio.com/1.145.3/cli-win32-arm64/stable#/dl.7z",
+            "hash": "219bcf23a462cde3428149b25efe25b27e600c97ba9c5185ddac48b1c66083eb"
         }
     },
     "extract_to": "app",
