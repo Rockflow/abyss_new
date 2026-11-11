@@ -1,5 +1,5 @@
 {
-    "version": "3.4.7",
+    "version": "3.4.8",
     "description": "一个功能强大的命令模板和代码片段管理器，适用于你的 shell | A powerful command template and snippet manager for your shell",
     "homepage": "https://lasantosr.github.io/intelli-shell",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lasantosr/intelli-shell/releases/download/v3.4.7/intelli-shell-x86_64-pc-windows-msvc.zip",
-            "hash": "2e938b04f6621a826540a5cbb88691a9618be5e4c06b69c82bca9cbe1e846395"
+            "url": "https://github.com/lasantosr/intelli-shell/releases/download/v3.4.8/intelli-shell-x86_64-pc-windows-msvc.zip",
+            "hash": "ac95b1c9219dc2b68eab91f10097a6efa48dbdfce1f73ee1c4d0c6c58d70fb4a"
         },
         "arm64": {
-            "url": "https://github.com/lasantosr/intelli-shell/releases/download/v3.4.7/intelli-shell-aarch64-pc-windows-msvc.zip",
-            "hash": "d48b4c6f2a9fc676b1edfef4dbe5d1eb8cf6676db87cf0855524f3c87e427144"
+            "url": "https://github.com/lasantosr/intelli-shell/releases/download/v3.4.8/intelli-shell-aarch64-pc-windows-msvc.zip",
+            "hash": "b8a00d18fb4f19a3c4c654ec1d6f8fcc387b053868cb0e5be0613abc64e95ab3"
         }
     },
     "extract_to": "app",
