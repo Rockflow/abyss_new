@@ -1,5 +1,5 @@
 {
-    "version": "0.5.3",
+    "version": "0.5.4",
     "description": "克服浏览器的跨域资源共享（CORS）限制，方便从浏览器版本的 Postman 发送 API 请求 | Overcome the Cross-Origin Resource Sharing (CORS) limitations of browsers, and facilitate API request sending from your browser version of Postman",
     "homepage": "https://www.postman.com/downloads/postman-agent",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl-agent.pstmn.io/download/version/0.5.3/windows_64#/dl.exe",
-            "hash": "dfab6d49920a32d032b33baff4ddfd8cba3e4e54754bd79b7de1dbdb405f622c"
+            "url": "https://dl-agent.pstmn.io/download/version/0.5.4/windows_64#/dl.exe",
+            "hash": "ad5a92d292d19344a2b0d6e4998060823e586860ab648e02db7f3e710f86f205"
         }
     },
     "location": "$env:LocalAppData\\Postman-Agent",
