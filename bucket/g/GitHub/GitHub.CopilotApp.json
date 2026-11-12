@@ -1,5 +1,5 @@
 {
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "一款面向智能体驱动开发的桌面应用，将并行工作流、GitHub 集成以及拉取请求全生命周期管理整合至同一平台 | A desktop application for agent-driven development that brings parallel workstreams, GitHub integration, and PR lifecycle management into one place",
     "homepage": "https://github.com/github/app",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/github/app/releases/download/v1.2.0/GitHub-Copilot-windows-x64-setup.exe",
-            "hash": "3290b6d5759e151f16167f28b2380eda0e6a4668c6ab6847f255b30454afdbaf"
+            "url": "https://github.com/github/app/releases/download/v1.3.0/GitHub-Copilot-windows-x64-setup.exe",
+            "hash": "dfc40acd203bd2d7a0585e8a003249b2e28e0600e4b8ded2f3090f07e7251d71"
         },
         "arm64": {
-            "url": "https://github.com/github/app/releases/download/v1.2.0/GitHub-Copilot-windows-arm64-setup.exe",
-            "hash": "f1b57c57583ec8ba3c80fe788aa05666c5b4270f97ef75a706428b1b41abfe53"
+            "url": "https://github.com/github/app/releases/download/v1.3.0/GitHub-Copilot-windows-arm64-setup.exe",
+            "hash": "4aac0d3a18af80df126f50d2c7354724047707bc4b934b7eb4f7a66130a557a8"
         }
     },
     "shortcuts": [
