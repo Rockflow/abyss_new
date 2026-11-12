@@ -1,5 +1,5 @@
 {
-    "version": "2.0.5",
+    "version": "2.0.6",
     "description": "一款类似 Typora 的文档编辑器，拥有更快的性能、智能 AI 辅助和 Git 集成 | A Typora-like document editor with faster performance, smart AI assistance, and Git integration",
     "homepage": "https://www.zditor.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zditor/zditor-docs/releases/download/zditor-v2.0.5/zditor_2.0.5_x64-setup.exe",
-            "hash": "77e640859ef0b005b6d0f12be02dd90317c03ec160482264d498594848a3bad1"
+            "url": "https://github.com/zditor/zditor-docs/releases/download/zditor-v2.0.6/zditor_2.0.6_x64-setup.exe",
+            "hash": "80a91503493aac4f53fc3365893043b867b60bf3e82f0095e36fd81323c84abd"
         }
     },
     "shortcuts": [
