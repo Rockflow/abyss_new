@@ -1,5 +1,5 @@
 {
-    "version": "12.21.1",
+    "version": "12.21.2",
     "description": "Floorp 基于 Firefox 构建，是一款具备卓越隐私保护功能和高度灵活性的新型浏览器 | Floorp is built on Firefox, and is a new browser with excellent privacy & flexibility",
     "homepage": "https://floorp.app",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.21.1/floorp-windows-x86_64.installer.exe",
-            "hash": "8d685527731987133901f1257dc2aad55149beb639ede54435056784be50f0b4"
+            "url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.21.2/floorp-windows-x86_64.installer.exe",
+            "hash": "b10e3337d170feae96fe80482848d956eec0f618721673a43b3bee0cb6591737"
         }
     },
     "location": "$env:ProgramFiles\\Ablaze Floorp",
