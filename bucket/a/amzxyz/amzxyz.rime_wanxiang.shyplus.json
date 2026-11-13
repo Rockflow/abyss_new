@@ -1,5 +1,5 @@
 {
-    "version": "18.1.11",
+    "version": "18.1.12",
     "description": "Rime 小狼毫配置: 万象拼音输入方案 (首右+) | Rime Weasel Configuration: Wanxiang-Pinyin (shouyouplus)",
     "homepage": "https://amzxyz.github.io/rime-wanxiang",
     "license": {
@@ -11,8 +11,8 @@
         "rime": "abyss/Rime.Weasel",
         "model": "abyss/amzxyz.rime_wanxiang.model"
     },
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.11/rime-wanxiang-shyplus-fuzhu.zip",
-    "hash": "86c15f7bdb1c9c67f15a27b1de1485156d5ec9aeb4eb493ea6783a7b0097881d",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.12/rime-wanxiang-shyplus-fuzhu.zip",
+    "hash": "adf1bdf89760f64600447ddf058020e3a3dd509ff131b8b6e060579e5d9ad74f",
     "conflicts": [
         "amzxyz.rime_wanxiang",
         "amzxyz.rime_wanxiang.base",
