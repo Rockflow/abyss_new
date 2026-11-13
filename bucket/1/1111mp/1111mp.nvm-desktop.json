@@ -1,5 +1,5 @@
 {
-    "version": "4.5.1",
+    "version": "4.5.2",
     "description": "一个用于管理多个 Node.js 版本的桌面应用程序 | A desktop application to manage multiple active Node.js versions",
     "homepage": "https://github.com/1111mp/nvm-desktop",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/1111mp/nvm-desktop/releases/download/v4.5.1/NVM.Desktop_4.5.1_x64-setup.exe",
-            "hash": "d436c6d6ab7f551824f61f609181849fcd005d15cc592ce1875b22346cf2610d"
+            "url": "https://github.com/1111mp/nvm-desktop/releases/download/v4.5.2/NVM.Desktop_4.5.2_x64-setup.exe",
+            "hash": "26ad5738fa1d12cff066919a413bec42db143530edf3e9f906df91d0c7ad72b8"
         },
         "arm64": {
-            "url": "https://github.com/1111mp/nvm-desktop/releases/download/v4.5.1/NVM.Desktop_4.5.1_arm64-setup.exe",
-            "hash": "f9121ab7a4775f00e55f7628e816a6d98786d475906e563bf6c17faf67ffb8f6"
+            "url": "https://github.com/1111mp/nvm-desktop/releases/download/v4.5.2/NVM.Desktop_4.5.2_arm64-setup.exe",
+            "hash": "d781065579d08e6e3046bef84a99f738e558ba54eebc6ebb1156cc10ebaab4dd"
         }
     },
     "commands": "nvmd",
