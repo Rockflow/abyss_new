@@ -1,5 +1,5 @@
 {
-    "version": "1.6.1",
+    "version": "1.6.2",
     "description": "隐私优先的、点对点加密传输的跨设备剪贴板同步工具 | Privacy-first, encrypted peer-to-peer, cross-device clipboard synchronization tool",
     "homepage": "https://uniclipboard.app",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/UniClipboard/UniClipboard/releases/download/v1.6.1/UniClipboard_1.6.1_x64-setup.exe",
-            "hash": "bd22b568086466bebf63a33c583a135b48351a0ece9975593f115b2840bdee85"
+            "url": "https://github.com/UniClipboard/UniClipboard/releases/download/v1.6.2/UniClipboard_1.6.2_x64-setup.exe",
+            "hash": "135c55b28d73799cb989175cbb15faa5176856917927a1b951c8742ad2e69ce5"
         },
         "arm64": {
-            "url": "https://github.com/UniClipboard/UniClipboard/releases/download/v1.6.1/UniClipboard_1.6.1_arm64-setup.exe",
-            "hash": "de79b721c99072b1763c59e97daf6fd2088fe8166565fd35da921f256ae32807"
+            "url": "https://github.com/UniClipboard/UniClipboard/releases/download/v1.6.2/UniClipboard_1.6.2_arm64-setup.exe",
+            "hash": "24686225324422aa86f007e61c3b457ec1b686a369e027e39883d49b2f7fc45a"
         }
     },
     "shortcuts": [
