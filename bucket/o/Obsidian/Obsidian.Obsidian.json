@@ -1,5 +1,5 @@
 {
-    "version": "1.15.0",
+    "version": "1.15.1",
     "description": "强大的知识库，基于 Markdown 文件 | Powerful knowledge base that works on top of a local folder of plain text Markdown files",
     "homepage": "https://obsidian.md",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.15.0/Obsidian-1.15.0.exe",
-            "hash": "b0f60c75a12f96d54cb16b9fc32919966f2ebf029d9af75d67a19ba6555e1da0"
+            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.15.1/Obsidian-1.15.1.exe",
+            "hash": "218c7d30acc065355ce94719dd996d5e2a2347cde3811ea5dc29380583f02b58"
         },
         "arm64": {
-            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.15.0/Obsidian-1.15.0.exe",
-            "hash": "b0f60c75a12f96d54cb16b9fc32919966f2ebf029d9af75d67a19ba6555e1da0"
+            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.15.1/Obsidian-1.15.1.exe",
+            "hash": "218c7d30acc065355ce94719dd996d5e2a2347cde3811ea5dc29380583f02b58"
         }
     },
     "bin": "app\\obsidian.exe",
