@@ -1,5 +1,5 @@
 {
-    "version": "2.60.0",
+    "version": "2.61.0",
     "description": "面向终端的 DeepSeek 原生 AI 编码智能体 | A DeepSeek-native AI coding agent for your terminal",
     "homepage": "https://reasonix.io",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/studio-v2.60.0/ReasonixStudio-windows-amd64-installer.exe",
-            "hash": "c44a1b9ea5c3f688df817dd6909e2772d9d31dd6d8e17acfe52e3663b50200c8"
+            "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/studio-v2.61.0/ReasonixStudio-windows-amd64-installer.exe",
+            "hash": "6a1909f16875843d58984b196b993bdd2bc7d7c2852ab1d4f85df4d4d68c6e08"
         },
         "arm64": {
-            "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/studio-v2.60.0/ReasonixStudio-windows-arm64-installer.exe",
-            "hash": "f7400d61e862436c737af5f99672b66f78baf9aa287c81e07f2f5c839e65c46a"
+            "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/download/studio-v2.61.0/ReasonixStudio-windows-arm64-installer.exe",
+            "hash": "8fad6ffbe4438a93c5ae33d772e3afc9c3d015ed140e44fe026e48ba661cbe47"
         }
     },
     "env_set_shared": {
