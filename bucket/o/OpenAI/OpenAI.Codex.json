@@ -1,5 +1,5 @@
 {
-    "version": "0.167.2",
+    "version": "0.168.0",
     "description": "一款在终端中运行的开源本地编码代理 | An open-source local coding agent that runs in your terminal",
     "homepage": "https://github.com/openai/codex",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.167.2/codex-x86_64-pc-windows-msvc.exe.zip",
-            "hash": "9f9af73c0761d2a364adaf9de2c69c41f406288f28da5d8077665b2862170704",
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.168.0/codex-x86_64-pc-windows-msvc.exe.zip",
+            "hash": "1f29a55b1e54821ab3b45d557f92594ead6e8af2d5d8d900571410ae8a10fc0e",
             "bin": [
                 [
                     "app\\codex-x86_64-pc-windows-msvc.exe",
@@ -17,8 +17,8 @@
             ]
         },
         "arm64": {
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.167.2/codex-aarch64-pc-windows-msvc.exe.zip",
-            "hash": "614dfe8983bc98f463fb5b8468dcd319c9d07dfff6fe638cf46440739709ee4d",
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.168.0/codex-aarch64-pc-windows-msvc.exe.zip",
+            "hash": "e847579b22b1a6ea834ded6a9a9a5fd412ff88528829852d6fd291f42153cb1f",
             "bin": [
                 [
                     "app\\codex-aarch64-pc-windows-msvc.exe",
