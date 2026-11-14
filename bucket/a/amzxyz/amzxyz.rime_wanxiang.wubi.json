@@ -1,5 +1,5 @@
 {
-    "version": "18.1.11",
+    "version": "18.1.13",
     "description": "Rime 小狼毫配置: 万象拼音输入方案 (五笔前2) | Rime Weasel Configuration: Wanxiang-Pinyin (wubi)",
     "homepage": "https://amzxyz.github.io/rime-wanxiang",
     "license": {
@@ -11,8 +11,8 @@
         "rime": "abyss/Rime.Weasel",
         "model": "abyss/amzxyz.rime_wanxiang.model"
     },
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.11/rime-wanxiang-wubi-fuzhu.zip",
-    "hash": "95147b0037b8bd0e18a12ee56df0545bec8887b710d2221e0532e523e5440045",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.13/rime-wanxiang-wubi-fuzhu.zip",
+    "hash": "2ddf7a4515b0a34e2a603797e87dc896ad506379a338572fffba7762f41e92b1",
     "conflicts": [
         "amzxyz.rime_wanxiang",
         "amzxyz.rime_wanxiang.base",
