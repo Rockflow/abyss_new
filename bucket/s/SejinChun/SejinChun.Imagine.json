@@ -1,5 +1,5 @@
 {
-    "version": "2.8.0",
+    "version": "2.8.1",
     "description": "一款适用于 Windows 系统的免费、轻量级图像和动画查看器 | A free, lightweight image and animation viewer for Windows",
     "homepage": "https://www.nyam.pe.kr/dev/imagine",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_2.8.0_x64_Unicode_Full.zip",
-            "hash": "f1f02dbeb262079e041d3814e9d4cef5718b7341772a5290d487a32de1b1d4af",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_2.8.1_x64_Unicode_Full.zip",
+            "hash": "958fa2b64d174da0d6a3cc652e450393df4134995eb702b94dbf29ac23db317d",
             "bin": [
                 "app\\Imagine64.exe",
                 [
@@ -25,8 +25,8 @@
             ]
         },
         "arm64": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/arm64/Imagine_2.8.0_arm64_Unicode_Full.zip",
-            "hash": "f314a6e0fa8f81a4410f9885c08eb2c25e0e6591bc0994cdb70581780146a3fc",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/arm64/Imagine_2.8.1_arm64_Unicode_Full.zip",
+            "hash": "868330cebad2c0264a3b2c8f34ec410c18f6030a89be19e072e40ef8bb821e8c",
             "bin": [
                 "app\\ImagineA64.exe",
                 [
