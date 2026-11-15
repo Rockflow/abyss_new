@@ -1,5 +1,5 @@
 {
-    "version": "1.7.12",
+    "version": "1.7.13",
     "description": "一个 Windows 的右键菜单管理工具 | Windows context menu management tool",
     "homepage": "https://github.com/PLFJY/ContextMenuMgr",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PLFJY/ContextMenuMgr/releases/download/v1.7.12/ContextMenuMgrPlus-1.7.12-x64-self-contained-Setup.exe",
-            "hash": "2ac3341465b22dbb8a086afcff82a916bb16148325a36b166b1c80e6054320ee"
+            "url": "https://github.com/PLFJY/ContextMenuMgr/releases/download/v1.7.13/ContextMenuMgrPlus-1.7.13-x64-self-contained-Setup.exe",
+            "hash": "3198deb5b3ebe17ff6ef2a570a0c90ee825b90c296c34662bde48b41f4d7950e"
         },
         "arm64": {
-            "url": "https://github.com/PLFJY/ContextMenuMgr/releases/download/v1.7.12/ContextMenuMgrPlus-1.7.12-arm64-self-contained-Setup.exe",
-            "hash": "968f3f8cadaa43f2b4df8e432db915bb0e4672634048aab28e2037f5dce8dea7"
+            "url": "https://github.com/PLFJY/ContextMenuMgr/releases/download/v1.7.13/ContextMenuMgrPlus-1.7.13-arm64-self-contained-Setup.exe",
+            "hash": "486bc94ff5c4ef7183bfe5744448faf1efd276166d7a66dc2b78a5b90343d263"
         }
     },
     "shortcuts": [
