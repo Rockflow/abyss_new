@@ -1,5 +1,5 @@
 {
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "一个 PowerToys Run 插件，用于管理你的生产力会话 | A PowerToys Run plugin for managing your productivity sessions",
     "homepage": "https://github.com/ruslanlap/PowerToysRun-Pomodoro",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ruslanlap/PowerToysRun-Pomodoro/releases/download/v1.2.2/Pomodoro-x64.zip",
-            "hash": "760ee514638ff6533df0c632916d4c4f8310698b0e66375e2e7bbf46f92024a6"
+            "url": "https://github.com/ruslanlap/PowerToysRun-Pomodoro/releases/download/v1.2.3/Pomodoro-x64.zip",
+            "hash": "9a66ed65552a8ecb428248739fca0a40d5d3f7876ef380642d155e126fc6cf21"
         },
         "arm64": {
-            "url": "https://github.com/ruslanlap/PowerToysRun-Pomodoro/releases/download/v1.2.2/Pomodoro-ARM64.zip",
-            "hash": "a7e12bb08194f57289dbe29c07eff9767e2b498b4edcc69f1a106693b1ef2563"
+            "url": "https://github.com/ruslanlap/PowerToysRun-Pomodoro/releases/download/v1.2.3/Pomodoro-ARM64.zip",
+            "hash": "fc62844a2ce96b6dfe9248c0b8d6d9d203ced1f8a83e543f9ce6c93f2c718799"
         }
     },
     "pre_install": [
