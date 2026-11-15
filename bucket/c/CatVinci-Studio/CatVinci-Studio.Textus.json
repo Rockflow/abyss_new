@@ -1,5 +1,5 @@
 {
-    "version": "1.4.1",
+    "version": "1.4.2",
     "description": "下一代 Markdown 编辑器 | The next-generation Markdown editor",
     "homepage": "https://textus.catvinci.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CatVinci-Studio/Textus/releases/download/v1.4.1/Textus_1.4.1_x64-setup.exe",
-            "hash": "a13d338f8ba72cc06c6e2028f6999232259119cfaa24ebd4987a0863d75f3129"
+            "url": "https://github.com/CatVinci-Studio/Textus/releases/download/v1.4.2/Textus_1.4.2_x64-setup.exe",
+            "hash": "11c90846631e3ca9183e04d63d293a4c1b3d6b481a8369a09d7315855d51df4f"
         }
     },
     "shortcuts": [
