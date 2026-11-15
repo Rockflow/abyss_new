@@ -1,5 +1,5 @@
 {
-    "version": "1.2.12",
+    "version": "1.2.13",
     "description": "非官方的 Telegram 桌面版 | Unofficial Telegram Desktop",
     "homepage": "https://github.com/TDesktop-x64/tdesktop",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.2.12/64Gram-x64.1.2.12.exe",
-            "hash": "d7fb661accfdd88dc50d3d509a81f690a3058dec51111bff34b336db96d841e4"
+            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.2.13/64Gram-x64.1.2.13.exe",
+            "hash": "cc13c8b1c11e637d8869b499788e6b766e812e01324d1d2aa0a12e05331e8f12"
         }
     },
     "shortcuts": [
