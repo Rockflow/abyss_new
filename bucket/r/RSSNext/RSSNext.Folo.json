@@ -1,5 +1,5 @@
 {
-    "version": "1.17.0",
+    "version": "1.18.0",
     "description": "在一个地方关注所有事情 | Follow everything in one place",
     "homepage": "https://follow.is",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/RSSNext/Folo/releases/download/desktop/v1.17.0/Folo-1.17.0-windows-x64.exe#/dl.7z",
-            "hash": "090536e268de045a36712c057d75848b226e9169ff43ed3024d1a5f9d4cacc3e"
+            "url": "https://github.com/RSSNext/Folo/releases/download/desktop/v1.18.0/Folo-1.18.0-windows-x64.exe#/dl.7z",
+            "hash": "91e081d1ee5411f874dab826aba1dad28bbb4bb21f7d38d4545da2ca0ef7a411"
         }
     },
     "extract_to": "app",
