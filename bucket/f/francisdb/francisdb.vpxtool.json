@@ -1,5 +1,5 @@
 {
-    "version": "0.40.0",
+    "version": "0.40.1",
     "description": "Visual Pinball 的基于终端的前端和实用程序 | Terminal based frontend and utilities for Visual Pinball",
     "homepage": "https://github.com/francisdb/vpxtool",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/francisdb/vpxtool/releases/download/v0.40.0/vpxtool-Windows-x86_64-v0.40.0.zip",
-            "hash": "d797e7ae4d4e353864805d5dfed93a4fea29200cce5e711b12fa0fb6770c6a61"
+            "url": "https://github.com/francisdb/vpxtool/releases/download/v0.40.1/vpxtool-Windows-x86_64-v0.40.1.zip",
+            "hash": "43abee42595fa83a6c5e8edf2ba18eeec0521ae63d1521152614fcd45700a8b1"
         },
         "arm64": {
-            "url": "https://github.com/francisdb/vpxtool/releases/download/v0.40.0/vpxtool-Windows-aarch64-v0.40.0.zip",
-            "hash": "832a17ff94717529273f691c150071e8e3e14d403147a2c03fd37e10aebddc42"
+            "url": "https://github.com/francisdb/vpxtool/releases/download/v0.40.1/vpxtool-Windows-aarch64-v0.40.1.zip",
+            "hash": "8f64509e36b1378297ee0567d1e6a8a6913e0391432b99b011ae2d2e4d4356ef"
         }
     },
     "extract_to": "app",
