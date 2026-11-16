@@ -1,5 +1,5 @@
 {
-    "version": "157.0.8103.50-1.1",
+    "version": "157.0.8103.78-1.1",
     "description": "不依赖谷歌网络服务的 Google Chromium 浏览器 | Google Chromium without dependency on Google web services",
     "homepage": "https://github.com/ungoogled-software/ungoogled-chromium-windows",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/157.0.8103.50-1.1/ungoogled-chromium_157.0.8103.50-1.1_installer_x64.exe",
-            "hash": "bb4042ce2b342de4e5eb71b3451d4ca6b7ce9e58ae249926468293ec04047e71"
+            "url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/157.0.8103.78-1.1/ungoogled-chromium_157.0.8103.78-1.1_installer_x64.exe",
+            "hash": "835a6f337dc8ef199d2297110a2d7568df77b7bf1bc1282083770c1ea5ccb610"
         },
         "arm64": {
-            "url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/157.0.8103.50-1.1/ungoogled-chromium_157.0.8103.50-1.1_installer_arm64.exe",
-            "hash": "85b8eaf495ffcaa3ce09c41ad101884310f36f5a6beff187e76daba9cb02e36c"
+            "url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/157.0.8103.78-1.1/ungoogled-chromium_157.0.8103.78-1.1_installer_arm64.exe",
+            "hash": "027613e9c24d4aa9dde486e010a7a0971b7286c937226813bf32685581222a1e"
         }
     },
     "conflicts": [
