@@ -1,5 +1,5 @@
 {
-    "version": "1.9.0",
+    "version": "1.9.1",
     "description": "图吧工具箱 winUI3 版，现代化的 PC 硬件检测与系统维护工具集 | Modern toolkit for PC hardware detection and system maintenance",
     "homepage": "https://tubawinui3.cn",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/luolangaga/tubatools/releases/download/v1.9.0/TubaWinUi3_Setup_1.9.0_x64.exe",
-            "hash": "25aa8ca6a55ba1fcb337b826d142b768781510542433712cc30d7bc2e3123884"
+            "url": "https://github.com/luolangaga/tubatools/releases/download/v1.9.1/TubaWinUi3_Setup_1.9.1_x64.exe",
+            "hash": "d55f0e9f45bbbc5f59baf01e7dd674a888de84d9ac105639b8959647a3cfc5fa"
         },
         "arm64": {
-            "url": "https://github.com/luolangaga/tubatools/releases/download/v1.9.0/TubaWinUi3_Setup_1.9.0_arm64.exe",
-            "hash": "f16ec9452691bd1629019becd73ca12114af5a155450bd0dad46dcb1c6f4c469"
+            "url": "https://github.com/luolangaga/tubatools/releases/download/v1.9.1/TubaWinUi3_Setup_1.9.1_arm64.exe",
+            "hash": "6a96f28a2d43b0d38928af6f587c1959ec3ccb0f53f5afaa39e24c575708ac29"
         }
     },
     "shortcuts": [
