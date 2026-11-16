@@ -1,5 +1,5 @@
 {
-    "version": "2026-11-09",
+    "version": "2026-11-16",
     "description": "一个为编写 Rust 程序提供 IDE 功能的语言服务器 | A language server that provides IDE functionality for writing Rust programs",
     "homepage": "https://rust-analyzer.github.io",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2026-11-09/rust-analyzer-x86_64-pc-windows-msvc.zip",
-            "hash": "973ab11e84955a7f8e3cf01ccd98a33f3ecbd6d4a14bf59bb164aa9e831c6fef"
+            "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2026-11-16/rust-analyzer-x86_64-pc-windows-msvc.zip",
+            "hash": "dbf0c36ec54cf727d34cc40c9994fe71b7d52e3c28a3112c3deca1aba46fbc8f"
         },
         "arm64": {
-            "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2026-11-09/rust-analyzer-aarch64-pc-windows-msvc.zip",
-            "hash": "ca0770b76d3881642221d0437f7535e324f22a9499bcd00bbebeb0228617249e"
+            "url": "https://github.com/rust-lang/rust-analyzer/releases/download/2026-11-16/rust-analyzer-aarch64-pc-windows-msvc.zip",
+            "hash": "2e8fd876300eeee87afd6de18c79eb17bab425a9b755043c63d5023d58de37b7"
         }
     },
     "extract_to": "app",
