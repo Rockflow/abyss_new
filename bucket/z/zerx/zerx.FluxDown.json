@@ -1,5 +1,5 @@
 {
-    "version": "0.6.7",
+    "version": "0.6.8",
     "description": "一款基于 Rust 开发的下载管理器，支持 HTTP、FTP、BitTorrent 以及 HLS/DASH 流媒体协议 | A Rust-powered download manager with HTTP, FTP, BitTorrent and HLS/DASH streaming support",
     "homepage": "https://fluxdown.zerx.dev",
     "license": {
@@ -15,12 +15,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zerx-lab/FluxDown/releases/download/v0.6.7/FluxDown-0.6.7-windows-x64-setup.exe",
-            "hash": "2d70383c872d045a166eb47c2dd1d3af7eeeb50dd6dbede43934f149119f6206"
+            "url": "https://github.com/zerx-lab/FluxDown/releases/download/v0.6.8/FluxDown-0.6.8-windows-x64-setup.exe",
+            "hash": "d9e725965927d61a5be55e706c2db218ebaa33168126e03640b85f08043da1da"
         },
         "arm64": {
-            "url": "https://github.com/zerx-lab/FluxDown/releases/download/v0.6.7/FluxDown-0.6.7-windows-arm64-setup.exe",
-            "hash": "0fc72e66de5b193385361383635e46bbe3fe16d8dfb811fefe349e4dbc571db6"
+            "url": "https://github.com/zerx-lab/FluxDown/releases/download/v0.6.8/FluxDown-0.6.8-windows-arm64-setup.exe",
+            "hash": "aeb2d40bafab4b2e11bc7f8cb43a8354ef8b7c94db84c97845dfa53fd148762c"
         }
     },
     "shortcuts": [
