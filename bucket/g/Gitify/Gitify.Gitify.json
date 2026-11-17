@@ -1,5 +1,5 @@
 {
-    "version": "8.1.0",
+    "version": "8.2.0",
     "description": "菜单栏上的 GitHub 通知 | GitHub notifications on your menu bar",
     "homepage": "https://gitify.io",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/gitify-app/gitify/releases/download/v8.1.0/Gitify-Setup-8.1.0.exe",
-            "hash": "f6f5548bb12fc5f10cc742b4ab586bc486a048555e148a03c4589045b107b35d"
+            "url": "https://github.com/gitify-app/gitify/releases/download/v8.2.0/Gitify-Setup-8.2.0.exe",
+            "hash": "619ae4897542f79514dcca427ce3ee59abfc06837ddddb82b1b4a4e29f51f456"
         }
     },
     "shortcuts": [
