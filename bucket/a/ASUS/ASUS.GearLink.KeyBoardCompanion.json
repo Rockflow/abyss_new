@@ -1,5 +1,5 @@
 {
-    "version": "3.1.0.10",
+    "version": "3.1.0.15",
     "description": "奥创极速网页版的扩展功能 - 键盘 | ASUS Gear Link Companion - Keyboard",
     "homepage": "https://gearlink.asus.com",
     "license": {
@@ -11,12 +11,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://gearlink.asus.com/local-services/02/windows/Gear%20Link_KB%20Companion_3.1.0.10.zip",
-            "hash": "6d08daf2fe0752eeded6b7919b7d01829182660b806f2dfe23806ebf2ae79373"
+            "url": "https://gearlink.asus.com/local-services/02/windows/Gear%20Link_KB%20Companion_3.1.0.15.zip",
+            "hash": "336c7afc6137bfde3ebe54c3d0125761f20fff1f3e2d193dc11521797a604407"
         }
     },
     "location": "${env:ProgramFiles(x86)}\\ASUS\\Gear Link\\KB",
-    "extract_dir": "Gear Link_KB Companion_3.1.0.10\\SetupFiles",
+    "extract_dir": "Gear Link_KB Companion_3.1.0.15\\SetupFiles",
     "extract_to": "app",
     "link": "$env:LocalAppData\\ASUS\\Gear Link\\KB",
     "admin": true,
