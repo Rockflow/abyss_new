@@ -1,5 +1,5 @@
 {
-    "version": "2.9.0.23",
+    "version": "2.9.0.24",
     "description": "一款 Windows 程序，可为浏览和编辑 XML 文档提供简洁直观的用户界面 | A Windows program that provides a simple intuitive User Interface for browsing and editing XML documents",
     "homepage": "https://microsoft.github.io/XmlNotepad",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/microsoft/XmlNotepad/releases/download/2.9.0.23/XmlNotepadPackage_2.9.0.23_AnyCPU.msixbundle",
-            "hash": "38e794177fd53d7846d7a438365a1af9b1281e2072b9a618f8af71491639c1ea"
+            "url": "https://github.com/microsoft/XmlNotepad/releases/download/2.9.0.24/XmlNotepadPackage_2.9.0.24_AnyCPU.msixbundle",
+            "hash": "cc9b53866b12d033ddd6400f5fe7667463fbdcf3d4b7fea265d2721599955c37"
         }
     },
     "msix": "43906ChrisLovett.XmlNotepad_hndwmj480pefj",
