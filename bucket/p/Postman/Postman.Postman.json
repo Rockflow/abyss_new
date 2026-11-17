@@ -1,5 +1,5 @@
 {
-    "version": "12.37.0",
+    "version": "12.37.1",
     "description": "API 开发协作平台 | The Collaboration Platform for API Development",
     "homepage": "https://www.postman.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.pstmn.io/download/version/12.37.0/windows_64#/dl.exe",
-            "hash": "086c3f3b26dd99a48603f7ab1846551c3fc58366f63cd7ac3e2cfdef0ac85756"
+            "url": "https://dl.pstmn.io/download/version/12.37.1/windows_64#/dl.exe",
+            "hash": "8a8a52837236262887d6da293065532ee7209bc76925b29ce372f385fa2cd8b7"
         }
     },
     "location": "$env:LocalAppData\\Postman",
