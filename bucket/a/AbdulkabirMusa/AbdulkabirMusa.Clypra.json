@@ -1,5 +1,5 @@
 {
-    "version": "1.6.5",
+    "version": "1.6.6",
     "description": "一款现代化的开源视频编辑器，配备专业的时间轴界面 | A modern, open-source video editor featuring a professional timeline interface",
     "homepage": "https://clypra.abdulkabirmusa.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AIEraDev/Clypra/releases/download/v1.6.5/Clypra_1.6.5_x64-setup.exe",
-            "hash": "b7651632fd0a79543140e67455da5ec885e6338a1562b28edbb2bf60f2bd81bb"
+            "url": "https://github.com/AIEraDev/Clypra/releases/download/v1.6.6/Clypra_1.6.6_x64-setup.exe",
+            "hash": "2de16b4fcf30ca3e7f21977e9081fe3eae8aad31053ca3e996de63fa576037f1"
         }
     },
     "shortcuts": [
