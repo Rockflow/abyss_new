@@ -1,5 +1,5 @@
 {
-    "version": "2.7.4",
+    "version": "2.7.5",
     "description": "一个 SQL 数据库，您可以像 Git 存储库一样对其进行分叉、克隆、分支、合并、推送和拉取 | A SQL database that you can fork, clone, branch, merge, push and pull just like a Git repository",
     "homepage": "https://www.dolthub.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dolthub/dolt/releases/download/v2.7.4/dolt-windows-amd64.zip",
-            "hash": "e23523e25f865eb7d8aa98bc5e318d377342172643dfded0b5e8d6c30d0355be",
+            "url": "https://github.com/dolthub/dolt/releases/download/v2.7.5/dolt-windows-amd64.zip",
+            "hash": "a51c2557ddd03ca284971957c0cb006e18585c4a063e83db7b94d0fd38814300",
             "extract_dir": "dolt-windows-amd64"
         }
     },
