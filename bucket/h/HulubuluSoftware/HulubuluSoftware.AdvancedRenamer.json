@@ -1,5 +1,5 @@
 {
-    "version": "4.28",
+    "version": "4.29",
     "description": "一个可一次性批量重命名多个文件和文件夹的程序 | A program for bulk renaming multiple files and folders at once",
     "homepage": "https://www.advancedrenamer.com",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://www.advancedrenamer.com/down/win/advanced_renamer_setup_4_28.exe",
-            "hash": "24402561feb48b821e5377310b1c66fb77c724ed59b2aa07e76703452377f0a2"
+            "url": "https://www.advancedrenamer.com/down/win/advanced_renamer_setup_4_29.exe",
+            "hash": "7fe8a1b728369db15c43eca7335db7480d82b740e2d31b4a21a956dd679ad6ec"
         }
     },
     "bin": "app\\arenc.exe",
