@@ -1,5 +1,5 @@
 {
-    "version": "1.25t-2026-11-16",
+    "version": "1.25t-2026-11-17",
     "description": "一款基于火狐的浏览器，旨在将您的工作效率提升到新高度 | A firefox-based browser with the aim of pushing your productivity to a new level",
     "homepage": "https://zen-browser.app",
     "license": {
@@ -8,11 +8,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.installer.exe",
-            "hash": "047884e878fcfaffa4027f3ba3cc7d17847fb95d17cffa75032f8b38c16f093f"
+            "hash": "9cbef7f0f4f06b285606f2b10aa5632cbbd81c44704e49c99ee3411d9447a126"
         },
         "arm64": {
             "url": "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.installer-arm64.exe",
-            "hash": "d7d05d065d0d649012e9d58b8290aa52401166b28dd80e8c7ae10ccff26dbf3e"
+            "hash": "6c783dd875665b7dcc411a1faa10adb5085d4a0cd14ea436eecadce9ddffced6"
         }
     },
     "conflicts": [
