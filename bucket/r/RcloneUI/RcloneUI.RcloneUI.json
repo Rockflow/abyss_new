@@ -1,5 +1,5 @@
 {
-    "version": "3.7.5",
+    "version": "3.7.7",
     "description": "rclone 之上的一个轻便、透明的层（桌面图形用户界面），能以更用户友好的方式管理你的远程存储和任务 | A light, transparent layer (desktop GUI) on top of rclone to manage your remotes & tasks in a more user-friendly way",
     "homepage": "https://rcloneui.com",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/rclone-ui/rclone-ui/releases/download/v3.7.5/Rclone.UI_x64.exe",
-            "hash": "f78476b79ae3fa6c1e62f7f7d4f77914b06a031607776d41067d1d81987a76ae"
+            "url": "https://github.com/rclone-ui/rclone-ui/releases/download/v3.7.7/Rclone.UI_x64.exe",
+            "hash": "cd2a1ad73e29579456c3c9e422811a0c646aa12405b8fe7be3004ed5fc5ab5a3"
         },
         "arm64": {
-            "url": "https://github.com/rclone-ui/rclone-ui/releases/download/v3.7.5/Rclone.UI_arm64.exe",
-            "hash": "80105a91b33476c256953be10178732d543fe132100d0cc377e8d5d16220ede2"
+            "url": "https://github.com/rclone-ui/rclone-ui/releases/download/v3.7.7/Rclone.UI_arm64.exe",
+            "hash": "0271b1030f937af4ecbdcb44de933a66ce792db61a1365ec646e4fde46c87d08"
         }
     },
     "location": "$env:ProgramFiles\\Rclone UI",
