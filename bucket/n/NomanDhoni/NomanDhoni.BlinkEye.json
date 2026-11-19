@@ -1,5 +1,5 @@
 {
-    "version": "2.9.1",
+    "version": "2.9.3",
     "description": "一款极简主义的护眼提醒应用，旨在减轻长时间使用屏幕时的眼睛疲劳 | A minimalist eye-care reminder app designed to reduce eye strain during extended screen usage",
     "homepage": "https://blinkeye.app",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nomandhoni-cs/blink-eye/releases/download/v2.9.1/Blink.Eye_2.9.1_x64-setup.exe",
-            "hash": "902e43bb6b8f683dd6db53b2f15157de9321857de3aa807a5d7d56906f627eae"
+            "url": "https://github.com/nomandhoni-cs/blink-eye/releases/download/v2.9.3/Blink.Eye_2.9.3_x64-setup.exe",
+            "hash": "8ee1f1a8b34fd3455a77f4b8efa38c2225271124b8e164454810f16eea165af8"
         }
     },
     "shortcuts": [
