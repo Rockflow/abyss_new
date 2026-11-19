@@ -1,5 +1,5 @@
 {
-    "version": "9.2.1364",
+    "version": "9.2.1373",
     "description": "一个高度可配置的文本编辑器，可高效创建和更改任何类型的文本 | A highly configurable text editor built to make creating and changing any kind of text very efficient",
     "homepage": "https://www.vim.org",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.2.1364/gvim_9.2.1364_x64.zip",
-            "hash": "fcb8b0db37954c147157a68351ddfbfc2968d9dda79a5b3d4e2be9ccb8a1c300"
+            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.2.1373/gvim_9.2.1373_x64.zip",
+            "hash": "b10e2367e04f4dadba899fdcdc496d684d8d436746799536b01ba4d40b41f982"
         },
         "arm64": {
-            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.2.1364/gvim_9.2.1364_arm64.zip",
-            "hash": "0f78cc85e1dd7ba957609b342cc45d9b619bc1f2ee7bac2ffb7b801cd53d5d53"
+            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.2.1373/gvim_9.2.1373_arm64.zip",
+            "hash": "a3fe1ee67a3eb47ddcb19b0f6443e465d7eaac8842fba32937c936fba894fb31"
         }
     },
     "extract_dir": "vim\\vim92",
