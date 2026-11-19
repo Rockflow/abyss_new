@@ -1,5 +1,5 @@
 {
-    "version": "2026-11-18",
+    "version": "2026-11-19",
     "description": "多 shell、多命令、参数补全器 | multi-shell, multi-command, argument completer",
     "homepage": "https://carapace.sh",
     "license": {
@@ -15,12 +15,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/carapace-sh/nightly/releases/download/2026-11-18/carapace-bin_1.8.2-SNAPSHOT-a8041a4e0_windows_amd64.zip",
-            "hash": "f2d12dee081613d4c1e5442d8eac2be8a608ab8d0de7a48f05c2b7b092631014"
+            "url": "https://github.com/carapace-sh/nightly/releases/download/2026-11-19/carapace-bin_1.8.2-SNAPSHOT-a26c3f8a7_windows_amd64.zip",
+            "hash": "ef9bd4aa2390e79c0308ea42d5fb2b56f5f0c52520a99dcdb4c3eccdb6faae02"
         },
         "arm64": {
-            "url": "https://github.com/carapace-sh/nightly/releases/download/2026-11-18/carapace-bin_1.8.2-SNAPSHOT-a8041a4e0_windows_arm64.zip",
-            "hash": "7d3c10de41f8e09b404e7f97a6ce6cfcfda3412d4d954023a298b8c933741adf"
+            "url": "https://github.com/carapace-sh/nightly/releases/download/2026-11-19/carapace-bin_1.8.2-SNAPSHOT-a26c3f8a7_windows_arm64.zip",
+            "hash": "f1a1e2c310e78da3fb989fc35ee638083947da87ba1b357d6eca00db62d1906b"
         }
     },
     "conflicts": [
