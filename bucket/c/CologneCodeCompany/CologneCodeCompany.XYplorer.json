@@ -1,5 +1,5 @@
 {
-    "version": "28.50.0000",
+    "version": "28.50.0100",
     "description": "一个 Windows 上的第三方文件管理器 | A file manager for Windows",
     "homepage": "https://www.xyplorer.com/index.php",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://www.xyplorer.com/download/xyplorer64_28.50.0000.zip",
-            "hash": "d602eb04286b579b5fa988a0c245479703b3a4ee3671e653f84520e3306edab6"
+            "url": "https://www.xyplorer.com/download/xyplorer64_28.50.0100.zip",
+            "hash": "a2e7f0fe865b495224e2ec1c1243a10fd754104b010b4339686049ceeb1d82b7"
         }
     },
     "extract_to": "app",
