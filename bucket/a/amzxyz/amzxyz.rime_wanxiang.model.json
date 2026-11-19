@@ -1,5 +1,5 @@
 {
-    "version": "2026.11.14.154332",
+    "version": "2026.11.18.140543",
     "description": "Rime 小狼毫配置: 万象语法模型 | Rime Weasel Configuration: Wanxiang syntax model",
     "homepage": "https://github.com/amzxyz/rime-wanxiang-data",
     "license": {
@@ -12,7 +12,7 @@
         "input-schemes": "abyss/amzxyz.rime_wanxiang.base"
     },
     "url": "https://github.com/amzxyz/rime-wanxiang-data/releases/download/LTS/wanxiang-lts-zh-hans.gram",
-    "hash": "d4f64356231764ff27b79c9b0db79cd9d665013464cf5544e2fbd9a71e0f1c5a",
+    "hash": "e9ddd501b7d536bc5ea1346f8f900ae49a719a05be349e0a17cb27e717143ca5",
     "admin": true,
     "pre_install": [
         "if (!$bucket) { $bucket = 'abyss' }",
