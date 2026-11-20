@@ -1,5 +1,5 @@
 {
-    "version": "18.1.13",
+    "version": "18.1.14",
     "description": "Rime 小狼毫配置: 万象拼音输入方案 (小鹤) | Rime Weasel Configuration: Wanxiang-Pinyin (flypy)",
     "homepage": "https://amzxyz.github.io/rime-wanxiang",
     "license": {
@@ -11,8 +11,8 @@
         "rime": "abyss/Rime.Weasel",
         "model": "abyss/amzxyz.rime_wanxiang.model"
     },
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.13/rime-wanxiang-flypy-fuzhu.zip",
-    "hash": "fa5fe76cbb0ef759471584654c27ab3f913484548ebe08a25d4ea336891ddd37",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.14/rime-wanxiang-flypy-fuzhu.zip",
+    "hash": "214556a2debafc0b2f605b856d91e119d887b4d8b879b8c2862e7cb41f5d9e0f",
     "conflicts": [
         "amzxyz.rime_wanxiang",
         "amzxyz.rime_wanxiang.base",
