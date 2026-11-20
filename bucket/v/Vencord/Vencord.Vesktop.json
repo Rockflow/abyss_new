@@ -1,5 +1,5 @@
 {
-    "version": "1.6.9",
+    "version": "1.7.0",
     "description": "一款定制化 Discord 应用，旨在为你提供更出色的性能表现 | A custom Discord App aiming to give you better performance",
     "homepage": "https://vesktop.dev",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Vencord/Vesktop/releases/download/v1.6.9/Vesktop-Setup-1.6.9.exe",
-            "hash": "e099dc2df1f9810424d2d27006b50179106359f276bdc34bfc524094a5b4460d"
+            "url": "https://github.com/Vencord/Vesktop/releases/download/v1.7.0/Vesktop-Setup-1.7.0.exe",
+            "hash": "74c48a16ee8b0ef312542dca1fb99355d2010477e44c5a3594b5bfd04a059924"
         },
         "arm64": {
-            "url": "https://github.com/Vencord/Vesktop/releases/download/v1.6.9/Vesktop-Setup-1.6.9.exe",
-            "hash": "e099dc2df1f9810424d2d27006b50179106359f276bdc34bfc524094a5b4460d"
+            "url": "https://github.com/Vencord/Vesktop/releases/download/v1.7.0/Vesktop-Setup-1.7.0.exe",
+            "hash": "74c48a16ee8b0ef312542dca1fb99355d2010477e44c5a3594b5bfd04a059924"
         }
     },
     "shortcuts": [
