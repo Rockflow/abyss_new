@@ -1,5 +1,5 @@
 {
-    "version": "6.3.2",
+    "version": "6.3.3",
     "description": "一款跨平台的 SQL 编辑器和数据库管理器 | A cross-platform SQL editor and database manager",
     "homepage": "https://www.beekeeperstudio.io",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v6.3.2/Beekeeper-Studio-Setup-6.3.2.exe",
-            "hash": "2c122065d930dc2da6d76d6ae7090ec4ae94ee61141eac51942394046e46f864"
+            "url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v6.3.3/Beekeeper-Studio-Setup-6.3.3.exe",
+            "hash": "cf31869179ff02a1dcbcaba1949b5d69ddad8dfd22b5044296a8595dd9220f65"
         }
     },
     "shortcuts": [
