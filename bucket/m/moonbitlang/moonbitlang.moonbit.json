@@ -1,5 +1,5 @@
 {
-    "version": "0.1.20261117-0.10.21-0.1.20261117",
+    "version": "0.1.20261119-0.10.22-0.1.20261119",
     "description": "MoonBit 是一种类似 Rust 的语言（支持垃圾回收），也是一个为 WebAssembly 体验优化的工具链 | MoonBit is a Rust-like language (with GC support) and toolchain optimized for WebAssembly experience",
     "homepage": "https://www.moonbitlang.com",
     "license": {
@@ -12,8 +12,8 @@
                 "https://cli.moonbitlang.cn/cores/core-latest.zip"
             ],
             "hash": [
-                "941b6596813861350d43e2fc92b4444f562f2b5589b07c1b82e5c62f07f47239",
-                "9dee22c988998e41c6b39dfeacca3f354d6ac9da2159afd9f9d9853bcad1cc36"
+                "8e552848a5c06dcce6bab725687562a689397948b7144e9087e9ffa4c1d38be4",
+                "2ce9e6112f2db09eeb52c7865459df3de27e42badb6be26db77347187ab8fbfe"
             ]
         }
     },
