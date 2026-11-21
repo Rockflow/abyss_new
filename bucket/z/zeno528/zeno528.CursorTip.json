@@ -1,5 +1,5 @@
 {
-    "version": "1.6.1",
+    "version": "1.6.2",
     "description": "轻量 Windows 桌面状态提示工具，在屏幕上实时显示键盘状态和剪贴板操作反馈 | A lightweight Windows desktop status prompt tool that displays real-time keyboard status and clipboard operation feedback on the screen",
     "homepage": "https://github.com/zeno528/CursorTip",
     "license": {
@@ -7,14 +7,14 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zeno528/CursorTip/releases/download/v1.6.1/CursorTip_v1.6.1.zip",
-            "hash": "0b55de19b2d66b4615d7c4e1848b5a1dd3f50b924bb07ab8efe491178cb7ee14"
+            "url": "https://github.com/zeno528/CursorTip/releases/download/v1.6.2/CursorTip_v1.6.2.zip",
+            "hash": "7d0e59d1d5f11443de1701a0846340bb2f8e63e2265cb36741aecdfa8cbdcc96"
         }
     },
     "extract_to": "app",
     "shortcuts": [
         [
-            "app\\CursorTip_v1.6.1.exe",
+            "app\\CursorTip_v1.6.2.exe",
             "CursorTip"
         ]
     ],
