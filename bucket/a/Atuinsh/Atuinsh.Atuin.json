@@ -1,5 +1,5 @@
 {
-    "version": "18.25.0",
+    "version": "18.25.1",
     "description": "Atuin 使用 SQLite 数据库取代你现有的命令行历史记录，并为你的命令记录额外的上下文信息 | Atuin replaces your existing shell history with a SQLite database, and records additional context for your commands",
     "homepage": "https://atuin.sh",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/atuinsh/atuin/releases/download/v18.25.0/atuin-x86_64-pc-windows-msvc.zip",
-            "hash": "31360ba9fedb9de4ec819e9c853a67cb45b7f567ca580e7b80b2505b6fe13619"
+            "url": "https://github.com/atuinsh/atuin/releases/download/v18.25.1/atuin-x86_64-pc-windows-msvc.zip",
+            "hash": "8c1a4c51251fd79f93551dcb66d23e8e34b3d49df56e47dbf853418cfadc167a"
         }
     },
     "extract_to": "app",
