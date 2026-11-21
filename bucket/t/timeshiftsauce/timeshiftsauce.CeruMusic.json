@@ -1,5 +1,5 @@
 {
-    "version": "2.4.0",
+    "version": "2.5.0",
     "description": "澜音，一个跨平台的音乐播放器应用，提供插件运行框架与播放功能 | A cross-platform music player application that provides a plug-in running framework and playback functions",
     "homepage": "https://ceru.docs.shiqianjiang.cn",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/timeshiftsauce/CeruMusic/releases/download/v2.4.0/ceru-music-2.4.0-win-x64-setup.exe",
-            "hash": "22e1e96f9ca3b59fb653b258761ff19f077999b6684a83f5c395a8655cac9173"
+            "url": "https://github.com/timeshiftsauce/CeruMusic/releases/download/v2.5.0/ceru-music-2.5.0-win-x64-setup.exe",
+            "hash": "2f509a20fe8717aa1cea1de038c16407adb13cf0a950ec019da32df09aee371b"
         }
     },
     "shortcuts": [
