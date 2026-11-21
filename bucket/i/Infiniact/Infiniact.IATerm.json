@@ -1,5 +1,5 @@
 {
-    "version": "1.2.14",
+    "version": "1.2.15",
     "description": "集成 AI 能力的下一代远程终端应用，支持多工作空间、SSH 连接和智能命令执行 | Next-gen AI-powered remote terminal with multi-workspace, SSH connections and intelligent command execution",
     "homepage": "https://www.iaterm.ai",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/infiniact/homebrew-iaterm/releases/download/v1.2.14/IATerm_1.2.14_x64-setup.exe",
-            "hash": "6421eb8a6298fd267ea35fdd78f5d9c368d461152f2998f6add1b8c6779133b5"
+            "url": "https://github.com/infiniact/homebrew-iaterm/releases/download/v1.2.15/IATerm_1.2.15_x64-setup.exe",
+            "hash": "d70150dc8c1b1ded30147f437eacfdb515385195d97bc5413cce5cb8520d6263"
         }
     },
     "shortcuts": [
