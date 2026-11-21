@@ -1,5 +1,5 @@
 {
-    "version": "18.1.13",
+    "version": "18.1.14",
     "description": "Rime 小狼毫配置: 万象拼音输入方案 (虎码首末) | Rime Weasel Configuration: Wanxiang-Pinyin (tiger)",
     "homepage": "https://amzxyz.github.io/rime-wanxiang",
     "license": {
@@ -11,8 +11,8 @@
         "rime": "abyss/Rime.Weasel",
         "model": "abyss/amzxyz.rime_wanxiang.model"
     },
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.13/rime-wanxiang-tiger-fuzhu.zip",
-    "hash": "12d26d2e6db87b5674d53ae6537b151a7e4201cc55a0ade66be0f4390b07601f",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.14/rime-wanxiang-tiger-fuzhu.zip",
+    "hash": "c1c673e61da9152a2b585a1ef5e4facb260cafce0c5b79885a300b8265dfeda3",
     "conflicts": [
         "amzxyz.rime_wanxiang",
         "amzxyz.rime_wanxiang.base",
