@@ -1,5 +1,5 @@
 {
-    "version": "2.6.0",
+    "version": "2.6.1",
     "description": "GPU 加速终端、SSH 工作区，以及你的 AI CLI 会话空间 | A GPU-accelerated terminal, SSH workspace, and home for your AI CLI sessions",
     "homepage": "https://github.com/Kuddev/pebrel",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kuddev/pebrel/releases/download/v2.6.0/Pebrel-v2.6.0-windows-x64-setup.exe",
-            "hash": "4d5164a4c37f3df8d0f9753d8ca5a4446936be0343f5a94247d17f22408c507e"
+            "url": "https://github.com/Kuddev/pebrel/releases/download/v2.6.1/Pebrel-v2.6.1-windows-x64-setup.exe",
+            "hash": "f3812c572f912d419b205eee7bab943b587dcdd94c1eee4f72a3c93b2d3650ef"
         }
     },
     "shortcuts": [
