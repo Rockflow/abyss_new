@@ -1,5 +1,5 @@
 {
-    "version": "18.1.14",
+    "version": "18.2.0",
     "description": "Rime 小狼毫配置: 万象拼音输入方案 (自然码) | Rime Weasel Configuration: Wanxiang-Pinyin (zrm)",
     "homepage": "https://amzxyz.github.io/rime-wanxiang",
     "license": {
@@ -11,8 +11,8 @@
         "rime": "abyss/Rime.Weasel",
         "model": "abyss/amzxyz.rime_wanxiang.model"
     },
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.14/rime-wanxiang-zrm-fuzhu.zip",
-    "hash": "8583ed694e584989b70100ea136c89f4e582a0f9920798d0dc49144f4aa2b1aa",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.2.0/rime-wanxiang-zrm-fuzhu.zip",
+    "hash": "59e6a354c77d718a0e94fb334dc8e7d96e893e2c08ba8fff0f210cac74323c00",
     "conflicts": [
         "amzxyz.rime_wanxiang",
         "amzxyz.rime_wanxiang.base",
