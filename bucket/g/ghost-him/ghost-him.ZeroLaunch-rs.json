@@ -1,5 +1,5 @@
 {
-    "version": "1.5.7",
+    "version": "1.5.8",
     "description": "一款极速、隐私优先的 Windows 智能启动器，精通拼音与模糊匹配；可选本地 AI 语义检索，让错字与意图搜索也能秒速直达 | A Windows smart launcher that understands your typing. It excels at Pinyin and fuzzy matching, and can optionally add AI semantic understanding—so typos and vague queries still get instant results",
     "homepage": "https://zerolaunch.ghost-him.com",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ghost-him/ZeroLaunch-rs/releases/download/v1.5.7/zerolaunch-rs_1.5.7_x64_en-US.msi#/dl.msi_",
-            "hash": "3b79d09c8481c1a2bcd5eb2c77f5c7f4a97dea02d7e89266a6d1e00779a7f1b0"
+            "url": "https://github.com/ghost-him/ZeroLaunch-rs/releases/download/v1.5.8/zerolaunch-rs_1.5.8_x64_en-US.msi#/dl.msi_",
+            "hash": "f4aa1852ed132ff477ae3f36bfa2e19f204d0aa13fa23014d6e358d5c77ad2fb"
         },
         "arm64": {
-            "url": "https://github.com/ghost-him/ZeroLaunch-rs/releases/download/v1.5.7/zerolaunch-rs_1.5.7_arm64_en-US.msi#/dl.msi_",
-            "hash": "c9580b1bedfbc5b3077f4a8b2d86504805fb9cd798953b9859f12e3784400339"
+            "url": "https://github.com/ghost-him/ZeroLaunch-rs/releases/download/v1.5.8/zerolaunch-rs_1.5.8_arm64_en-US.msi#/dl.msi_",
+            "hash": "6c0c15d2f81df6ff93a0454e3141d7c6e0eede79a148e6e6b63d4c57676a4f43"
         }
     },
     "location": "$env:ProgramFiles\\zerolaunch-rs",
