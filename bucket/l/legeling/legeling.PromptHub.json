@@ -1,5 +1,5 @@
 {
-    "version": "0.6.2",
+    "version": "0.6.3",
     "description": "一款开源、纯本地 AI Prompt 管理工具，帮助你高效管理、版本控制和复用 Prompt | An open-source, local-first AI prompt management tool that helps you efficiently manage, version-control, and reuse your prompts",
     "homepage": "https://github.com/legeling/PromptHub",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/legeling/PromptHub/releases/download/v0.6.2/PromptHub-Setup-0.6.2-x64.exe",
-            "hash": "92bea30fee7d0d4198784ee50e74f7656294e2e7562fb6546e3ce5c1dd738844"
+            "url": "https://github.com/legeling/PromptHub/releases/download/v0.6.3/PromptHub-Setup-0.6.3-x64.exe",
+            "hash": "29ce9776032f1cb06170b06ffbdb59f774354e70e1f03568e5e0e4ac671c25a3"
         },
         "arm64": {
-            "url": "https://github.com/legeling/PromptHub/releases/download/v0.6.2/PromptHub-Setup-0.6.2-arm64.exe",
-            "hash": "1c6ff09e84aa67b4f72c3bc4b4f3b773de0175aa399bf292f94fcbe01a8978dc"
+            "url": "https://github.com/legeling/PromptHub/releases/download/v0.6.3/PromptHub-Setup-0.6.3-arm64.exe",
+            "hash": "0cf205ea83d44b05b753502ccd4d47f01eec4680c823b61e106ccdada3003163"
         }
     },
     "shortcuts": [
