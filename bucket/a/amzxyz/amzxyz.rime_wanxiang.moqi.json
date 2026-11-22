@@ -1,5 +1,5 @@
 {
-    "version": "18.1.14",
+    "version": "18.2.0",
     "description": "Rime 小狼毫配置: 万象拼音输入方案 (墨奇) | Rime Weasel Configuration: Wanxiang-Pinyin (moqi)",
     "homepage": "https://amzxyz.github.io/rime-wanxiang",
     "license": {
@@ -11,8 +11,8 @@
         "rime": "abyss/Rime.Weasel",
         "model": "abyss/amzxyz.rime_wanxiang.model"
     },
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.14/rime-wanxiang-moqi-fuzhu.zip",
-    "hash": "a826cfc4ff46cc5484ebe47978847205606a3931dee4193d18100d0eadb3f91d",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.2.0/rime-wanxiang-moqi-fuzhu.zip",
+    "hash": "a9ca895db0bf62e74d8877124e4abf78a0d4b395ce4575db1f878accff58218d",
     "conflicts": [
         "amzxyz.rime_wanxiang",
         "amzxyz.rime_wanxiang.base",
