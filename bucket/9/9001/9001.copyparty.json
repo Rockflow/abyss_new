@@ -1,5 +1,5 @@
 {
-    "version": "1.20.26",
+    "version": "1.20.27",
     "description": "便携式文件服务器，集加速可续传上传、重复数据删除、WebDAV、SFTP、FTP、TFTP、零配置、媒体索引器、缩略图等众多功能于一体 | Portable file server with accelerated resumable uploads, dedup, WebDAV, SFTP, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file",
     "homepage": "https://github.com/9001/copyparty",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/9001/copyparty/releases/download/v1.20.26/copyparty.exe",
-            "hash": "6c51a154d0a173fec6e2ca0dfd5ffbc10a0c81f184bae8f920e79cafc12ae0c1"
+            "url": "https://github.com/9001/copyparty/releases/download/v1.20.27/copyparty.exe",
+            "hash": "9353c80f9b64c1b9ad0c88e0931a5b9d8f77eb33fd91956f89c9a4849327653c"
         }
     },
     "extract_to": "app",
