@@ -1,5 +1,5 @@
 {
-    "version": "20.0.0",
+    "version": "20.1.0",
     "description": "一个高级待办事项列表应用，具备时间限制和时间跟踪功能，支持从日历、Jira、GitHub 等平台导入任务 | An advanced todo list app with timeboxing & time tracking capabilities that supports importing tasks from your calendar, Jira, GitHub and others",
     "homepage": "https://super-productivity.com",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/johannesjo/super-productivity/releases/download/v20.0.0/Super-Productivity-Setup-x64.exe",
-            "hash": "246b5e0ab1b2aa495353e2bcbeadb763747ecec90ae007f6273d24a5f0346350"
+            "url": "https://github.com/johannesjo/super-productivity/releases/download/v20.1.0/Super-Productivity-Setup-x64.exe",
+            "hash": "0996fb9696c5180c6e48be422ebdd19431de5e8778a2a0e0888ec922eeec5bbd"
         },
         "arm64": {
-            "url": "https://github.com/johannesjo/super-productivity/releases/download/v20.0.0/Super-Productivity-Setup-arm64.exe",
-            "hash": "246b5e0ab1b2aa495353e2bcbeadb763747ecec90ae007f6273d24a5f0346350"
+            "url": "https://github.com/johannesjo/super-productivity/releases/download/v20.1.0/Super-Productivity-Setup-arm64.exe",
+            "hash": "0996fb9696c5180c6e48be422ebdd19431de5e8778a2a0e0888ec922eeec5bbd"
         }
     },
     "shortcuts": [
