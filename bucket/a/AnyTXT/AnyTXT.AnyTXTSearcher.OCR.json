@@ -1,5 +1,5 @@
 {
-    "version": "1.3.3774",
+    "version": "1.3.3803",
     "description": "一款拥有强大全文搜索引擎的桌面搜索工具 | A Desktop Search Tool with A Powerful Full-Text Search Engine",
     "homepage": "https://anytxt.net",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://sourceforge.net/projects/anytxt/files/Anytxt_1.3.3774_Windows_X86_64_OCR.exe/download#/dl.exe",
-            "hash": "3b09ff6d9c3254d52604925da8ca23ae97f262dd9e9f6b69ab617c50c7852354"
+            "url": "https://sourceforge.net/projects/anytxt/files/Anytxt_1.3.3803_Windows_X86_64_OCR.exe/download#/dl.exe",
+            "hash": "1518f43ceea2128cf3c0b3170830e08e713d82afb5858e705861226e11fca31d"
         }
     },
     "conflicts": [
