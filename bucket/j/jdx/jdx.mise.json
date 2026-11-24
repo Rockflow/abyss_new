@@ -1,5 +1,5 @@
 {
-    "version": "2026.11.12",
+    "version": "2026.11.14",
     "description": "多语言工具版本管理器、环境变量管理器和任务运行器 | Polyglot tool version manager, env vars manager and task runner",
     "homepage": "https://mise.jdx.dev",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jdx/mise/releases/download/v2026.11.12/mise-v2026.11.12-windows-x64.zip",
-            "hash": "706fecc47fba7e4da63f59dccd3262502c59e4699035548f1113df95fcfca96e"
+            "url": "https://github.com/jdx/mise/releases/download/v2026.11.14/mise-v2026.11.14-windows-x64.zip",
+            "hash": "f1a197ba2d5e4b0ccac323038efd55b007846c6d38828baf529439387b61eb5a"
         },
         "arm64": {
-            "url": "https://github.com/jdx/mise/releases/download/v2026.11.12/mise-v2026.11.12-windows-arm64.zip",
-            "hash": "bee83ff472860af33d1cf81a64e6effe34f219d76c7a924df332c8762a938db9"
+            "url": "https://github.com/jdx/mise/releases/download/v2026.11.14/mise-v2026.11.14-windows-arm64.zip",
+            "hash": "84b775314cb92f394c0974f514c591165c250618be86b1f8829c59a5763b4225"
         }
     },
     "extract_dir": "mise",
