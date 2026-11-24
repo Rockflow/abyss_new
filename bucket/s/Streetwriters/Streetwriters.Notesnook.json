@@ -1,5 +1,5 @@
 {
-    "version": "3.4.13",
+    "version": "3.4.14",
     "description": "一款完全开源且端到端加密的笔记应用，可替代 Evernote | A fully open source & end-to-end encrypted note taking alternative to Evernote",
     "homepage": "https://github.com/streetwriters/notesnook",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/streetwriters/notesnook/releases/download/v3.4.13/notesnook_win_x64.exe",
-            "hash": "b813b2f632b1a3c8ca441cc51c295199c0ae6f178b3bb84f56452c712e9e057d"
+            "url": "https://github.com/streetwriters/notesnook/releases/download/v3.4.14/notesnook_win_x64.exe",
+            "hash": "30c91e320fec0892b594ef6c6bbe1545373639db14505fd860745f43bc382085"
         },
         "arm64": {
-            "url": "https://github.com/streetwriters/notesnook/releases/download/v3.4.13/notesnook_win_arm64.exe",
-            "hash": "2ff6c231da235f146766207787691990af50e3c212c5daef710ddb0cef2b12b0"
+            "url": "https://github.com/streetwriters/notesnook/releases/download/v3.4.14/notesnook_win_arm64.exe",
+            "hash": "c62e460a5c1a82b65316261e0bacbb96ba831660b5f585f63cb838c2a70e8575"
         }
     },
     "shortcuts": [
