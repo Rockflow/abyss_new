@@ -1,5 +1,5 @@
 {
-    "version": "0.20.0",
+    "version": "0.21.0",
     "description": "一个还算强大的 Web 思维导图 | A relatively powerful web mind map",
     "homepage": "https://github.com/wanglin2/mind-map",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/wanglin2/mind-map/releases/download/0.20.0/Setup.0.20.0.exe",
-            "hash": "0c4abf13a2ea098d514bb17004413e541959cf392d4fa1580a915edd954aa865"
+            "url": "https://github.com/wanglin2/mind-map/releases/download/0.21.0/Setup.0.21.0.exe",
+            "hash": "c67fe8330b4bcc74ee23e1aa7be040c1eb8ed72984a6fd2b7b6f437aeda8c8f0"
         }
     },
     "shortcuts": [
