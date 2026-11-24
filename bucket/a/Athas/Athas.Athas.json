@@ -1,5 +1,5 @@
 {
-    "version": "0.17.0",
+    "version": "0.19.0",
     "description": "轻量级代码编辑器 | A lightweight code editor",
     "homepage": "https://athas.dev",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/athasdev/athas/releases/download/v0.17.0/Athas_0.17.0_x64-setup.exe",
-            "hash": "ae685774892e119059b4f8c8d6f0a7169c1dfa3ed69ac4221da8005a4b54b4f7"
+            "url": "https://github.com/athasdev/athas/releases/download/v0.19.0/Athas_0.19.0_x64-setup.exe",
+            "hash": "87d02e335acabe80c6998e52a6e26fa36223c784100c477051790c2ef6fe9586"
         }
     },
     "shortcuts": [
