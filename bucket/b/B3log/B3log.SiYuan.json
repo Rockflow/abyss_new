@@ -1,5 +1,5 @@
 {
-    "version": "3.8.11",
+    "version": "3.8.12",
     "description": "一款以隐私为首要原则、可自行托管且完全开源的个人知识管理软件 | A privacy-first, self-hosted, fully open source personal knowledge management software",
     "homepage": "https://b3log.org/siyuan",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/siyuan-note/siyuan/releases/download/v3.8.11/siyuan-3.8.11-win.exe",
-            "hash": "a48aa7e0fae9a8d4e41a02b18f7503b0367d5425bab5529db9bbc637d39db61d"
+            "url": "https://github.com/siyuan-note/siyuan/releases/download/v3.8.12/siyuan-3.8.12-win.exe",
+            "hash": "1cc059f6543cb5ea52b84545fe01736b60408a647c8d0c440b6a1997bc5e598a"
         },
         "arm64": {
-            "url": "https://github.com/siyuan-note/siyuan/releases/download/v3.8.11/siyuan-3.8.11-win-arm64.exe",
-            "hash": "cf41504ce45d676189d96ab9fee9c0ef9222c120241732f8db4e48d11fc8dd3a"
+            "url": "https://github.com/siyuan-note/siyuan/releases/download/v3.8.12/siyuan-3.8.12-win-arm64.exe",
+            "hash": "0fe4181a0750bca6f012155426de3534e4ab8bb16c91c670207c57cbffaa1342"
         }
     },
     "shortcuts": [
