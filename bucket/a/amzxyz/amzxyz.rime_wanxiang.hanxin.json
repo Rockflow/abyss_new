@@ -1,5 +1,5 @@
 {
-    "version": "18.2.0",
+    "version": "18.2.1",
     "description": "Rime 小狼毫配置: 万象拼音输入方案 (汉心) | Rime Weasel Configuration: Wanxiang-Pinyin (hanxin)",
     "homepage": "https://amzxyz.github.io/rime-wanxiang",
     "license": {
@@ -11,8 +11,8 @@
         "rime": "abyss/Rime.Weasel",
         "model": "abyss/amzxyz.rime_wanxiang.model"
     },
-    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.2.0/rime-wanxiang-hanxin-fuzhu.zip",
-    "hash": "648cb6436f02d125c6c62aada974f9899da2ab891a6e7f2afd213b260f422253",
+    "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.2.1/rime-wanxiang-hanxin-fuzhu.zip",
+    "hash": "854e17470b3769da11fcd76684906ce020ed2ebb8a633a2342f9dd146f64305f",
     "conflicts": [
         "amzxyz.rime_wanxiang",
         "amzxyz.rime_wanxiang.base",
