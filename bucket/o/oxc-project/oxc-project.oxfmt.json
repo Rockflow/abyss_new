@@ -1,5 +1,5 @@
 {
-    "version": "0.79.0",
+    "version": "0.80.0",
     "description": "一个与 Prettier 兼容的代码格式化工具 | A Prettier-compatible code formatter",
     "homepage": "https://oxc.rs/docs/guide/usage/formatter.html",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.79.0/oxfmt-x86_64-pc-windows-msvc.zip",
-            "hash": "e78cabb2b5018f38da650b05d693d054c84fd5bba4853aecb5243834d3985577",
+            "url": "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.80.0/oxfmt-x86_64-pc-windows-msvc.zip",
+            "hash": "47c7e231c91239eaebd73a58ce9a916a61a9356b51791d7d2022169b1f90650f",
             "bin": [
                 [
                     "app\\oxfmt-x86_64-pc-windows-msvc.exe",
@@ -17,8 +17,8 @@
             ]
         },
         "arm64": {
-            "url": "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.79.0/oxfmt-aarch64-pc-windows-msvc.zip",
-            "hash": "452be5aee035f70469b85ed03328bc8e453af0ccb0b0bd6ff420d0d3758859ca",
+            "url": "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.80.0/oxfmt-aarch64-pc-windows-msvc.zip",
+            "hash": "fcc34c057f8ee91b61943599cbdc809ed3cc4c3c622931a92bd366654a60c700",
             "bin": [
                 [
                     "app\\oxfmt-aarch64-pc-windows-msvc.exe",
