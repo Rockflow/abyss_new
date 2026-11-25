@@ -1,5 +1,5 @@
 {
-    "version": "1.18.2",
+    "version": "1.19.0",
     "description": "一款免费的开源应用程序，它允许你在无需互联网连接的情况下，通过本地网络安全地与附近设备共享文件和消息 | A free, open-source app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection",
     "homepage": "https://localsend.org",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-windows-x86-64.zip",
-            "hash": "737aab1829d901e1d798cddd1e5fdc06ba9dfcc9ea50cfe3805e047005d5e71a"
+            "url": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-windows-x86-64.zip",
+            "hash": "1b131a225e30bb46c7b4ffee23577716b2d0605108aded27899375033ff69abc"
         }
     },
     "extract_to": "app",
