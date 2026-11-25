@@ -1,5 +1,5 @@
 {
-    "version": "5.3.6",
+    "version": "5.4.1",
     "description": "免费开源的 Markdown 编辑器，支持实时预览、数学公式、图表绘制与文件导出 | Free, open-source Markdown editor with live preview, math, diagrams and export",
     "homepage": "https://solomd.app",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.3.6/SoloMD_5.3.6_x64-portable.zip",
-            "hash": "32412d89ab53d24b4c535537ce317ed30153fccca99865a03d2538139e58f77a"
+            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.4.1/SoloMD_5.4.1_x64-portable.zip",
+            "hash": "0b7e320715d49e164fc1c8ea573d983dde693e0dfdb696f8c0214379c862b158"
         },
         "arm64": {
-            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.3.6/SoloMD_5.3.6_arm64-portable.zip",
-            "hash": "56fd47037274ad994d47034d402d97bcf063309e5e5b71f54812a51e6a731f38"
+            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.4.1/SoloMD_5.4.1_arm64-portable.zip",
+            "hash": "19ba68b1066b50e608910286d8adb0a83c736ae5bbf0728fa06cd2de9e09b551"
         }
     },
     "extract_to": "app",
