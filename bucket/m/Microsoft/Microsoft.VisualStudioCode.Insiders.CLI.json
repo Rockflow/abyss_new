@@ -1,5 +1,5 @@
 {
-    "version": "1.148.0-d6531f",
+    "version": "1.149.0-d8b0b6",
     "description": "(Insiders 版本) vscode - 一个轻量级、功能强大，插件生态丰富的文件编辑器 | (Insiders Edition) vscode - A lightweight but powerful source code editor",
     "homepage": "https://code.visualstudio.com",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://update.code.visualstudio.com/1.148.0-insider/cli-win32-x64/insider#/dl.7z",
-            "hash": "a001fdc6240469e9fc0920b51aedfb49a4da05ec46d42620812a3dc97911705a"
+            "url": "https://update.code.visualstudio.com/1.149.0-insider/cli-win32-x64/insider#/dl.7z",
+            "hash": "8c75f715fae1f6aee3defff4846e2da1fa2ea19774065887b422be980e91fef0"
         },
         "arm64": {
-            "url": "https://update.code.visualstudio.com/1.148.0-insider/cli-win32-arm64/insider#/dl.7z",
-            "hash": "10970d2f6c83cf272c2b2b02d5989aa0f5e7cccb6042f571e1cae62a1f0d96c6"
+            "url": "https://update.code.visualstudio.com/1.149.0-insider/cli-win32-arm64/insider#/dl.7z",
+            "hash": "7e1cdead39d603a6985c89d270ec7fd242756aa54ecad270fd45533032c7c523"
         }
     },
     "extract_to": "app",
