@@ -1,5 +1,5 @@
 {
-    "version": "2.34.0",
+    "version": "2.35.3",
     "description": "支持点击穿透模式的轻量级开源屏幕标注工具 | Lightweight open-source screen annotation tool with click-through mode",
     "homepage": "https://ifer47.github.io/markeron",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ifer47/markeron/releases/download/v2.34.0/MarkerOn_2.34.0_x64-setup.exe",
-            "hash": "b3571ba08978f939f27cdba79d99bc442e9c99dd4e13eccf8a44696f8564e7c0"
+            "url": "https://github.com/ifer47/markeron/releases/download/v2.35.3/MarkerOn_2.35.3_x64-setup.exe",
+            "hash": "d3185e499f8f950b75ae24b3d8e679f4ae51961c0874676c2f1060161bd6af37"
         }
     },
     "shortcuts": [
