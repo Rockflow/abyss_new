@@ -1,5 +1,5 @@
 {
-    "version": "0.8.0",
+    "version": "0.8.2",
     "description": "一款带有沉浸式全屏歌词的音乐播放器 | A music player with immersive full-screen lyrics",
     "homepage": "https://github.com/chthollyphile/folia-major",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/chthollyphile/folia-major/releases/download/v0.8.0/Folia-Setup-0.8.0.exe",
-            "hash": "f217863686f2b14d817c11e8c5101986eea96969fbaaeb347eeed1b04651bd58"
+            "url": "https://github.com/chthollyphile/folia-major/releases/download/v0.8.2/Folia-Setup-0.8.2.exe",
+            "hash": "867a73efcc913de90c5c7712684cfd2d05da9d6a8c265b855935d928f928f0dc"
         }
     },
     "shortcuts": [
