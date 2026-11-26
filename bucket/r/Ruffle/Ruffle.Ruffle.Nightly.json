@@ -1,5 +1,5 @@
 {
-    "version": "2026-11-25",
+    "version": "2026-11-26",
     "description": "一个用 Rust 编程语言编写的 Adobe Flash Player 模拟器 | An Adobe Flash Player emulator written in the Rust programming language",
     "homepage": "https://ruffle.rs",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2026-11-25/ruffle-nightly-2026_11_25-windows-x86_64.zip",
-            "hash": "a162524975c35d86f93923827a223b16563854f1ccbe8d387c143d08447e5814"
+            "url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2026-11-26/ruffle-nightly-2026_11_26-windows-x86_64.zip",
+            "hash": "f25986fd3d7472daec69c3bea5f9d4cc40bb59bd7f0ed600f6125e6425af9f5e"
         }
     },
     "extract_to": "app",
