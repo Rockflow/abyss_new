@@ -1,5 +1,5 @@
 {
-    "version": "1.2.7",
+    "version": "1.2.8",
     "description": "一个更直观的 Rust 版 du 工具 | A more intuitive version of du in rust",
     "homepage": "https://github.com/bootandy/dust",
     "license": {
@@ -7,9 +7,9 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bootandy/dust/releases/download/v1.2.7/dust-v1.2.7-x86_64-pc-windows-msvc.zip",
-            "hash": "d07a41521958895e701ad55f342302b7362799d6a328c843e8e2208ba0564c30",
-            "extract_dir": "dust-v1.2.7-x86_64-pc-windows-msvc"
+            "url": "https://github.com/bootandy/dust/releases/download/v1.2.8/dust-v1.2.8-x86_64-pc-windows-msvc.zip",
+            "hash": "adfbdab0765c72e5e3a8c43ae9e92f4076cdb30c6364b68817301fb85fe44ecd",
+            "extract_dir": "dust-v1.2.8-x86_64-pc-windows-msvc"
         }
     },
     "extract_to": "app",
