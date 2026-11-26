@@ -1,5 +1,5 @@
 {
-    "version": "2.2.0",
+    "version": "2.3.0",
     "description": "一款免费、开源、快速发展的现代文件管理器 (explorer) 应用程序 | A free, open-source, quickly evolving, modern file manager (explorer) app",
     "homepage": "https://sigma-file-manager.vercel.app",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/aleksey-hoffman/sigma-file-manager/releases/download/v2.2.0/Sigma-File-Manager-2.2.0-windows-setup.exe",
-            "hash": "1deb6a2672e5c98f3160f8b626afb2ae178c37a8b42a543c73a30e75c467ceeb"
+            "url": "https://github.com/aleksey-hoffman/sigma-file-manager/releases/download/v2.3.0/Sigma-File-Manager-2.3.0-windows-setup.exe",
+            "hash": "880cfdcad404120476da81bf1594b03fb35f48537a91f99c0fce5ea805fe7793"
         }
     },
     "shortcuts": [
