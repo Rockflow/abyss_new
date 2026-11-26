@@ -1,5 +1,5 @@
 {
-    "version": "2.105.0",
+    "version": "2.106.0",
     "description": "gh - GitHub 的官方命令行工具 | gh - GitHub's official command line tool",
     "homepage": "https://cli.github.com",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/cli/cli/releases/download/v2.105.0/gh_2.105.0_windows_amd64.zip",
-            "hash": "8813a72c899900afaa10e3fec8fbc64b908c89dbfe837e95ed2fa500fc140627"
+            "url": "https://github.com/cli/cli/releases/download/v2.106.0/gh_2.106.0_windows_amd64.zip",
+            "hash": "d406f442ca0baa3d3e9c695e9cded1aa48e67dad3294b8947e5ab84f980b4844"
         },
         "arm64": {
-            "url": "https://github.com/cli/cli/releases/download/v2.105.0/gh_2.105.0_windows_arm64.zip",
-            "hash": "5282a09c7757210c6e2dfb11a56b11e14e646df9b3b6a49f155465f5f881c3b7"
+            "url": "https://github.com/cli/cli/releases/download/v2.106.0/gh_2.106.0_windows_arm64.zip",
+            "hash": "6099b15d88eb96b7955050e84bd002432f9572857402d7f342c87cfaeaa83082"
         }
     },
     "extract_to": "app",
