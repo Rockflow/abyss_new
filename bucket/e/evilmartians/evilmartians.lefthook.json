@@ -1,5 +1,5 @@
 {
-    "version": "2.2.3",
+    "version": "2.2.4",
     "description": "适用于任何类型项目的快速且功能强大的 Git hooks 管理器 | Fast and powerful Git hooks manager for any type of projects",
     "homepage": "http://lefthook.dev",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/evilmartians/lefthook/releases/download/v2.2.3/lefthook_2.2.3_Windows_x86_64.exe#/lefthook.exe",
-            "hash": "1d74cdecc4028d32c0240fde53cd874b83cf6a64ab03c02f56b6b74e7feaa9ae"
+            "url": "https://github.com/evilmartians/lefthook/releases/download/v2.2.4/lefthook_2.2.4_Windows_x86_64.exe#/lefthook.exe",
+            "hash": "10970a8adfcb764ad456ac50bea092626d7a410900c567b9b980ca95cd920a32"
         },
         "arm64": {
-            "url": "https://github.com/evilmartians/lefthook/releases/download/v2.2.3/lefthook_2.2.3_Windows_arm64.exe#/lefthook.exe",
-            "hash": "f1d8d741abbe67e20da5d3afa316016e7f2fbc74cc5c383de0cf6838b86a42ec"
+            "url": "https://github.com/evilmartians/lefthook/releases/download/v2.2.4/lefthook_2.2.4_Windows_arm64.exe#/lefthook.exe",
+            "hash": "8ce759578650520d788e34adb7dcb97648b3c25de948e3dbe75b8934a36a0e4f"
         }
     },
     "extract_to": "app",
