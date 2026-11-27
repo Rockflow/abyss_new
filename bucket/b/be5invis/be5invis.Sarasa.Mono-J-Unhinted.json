@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Mono: 等宽/连字/全宽破折号, J: Japanese, Unhinted: No-FontHinting) 一款 2:1 等宽字体 | (Mono: Monospace/Ligature/Full-width dash, J: Japanese, Unhinted: No-FontHinting) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaMonoJ-TTF-Unhinted-1.0.43.7z",
-    "hash": "b5aca7bb6f1dfe9ea6af496b5cee216ae5114d626d4f572a554d998ccdba04ec",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaMonoJ-TTF-Unhinted-1.0.44.7z",
+    "hash": "bb00e26829f5538149fd00ac3de21b4ea972a0c96f98465282034504eae70930",
     "conflicts": [
         "be5invis.Sarasa.Mono-J",
         "be5invis.Sarasa.Mono-J-Unhinted"
