@@ -1,5 +1,5 @@
 {
-    "version": "0.9.0",
+    "version": "0.10.0",
     "description": "终端输出工作区 - 捕获、浏览、检索、选取并导出终端输出 | A terminal output workspace — capture, browse, search, select, and export terminal output",
     "homepage": "https://github.com/Ariestar/sivtr",
     "license": {
@@ -7,9 +7,9 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Ariestar/sivtr/releases/download/v0.9.0/sivtr-v0.9.0-windows-x64.zip",
-            "hash": "b1c039a3caf4f2a5859284126ca542ebc7925daf272da49e9d52cea1c2cca58f",
-            "extract_dir": "sivtr-v0.9.0-windows-x64"
+            "url": "https://github.com/Ariestar/sivtr/releases/download/v0.10.0/sivtr-v0.10.0-windows-x64.zip",
+            "hash": "9f2bd3ba3b7461faff229349dafecb63040031cf69eaf88515ee3fb517f52328",
+            "extract_dir": "sivtr-v0.10.0-windows-x64"
         }
     },
     "extract_to": "app",
