@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Term: 等宽/连字/半宽破折号, TC: Traditional Chinese, Unhinted: No-FontHinting) 一款 2:1 等宽字体 | (Term: Monospace/Ligature/Half-width em dash, TC: Traditional Chinese, Unhinted: No-FontHinting) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaTermTC-TTF-Unhinted-1.0.43.7z",
-    "hash": "6b29b7b97a176eb9ae282895174a3f766ee1f7100073ab6105230bb09d72c31d",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaTermTC-TTF-Unhinted-1.0.44.7z",
+    "hash": "634f28a2c085ffabb0825a8313e76badedc0dd75725ecb0a8294660116cb9de9",
     "conflicts": [
         "be5invis.Sarasa.Term-TC",
         "be5invis.Sarasa.Term-TC-Unhinted"
