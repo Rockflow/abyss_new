@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Term: 等宽/连字/半宽破折号, Slab: 有衬线, K: Korean, Unhinted: No-FontHinting) 一款 2:1 等宽字体 | (Term: Monospace/Ligature/Half-width em dash, Slab: Serifs, K: Korean, Unhinted: No-FontHinting) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaTermSlabK-TTF-Unhinted-1.0.43.7z",
-    "hash": "f419e59be10c036772a6ecb729a0384fea03a1b8330e8fb48a7f8d2890f75e1c",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaTermSlabK-TTF-Unhinted-1.0.44.7z",
+    "hash": "f07ac47119779bd07f77bf367915cd5f7809d4ecaadda476380e223d0af2cc2f",
     "conflicts": [
         "be5invis.Sarasa.Term-Slab-K",
         "be5invis.Sarasa.Term-Slab-K-Unhinted"
