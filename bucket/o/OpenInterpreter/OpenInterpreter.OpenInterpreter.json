@@ -1,5 +1,5 @@
 {
-    "version": "0.0.61",
+    "version": "0.0.64",
     "description": "专为低成本模型优化的代码智能体 | A coding agent optimized for low-cost models",
     "homepage": "http://openinterpreter.com",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/openinterpreter/openinterpreter/releases/download/rust-v0.0.61/open-interpreter-package-x86_64-pc-windows-msvc.tar.gz",
-            "hash": "f33bf04d13fbbcba43ed21a212b6b3fe806abb59c39e771061159fa55bb82e87"
+            "url": "https://github.com/openinterpreter/openinterpreter/releases/download/rust-v0.0.64/open-interpreter-package-x86_64-pc-windows-msvc.tar.gz",
+            "hash": "e9007c7011867efc4fbfc21d684c9c3cfe3181014512c406c6f8cc3aab68a0c6"
         },
         "arm64": {
-            "url": "https://github.com/openinterpreter/openinterpreter/releases/download/rust-v0.0.61/open-interpreter-package-aarch64-pc-windows-msvc.tar.gz",
-            "hash": "e137bbd76353d772c3e24d00463dbb0a0541604e70b43b87f678df75828764d0"
+            "url": "https://github.com/openinterpreter/openinterpreter/releases/download/rust-v0.0.64/open-interpreter-package-aarch64-pc-windows-msvc.tar.gz",
+            "hash": "b5ea0b8c38a8e9632553e4f0eae126054193c8fef9570c4bb997f4352bf2caca"
         }
     },
     "extract_to": "app",
