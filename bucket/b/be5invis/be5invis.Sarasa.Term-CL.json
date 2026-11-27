@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Term: 等宽/连字/半宽破折号, CL: Classical orthography) 一款 2:1 等宽字体 | (Term: Monospace/Ligature/Half-width em dash, CL: Classical orthography) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaTermCL-TTF-1.0.43.7z",
-    "hash": "4a303839b4922ac4dfe84166846ab5e399940a6d52d079eac8d9b7108e8e04c1",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaTermCL-TTF-1.0.44.7z",
+    "hash": "a0aef5a1fccce475aa7217673bec63b8ef5cb50e98b631e02d09a1a737cbef94",
     "conflicts": [
         "be5invis.Sarasa.Term-CL",
         "be5invis.Sarasa.Term-CL-Unhinted"
