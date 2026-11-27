@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(UI: 非等宽/无连字/全宽破折号, CL: Classical orthography) 一款 2:1 等宽字体 | (UI: No-Monospace/No-Ligature/Full-width em dash, CL: Classical orthography) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaUICL-TTF-1.0.43.7z",
-    "hash": "2a7eb5b7422fa2a372e098d1e6e399213609cc40b9d510e1e8f8dc19667bce79",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaUICL-TTF-1.0.44.7z",
+    "hash": "f3a88fdfcb9719a615dc6e8709cc658e2d71acaa015edac02d1801f06d3aab7d",
     "conflicts": [
         "be5invis.Sarasa.UI-CL",
         "be5invis.Sarasa.UI-CL-Unhinted"
