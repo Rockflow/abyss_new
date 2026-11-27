@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Mono: 等宽/连字/全宽破折号, Slab: 有衬线, HC: HongKong Chinese) 一款 2:1 等宽字体 | (Mono: Monospace/Ligature/Full-width dash, Slab: Serifs, HC: HongKong Chinese) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaMonoSlabHC-TTF-1.0.43.7z",
-    "hash": "3de7f7f8451a7fd2d0d94727f0668ea4ef54685b8e72baa368aae7894c41d067",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaMonoSlabHC-TTF-1.0.44.7z",
+    "hash": "8c07885405bae4ff78be68c415e5bbe034922b5c4f643d5d55c45a635fb53205",
     "conflicts": [
         "be5invis.Sarasa.Mono-Slab-HC",
         "be5invis.Sarasa.Mono-Slab-HC-Unhinted"
