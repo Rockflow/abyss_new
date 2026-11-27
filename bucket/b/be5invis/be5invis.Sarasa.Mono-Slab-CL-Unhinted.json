@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Mono: 等宽/连字/全宽破折号, Slab: 有衬线, CL: Classical orthography, Unhinted: No-FontHinting) 一款 2:1 等宽字体 | (Mono: Monospace/Ligature/Full-width dash, Slab: Serifs, CL: Classical orthography, Unhinted: No-FontHinting) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaMonoSlabCL-TTF-Unhinted-1.0.43.7z",
-    "hash": "9a0ff68b3dedfb336182b4fd434c25f73c4e53b5cb6ff1fabcb5aea3e6325ae9",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaMonoSlabCL-TTF-Unhinted-1.0.44.7z",
+    "hash": "90dd6dc8a3b644c914250ea76012c4f71150c41290d8e06c1f951745d9abe068",
     "conflicts": [
         "be5invis.Sarasa.Mono-Slab-CL",
         "be5invis.Sarasa.Mono-Slab-CL-Unhinted"
