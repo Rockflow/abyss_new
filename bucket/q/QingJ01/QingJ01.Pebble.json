@@ -1,5 +1,5 @@
 {
-    "version": "0.1.6",
+    "version": "0.2.0",
     "description": "一款优先本地运行的桌面邮件客户端 | A local-first desktop email client",
     "homepage": "https://pebble.byebug.cn",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/QingJ01/Pebble/releases/download/v0.1.6/Pebble_0.1.6_x64-setup.exe",
-            "hash": "48ee751ab404aea505e6cfedb5c4f19b5d7147a1d338e46217c89ff54b4d84f9"
+            "url": "https://github.com/QingJ01/Pebble/releases/download/v0.2.0/Pebble_0.2.0_x64-setup.exe",
+            "hash": "943e6bba8cac7b307145df4f9b86974b26ffee9795ad69cc70b5436b11c4ea1c"
         }
     },
     "shortcuts": [
