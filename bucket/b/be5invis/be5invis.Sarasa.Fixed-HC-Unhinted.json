@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Fixed: 等宽/无连字/半宽破折号, HC: HongKong Chinese, Unhinted: No-FontHinting) 一款 2:1 等宽字体 | (Fixed: Monospace/No-Ligature/Half-width em dash, HC: HongKong Chinese, Unhinted: No-FontHinting) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaFixedHC-TTF-Unhinted-1.0.43.7z",
-    "hash": "824a6ebeb8d50f0af240b3fc94c7e6c6f18849214bfd8abd3cc8ef6aa7d63998",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaFixedHC-TTF-Unhinted-1.0.44.7z",
+    "hash": "298177e1eeb8990acfc1bd6f980d58ee8eb5650920ef7180eefcca87eb760243",
     "conflicts": [
         "be5invis.Sarasa.Fixed-HC",
         "be5invis.Sarasa.Fixed-HC-Unhinted"
