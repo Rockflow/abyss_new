@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Term: 等宽/连字/半宽破折号, HC: HongKong Chinese) 一款 2:1 等宽字体 | (Term: Monospace/Ligature/Half-width em dash, HC: HongKong Chinese) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaTermHC-TTF-1.0.43.7z",
-    "hash": "cee998573fd0fa6757ee0e2e7736c8dc5417a33e05f85597acdf2b13230d8741",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaTermHC-TTF-1.0.44.7z",
+    "hash": "612cce4b54bcfcf4986b080f68726ac51cb54a1db14aa0705c43fedceab11897",
     "conflicts": [
         "be5invis.Sarasa.Term-HC",
         "be5invis.Sarasa.Term-HC-Unhinted"
