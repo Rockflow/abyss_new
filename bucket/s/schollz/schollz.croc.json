@@ -1,5 +1,5 @@
 {
-    "version": "11.6.6",
+    "version": "11.6.7",
     "description": "一种能够让任意两台计算机简单且安全地传输文件和文件夹的工具 | A tool that allows any two computers to simply and securely transfer files and folders",
     "homepage": "https://schollz.com/software/croc6",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/schollz/croc/releases/download/v11.6.6/croc_v11.6.6_Windows-64bit.zip",
-            "hash": "e84910ec971b81f34c9722dc20128d23f3b962cbdbe16437b5c289f757f88016"
+            "url": "https://github.com/schollz/croc/releases/download/v11.6.7/croc_v11.6.7_Windows-64bit.zip",
+            "hash": "44de6a9d107e0021238222f3cbf83696e83d627e951fb0bfe3ad615786e539e0"
         },
         "arm64": {
-            "url": "https://github.com/schollz/croc/releases/download/v11.6.6/croc_v11.6.6_Windows-ARM64.zip",
-            "hash": "a88819bfe5fa9ec86a5e25925cc813894d5f6471467b30d2f3fc459d97f5767c"
+            "url": "https://github.com/schollz/croc/releases/download/v11.6.7/croc_v11.6.7_Windows-ARM64.zip",
+            "hash": "94f3149757173e1ae3b54ae56433d12504933d8f8c86d5109193e6a11c5d537e"
         }
     },
     "extract_to": "app",
