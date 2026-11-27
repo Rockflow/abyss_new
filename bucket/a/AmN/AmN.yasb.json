@@ -1,5 +1,5 @@
 {
-    "version": "2.0.8",
+    "version": "2.0.9",
     "description": "一款用 Python 编写的具有高度可配置性的 Windows 状态栏 | A highly configurable Windows status bar written in Python",
     "homepage": "https://yasb.dev",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/amnweb/yasb/releases/download/v2.0.8/yasb-2.0.8-x64.msi",
-            "hash": "fe1197bf739117be7c29cc858a4852f0a6c9e23134f094f6630f539347051404"
+            "url": "https://github.com/amnweb/yasb/releases/download/v2.0.9/yasb-2.0.9-x64.msi",
+            "hash": "910b1162968912328fb1bb7dd2f052f0bcf27b6c24c669ef229b91b000cc85cd"
         },
         "arm64": {
-            "url": "https://github.com/amnweb/yasb/releases/download/v2.0.8/yasb-2.0.8-aarch64.msi",
-            "hash": "ebd00ec77b438fdfdadc8895d2277effe1606ef17b93bd86465632861b7b3314"
+            "url": "https://github.com/amnweb/yasb/releases/download/v2.0.9/yasb-2.0.9-aarch64.msi",
+            "hash": "649aca03d1ea115bf96ce402266ac920806b14e2bba21fc9458e29c5203384a4"
         }
     },
     "extract_to": "app",
