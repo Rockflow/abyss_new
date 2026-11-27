@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Mono: 等宽/连字/全宽破折号, SC: Simplified Chinese) 一款 2:1 等宽字体 | (Mono: Monospace/Ligature/Full-width dash, SC: Simplified Chinese) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaMonoSC-TTF-1.0.43.7z",
-    "hash": "54747ee26f0bc47dc85583df5f8877a4607467afd70630b80ab4505cccaa8e1d",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaMonoSC-TTF-1.0.44.7z",
+    "hash": "202e7dc6edf6edc8b289be28784e2b92e4fcff6e77d3df5ffe780073d9abd2d7",
     "conflicts": [
         "be5invis.Sarasa.Mono-SC",
         "be5invis.Sarasa.Mono-SC-Unhinted"
