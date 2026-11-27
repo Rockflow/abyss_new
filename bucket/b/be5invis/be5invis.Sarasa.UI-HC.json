@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(UI: 非等宽/无连字/全宽破折号, HC: HongKong Chinese) 一款 2:1 等宽字体 | (UI: No-Monospace/No-Ligature/Full-width em dash, HC: HongKong Chinese) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaUIHC-TTF-1.0.43.7z",
-    "hash": "303ba44f8a2ce221c55ebe48129ae4def010627b770c7636c16654407cde669c",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaUIHC-TTF-1.0.44.7z",
+    "hash": "f7f5a71a58edefb2dabf0380e830183727827b69a068aaf73b41789266059625",
     "conflicts": [
         "be5invis.Sarasa.UI-HC",
         "be5invis.Sarasa.UI-HC-Unhinted"
