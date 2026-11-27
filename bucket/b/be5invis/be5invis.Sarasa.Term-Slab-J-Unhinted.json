@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Term: 等宽/连字/半宽破折号, Slab: 有衬线, J: Japanese, Unhinted: No-FontHinting) 一款 2:1 等宽字体 | (Term: Monospace/Ligature/Half-width em dash, Slab: Serifs, J: Japanese, Unhinted: No-FontHinting) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaTermSlabJ-TTF-Unhinted-1.0.43.7z",
-    "hash": "7563b1d6851ee5dcbde52318a9a2a590469625ecb3f254f2a8c206bb30dcb42b",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaTermSlabJ-TTF-Unhinted-1.0.44.7z",
+    "hash": "da1b2cbe119ce24d78e66def5e78f32c70f4b7e0c4e485990ce4dc569f9edaad",
     "conflicts": [
         "be5invis.Sarasa.Term-Slab-J",
         "be5invis.Sarasa.Term-Slab-J-Unhinted"
