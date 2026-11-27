@@ -1,12 +1,12 @@
 {
-    "version": "1.0.43",
+    "version": "1.0.44",
     "description": "(Mono: 等宽/连字/全宽破折号, K: Korean, Unhinted: No-FontHinting) 一款 2:1 等宽字体 | (Mono: Monospace/Ligature/Full-width dash, K: Korean, Unhinted: No-FontHinting) 2:1 monospaced font",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "license": {
         "identifier": "OFL-1.1"
     },
-    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.43/SarasaMonoK-TTF-Unhinted-1.0.43.7z",
-    "hash": "a346df74087d490d4086ca1bf5f0dbc355456ea4432a5839ce863fa79fb9f5e8",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.44/SarasaMonoK-TTF-Unhinted-1.0.44.7z",
+    "hash": "37a09fc1b99e365a8db3119d80de55f9989d0ac44c014248c9a248a56e0a8b12",
     "conflicts": [
         "be5invis.Sarasa.Mono-K",
         "be5invis.Sarasa.Mono-K-Unhinted"
