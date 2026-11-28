@@ -1,5 +1,5 @@
 {
-    "version": "1.94.0",
+    "version": "1.95.0",
     "description": "Postman 的一款安全的命令行配套工具 | A secure command-line companion for Postman",
     "homepage": "https://learning.postman.com/docs/postman-cli/postman-cli-overview",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl-cli.pstmn.io/download/version/1.94.0/win64#/dl.zip",
-            "hash": "a03ccbc2cc2baed9bd7a255a13a1d13ca0229b16e185235136fff347837dba7c"
+            "url": "https://dl-cli.pstmn.io/download/version/1.95.0/win64#/dl.zip",
+            "hash": "783e47a8789df32a5f572c0d21cd065258adc87290785334750b0045b2659dc0"
         }
     },
     "extract_to": "app",
