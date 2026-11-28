@@ -1,5 +1,5 @@
 {
-    "version": "0.83.2",
+    "version": "0.84.0",
     "description": "通过单点登录 (SSO) 、多因素认证 (MFA) 和精细化访问控制，将您的设备接入基于 WireGuard® 的安全 overlay 网络 | Connect your devices into a secure WireGuard®-based overlay network with SSO, MFA and granular access controls",
     "homepage": "https://netbird.io",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/netbirdio/netbird/releases/download/v0.83.2/netbird_installer_0.83.2_windows_amd64.exe",
-            "hash": "7b6a956825a35a1de77fd2797d8e935edf60f68ef41caf816f1872bb4b844527"
+            "url": "https://github.com/netbirdio/netbird/releases/download/v0.84.0/netbird_installer_0.84.0_windows_amd64.exe",
+            "hash": "ea31a84b4ce1a4d130f34ad17426285264770ddbd6bf8a80c004ed8cb33422e4"
         },
         "arm64": {
-            "url": "https://github.com/netbirdio/netbird/releases/download/v0.83.2/netbird_installer_0.83.2_windows_arm64.exe",
-            "hash": "dc0d7110feb00593509a664994e28aa0e205c8c267de4cc08d890d1ba6c37fea"
+            "url": "https://github.com/netbirdio/netbird/releases/download/v0.84.0/netbird_installer_0.84.0_windows_arm64.exe",
+            "hash": "d5e0d34ba41b5350cb5b30c304b4eb1f122af4e85f0e25f8e21c43747b605853"
         }
     },
     "location": "$env:ProgramFiles\\Netbird",
