@@ -1,5 +1,5 @@
 {
-    "version": "0.8.3",
+    "version": "0.8.4",
     "description": "可将纯 Markdown 文本转化为精致幻灯片的 Markdown 演示编辑器，支持实时预览、多种版式、主题设置以及 PPTX 格式导出 | Markdown presentation editor that turns plain Markdown into polished slides with live preview, multiple layouts, theming, and PPTX export",
     "homepage": "https://kova.md",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/KovaMD/Kova/releases/download/v0.8.3/Kova_0.8.3_x64-setup.exe",
-            "hash": "b9c7ef698b6a801b828103f78a931a899816248603a2e5e81cde1d7c8b8c7cd5"
+            "url": "https://github.com/KovaMD/Kova/releases/download/v0.8.4/Kova_0.8.4_x64-setup.exe",
+            "hash": "e6ef7903097be2b65a11f2bf9e2241fc59ec2062732f0e2de89ce88a1a372398"
         }
     },
     "shortcuts": [
