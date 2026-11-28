@@ -1,5 +1,5 @@
 {
-    "version": "1.1.93",
+    "version": "1.1.94",
     "description": "一款现代化 SSH 管理与终端应用，支持主机分组、SFTP 传输、密钥管理、端口转发，并配备精美丰富的用户界面 | A modern SSH manager and terminal app with host grouping, SFTP, keychain, port forwarding, and a rich UI",
     "homepage": "https://netcatty.app",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/binaricat/Netcatty/releases/download/v1.1.93/Netcatty-1.1.93-win-x64.exe",
-            "hash": "0a17de64dc59a05e1a771be0ae3a6bcf228847069f7d7c76f195447f3ea0a729"
+            "url": "https://github.com/binaricat/Netcatty/releases/download/v1.1.94/Netcatty-1.1.94-win-x64.exe",
+            "hash": "41a274110c1a99ac96fc675d35d3d3be5401616243734ef72e5231f9dd0d85be"
         }
     },
     "shortcuts": [
