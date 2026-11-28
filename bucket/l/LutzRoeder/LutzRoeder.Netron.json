@@ -1,5 +1,5 @@
 {
-    "version": "9.3.7",
+    "version": "9.3.8",
     "description": "神经网络、深度学习和机器学习模型的可视化工具 | Visualizer for neural network, deep learning and machine learning models",
     "homepage": "https://netron.app",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lutzroeder/netron/releases/download/v9.3.7/Netron-Setup-9.3.7.exe",
-            "hash": "93f112bb193e770b33ec4ec8b5fecfe255c7fa43dc4dad0d9dfc68ba837317d6"
+            "url": "https://github.com/lutzroeder/netron/releases/download/v9.3.8/Netron-Setup-9.3.8.exe",
+            "hash": "9f3d4d53a1783dfb38cabfef10f7b3d395039ce752921211f93c1b8a0abe8c9d"
         }
     },
     "bin": "app\\Netron.exe",
